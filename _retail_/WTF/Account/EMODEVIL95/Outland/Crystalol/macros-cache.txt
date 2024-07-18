@@ -1,0 +1,43 @@
+VER 3 0100000000000001 "Arcane Barrage" "INV_MISC_QUESTIONMARK"
+#showtooltip Arcane Barrage
+/cast Arcane Missiles
+/cast Arcane Barrage
+END
+VER 3 0100000000000003 "Blizzard" "INV_MISC_QUESTIONMARK"
+#showtooltip Blizzard
+/cast [@cursor] Blizzard
+END
+VER 3 0100000000000007 "cs" "INV_MISC_QUESTIONMARK"
+#showtooltip Counterspell
+/cast [@mouseover, exists][] Counterspell
+END
+VER 3 0100000000000008 "Fall" "INV_MISC_QUESTIONMARK"
+#showtooltip Slow Fall
+/cast [@mouseover, exists]
+END
+VER 3 0100000000000002 "Freeze" "INV_MISC_QUESTIONMARK"
+#showtooltip Freeze
+/cast [@cursor] Freeze
+END
+VER 3 0100000000000005 "orb" "INV_MISC_QUESTIONMARK"
+#showtooltip Frozen Orb
+/cast [@cursor] Frozen Orb
+END
+VER 3 0100000000000006 "poly" "INV_MISC_QUESTIONMARK"
+#showtooltip Polymorph
+/cast [@mouseover, exists][] Polymorph
+END
+VER 3 0100000000000004 "Ring of Frost" "INV_MISC_QUESTIONMARK"
+#showtooltip Ring of Frost
+/cast [@cursor] Ring of Frost
+END
+VER 3 0100000000000009 "uncurse" "INV_MISC_QUESTIONMARK"
+#showtooltip Remove Curse
+/cast [@mouseover, exists][] Remove Curse
+END
+VER 3 010000000000000A "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1MR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000B "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Cry[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

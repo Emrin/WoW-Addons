@@ -1,0 +1,77 @@
+VER 3 0100000000000015 "bl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:2/3] Unholy Blight; [@mouseover,exists][mod, @focus][] Outbreak
+END
+VER 3 0100000000000002 "blow" "INV_MISC_QUESTIONMARK"
+#showtooltip Mind Freeze
+/cast [mod:shift, @focus][@mouseover,exists][] Mind Freeze
+END
+VER 3 010000000000000A "cain" "INV_MISC_QUESTIONMARK"
+#showtooltip Chains of Ice
+/cast [mod:shift, @focus][@mouseover,exists][] Chains of Ice
+END
+VER 3 0100000000000017 "catc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Death's Advance
+/cast [mod:ctrl] Huddle
+END
+VER 3 0100000000000003 "cc" "135836"
+#showtooltip
+/cast [mod,@mouseover,exists,harm,nodead][mod] Asphyxiate
+/cast [nomod] Blinding Sleet
+END
+VER 3 0100000000000009 "coil" "136145"
+#showtooltip
+/cast [mod:alt,@mouseover,exists,nodead][mod:alt,@player][mod:alt] Death Coil
+/cancelaura [mod:ctrl] Lichborne
+/cast Lichborne
+END
+VER 3 0100000000000005 "cum" "INV_MISC_QUESTIONMARK"
+#showtooltip Gorefiend's Grasp
+/cast [mod,@player][@mouseover,exists][] Gorefiend's Grasp
+END
+VER 3 0100000000000001 "dd" "INV_MISC_QUESTIONMARK"
+#showtooltip Death and Decay
+/cast [mod,@cursor][@player] Death and Decay
+END
+VER 3 0100000000000012 "kiss" "INV_MISC_QUESTIONMARK"
+#showtooltip Death's Caress
+/cast [@mouseover,exists][mod, @focus][] Death's Caress
+END
+VER 3 0100000000000007 "lick" "INV_MISC_QUESTIONMARK"
+#showtooltip Dark Command
+/cast [@mouseover,exists][mod:shift,@focus][] Dark Command
+END
+VER 3 0100000000000004 "pull" "INV_MISC_QUESTIONMARK"
+#showtooltip Death Grip
+/cast [@mouseover,exists][mod:shift, @focus][] Death Grip
+END
+VER 3 0100000000000013 "r5" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:5/2] Wraith Walk
+/cast [talent:5/3] Death Pact
+END
+VER 3 0100000000000011 "raise" "INV_MISC_QUESTIONMARK"
+#showtooltip raise Dead
+/cast [mod] Sacrificial Pact
+/cast Raise Dead
+END
+VER 3 0100000000000006 "rez" "INV_MISC_QUESTIONMARK"
+#showtooltip Raise Ally
+/cast [@mouseover,help,dead][]Raise Ally
+END
+VER 3 0100000000000014 "sum" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Raise Abomination
+END
+VER 3 0100000000000018 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1EM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000019 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Nol[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000B "wep" "135309"
+#showtooltip
+/equip Deathguard's Greatsword
+/equip Cudgel of Correctional Oversight
+END

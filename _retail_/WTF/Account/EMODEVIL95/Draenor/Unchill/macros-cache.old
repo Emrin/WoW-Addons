@@ -1,0 +1,74 @@
+VER 3 0100000000000009 "blo" "4622457"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Emerald Blossom
+END
+VER 3 0100000000000006 "cle" "134400"
+#showtooltip
+/cast [nomod, @mouseover, exists][nomod] Expunge
+/cast [mod, @mouseover,exists][mod] Cauterizing Flame
+END
+VER 3 010000000000000E "dash" "4622450"
+#showtooltip
+/cast [nomod,@cursor] Deep Breath
+/cast [mod,@cursor] Dream Flight
+END
+VER 3 0100000000000013 "db" "4622454"
+#showtooltip
+/cast Dream Breath
+END
+VER 3 0100000000000011 "def" "134400"
+#showtooltip
+/cast [nomod] Obsidian Scales
+/cast [mod] Renewing Blaze
+END
+VER 3 010000000000000A "es" "134400"
+#showtooltip
+/cast Eternity Surge
+END
+VER 3 0100000000000003 "fire" "4622458"
+#showtooltip
+/cast Fire Breath
+END
+VER 3 0100000000000008 "fly" "134400"
+#showtooltip
+/cast [nomod,@mouseover] Rescue
+/cast [mod,@mouseover] Swoop Up
+END
+VER 3 0100000000000005 "fs" "134400"
+#showtooltip
+/cast [nomod,@cursor][mod,@player] Firestorm
+END
+VER 3 0100000000000004 "lf" "134400"
+#showtooltip
+/cast [mod, @player][nomod,@mouseover,exists][] Living Flame
+END
+VER 3 0100000000000017 "loop" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Chrono Loop
+END
+VER 3 010000000000000D "ls" "134400"
+#showtooltip
+/cast [@cursor] Landslide
+END
+VER 3 0100000000000014 "sb" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,nodead,help][] Spiritbloom
+END
+VER 3 0100000000000016 "som" "134400"
+#showtooltip
+/cast [@mouseover,exists,help,nodead][] Source of Magic
+END
+VER 3 010000000000000B "sw" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Sleep Walk
+END
+VER 3 010000000000000C "ve" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Verdant Embrace
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1VH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Unc[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

@@ -1,0 +1,15 @@
+Version: 1
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 388
+H: 251
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 58
+Y: -190
+W: 200
+H: 50

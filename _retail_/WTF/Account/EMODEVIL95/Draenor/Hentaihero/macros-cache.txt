@@ -1,0 +1,54 @@
+VER 3 0100000000000002 "bop" "INV_MISC_QUESTIONMARK"
+#showtooltip Blessing of Protection
+/stopcasting
+/cancelaura Blessing of Protection
+/cast [mod:shift,@focus][@mouseover,exists][] Blessing of Protection
+END
+VER 3 0100000000000008 "bos" "INV_MISC_QUESTIONMARK"
+#showtooltip Blessing of Sacrifice
+/cast [target=mouseover,exists] Blessing of Sacrifice; [help,nodead] Blessing of Sacrifice; [target=player] Blessing of Sacrifice
+END
+VER 3 0100000000000003 "bub" "INV_MISC_QUESTIONMARK"
+#showtooltip Divine Shield
+/stopcasting
+/cancelaura Divine Shield
+/cast Divine Shield
+END
+VER 3 0100000000000004 "cc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/2][mod,@focus, exists][@mouseover,exists][]Repentance;[talent:3/3]Blinding Light
+END
+VER 3 0100000000000005 "cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Toxins
+/cast [target=mouseover,exists] Cleanse Toxins; [help,nodead] Cleanse Toxins;[target=player] Cleanse Toxins
+END
+VER 3 0100000000000001 "free" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][] Blessing of Freedom
+END
+VER 3 0100000000000007 "hand" "INV_MISC_QUESTIONMARK"
+#showtooltip Lay on Hands
+/cast [target=mouseover,exists] Lay on Hands; [help,nodead] Lay on Hands; [target=player] Lay on Hands
+END
+VER 3 0100000000000006 "heal" "INV_MISC_QUESTIONMARK"
+#showtooltip Flash of Light
+/cast [target=mouseover,exists] Flash of Light; [help,nodead] Flash of Light; [target=player] Flash of Light
+END
+VER 3 010000000000000A "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Rebuke
+END
+VER 3 0100000000000009 "taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Hand of Reckoning
+END
+VER 3 010000000000000C "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000D "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Hen[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000B "wog" "INV_MISC_QUESTIONMARK"
+#showtooltip Word of Glory
+/cast [target=mouseover,exists] Word of Glory; [help,nodead] Word of Glory;[target=player] Word of Glory
+END

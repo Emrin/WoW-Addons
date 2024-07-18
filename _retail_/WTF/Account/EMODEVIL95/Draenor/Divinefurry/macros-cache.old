@@ -1,0 +1,56 @@
+VER 3 0100000000000008 "bind" "INV_MISC_QUESTIONMARK"
+#showtooltip Binding Shot
+/cast [mod,@player][@cursor] Binding Shot
+END
+VER 3 010000000000000F "cam" "INV_MISC_QUESTIONMARK"
+#showtooltip Camouflage
+/cast !Camouflage
+END
+VER 3 010000000000000D "conc" "INV_MISC_QUESTIONMARK"
+#showtooltip Concussive Shot
+/cast [mod:shift,@focus][@mouseover,exists][] Concussive Shot
+END
+VER 3 0100000000000005 "fl" "INV_MISC_QUESTIONMARK"
+#showtooltip Flare
+/cast [mod,@player][@cursor] Flare
+END
+VER 3 0100000000000007 "ice" "INV_MISC_QUESTIONMARK"
+#showtooltip Freezing Trap
+/cast [mod,@player][@cursor] Freezing Trap
+END
+VER 3 0100000000000004 "kik" "INV_MISC_QUESTIONMARK"
+#showtooltip Counter Shot
+/cast [mod:shift,@focus][@mouseover,exists][] Counter Shot
+END
+VER 3 010000000000000B "misdir" "INV_MISC_QUESTIONMARK"
+#showtooltip Misdirection
+/cast [mod:shift,@focus][@mouseover,exists][] Misdirection
+END
+VER 3 0100000000000009 "reson" "INV_MISC_QUESTIONMARK"
+#showtooltip Resonating Arrow
+/cast [mod,@player][@cursor] Resonating Arrow
+END
+VER 3 010000000000000C "sac" "INV_MISC_QUESTIONMARK"
+#showtooltip Roar of Sacrifice
+/cast [mod:shift,@focus][@mouseover,exists][] Roar of Sacrifice
+END
+VER 3 010000000000000E "scare" "INV_MISC_QUESTIONMARK"
+#showtooltip Scare Beast
+/cast [@mouseover,exists][] Scare Beast
+END
+VER 3 0100000000000003 "scat" "INV_MISC_QUESTIONMARK"
+#showtooltip Scatter Shot
+/cast [mod:shift,@focus][@mouseover,exists][] Scatter Shot
+END
+VER 3 0100000000000006 "tar" "INV_MISC_QUESTIONMARK"
+#showtooltip Tar Trap
+/cast [mod,@player][@cursor] Tar Trap
+END
+VER 3 010000000000000A "tranq" "INV_MISC_QUESTIONMARK"
+#showtooltip Tranquilizing Shot
+/cast [mod:shift,@focus][@mouseover,exists][] Tranquilizing Shot
+END
+VER 3 0100000000000010 "volly" "132205"
+#showtooltip
+/cast [mod,@player][@cursor] Volley
+END

@@ -1,0 +1,74 @@
+VER 3 0100000000000004 "beac" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,help][nomod] Beacon of Light
+/cast [mod,@mouseover,exists,nodead,help][mod] Beacon of Faith
+END
+VER 3 010000000000000F "bf" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Bestow Faith
+END
+VER 3 010000000000000A "bos" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead,help][] Blessing of Sacrifice
+END
+VER 3 0100000000000003 "cl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Cleanse
+END
+VER 3 0100000000000008 "cs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Crusader Strike
+/cast [mod] Shield of the Righteous
+END
+VER 3 010000000000000C "flash" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Flash of Light
+END
+VER 3 0100000000000010 "hl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Holy Light
+END
+VER 3 0100000000000005 "hoj" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Hammer of Justice
+END
+VER 3 0100000000000006 "how" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Hammer of Wrath
+END
+VER 3 010000000000000D "hs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,help][nomod,@target,exists,help][nomod,@player] Holy Shock
+/cast [mod,@mouseover,exists,nodead,harm][mod] Holy Shock
+END
+VER 3 0100000000000007 "judg" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Judgment
+END
+VER 3 0100000000000012 "loh" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Lay on Hands
+END
+VER 3 0100000000000011 "lom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Light of the Martyr
+END
+VER 3 0100000000000009 "rep" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/3] Blinding Light
+/cast [talent:3/2,mod,@focus,exists,harm][talent:3/2,@mouseover,exists,nodead,harm][talent:3/2] Repentance
+END
+VER 3 010000000000000B "te" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Turn Evil
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Hol[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 010000000000000E "wog" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Word of Glory
+END

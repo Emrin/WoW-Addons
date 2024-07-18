@@ -1,0 +1,527 @@
+VER 3 0000000000000047 "-waypoint list" "134331"
+/way Moonglade 48 33
+/way Duskwood 49 33
+/way Ashenvale 60 72 Moonwell of Cleansing 1
+/way Ashenvale 53 46 Moonwell of Cleansing 2
+/way Felwood 44 28 Whisperwind Grove
+/way Stonetalon Mountains 41.5 19 Stonetalon Peak
+/way Feralas 60 46 Dire Maul
+END
+VER 3 0000000000000057 "_assist" "524348"
+/petassist
+/petfollow
+/petattack [@mouseover,exists][@target]
+END
+VER 3 000000000000007F "_belt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] 6
+/use [mod] Rocket Jump
+END
+VER 3 00000000000000C0 "_clc" "3564691"
+#showtooltip
+/use [nomod] 15
+/use [mod] Goblin Glider Kit
+END
+VER 3 0000000000000072 "_cr" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,exists][] 9
+END
+VER 3 0000000000000073 "_foc" "1033497"
+/focus [@mouseover,exists,nodead] []
+END
+VER 3 0000000000000053 "_go" "132327"
+/petmoveto
+END
+VER 3 000000000000004D "_hp" "134400"
+#showtooltip
+/use [nomod] item:207023
+/use [mod] Healthstone
+END
+VER 3 000000000000006D "_mb" "134400"
+#showtooltip
+/use [nomod] Filet of Fangs
+/use [mod] Conjured Mana Bun
+END
+VER 3 0000000000000093 "_pa" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] Potion of Spectral Agility
+/use [mod] Phial of Serenity
+END
+VER 3 0000000000000054 "_passive" "132311"
+/petpassive
+/petfollow
+END
+VER 3 000000000000004E "_pot" "967534"
+#showtooltip
+/use Elemental Potion of Ultimate Power
+END
+VER 3 0000000000000070 "_ps" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] Potion of Spectral Strength
+/use [mod] Phial of Serenity
+END
+VER 3 00000000000000BE "_sc2" "INV_MISC_QUESTIONMARK"
+/targetexact Time-Lost Proto-Drake
+/targetexact Vyragosa
+/run local N = UnitName("Target");if N and (N=="Vyragosa") then PlaySound(13363, "master");print(date(),N,"Found");SetRaidTarget("target",8);end
+END
+VER 3 00000000000000BD "_scn" "INV_MISC_QUESTIONMARK"
+/targetexact Time-Lost Proto-Drake
+/targetexact Vyragosa
+/run local N = UnitName("Target");if N and (N=="Time-Lost Proto-Drake") then PlaySound(13363,"master");print(date(),N,"Found");SetRaidTarget("target",8);end
+END
+VER 3 000000000000006F "_trink" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod,@mouseover,exists,nodead][nomod] 13
+/use [mod,@mouseover,exists,nodead][mod] 14
+END
+VER 3 00000000000000B8 "_uneq" "INV_MISC_QUESTIONMARK"
+/run PickupInventoryItem(7)PutItemInBackpack()
+END
+VER 3 00000000000000C6 "as" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Azure Strike
+END
+VER 3 000000000000003C "Asp" "INV_MISC_QUESTIONMARK"
+#showtooltip Asphyxiate
+/cast [mod:shift,@focus,exists,harm][@mouseover,exists,harm,nodead][] Asphyxiate
+END
+VER 3 00000000000000BB "beam" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Solar Beam
+END
+VER 3 0000000000000088 "bliz" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@cursor] Blizzard
+/cast [mod] Arcane Explosion
+END
+VER 3 00000000000000B3 "bof" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Blessing of Freedom
+END
+VER 3 000000000000003E "boom" "INV_MISC_QUESTIONMARK"
+#showtooltip Corpse Exploder
+/cast [@mouseover,exists][mod:shift,@focus][] Corpse Exploder
+END
+VER 3 00000000000000B2 "bop" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Blessing of Protection
+END
+VER 3 00000000000000CD "bs" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Blistering Scales
+END
+VER 3 00000000000000B0 "cc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/1] Typhoon
+/cast [talent:3/3] Incapacitating Roar
+END
+VER 3 00000000000000BF "cds" "134400"
+#showtooltip
+/cast [nomod] Ancestral Guidance
+/cast [mod] Ascendance
+END
+VER 3 000000000000006C "cha" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,harm][@mouseover,nodead,harm][] Chain Lightning
+END
+VER 3 0000000000000099 "chill" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Chill Streak
+END
+VER 3 000000000000009A "chok" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/2,mod:shift,@focus,exists,harm][talent:3/2,@mouseover,exists,harm,nodead][talent:3/2] Asphyxiate
+/cast [talent:3/3] Blinding Sleet
+END
+VER 3 0000000000000062 "clens" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,help][mod:shift,@focus][] Cleanse Spirit
+END
+VER 3 0000000000000083 "cs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Counterspell
+END
+VER 3 00000000000000AA "cw" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,help][nomod] Cenarion Ward
+/cast [mod] Nature's Swiftness
+END
+VER 3 0000000000000042 "cyc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Cyclone
+END
+VER 3 00000000000000C5 "dis" "134400"
+#showtooltip Eruption
+/cast [nostance:1] Black Attunement
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Disintegrate
+END
+VER 3 000000000000008F "disp" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,help,exists][] Remove Curse
+END
+VER 3 000000000000003D "dot" "INV_MISC_QUESTIONMARK"
+#showtooltip Outbreak
+/cast [mod:shift,@focus][@mouseover,exists][] Outbreak
+END
+VER 3 0000000000000033 "DS" "INV_MISC_QUESTIONMARK"
+#showtooltip Death Strike
+/cast [@focus]Dark Command
+/cast Death Strike
+END
+VER 3 0000000000000038 "eat" "INV_MISC_QUESTIONMARK"
+#showtooltip Gnaw
+/cast [mod:shift,@focus][@mouseover,exists][] Gnaw
+END
+VER 3 00000000000000C3 "ech" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Echo
+END
+VER 3 0000000000000063 "ele" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Fire Elemental
+/cast [nomod] Berserking
+/cast [mod] Earth Elemental
+END
+VER 3 000000000000008C "flame" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@cursor] Flamestrike
+/cast [mod] Arcane Explosion
+END
+VER 3 000000000000002A "Frenzy" "Spell_Shadow_UnholyFrenzy"
+#showtooltip Unholy Frenzy
+/cast [@mouseover,exists][mod:ctrl,@Zaytox][mod:alt,@Akadian][] Unholy Frenzy
+END
+VER 3 0000000000000087 "frez" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player] Freeze
+/cast [@cursor] Freeze
+END
+VER 3 0000000000000050 "fs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Festering Strike
+#/cast [@pettarget] claw
+END
+VER 3 000000000000005E "go" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petfollow
+/petassist
+/petattack [@mouseover, exists][mod,@focus][]
+/cast [@mouseover,exists][mod,@focus][] Leap
+END
+VER 3 0000000000000045 "grab" "INV_MISC_QUESTIONMARK"
+#showtooltip Gorefiend's Grasp
+/cast [@mouseover,exists][mod, @focus][] Gorefiend's Grasp
+END
+VER 3 0000000000000004 "GZ" "Ability_Hunter_BeastTraining"
+    GGGGG       ZZZZZZZ
+GG          G              ZZ
+GG   GG               ZZ
+GG      GG         ZZ
+  GGGGGG      ZZZZZZZ
+END
+VER 3 000000000000008D "ice" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,harm,exists][nomod] Ice Lance
+/cast [mod,@mouseover,harm,exists][mod] Fire Blast
+END
+VER 3 0000000000000091 "inv" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Greater Invisibility
+/cast [mod] Mass Invisibility
+END
+VER 3 0000000000000080 "invis" "INV_MISC_QUESTIONMARK"
+END
+VER 3 0000000000000098 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip Mind Freeze
+/cast [mod:shift, @focus][@mouseover,exists][] Mind Freeze
+END
+VER 3 0000000000000076 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists][@mouseover,nodead,harm][] Wind Shear
+END
+VER 3 00000000000000AB "lb" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Lifebloom
+END
+VER 3 0000000000000055 "leap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petfollow
+/petassist
+/petattack [@mouseover, exists][mod,@focus][]
+/cast [@mouseover,exists][mod,@focus][] Leap
+END
+VER 3 0000000000000074 "life" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,help][] Unleash Life
+END
+VER 3 00000000000000CF "life" "134400"
+#showtooltip
+/cast [mod,@player][nomod,@mouseover,exists,help,nodead][] Power Word: Life
+END
+VER 3 0000000000000060 "link" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Spirit Link Totem
+/cast Berserking
+END
+VER 3 00000000000000B4 "lj" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Light's Judgment
+END
+VER 3 00000000000000B6 "lod" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Light of Dawn
+/cast [mod] Shield of the Righteous
+END
+VER 3 00000000000000A2 "mbl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Mind Blast
+END
+VER 3 0000000000000095 "md" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Mass Dispel
+END
+VER 3 00000000000000A6 "mg" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Purge the Wicked
+END
+VER 3 00000000000000A4 "ms" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists][@mouseover,exists,nodead][] Mind Sear
+END
+VER 3 000000000000007D "msp" "INV_MISC_QUESTIONMARK"
+/mountspecial
+END
+VER 3 0000000000000067 "mto" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Mana Tide Totem
+/s Mana Totem
+END
+VER 3 00000000000000A7 "nl" "INV_MISC_QUESTIONMARK"
+/cancelaura Levitate
+END
+VER 3 0000000000000078 "pat" "INV_MISC_QUESTIONMARK"
+#showtooltip Control Undead
+/target pet
+/run PetDismiss()
+/use Control Undead
+/petassist
+END
+VER 3 0000000000000084 "poly" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Polymorph
+END
+VER 3 000000000000007A "pour" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] Downpour
+END
+VER 3 00000000000000CC "pres" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover, exists, help][] Prescience
+END
+VER 3 0000000000000066 "pri" "3578231"
+#showtooltip
+/cast [mod:shift,@focus,exists][mod:alt,@player][@mouseover,nodead,exists][] Primordial Wave
+END
+VER 3 000000000000004A "pull" "133706"
+/pull 15
+END
+VER 3 0000000000000096 "pull" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,help][] Leap of Faith
+END
+VER 3 0000000000000075 "purg" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,exists][@mouseover,nodead,harm][] Purge
+END
+VER 3 0000000000000081 "PvP" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] Sinful Gladiator's Medallion
+#/use [mod:shift]
+#/use [mod:ctrl]
+#/use [mod:alt]
+END
+VER 3 00000000000000CA "pyr" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Pyre
+END
+VER 3 0000000000000061 "quak" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Earthquake
+END
+VER 3 00000000000000C1 "qwe" "4622469"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Quell
+END
+VER 3 00000000000000BC "rc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Remove Corruption
+END
+VER 3 00000000000000AF "re" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,help][nomod] Regrowth
+/cast [mod] Nature's Swiftness
+END
+VER 3 00000000000000AC "re" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Rejuvenation
+END
+VER 3 000000000000005D "rea" "INV_MISC_QUESTIONMARK"
+#showtooltip Soul Reaper
+/cast [@mouseover,exists][mod:shift, @focus][] Soul Reaper
+END
+VER 3 0000000000000059 "REE" "INV_MISC_QUESTIONMARK"
+#showtooltip Leap
+/petpassive [mod]
+/petmoveto [mod]
+/petfollow [nomod]
+/petassist [nomod]
+/petattack [nomod,@mouseover,exists]
+/cast [nomod,@mouseover,exists] Leap
+END
+VER 3 000000000000004B "reset" "133706"
+/pull 0
+END
+VER 3 00000000000000C2 "rev" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Reversion
+END
+VER 3 0000000000000079 "ROK" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Earth Elemental
+/target [mod] Greater Earth Elemental
+END
+VER 3 000000000000009D "rt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][nomod,@mouseover,exists,help,nodead][] Rapture
+END
+VER 3 0000000000000092 "s" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,harm,exists][nomod] Fire Blast
+/cast [mod] Frostbolt
+END
+VER 3 000000000000004F "s" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift] Necrotic Strike
+/cast [talent:1/3] Clawing Shadows
+/cast Scourge Strike
+#/cast [@pettarget] claw
+END
+VER 3 00000000000000A0 "sch" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Schism
+END
+VER 3 0000000000000082 "sfall" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,help][] Slow Fall
+END
+VER 3 000000000000009B "shak" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][] Shackle Undead
+END
+VER 3 0000000000000039 "shield" "INV_MISC_QUESTIONMARK"
+#showtooltip Corpse Shield
+/cast Huddle
+/cast Corpse Shield
+END
+VER 3 0000000000000097 "sim" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Dark Simulacrum
+END
+VER 3 0000000000000085 "slow" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Slow
+END
+VER 3 00000000000000A3 "smit" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Smite
+END
+VER 3 00000000000000A1 "sol" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/3,mod,@focus,exists,harm,nodead][talent:3/3,@mouseover,exists,harm,nodead][talent:3/3] Power Word: Solace
+/cast [talent:3/2,mod,@focus,exists,harm,nodead][talent:3/2,@mouseover,exists,harm,nodead][talent:3/2] Mindbender
+END
+VER 3 00000000000000CE "sooth" "134400"
+#showtooltip Mind Soothe
+/cast [@cursor] Mind Soothe
+END
+VER 3 000000000000008A "ss" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Spellsteal
+END
+VER 3 000000000000002D "str" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Strangulate
+END
+VER 3 00000000000000A9 "swm" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead,help][] Swiftmend
+END
+VER 3 00000000000000A5 "t6" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:6/2] Divine Star
+/cast [talent:6/3] Halo
+END
+VER 3 00000000000000B9 "target" "INV_MISC_QUESTIONMARK"
+/targetexact Time-Lost Proto-Drake
+/targetexact Vyragosa
+/run local N = UnitName("Target");if N and (N=="Time-Lost Proto-Drake") then PlaySound(13363);print(date(),N,"Found");SetRaidTarget("target",8);end
+END
+VER 3 00000000000000C4 "td" "134400"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,help,nodead][] Time Dilation
+END
+VER 3 00000000000000AE "th" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Thorns
+END
+VER 3 00000000000000C7 "tip" "134400"
+#showtooltip
+/cast [nomod] Tip the Scales
+/cast [mod] Nullifying Shroud
+END
+VER 3 00000000000000B7 "toll" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,help][nomod,@target,exists,help][nomod,@player] Divine Toll
+/cast [mod,@mouseover,exists,nodead,harm][mod] Divine Toll
+END
+VER 3 000000000000005F "tor" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Arcane Torrent
+/cast [@mouseover,exists][mod:shift,@focus][] Dark Simulacrum
+END
+VER 3 000000000000007B "tot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Tremor Totem
+/cast [mod,@cursor] Wind Rush Totem
+END
+VER 3 0000000000000065 "tots" "3565451"
+#showtooltip
+/cast [nomod, @cursor] Earthen Wall Totem
+/cast [mod, @cursor] Vesper Totem
+END
+VER 3 00000000000000CB "unra" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists,nodead][] Unravel
+END
+VER 3 000000000000006E "walk" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,help][] Water Walking
+END
+VER 3 00000000000000AD "wg" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Wild Growth
+END
+VER 3 00000000000000A8 "wra" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Wrath
+END
+VER 3 00000000000000C9 "zeph" "134400"
+#showtooltip
+/cast [nomod] Zephyr
+/cast [mod] Dream Projection
+END
+VER 3 0000000000000077 "Zone" "INV_MISC_QUESTIONMARK"
+#showtooltip Anti-Magic Zone
+/cast [mod,@player][@cursor] Anti-Magic Zone
+END

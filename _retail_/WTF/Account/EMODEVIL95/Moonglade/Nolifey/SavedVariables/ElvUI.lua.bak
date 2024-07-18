@@ -1,0 +1,9 @@
+
+ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/who the storm peaks", -- [1]
+	},
+	["ChatHistoryLog"] = {
+	},
+}

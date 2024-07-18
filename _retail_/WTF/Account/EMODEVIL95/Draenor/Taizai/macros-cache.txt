@@ -1,0 +1,54 @@
+VER 3 010000000000000D "aoe" "134400"
+#showtooltip
+/cast [nomod,@player][mod,@cursor] Sigil of Flame
+END
+VER 3 010000000000000C "cm" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Consume Magic
+END
+VER 3 0100000000000005 "fb" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Felblade
+END
+VER 3 0100000000000004 "glav" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Throw Glaive
+END
+VER 3 010000000000000A "hunt" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] The Hunt
+END
+VER 3 0100000000000006 "impr" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Imprison
+END
+VER 3 0100000000000007 "is" "134400"
+#showtooltip
+/cast [@cursor] Infernal Strike
+END
+VER 3 0100000000000003 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Disrupt
+END
+VER 3 0100000000000008 "mis" "134400"
+#showtooltip
+/cast [nomod,@cursor][mod,@player] Sigil of Misery
+END
+VER 3 010000000000000E "root" "134400"
+#showtooltip
+/cast [nomod,@cursor][mod,@player] Sigil of Chains
+END
+VER 3 0100000000000009 "sil" "134400"
+#showtooltip
+/cast [nomod,@cursor][mod,@player] Sigil of Silence
+END
+VER 3 010000000000000B "tnt" "134400"
+#showtooltip
+/cast [mod,@focus][@mouseover,nodead,harm][] Torment
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1NM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Tai[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

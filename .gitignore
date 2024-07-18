@@ -1,0 +1,53 @@
+# Blocklist files/folders in same directory as the .gitignore file
+/*
+
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+
+# Includelist some files
+!.gitignore
+
+
+# Includelist folder/a/b1/ and folder/a/b2/
+# trailing "/" is optional for folders, may match file though.
+# "/" is NOT optional when followed by a *
+
+#!_retail_/Interface/*
+#!_retail_/WTF/*
+
+!_retail_/
+_retail_/*
+!_retail_/WTF/
+!_retail_/Interface/
+
+
+#!folder/
+#folder/*
+#!folder/a/
+#folder/a/*
+#!folder/a/b1/
+#!folder/a/b2/
+#!folder/a/file.txt
+
+
+# Adding to the above, this also works...
+#!/folder/a/deeply
+#/folder/a/deeply/*
+#!/folder/a/deeply/nested
+#/folder/a/deeply/nested/*
+#!/folder/a/deeply/nested/subfolder
+
+
+
+
+
+# ...even if they are in subdirectories
+#!*/
+
+# if the files to be tracked are in subdirectories
+#!*/a/b/file1.txt
+#!*/a/b/c/*
+
+#!*/_retail_/Interface/*/**
+#!*/_retail_/WTF/**

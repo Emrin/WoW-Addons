@@ -1,0 +1,54 @@
+VER 3 010000000000000C "a" "134400"
+#showtooltip
+/cast [nomod] Alter Time
+/cast [mod] Temporal Shield
+END
+VER 3 0100000000000011 "blink" "134400"
+#showtooltip
+/cast [nomod] Blink
+/use [mod] Displacement
+END
+VER 3 010000000000000A "eat" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [nomod] Conjured Mana Bun
+/use [mod] Mana Gem
+END
+VER 3 0100000000000010 "fire" "134400"
+#showtooltip
+/cast [mod,@player][nomod,@cursor][] Ring of Fire
+END
+VER 3 0100000000000008 "inv" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Greater Invisibility
+/cast [mod] Mass Invisibility
+END
+VER 3 0100000000000012 "nova" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Ice Nova
+END
+VER 3 010000000000000E "orb" "134400"
+#showtooltip
+/cast [mod,@player][nomod,@cursor][] Frozen Orb
+END
+VER 3 0100000000000003 "poly" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Polymorph
+END
+VER 3 010000000000000B "ring" "134400"
+#showtooltip
+/cast [mod,@player][nomod,@cursor][] Ring of Frost
+END
+VER 3 0100000000000006 "s" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,harm,exists][nomod] Fire Blast
+/cast [mod] Frostbolt
+END
+VER 3 0100000000000005 "slow" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,harm,exists][] Slow
+END
+VER 3 010000000000000F "sp" "134400"
+#showtooltip
+/cast [nomod] Fireball
+/cast [mod] Frostbolt
+END

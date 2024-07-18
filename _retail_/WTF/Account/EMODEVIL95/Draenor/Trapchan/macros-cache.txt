@@ -1,0 +1,50 @@
+VER 3 010000000000000C "bub" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:5/2] Healing Elixir; [talent:5/3] Dampen Harm
+END
+VER 3 0100000000000006 "cc" "INV_MISC_QUESTIONMARK"
+#showtooltip Paralysis
+/cast [mod:shift,@focus][@mouseover,exists][] Paralysis
+END
+VER 3 010000000000000B "chi" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player][talent:1/2] Chi Wave; [talent:1/3] Chi Burst
+END
+VER 3 010000000000000A "clash" "INV_MISC_QUESTIONMARK"
+#showtooltip Clash
+/cast [mod:shift,@focus][@mouseover,exists][] Clash
+END
+VER 3 0100000000000007 "detox" "INV_MISC_QUESTIONMARK"
+#showtooltip Detox
+/cast [mod:shift,@focus][@mouseover,exists][] Detox
+END
+VER 3 0100000000000008 "free" "INV_MISC_QUESTIONMARK"
+#showtooltip Tiger's Lust
+/cast [mod:shift,@focus][@mouseover,exists][] Tiger's Lust
+END
+VER 3 0100000000000009 "jade" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:6/2] Rushing Jade Wind; [mod,@cursor][@player][talent:6/3] Exploding Keg
+END
+VER 3 0100000000000005 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip Spear Hand Strike
+/cast [mod:shift,@focus][@mouseover,exists][] Spear Hand Strike
+END
+VER 3 010000000000000D "nbop" "135768"
+/cancelaura Blessing of Protection
+END
+VER 3 0100000000000001 "oxy" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/tar [mod] Black Ox Statue
+/cast [mod] Provoke
+/targetlasttarget [mod]
+/cast [nomod,@cursor] Summon Black Ox Statue
+END
+VER 3 0100000000000003 "peace" "INV_MISC_QUESTIONMARK"
+#showtooltip Ring of Peace
+/cast [mod,@player][@cursor] Ring of Peace
+END
+VER 3 0100000000000004 "taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip Provoke
+/cast [mod:shift,@focus][@mouseover,exists][] Provoke
+END

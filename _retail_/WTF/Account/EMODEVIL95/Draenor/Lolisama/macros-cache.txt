@@ -1,0 +1,65 @@
+VER 3 0100000000000002 "blow" "INV_MISC_QUESTIONMARK"
+#showtooltip Mind Freeze
+/cast [@mouseover,exists][mod:shift, @focus][] Mind Freeze
+END
+VER 3 010000000000000A "chain" "INV_MISC_QUESTIONMARK"
+#showtooltip Chains of Ice
+/cast [@mouseover,exists][mod:shift, @focus][] Chains of Ice
+END
+VER 3 0100000000000003 "chok" "INV_MISC_QUESTIONMARK"
+#showtooltip Asphyxiate
+/cast [@mouseover,exists][mod:shift, @focus][] Asphyxiate
+END
+VER 3 0100000000000005 "cum" "INV_MISC_QUESTIONMARK"
+#showtooltip Gorefiend's Grasp
+/cast [@mouseover,exists][mod:shift, @focus][] Gorefiend's Grasp
+END
+VER 3 0100000000000001 "dd" "INV_MISC_QUESTIONMARK"
+#showtooltip Death and Decay
+/cast [mod,@cursor][@player] Death and Decay
+END
+VER 3 0100000000000010 "ds" "132095"
+#showtooltip Death Strike
+/cast Death Strike
+END
+VER 3 0100000000000009 "heal" "135903"
+#showtooltip Death Coil
+/cast [@player] Death Coil
+END
+VER 3 0100000000000012 "kiss" "INV_MISC_QUESTIONMARK"
+#showtooltip Death's Caress
+/cast [@mouseover,exists][mod:shift, @focus][] Death's Caress
+END
+VER 3 0100000000000007 "lick" "INV_MISC_QUESTIONMARK"
+#showtooltip Dark Command
+/cast [@mouseover,exists][mod:shift, @focus][] Dark Command
+END
+VER 3 010000000000000C "pat" "INV_MISC_QUESTIONMARK"
+#showtooltip Control Undead
+/target pet
+/run PetDismiss()
+/use Control Undead
+/petassist
+END
+VER 3 0100000000000004 "pull" "INV_MISC_QUESTIONMARK"
+#showtooltip Death Grip
+/cast [@mouseover,exists][mod:shift, @focus][] Death Grip
+END
+VER 3 0100000000000011 "raise" "INV_MISC_QUESTIONMARK"
+#showtooltip raise Dead
+/cast [mod:shift] Sacrificial Pact
+/cast Raise Dead
+END
+VER 3 0100000000000006 "rez" "INV_MISC_QUESTIONMARK"
+#showtooltip Raise Ally
+/cast [@mouseover,help,dead][]Raise Ally
+END
+VER 3 010000000000000B "wep" "135309"
+#showtooltip
+/equip Deathguard's Greatsword
+/equip Cudgel of Correctional Oversight
+END
+VER 3 0100000000000008 "Zone" "INV_MISC_QUESTIONMARK"
+#showtooltip Anti-Magic Zone
+/cast [mod,@player][@cursor] Anti-Magic Zone
+END

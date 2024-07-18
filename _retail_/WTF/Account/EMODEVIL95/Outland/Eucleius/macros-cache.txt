@@ -1,0 +1,70 @@
+VER 3 010000000000000A "BoP" "INV_MISC_QUESTIONMARK"
+#showtooltip Hand Of Protection
+/cast [@mouseover,exists][mod:ctrl,@Kamikazeqt][mod:alt,@Kamikazeqt][] Hand of Protection
+END
+VER 3 0100000000000011 "Dance" "INV_MISC_QUESTIONMARK"
+/cast Seal of Truth
+/cast Seal of Justice
+END
+VER 3 0100000000000005 "Exit" "INV_Misc_EngGizmos_27"
+/cancelaura [nomod] Divine Shield
+/cancelaura [mod:shift] Hand of Protection
+/cancelaura [mod:ctrl] Hand of Freedom
+END
+VER 3 010000000000000B "Free" "INV_MISC_QUESTIONMARK"
+#showtooltip Hand of Freedom
+/cast [@mouseover,exists][mod:ctrl,@Kamikazeqt][mod:alt,@Kamikazeqt][] Hand of Freedom
+END
+VER 3 010000000000000D "Heal" "INV_MISC_QUESTIONMARK"
+#showtooltip Flash of Light
+/cast [@mouseover,exists][mod:ctrl,@Kamikazeqt][mod:alt,@Kamikazeqt][] Flash of Light
+END
+VER 3 0100000000000007 "HoJ" "INV_MISC_QUESTIONMARK"
+#showtooltip Hammer of Justice
+/cast [@mouseover,exists][mod:shift,@focus][] Hammer of Justice
+END
+VER 3 0100000000000010 "HoS" "INV_MISC_QUESTIONMARK"
+#showtooltip Hand of Salvation
+/cast [@mouseover,exists][mod:shift,@Kamikazeqt][mod:ctrl,@Kamikazeqt][] Hand of Salvation
+END
+VER 3 0100000000000012 "Juge" "INV_MISC_QUESTIONMARK"
+#showtooltip Judgment
+/cast [mod:shift,@focus][] Judgment
+END
+VER 3 0100000000000008 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip Rebuke
+/cast [@mouseover,exists][mod:shift,@focus][] Rebuke
+END
+VER 3 0100000000000013 "Mark" "INV_Misc_Wrench_01"
+/run SetRaidTarget("Eucleius", 6)
+/run SetRaidTarget("Sazerac", 4)
+/run SetRaidTarget("Kamikazeqt", 2)
+END
+VER 3 010000000000000E "Nuke" "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Avenger
+/cast Holy Avenger
+/use Tyrannical Gladiator's Badge of Victory
+END
+VER 3 010000000000000F "Prism" "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Prism
+/cast [@mouseover,exists][mod:shift,Eucleius][mod:ctrl,@Kamikazeqt][mod:alt,@Kamikazeqt][] Holy Prism
+END
+VER 3 0100000000000006 "Rep" "INV_MISC_QUESTIONMARK"
+#showtooltip Repentance
+/cast [@mouseover,exists][mod:shift,@focus][] Repentance
+END
+VER 3 010000000000000C "Sacr" "INV_MISC_QUESTIONMARK"
+#showtooltip Hand of Sacrifice
+/cast [@mouseover,exists][mod:ctrl,@Kamikazeqt][mod:alt@Kamikazeqt][] Hand of Sacrifice
+END
+VER 3 0100000000000002 "stop" "INV_MISC_QUESTIONMARK"
+/stopcasting
+END
+VER 3 0100000000000009 "TE" "INV_MISC_QUESTIONMARK"
+#showtooltip Turn Evil
+/cast [@arena1,harm][@arena2,harm][@arena3,harm][@arena4,harm][@arena5,harm][@arenapet1,harm][@arenapet2,harm][@arenapet3,harm][@arenapet4,harm][@arenapet5,harm][] Turn Evil
+END
+VER 3 0100000000000004 "WoG" "INV_MISC_QUESTIONMARK"
+#showtooltip Word of Glory
+/cast [@mouseover,exists][mod:ctrl,@Kamikazeqt][mod:alt,@Kamikazeqt][] Word of Glory
+END

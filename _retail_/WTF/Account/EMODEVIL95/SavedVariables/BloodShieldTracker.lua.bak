@@ -1,0 +1,31 @@
+
+BloodShieldTrackerDB = {
+	["profileKeys"] = {
+		["Lolisama - Draenor"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["profile_version"] = 4,
+			["bars"] = {
+				["PWSBar"] = {
+				},
+				["HealthBar"] = {
+				},
+				["BoneShieldBar"] = {
+				},
+				["TargetSwingTimerBar"] = {
+				},
+				["ShieldBar"] = {
+					["x"] = 6.9990234375,
+					["y"] = -175.00048828125,
+				},
+				["AMSBar"] = {
+				},
+				["EstimateBar"] = {
+					["y"] = -56.9998779296875,
+					["x"] = -323.0028686523438,
+				},
+			},
+		},
+	},
+}

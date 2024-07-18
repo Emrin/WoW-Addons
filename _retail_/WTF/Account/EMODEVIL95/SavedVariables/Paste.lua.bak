@@ -1,0 +1,48 @@
+
+PasteDB = {
+	["profileKeys"] = {
+		["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+		["Nolifey - Draenor"] = "Nolifey - Draenor",
+		["Nolifey - Ravencrest"] = "Nolifey - Ravencrest",
+		["Cutetroll - Draenor"] = "Cutetroll - Draenor",
+		["Unchill - Draenor"] = "Unchill - Draenor",
+	},
+	["profiles"] = {
+		["Lifey - Silvermoon"] = {
+			["loaded"] = true,
+		},
+		["Nolifey - Draenor"] = {
+			["loaded"] = true,
+			["minimap"] = {
+				["minimapPos"] = 338.4200607704261,
+			},
+		},
+		["Nolifey - Ravencrest"] = {
+			["loaded"] = true,
+		},
+		["Cutetroll - Draenor"] = {
+			["whispertarget"] = "",
+			["where"] = "Default",
+			["loaded"] = true,
+			["minimap"] = {
+				["minimapPos"] = 352.7274520494663,
+			},
+			["pos"] = {
+				["height"] = 320,
+				["top"] = 880.0000610351562,
+				["left"] = 1030,
+				["width"] = 507.0002136230469,
+			},
+		},
+		["Unchill - Draenor"] = {
+			["whispertarget"] = "",
+			["where"] = "Default",
+			["loaded"] = true,
+			["minimap"] = {
+				["minimapPos"] = 268.8289971357509,
+			},
+			["pos"] = {
+			},
+		},
+	},
+}

@@ -1,0 +1,4 @@
+VER 3 0100000000000003 "st" "INV_MISC_QUESTIONMARK"
+#showtooltip Stealth
+/cast !Stealth
+END

@@ -1,0 +1,89 @@
+VER 3 0100000000000017 "assist" "524348"
+/petassist
+/petfollow
+END
+VER 3 0100000000000014 "D&D" "INV_MISC_QUESTIONMARK"
+#showtooltip Death and Decay
+/cast [nomod, @player][mod, @cursor] Death and Decay
+END
+VER 3 0100000000000005 "DG" "INV_MISC_QUESTIONMARK"
+#showtooltip Death Grip
+/cast [@mouseover,exists][mod:shift,@focus][] Death Grip
+END
+VER 3 0100000000000006 "DP" "INV_MISC_QUESTIONMARK"
+#showtooltip Death Pact
+/target [@Ebon Gargoyle,exists] [exists]
+/cast Death Pact
+/targetlasttarget
+/use Healthstone
+END
+VER 3 010000000000000F "DS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][mod:shift,@focus][] Dark Simulacrum
+END
+VER 3 0100000000000001 "Gnaw" "INV_MISC_QUESTIONMARK"
+#showtooltip Gnaw
+/petdefensive
+/petattack [mod:shift,@focus][@target][]
+/petautocastoff Claw
+/petautocaston Gnaw
+END
+VER 3 010000000000000D "go" "132327"
+/petmoveto
+END
+VER 3 0100000000000004 "Heal" "Spell_Holy_Excorcism_02"
+#showtooltip Lichborne
+/cast !lichborne;
+/cast [@player] Death Coil
+END
+VER 3 010000000000000A "ice" "INV_MISC_QUESTIONMARK"
+#showtooltip Chains of Ice
+/cast [@mouseover,exists][mod:shift,@focus][] Chains of Ice
+END
+VER 3 0100000000000011 "kick" "INV_MISC_QUESTIONMARK"
+#showtooltip Mind Freeze
+/cast [@mouseover,exists][mod:shift,@focus][] Mind Freeze
+END
+VER 3 0100000000000012 "kick" "132337"
+/petfollow
+/petassist
+/petattack [@mouseover, exists][mod:shift,@focus][]
+/cast [@mouseover,exists][mod:shift,@focus][] Leap
+END
+VER 3 0100000000000018 "Lich" "INV_MISC_QUESTIONMARK"
+#showtooltip Lichborne
+/cast Lichborne
+/cast [mod:alt, @player] Death Coil
+/cancelaura [mod:shift] Lichborne
+/cancelaura [mod:ctrl] Hand of Protection
+END
+VER 3 0100000000000015 "Magic" "INV_MISC_QUESTIONMARK"
+#showtooltip Anti-Magic Zone
+/cast [@cursor] Anti-Magic Zone
+END
+VER 3 010000000000000C "NS" "INV_MISC_QUESTIONMARK"
+#showtooltip Necrotic Strike
+/startattack
+/cast [@focus] Dark Command
+/use Necrotic Strike
+END
+VER 3 0100000000000003 "passive" "132311"
+/petpassive
+/petfollow
+END
+VER 3 0100000000000010 "pet" "INV_MISC_QUESTIONMARK"
+/target pet
+/run PetDismiss()
+/use Control Undead
+/petassist
+END
+VER 3 010000000000000E "SR" "INV_MISC_QUESTIONMARK"
+#showtooltip Scourge Strike
+/startattack
+/cast [@focus] Dark Command
+/use Scourge Strike
+END
+VER 3 0100000000000016 "taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip Dark Command
+/cast [@mouseover,exists][mod:shift,@focus][] Dark Command
+END

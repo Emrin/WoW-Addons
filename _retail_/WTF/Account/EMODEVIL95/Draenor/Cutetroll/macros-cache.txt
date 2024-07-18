@@ -1,0 +1,81 @@
+VER 3 0100000000000014 "ahe" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Water Shield
+/cast [mod] Lightning Shield
+END
+VER 3 010000000000000C "bind" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@cursor] Earthbind Totem
+/cast [mod,@cursor] Earthgrab Totem
+END
+VER 3 0100000000000012 "bolt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,nodead,harm][@mouseover,nodead,harm][] Lightning Bolt
+END
+VER 3 0100000000000007 "cha" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,help,nodead] Chain Heal
+/cast [mod,@mouseover,exists,help,nodead] Unleash Life
+/cast [nomod,nodead] Chain Heal
+/cast [mod,nodead] Unleash Life
+END
+VER 3 010000000000000A "dispel" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [mod:shift,@focus,help,nodead][@mouseover,nodead,help][] Purify Spirit
+END
+VER 3 0100000000000010 "fire" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,nodead,harm][@mouseover,nodead,harm][] Flame Shock
+END
+VER 3 010000000000000F "frost" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,nodead,harm][@mouseover,nodead,harm][] Frost Shock
+END
+VER 3 0100000000000005 "h1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,help,nodead][@mouseover,nodead,help][] Healing Surge
+END
+VER 3 0100000000000006 "h2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,help,nodead][@mouseover,nodead,help][] Healing Wave
+END
+VER 3 0100000000000013 "hex" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,exists,nodead,harm][@mouseover,exists,nodead,harm][] Hex
+END
+VER 3 0100000000000009 "hot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,help,nodead][@mouseover,nodead,help][] Riptide
+END
+VER 3 0100000000000011 "lava" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,nodead,harm][@mouseover,nodead,harm][] Lava Burst
+END
+VER 3 010000000000000B "rain" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@cursor] Healing Rain
+/cast [mod,@cursor] Wellspring
+/cast [mod,@cursor] Downpour
+/cast [mod,@player] Healing Rain
+END
+VER 3 010000000000000E "sh" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@mouseover,nodead,help][mod] Earth Shield
+/cast [nomod] Nature's Swiftness
+END
+VER 3 0100000000000015 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1SH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000016 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Cut[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000017 "waz" "134400"
+#showtooltip
+/cast [nomod] Thunderstorm
+/cast [mod] Stormkeeper
+END
+VER 3 010000000000000D "zap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Capacitor Totem
+END

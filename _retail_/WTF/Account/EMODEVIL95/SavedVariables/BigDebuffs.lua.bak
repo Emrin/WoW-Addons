@@ -1,0 +1,21 @@
+
+BigDebuffsDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Lifey - Silvermoon"] = "Default",
+		["Apoka - Outland"] = "Default",
+		["Pixiel - Draenor"] = "Default",
+		["Raingirl - Silvermoon"] = "Default",
+		["Crystalol - Draenor"] = "Default",
+		["Leafgirl - Silvermoon"] = "Default",
+		["Holiloli - Silvermoon"] = "Default",
+		["Nolifey - Silvermoon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

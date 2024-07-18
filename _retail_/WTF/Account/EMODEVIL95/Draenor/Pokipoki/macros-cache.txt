@@ -1,0 +1,9 @@
+VER 3 0100000000000004 "combo" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift] Death from Above
+/cast Eviscerate
+END
+VER 3 0100000000000003 "ste" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Stealth
+END

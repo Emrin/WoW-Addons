@@ -1,0 +1,34 @@
+VER 3 010000000000000C "cat" "134400"
+#showtooltip
+/cast [@cursor] Cataclysm
+END
+VER 3 010000000000000B "coil" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Mortal Coil
+END
+VER 3 0100000000000008 "crs" "134400"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead][nomod] Curse of Tongues
+/cast [mod,@mouseover,exists,nodead][mod] Curse of Weakness
+END
+VER 3 010000000000000D "fear" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Fear
+END
+VER 3 0100000000000006 "hs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Create Soulwell
+/cast [mod] Create Healthstone
+END
+VER 3 010000000000000A "rain" "134400"
+#showtooltip
+/cast [@cursor] Rain of Fire
+END
+VER 3 0100000000000007 "shado" "134400"
+#showtooltip
+/cast [@cursor] Shadowfury
+END
+VER 3 0100000000000009 "slw" "134400"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Curse of Exhaustion
+END

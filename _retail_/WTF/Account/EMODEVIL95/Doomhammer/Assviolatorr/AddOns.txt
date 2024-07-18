@@ -1,0 +1,2 @@
+AAP-Core: disabled
+OPie_Classic: disabled

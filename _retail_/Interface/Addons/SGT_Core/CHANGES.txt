@@ -1,0 +1,10 @@
+tag 37c5f0461d5d1292ca95345d8df303038ecc224c v1.0.8
+Author:	Stijn Stroeckx <stijnstroeckx@hotmail.com>
+Date:	Sun Jul 14 15:52:06 2024 +0100
+
+commit 9dd9e1c7ba481f21bf2449444bc29d8ebff570d2
+Author: Stijn Stroeckx <stijnstroeckx@hotmail.com>
+Date:   Sun Jul 14 15:51:10 2024 +0100
+
+    Updated TOC for 10.2.7
+

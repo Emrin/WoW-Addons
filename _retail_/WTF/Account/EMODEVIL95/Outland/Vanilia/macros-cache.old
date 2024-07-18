@@ -1,0 +1,72 @@
+VER 3 0100000000000002 "Barrier" "INV_MISC_QUESTIONMARK"
+#showtooltip Power Word: Barrier
+/cast [@cursor] Power Word: Barrier
+END
+VER 3 0100000000000008 "Dispel" "INV_MISC_QUESTIONMARK"
+#showtooltip Dispel Magic
+/cast [@mouseover, exists][] Dispel Magic
+END
+VER 3 0100000000000010 "exec" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Word: Death
+/cast [@mouseover, exists][] Shadow Word: Death
+END
+VER 3 010000000000000D "Fiend" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadowfiend
+/cast [@mouseover, exists][] Shadowfiend
+END
+VER 3 0100000000000013 "fiend" "INV_MISC_QUESTIONMARK"
+#showtooltip Psyfiend
+/cast [@mouseover, exists][] Psyfiend
+END
+VER 3 010000000000000F "Levi" "INV_MISC_QUESTIONMARK"
+#showtooltip Levitate
+/cast [@mouseover, exists][] Levitate
+END
+VER 3 0100000000000001 "Mass Dispel" "INV_MISC_QUESTIONMARK"
+#showtooltip Mass Dispel
+/cast [@cursor] Mass Dispel
+END
+VER 3 010000000000000A "MC" "INV_MISC_QUESTIONMARK"
+#showtooltip Mind Control
+/cast [@mouseover, exists][] Mind Control
+END
+VER 3 0100000000000006 "Mend" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Mend
+/cast [@mouseover, exists][] Shadow Mend
+END
+VER 3 0100000000000004 "Penance" "INV_MISC_QUESTIONMARK"
+#showtooltip Penance
+/cast [@mouseover, exists][] Penance
+END
+VER 3 0100000000000009 "Pull" "INV_MISC_QUESTIONMARK"
+#showtooltip Leap of Faith
+/cast [@mouseover, exists][] Leap of Faith
+END
+VER 3 0100000000000007 "Purify" "INV_MISC_QUESTIONMARK"
+#showtooltip Purify Disease
+/cast [@mouseover, exists][] Purify Disease
+END
+VER 3 010000000000000C "Purify" "INV_MISC_QUESTIONMARK"
+#showtooltip Purify
+/cast [@mouseover, exists][mod:shift, @focus][] Purify
+END
+VER 3 0100000000000005 "Shield" "INV_MISC_QUESTIONMARK"
+#showtooltip Power Word: Shield
+/cast [@mouseover, exists][] Power Word: Shield
+END
+VER 3 0100000000000011 "silence" "INV_MISC_QUESTIONMARK"
+#showtooltip Silence
+/cast [@mouseover, exists][] Silence
+END
+VER 3 0100000000000012 "stun" "INV_MISC_QUESTIONMARK"
+#showtooltip Psychic Horror
+/cast [@mouseover, exists][] Psychic Horror
+END
+VER 3 010000000000000E "Supp" "INV_MISC_QUESTIONMARK"
+#showtooltip Pain Suppression
+/cast [@mouseover, exists][] Pain Suppression
+END
+VER 3 010000000000000B "Void Shift" "INV_MISC_QUESTIONMARK"
+#showtooltip Void Shift
+/cast [@mouseover, exists][] Void Shift
+END

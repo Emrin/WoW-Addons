@@ -1,0 +1,10 @@
+OPie_Classic: disabled
+TidyPlates_ThreatPlates: disabled
+CompactRunes: disabled
+AAP-Core: disabled
+Capping: enabled
+Doom_CooldownPulse: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled
+WeakAuras: enabled
+ElvUI_OptionsUI: enabled

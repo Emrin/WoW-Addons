@@ -1,0 +1,68 @@
+VER 3 0100000000000013 "ca" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists][@mouseover,exists,nodead][] Wild Charge
+END
+VER 3 0100000000000010 "cr" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Rebirth
+END
+VER 3 0100000000000011 "cure" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Nature's Cure
+END
+VER 3 0100000000000004 "efl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Efflorescence
+END
+VER 3 010000000000000C "hib" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Hibernate
+END
+VER 3 010000000000000A "iron" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Ironbark
+END
+VER 3 010000000000000B "iv" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@mouseover,exists,nodead,help][] Innervate
+END
+VER 3 010000000000000E "mo" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Moonfire
+END
+VER 3 0100000000000008 "og" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Overgrowth
+END
+VER 3 0100000000000012 "root" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Entangling Roots
+END
+VER 3 0100000000000006 "shift" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Bear Form
+/cast [mod] Cat Form
+END
+VER 3 010000000000000D "soot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Soothe
+END
+VER 3 0100000000000007 "speed" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod] Dash
+/cast [mod] Stampeding Roar
+END
+VER 3 010000000000000F "su" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Sunfire
+END
+VER 3 0100000000000005 "vortex" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod,@player][@cursor] Ursol's Vortex
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P1DR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+NNom[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Lif[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
