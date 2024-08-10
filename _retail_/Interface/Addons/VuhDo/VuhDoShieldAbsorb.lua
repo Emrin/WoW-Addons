@@ -141,7 +141,6 @@ local ceil = ceil;
 local floor = floor;
 local GetTime = GetTime;
 local select = select;
-local GetSpellInfo = GetSpellInfo;
 
 
 
@@ -416,7 +415,7 @@ function VUHDO_parseCombatLogShieldAbsorb(aMessage, aSrcGuid, aDstGuid, aShieldN
 		"SPELL_AURA_REFRESH" == aMessage or "SPELL_AURA_BROKEN" == aMessage or
 		"SPELL_AURA_BROKEN_SPELL" == aMessage) then
 
-		tinfo = VUHDO_RAID[tUnit];
+		tInfo = VUHDO_RAID[tUnit];
 
 		if tInfo then
 			VUHDO_updateHots(tUnit, tInfo);

@@ -1,5 +1,5 @@
 
 DCP_SavedPerCharacter = {
-	["ignoredSpells"] = "",
-	["invertIgnored"] = false,
+["ignoredSpells"] = "",
+["invertIgnored"] = false,
 }

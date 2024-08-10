@@ -19,38 +19,42 @@ TomTomDB = {
 ["Yubiyubi - Draenor"] = "Default",
 ["Taizaii - Doomhammer"] = "Default",
 ["Yeetalot - Draenor"] = "Default",
+["Lovelol - Ravencrest"] = "Default",
 ["Holiloli - Silvermoon"] = "Default",
-["Apoka - Tarren Mill"] = "Default",
+["Wasdasdasd - Draenor"] = "Default",
+["Lifey - Silvermoon"] = "Default",
 ["Kungfugoblin - Draenor"] = "Default",
+["Apoka - Tarren Mill"] = "Default",
+["Leafgi42F6E6 - Ravencrest"] = "Default",
 ["Taizai - Draenor"] = "Default",
-["Apoku - Draenor"] = "Default",
+["Nolifey - Silvermoon"] = "Default",
 ["Ariellol - Outland"] = "Default",
 ["Cutetroll - Draenor"] = "Default",
 ["Sacrae - Ravencrest"] = "Default",
 ["Redangel - Draenor"] = "Default",
 ["Unchill - Draenor"] = "Default",
 ["Hentaihero - Draenor"] = "Default",
-["Nolifey - Silvermoon"] = "Default",
-["Wasdasdasd - Draenor"] = "Default",
-["Apoki - Silvermoon"] = "Default",
-["Clawra - Ravencrest"] = "Default",
-["Hentaihero - Outland"] = "Default",
-["Yhewrgrhn - Draenor"] = "Default",
 ["Demonphile - Draenor"] = "Default",
 ["Apoka - Stormscale"] = "Default",
 ["Trapchan - Draenor"] = "Default",
+["Clawra - Ravencrest"] = "Default",
+["Apoki - Silvermoon"] = "Default",
+["Apokalol - Outland"] = "Default",
+["Venetha - Draenor"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
+["Bowbie - Ravencrest"] = "Default",
 ["Fuwu - Silvermoon"] = "Default",
 ["Apoka - Outland"] = "Default",
 ["Nolifey - Moonglade"] = "Default",
 ["Lifey - Moonglade"] = "Default",
 ["Lifey - Draenor"] = "Default",
-["Bowbie - Ravencrest"] = "Default",
+["Hentaihero - Outland"] = "Default",
 ["Missuccubus - Draenor"] = "Default",
-["Apokalol - Outland"] = "Default",
-["Venetha - Draenor"] = "Default",
-["Lolisama - Draenor"] = "Default",
-["Lifey - Silvermoon"] = "Default",
+["Yhewrgrhn - Draenor"] = "Default",
 ["Raingirl - Silvermoon"] = "Default",
+["Lolisama - Draenor"] = "Default",
+["Apoku - Draenor"] = "Default",
+["Hun - Ravencrest"] = "Default",
 ["Crystalol - Draenor"] = "Default",
 ["Vanilia - Outland"] = "Default",
 },
@@ -102,38 +106,42 @@ TomTomWaypointsM = {
 ["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
 ["Taizaii - Doomhammer"] = "Taizaii - Doomhammer",
 ["Yeetalot - Draenor"] = "Yeetalot - Draenor",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
 ["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
-["Apoka - Tarren Mill"] = "Apoka - Tarren Mill",
+["Wasdasdasd - Draenor"] = "Wasdasdasd - Draenor",
+["Lifey - Silvermoon"] = "Lifey - Silvermoon",
 ["Kungfugoblin - Draenor"] = "Kungfugoblin - Draenor",
+["Apoka - Tarren Mill"] = "Apoka - Tarren Mill",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
 ["Taizai - Draenor"] = "Taizai - Draenor",
-["Apoku - Draenor"] = "Apoku - Draenor",
+["Nolifey - Silvermoon"] = "Nolifey - Silvermoon",
 ["Ariellol - Outland"] = "Ariellol - Outland",
 ["Cutetroll - Draenor"] = "Cutetroll - Draenor",
 ["Sacrae - Ravencrest"] = "Sacrae - Ravencrest",
 ["Redangel - Draenor"] = "Redangel - Draenor",
 ["Unchill - Draenor"] = "Unchill - Draenor",
 ["Hentaihero - Draenor"] = "Hentaihero - Draenor",
-["Nolifey - Silvermoon"] = "Nolifey - Silvermoon",
-["Wasdasdasd - Draenor"] = "Wasdasdasd - Draenor",
-["Apoki - Silvermoon"] = "Apoki - Silvermoon",
-["Clawra - Ravencrest"] = "Clawra - Ravencrest",
-["Hentaihero - Outland"] = "Hentaihero - Outland",
-["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
 ["Demonphile - Draenor"] = "Demonphile - Draenor",
 ["Apoka - Stormscale"] = "Apoka - Stormscale",
 ["Trapchan - Draenor"] = "Trapchan - Draenor",
+["Clawra - Ravencrest"] = "Clawra - Ravencrest",
+["Apoki - Silvermoon"] = "Apoki - Silvermoon",
+["Apokalol - Outland"] = "Apokalol - Outland",
+["Venetha - Draenor"] = "Venetha - Draenor",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
+["Bowbie - Ravencrest"] = "Bowbie - Ravencrest",
 ["Fuwu - Silvermoon"] = "Fuwu - Silvermoon",
 ["Apoka - Outland"] = "Apoka - Outland",
 ["Nolifey - Moonglade"] = "Nolifey - Moonglade",
 ["Lifey - Moonglade"] = "Lifey - Moonglade",
 ["Lifey - Draenor"] = "Lifey - Draenor",
-["Bowbie - Ravencrest"] = "Bowbie - Ravencrest",
+["Hentaihero - Outland"] = "Hentaihero - Outland",
 ["Missuccubus - Draenor"] = "Missuccubus - Draenor",
-["Apokalol - Outland"] = "Apokalol - Outland",
-["Venetha - Draenor"] = "Venetha - Draenor",
-["Lolisama - Draenor"] = "Lolisama - Draenor",
-["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
 ["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
+["Lolisama - Draenor"] = "Lolisama - Draenor",
+["Apoku - Draenor"] = "Apoku - Draenor",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
 ["Crystalol - Draenor"] = "Crystalol - Draenor",
 ["Vanilia - Outland"] = "Vanilia - Outland",
 },
@@ -174,11 +182,19 @@ TomTomWaypointsM = {
 },
 ["Yeetalot - Draenor"] = {
 },
+["Lovelol - Ravencrest"] = {
+},
 ["Holiloli - Silvermoon"] = {
+},
+["Wasdasdasd - Draenor"] = {
+},
+["Lifey - Silvermoon"] = {
+},
+["Kungfugoblin - Draenor"] = {
 },
 ["Apoka - Tarren Mill"] = {
 },
-["Kungfugoblin - Draenor"] = {
+["Leafgi42F6E6 - Ravencrest"] = {
 },
 ["Taizai - Draenor"] = {
 [1530] = {
@@ -207,7 +223,7 @@ TomTomWaypointsM = {
 },
 },
 },
-["Apoku - Draenor"] = {
+["Nolifey - Silvermoon"] = {
 },
 ["Ariellol - Outland"] = {
 },
@@ -221,23 +237,23 @@ TomTomWaypointsM = {
 },
 ["Hentaihero - Draenor"] = {
 },
-["Nolifey - Silvermoon"] = {
-},
-["Wasdasdasd - Draenor"] = {
-},
-["Apoki - Silvermoon"] = {
-},
-["Clawra - Ravencrest"] = {
-},
-["Hentaihero - Outland"] = {
-},
-["Yhewrgrhn - Draenor"] = {
-},
 ["Demonphile - Draenor"] = {
 },
 ["Apoka - Stormscale"] = {
 },
 ["Trapchan - Draenor"] = {
+},
+["Clawra - Ravencrest"] = {
+},
+["Apoki - Silvermoon"] = {
+},
+["Apokalol - Outland"] = {
+},
+["Venetha - Draenor"] = {
+},
+["Ravegirl - Ravencrest"] = {
+},
+["Bowbie - Ravencrest"] = {
 },
 ["Fuwu - Silvermoon"] = {
 },
@@ -249,19 +265,19 @@ TomTomWaypointsM = {
 },
 ["Lifey - Draenor"] = {
 },
-["Bowbie - Ravencrest"] = {
+["Hentaihero - Outland"] = {
 },
 ["Missuccubus - Draenor"] = {
 },
-["Apokalol - Outland"] = {
+["Yhewrgrhn - Draenor"] = {
 },
-["Venetha - Draenor"] = {
+["Raingirl - Silvermoon"] = {
 },
 ["Lolisama - Draenor"] = {
 },
-["Lifey - Silvermoon"] = {
+["Apoku - Draenor"] = {
 },
-["Raingirl - Silvermoon"] = {
+["Hun - Ravencrest"] = {
 },
 ["Crystalol - Draenor"] = {
 },

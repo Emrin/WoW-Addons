@@ -47,7 +47,7 @@ Kui_Nameplates_Core: disabled
 MDTGuide: disabled
 MikScrollingBattleText: disabled
 MogIt_Leather: disabled
-MogIt_Mail: disabled
+MogIt_Mail: enabled
 MogIt_Plate: disabled
 MogIt_Ranged: disabled
 MSBTOptions: disabled
@@ -141,3 +141,4 @@ LibDualSpec-1.0: enabled
 LibRangeCheck-3.0: enabled
 LibDispellable-1.0: enabled
 LittleWigs: enabled
+BigWigs_DragonIsles: enabled

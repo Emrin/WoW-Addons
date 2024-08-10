@@ -444,6 +444,8 @@ local function AddOverlayTooltip(tooltip, pin, addSeparator)
 		overlay = RSNpcDB.GetInternalNpcOverlay(pin.POI.entityID, pin.POI.mapID)
 	elseif (pin.POI.isContainer) then
 		overlay = RSContainerDB.GetInternalContainerOverlay(pin.POI.entityID, pin.POI.mapID)
+	elseif (pin.POI.isEvent) then
+		overlay = RSEventDB.GetInternalEventOverlay(pin.POI.entityID, pin.POI.mapID)
 	end
 
 	if (overlay) then

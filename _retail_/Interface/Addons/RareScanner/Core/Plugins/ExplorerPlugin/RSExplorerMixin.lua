@@ -807,6 +807,10 @@ local function RSExplorerLoadMap(mapID, mapFrame)
 end
 
 local function AddIcon(icon, texture, x, y, r, g, b)
+	if (not x or not y) then
+		return
+	end
+	
 	icon.Texture:SetTexture(texture)
 	if (r and g and b) then
 		icon.Texture:SetVertexColor(r, g, b, 0.4)
@@ -886,7 +890,7 @@ function RSExplorerRareList:AddItems(parentFrame, itemType, customGroupKeys)
 			local yOffset = -8
 			local numColumn = 0
 			local numRow = 0
-			local maxLines = 0
+			local maxLines = 1
 			local maxItemsPerRow
     		if (itemType ~= RSConstants.ITEM_TYPE.APPEARANCE and not RSUtils.Contains(customGroupKeys, itemType)) then
     			maxItemsPerRow = 3
@@ -901,7 +905,7 @@ function RSExplorerRareList:AddItems(parentFrame, itemType, customGroupKeys)
 	    	end
    
 	    	for _, itemID in ipairs(itemIDs) do
-	    		local _, _, _, _, icon, _, _ = GetItemInfoInstant(itemID)
+	    		local _, _, _, _, icon, _, _ = C_Item.GetItemInfoInstant(itemID)
 	    		local lootItem = mainFrame.lootItemsPool:Acquire();
 	    		
 	    		if (math.fmod(numColumn, maxItemsPerRow) == 0) then
@@ -1418,7 +1422,7 @@ function RSExplorerLoot:AddItems(editbox)
 		local errorIDs = {}
 		for itemIDstring in string.gmatch(value, '([^,]+)') do
 			local itemID = tonumber(itemIDstring)
-			local ret, _, itemType, itemSubType, itemEquipLoc, icon, classID, subclassID = pcall(GetItemInfoInstant, itemID)
+			local ret, _, itemType, itemSubType, itemEquipLoc, icon, classID, subclassID = pcall(C_Item.GetItemInfoInstant, itemID)
 			if (not ret or not icon) then
 				tinsert(errorIDs, itemID)
 			else
@@ -1517,7 +1521,7 @@ function RSExplorerLoot:SelectGroup(groupKey, groupName)
 		local maxLines = 8
 		local maxItemsPerRow = 17
     	for _, itemID in ipairs(itemIDs) do
-    		local _, _, _, _, icon, _, _ = GetItemInfoInstant(itemID)
+    		local _, _, _, _, icon, _, _ = C_Item.GetItemInfoInstant(itemID)
     		local lootItem = self.GroupInfo.lootItemsPool:Acquire();
     		
     		if (math.fmod(numColumn, maxItemsPerRow) ~= 0) then
@@ -1692,14 +1696,7 @@ function RSExplorerMixin:HideCustomLootPanels()
 	self.CustomLoot:Hide()
 	self.CustomLoot.background:Hide()
 	self.CustomLoot.background2:Hide()
-	self.CustomLoot.BaseFrameTopEdge:Hide()
-	self.CustomLoot.BaseFrameBottomEdge:Hide()
-	self.CustomLoot.BaseFrameLeftEdge:Hide()
-	self.CustomLoot.BaseFrameRightEdge:Hide()
-	self.CustomLoot.BaseFrameTopLeftCorner:Hide()
-	self.CustomLoot.BaseFrameTopRightCorner:Hide()
-	self.CustomLoot.BaseFrameBottomLeftCorner:Hide()
-	self.CustomLoot.BaseFrameBottomRightCorner:Hide()
+	self.CustomLoot.Border:Hide()
 	self.CustomLoot.ControlFrame:Hide()
 	self.CustomLoot.ControlFrame.LootGroupDropDown:Hide()
 	self.CustomLoot.GroupList:Hide()
@@ -1715,14 +1712,7 @@ function RSExplorerMixin:ShowCustomLootPanels()
 	self.CustomLoot:Show()
 	self.CustomLoot.background:Show()
 	self.CustomLoot.background2:Show()
-	self.CustomLoot.BaseFrameTopEdge:Show()
-	self.CustomLoot.BaseFrameBottomEdge:Show()
-	self.CustomLoot.BaseFrameLeftEdge:Show()
-	self.CustomLoot.BaseFrameRightEdge:Show()
-	self.CustomLoot.BaseFrameTopLeftCorner:Show()
-	self.CustomLoot.BaseFrameTopRightCorner:Show()
-	self.CustomLoot.BaseFrameBottomLeftCorner:Show()
-	self.CustomLoot.BaseFrameBottomRightCorner:Show()
+	self.CustomLoot.Border:Show()
 	self.CustomLoot.ControlFrame:Show()
 	self.CustomLoot.ControlFrame.LootGroupDropDown:Show()
 	self.CustomLoot.GroupList:Show()

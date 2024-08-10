@@ -43,7 +43,7 @@ end or isRetail and EJ_GetEncounterInfo or function(key)
 	return BigWigsAPI:GetLocale("BigWigs: Encounters")[key]
 end
 local SendChatMessage, GetInstanceInfo, Timer, SetRaidTarget = loader.SendChatMessage, loader.GetInstanceInfo, loader.CTimerAfter, loader.SetRaidTarget
-local UnitGUID, UnitHealth, UnitHealthMax, Ambiguate = loader.UnitGUID, loader.UnitHealth, loader.UnitHealthMax, loader.Ambiguate
+local UnitGUID, UnitHealth, UnitHealthMax = loader.UnitGUID, loader.UnitHealth, loader.UnitHealthMax
 local RegisterAddonMessagePrefix = loader.RegisterAddonMessagePrefix
 local format, find, gsub, band, tremove, twipe = string.format, string.find, string.gsub, bit.band, table.remove, table.wipe
 local select, type, next, tonumber = select, type, next, tonumber
@@ -349,6 +349,40 @@ function boss:SetStage(stage)
 	end
 end
 
+do
+	local menuArt = {
+		MESSAGE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Messages",
+		ME_ONLY = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\MeOnly",
+		SOUND = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Sounds",
+		ICON = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Markers",
+		FLASH = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Flash",
+		PULSE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Pulse",
+		PROXIMITY = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Proximity",
+		ALTPOWER = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\AltPower",
+		INFOBOX = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Info",
+		COUNTDOWN = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Countdown",
+		CASTBAR_COUNTDOWN = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Countdown",
+		SAY = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Say",
+		SAY_COUNTDOWN = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\SayCountdown",
+		VOICE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Voice",
+		BAR = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Bars",
+		CASTBAR = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Bars",
+		NAMEPLATEBAR = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Pulse", -- XXX temp
+		TANK = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Role_Tank",
+		HEALER = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Role_Healer",
+		EMPHASIZE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\EmphasizeMessage",
+		ME_ONLY_EMPHASIZE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\EmphasizeMessageMeOnly",
+		DISPEL = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Dispel",
+		PRIVATE = "Interface\\AddOns\\BigWigs\\Media\\Icons\\Menus\\Private",
+	}
+	--- Fetch the path to a specific menu icon
+	-- @string menuIcon the specific menu icon to fetch the path for
+	-- @return string
+	function boss:GetMenuIcon(menuIcon)
+		return menuArt[menuIcon]
+	end
+end
+
 --- Create a log entry in the Transcriptor addon if it is running
 -- @param ... any number of values to concatenate into the log entry
 function boss:Debug(...)
@@ -368,7 +402,7 @@ end
 
 function boss:Initialize() core:RegisterBossModule(self) end
 function boss:Enable(isWipe)
-	if not self.enabled then
+	if not self:IsEnabled() then
 		self.enabled = true
 
 		local isWiping = isWipe == true
@@ -406,7 +440,7 @@ function boss:Enable(isWipe)
 	end
 end
 function boss:Disable(isWipe)
-	if self.enabled then
+	if self:IsEnabled() then
 		self.enabled = nil
 
 		local isWiping = isWipe == true
@@ -509,7 +543,7 @@ function boss:Disable(isWipe)
 	end
 end
 function boss:Reboot(isWipe)
-	if self.enabled then
+	if self:IsEnabled() then
 		self:Debug("Rebooting module", "isWipe:", isWipe, self:GetEncounterID(), self.moduleName)
 		if isWipe then
 			-- Devs, in 99% of cases you'll want to use OnBossWipe
@@ -584,11 +618,11 @@ function boss:AddAutoTalkOption(state, talkType, name)
 	if talkType == "boss" then
 		moduleLocale[option] = L.autotalk
 		moduleLocale[option.."_desc"] = L.autotalk_boss_desc
-		moduleLocale[option.."_icon"] = "ui_chat"
+		moduleLocale[option.."_icon"] = self:GetMenuIcon("SAY")
 	elseif not talkType then
 		moduleLocale[option] = L.autotalk
 		moduleLocale[option.."_desc"] = L.autotalk_generic_desc
-		moduleLocale[option.."_icon"] = "ui_chat"
+		moduleLocale[option.."_icon"] = self:GetMenuIcon("SAY")
 	else
 		core:Error("Invalid auto talk type: ".. tostring(talkType))
 	end
@@ -1149,7 +1183,7 @@ do
 	end
 
 	function boss:Engage(noEngage)
-		if not self:IsEngaged() then
+		if self:IsEnabled() and not self:IsEngaged() then
 			self.isEngaged = true
 
 			self:Debug(":Engage", "noEngage:", noEngage, self:GetEncounterID(), self.moduleName)
@@ -1195,30 +1229,34 @@ do
 			if not noEngage or noEngage ~= "NoEngage" then
 				updateData(self)
 
-				self:SendMessage("BigWigs_OnBossEngage", self, difficulty)
+				self:SendMessage("BigWigs_OnBossEngage", self)
 
 				if self.OnEngage then
 					self:OnEngage(difficulty)
 				end
 			elseif noEngage == "NoEngage" then
-				self:SendMessage("BigWigs_OnBossEngageMidEncounter", self, difficulty)
+				self:SendMessage("BigWigs_OnBossEngageMidEncounter", self)
 			end
 		end
 	end
 
 	function boss:Win()
-		self:Debug(":Win", self:GetEncounterID(), self.moduleName)
-		twipe(icons) -- Wipe icon cache
-		twipe(spells)
-		if self.OnWin then self:OnWin() end
-		Timer(1, function() self:Disable() end) -- Delay a little to prevent re-enabling
-		self:SendMessage("BigWigs_OnBossWin", self)
-		self:SendMessage("BigWigs_VictorySound", self)
+		if self:IsEnabled() then
+			self:Debug(":Win", self:GetEncounterID(), self.moduleName)
+			twipe(icons) -- Wipe icon cache
+			twipe(spells)
+			if self.OnWin then self:OnWin() end
+			Timer(1, function() self:Disable() end) -- Delay a little to prevent re-enabling
+			self:SendMessage("BigWigs_OnBossWin", self)
+			self:SendMessage("BigWigs_VictorySound", self)
+		end
 	end
 
 	function boss:Wipe()
-		self:Reboot(true)
-		if self.OnWipe then self:OnWipe() end
+		if self:IsEnabled() then
+			self:Reboot(true)
+			if self.OnWipe then self:OnWipe() end
+		end
 	end
 end
 
@@ -1379,6 +1417,13 @@ function boss:LFR()
 	return difficulty == 7 or difficulty == 17
 end
 
+--- Check if in a Follower, Quest, or Story instance.
+-- @return boolean
+function boss:Story()
+	-- 205: Follower, 216: Quest, 220: Story
+	return difficulty == 205 or difficulty == 216 or difficulty == 220
+end
+
 --- Check if in a Normal difficulty instance.
 -- @return boolean
 function boss:Normal()
@@ -1432,6 +1477,19 @@ function boss:Vanilla()
 	return isClassicEra
 end
 
+do
+	local GetActiveSeason = C_Seasons and C_Seasons.GetActiveSeason
+	local season = 0
+	if GetActiveSeason then
+		season = GetActiveSeason() or 0
+	end
+	--- Get the current season.
+	-- @return number
+	function boss:GetSeason()
+		return season
+	end
+end
+
 --- Get the mob/npc id from a GUID.
 -- @string guid GUID of a mob/npc
 -- @return mob/npc id
@@ -1470,6 +1528,18 @@ function boss:Me(guid)
 end
 
 do
+	local Ambiguate = loader.Ambiguate
+	--- Returns a version of a character-realm string suitable for use in a given context.
+	-- @string name character-realm for a character
+	-- @string context the context the name will be used in, one of: "all", "guild", "mail", "none", or "short"
+	-- @return newName the character name with the server appended if appropriate
+	function boss:Ambiguate(name, context)
+		local newName = Ambiguate(name, context)
+		return newName
+	end
+end
+
+do
 	local UnitName = loader.UnitName
 	--- Get the full name of a unit.
 	-- @string unit unit token or name
@@ -1482,6 +1552,19 @@ do
 			name = name .."-".. server
 		end
 		return name
+	end
+end
+
+do
+	local UnitSex = loader.UnitSex
+	--- Get the sex of a unit.
+	-- @string unit unit token or name
+	-- @return sex the sex of the unit
+	function boss:UnitSex(unit)
+		local sex = UnitSex(unit)
+		if sex then
+			return sex
+		end
 	end
 end
 
@@ -1545,6 +1628,17 @@ function boss:GetHealth(unit)
 		return maxHP
 	else
 		return UnitHealth(unit) / maxHP * 100
+	end
+end
+
+do
+	local GetPlayerAuraBySpellID = loader.GetPlayerAuraBySpellID
+	--- Get the aura info of the player using a spell ID.
+	-- @number spellId the spell ID of the aura
+	-- @return table the table full of aura info, or nil if not found
+	function boss:GetPlayerAura(spellId)
+		local tbl = GetPlayerAuraBySpellID(spellId)
+		return tbl
 	end
 end
 
@@ -1693,7 +1787,7 @@ function boss:RegisterWhisperEmoteComms(func)
 		if channel ~= "RAID" and channel ~= "PARTY" and channel ~= "INSTANCE_CHAT" then
 			return
 		elseif prefix == "Transcriptor" then
-			self[func](self, msg, Ambiguate(sender, "none"))
+			self[func](self, msg, self:Ambiguate(sender, "none"))
 		end
 	end)
 end
@@ -1853,7 +1947,8 @@ do
 	-- @string[opt="player"] sourceUnit If a player unit is specified, this unit will be checked to see if they are tanking, otherwise use nil to check yourself
 	-- @return boolean
 	function boss:Tanking(targetUnit, sourceUnit)
-		return UnitDetailedThreatSituation(sourceUnit or "player", targetUnit)
+		local isTanking, status = UnitDetailedThreatSituation(sourceUnit or "player", targetUnit)
+		return isTanking or status == 2 or status == 3
 	end
 
 	--- Check if you have the highest threat on a specific NPC unit.
@@ -1960,8 +2055,8 @@ do
 				-- Mass Dispel (Priest), Dispel Magic (Priest), Purge (Shaman), Spellsteal (Mage), Consume Magic (Demon Hunter), Devour Magic (Warlock Felhunter), Tranquilizing Shot (Hunter)
 				offDispel.magic = true
 			end
-			if IsSpellKnown(2908) or IsSpellKnown(19801) or IsSpellKnown(5938) then
-				-- Soothe (Druid), Tranquilizing Shot (Hunter), Shiv (Rogue)
+			if IsSpellKnown(2908) or IsSpellKnown(19801) or IsSpellKnown(5938) or IsPlayerSpell(450432) then
+				-- Soothe (Druid), Tranquilizing Shot (Hunter), Shiv (Rogue), Pressure Points (Monk)
 				offDispel.enrage = true
 			end
 			if IsSpellKnown(527) or IsSpellKnown(77130) or IsSpellKnown(115450) or IsSpellKnown(4987) or IsSpellKnown(88423) or IsPlayerSpell(360823) or IsSpellKnown(89808, true) then -- XXX Add DPS priest mass dispel?
@@ -2322,37 +2417,6 @@ function boss:CloseProximity(key)
 	--if not solo and checkFlag(self, key or "proximity", C.PROXIMITY) then
 	--	self:SendMessage("BigWigs_HideProximity", self, key or "proximity")
 	--end
-end
-
--------------------------------------------------------------------------------
--- Nameplates.
--- @section nameplates
---
-
---- Toggle showing hostile nameplates to the enabled state.
-function boss:ShowPlates()
-	self:SendMessage("BigWigs_EnableHostileNameplates", self)
-end
-
---- Toggle showing hostile nameplates to the disabled state.
-function boss:HidePlates()
-	self:SendMessage("BigWigs_DisableHostileNameplates", self)
-end
-
---- Add icon to hostile nameplate.
--- @number spellId the associated spell id
--- @string guid the hostile unit guid
--- @number[opt] duration the duration of the aura
--- @bool[opt] desaturate true if the texture should be desaturated
-function boss:AddPlateIcon(spellId, guid, duration, desaturate)
-	self:SendMessage("BigWigs_AddNameplateIcon", self, guid, icons[spellId], duration, desaturate)
-end
-
---- Remove icon from hostile nameplate.
--- @number spellId the associated spell id, passing nil removes all icons
--- @string guid the hostile unit guid
-function boss:RemovePlateIcon(spellId, guid)
-	self:SendMessage("BigWigs_RemoveNameplateIcon", self, guid, spellId and icons[spellId])
 end
 
 -------------------------------------------------------------------------------
@@ -2781,8 +2845,6 @@ end
 do
 	local badBar = "Attempted to start bar %q without a valid time."
 	local badTargetBar = "Attempted to start target bar %q without a valid time."
-	local badNameplateBarStart = "Attempted to start nameplate bar %q without a valid unitGUID."
-	local badNameplateBarStop = "Attempted to stop nameplate bar %q without a valid unitGUID."
 
 	local countString = "%((%d%d?)%)"
 	if myLocale == "zhCN" or myLocale == "zhTW" then
@@ -2956,59 +3018,6 @@ do
 		local counter = msg:match(countString)
 		self:SendMessage("BigWigs_CastTimer", self, key, time, maxTime, msg, counter, icons[icon or textType == "number" and text or key])
 	end
-
-	--- Display a nameplate bar.
-	-- @param key the option key
-	-- @number length the bar duration in seconds
-	-- @string guid Anchor to a unit's nameplate by GUID
-	-- @param[opt] text the bar text (if nil, key is used)
-	-- @param[opt] icon the bar icon (spell id or texture name)
-	function boss:NameplateBar(key, length, guid, text, icon)
-		if type(length) ~= "number" or length == 0 then
-			core:Print(format(badBar, key))
-			return
-		elseif type(guid) ~= "string" then
-			core:Print(format(badNameplateBarStart, key))
-			return
-		end
-		if checkFlag(self, key, C.NAMEPLATEBAR) then
-			local msg = type(text) == "string" and text or spells[text or key]
-			self:SendMessage("BigWigs_StartNameplateTimer", self, key, msg, length, icons[icon or type(text) == "number" and text or key], false, guid)
-		end
-	end
-
-	--- Display a nameplate cooldown bar.
-	-- Indicates an unreliable duration by prefixing the time with "~"
-	-- @param key the option key
-	-- @number length the bar duration in seconds
-	-- @string guid Anchor to a unit's nameplate by GUID
-	-- @param[opt] text the bar text (if nil, key is used)
-	-- @param[opt] icon the bar icon (spell id or texture name)
-	function boss:NameplateCDBar(key, length, guid, text, icon)
-		if type(length) ~= "number" or length == 0 then
-			core:Print(format(badBar, key))
-			return
-		elseif type(guid) ~= "string" then
-			core:Print(format(badNameplateBarStart, key))
-			return
-		end
-
-		if checkFlag(self, key, C.NAMEPLATEBAR) then
-			local msg = type(text) == "string" and text or spells[text or key]
-			self:SendMessage("BigWigs_StartNameplateTimer", self, key, msg, length, icons[icon or type(text) == "number" and text or key], true, guid)
-		end
-	end
-
-	--- Stop a nameplate bar.
-	-- @param text the bar text, or a spellId which is converted into the spell name and used
-	-- @string guid nameplate unit's guid
-	function boss:StopNameplateBar(text, guid)
-		if type(guid) ~= "string" then
-			core:Print(format(badNameplateBarStop, text))
-		end
-		local msg = type(text) == "number" and spells[text] or text
-		self:SendMessage("BigWigs_StopNameplateTimer", self, msg, guid)
-	end
 end
 
 --- Stop a bar.
@@ -3062,6 +3071,76 @@ function boss:BarTimeLeft(text)
 		return bars:GetBarTimeLeft(self, type(text) == "number" and spells[text] or text)
 	end
 	return 0
+end
+
+-------------------------------------------------------------------------------
+-- Nameplates.
+-- @section nameplates
+--
+
+do
+	--- Start showing a nameplate icon.
+	-- @param key the option key
+	-- @number length the duration in seconds
+	-- @string guid Anchor to a unit's nameplate by GUID
+	-- @param[opt] icon the bar icon (spell id or texture name)
+	-- @bool[opt] hideOnExpire Removes the icon when the duration expires instead of keeping it on screen
+	function boss:Nameplate(key, length, guid, icon, hideOnExpire)
+		if checkFlag(self, key, C.NAMEPLATEBAR) then
+			self:SendMessage("BigWigs_StartNameplate", self, guid, key, length, icons[icon or key], hideOnExpire)
+		end
+	end
+
+	--- Stop showing a nameplate icon.
+	-- @param key the option key
+	-- @string guid nameplate unit's guid
+	function boss:StopNameplate(key, guid)
+		self:SendMessage("BigWigs_StopNameplate", self, guid, key)
+	end
+
+	--- Clear everything on a nameplate.
+	-- @string guid nameplate unit's guid
+	function boss:ClearNameplate(guid)
+		self:SendMessage("BigWigs_ClearNameplate", self, guid)
+	end
+end
+
+--- [DEPRECATED] Toggle showing hostile nameplates to the enabled state.
+function boss:ShowPlates()
+	self:SendMessage("BigWigs_EnableHostileNameplates", self)
+end
+
+--- [DEPRECATED] Toggle showing hostile nameplates to the disabled state.
+function boss:HidePlates()
+	self:SendMessage("BigWigs_DisableHostileNameplates", self)
+end
+
+--- [DEPRECATED] Add icon to hostile nameplate.
+-- @number spellId the associated spell id
+-- @string guid the hostile unit guid
+-- @number[opt] duration the duration of the aura
+-- @bool[opt] desaturate true if the texture should be desaturated
+function boss:AddPlateIcon(spellId, guid, duration, desaturate)
+	self:SendMessage("BigWigs_AddNameplateIcon", self, guid, icons[spellId], duration, desaturate)
+end
+
+--- [DEPRECATED] Remove icon from hostile nameplate.
+-- @number spellId the associated spell id, passing nil removes all icons
+-- @string guid the hostile unit guid
+function boss:RemovePlateIcon(spellId, guid)
+	self:SendMessage("BigWigs_RemoveNameplateIcon", self, guid, spellId and icons[spellId])
+end
+
+--- [DEPRECATED] Does nothing
+function boss:NameplateBar()
+end
+
+--- [DEPRECATED] Does nothing
+function boss:NameplateCDBar()
+end
+
+--- [DEPRECATED] Does nothing
+function boss:StopNameplateBar()
 end
 
 -------------------------------------------------------------------------------

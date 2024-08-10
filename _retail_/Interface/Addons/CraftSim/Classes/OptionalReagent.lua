@@ -17,15 +17,12 @@ function CraftSim.OptionalReagent:new(craftingReagent)
         self.professionStats.recipeDifficulty.value = stats.recipeDifficulty or 0
         self.professionStats.skill.value = stats.skill or 0
 
-        self.professionStats.inspiration.value = stats.inspiration or 0
-        self.professionStats.inspiration.extraFactor = stats.inspirationBonusSkillFactor or 0
-
         self.professionStats.multicraft.value = stats.multicraft or 0
 
         self.professionStats.resourcefulness.value = stats.resourcefulness or 0
-        self.professionStats.resourcefulness.extraFactor = stats.resourcefulnessExtraItemsFactor or 0
+        self.professionStats.resourcefulness:SetExtraValue(stats.resourcefulnessExtraItemsFactor)
 
-        self.professionStats.craftingspeed.extraFactor = stats.craftingspeedBonusFactor or 0
+        self.professionStats.craftingspeed:SetExtraValue(stats.craftingspeedBonusFactor)
     end
 end
 

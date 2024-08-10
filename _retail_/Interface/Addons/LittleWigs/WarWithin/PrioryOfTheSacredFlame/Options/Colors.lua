@@ -15,7 +15,8 @@ BigWigs:AddColors("Baron Braunpyke", {
 
 BigWigs:AddColors("Prioress Murrpray", {
 	[423588] = {"cyan","green"},
-	[444546] = "orange",
+	[423664] = "green",
+	[444546] = {"blue","orange"},
 	[444608] = "red",
 	[451605] = "yellow",
 })
@@ -38,8 +39,8 @@ BigWigs:AddColors("Priory of the Sacred Flame Trash", {
 	[428150] = "red",
 	[429091] = "yellow",
 	[435088] = "green",
+	[444743] = "red",
 	[448485] = "purple",
 	[448492] = "red",
 	[448515] = "purple",
-	[451818] = "orange",
 })

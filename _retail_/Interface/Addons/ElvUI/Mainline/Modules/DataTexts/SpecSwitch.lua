@@ -5,7 +5,6 @@ local _G = _G
 local ipairs, tinsert, tremove = ipairs, tinsert, tremove
 local format, next, strjoin = format, next, strjoin
 
-local EasyMenu = EasyMenu
 local GetLootSpecialization = GetLootSpecialization
 local GetNumSpecializations = GetNumSpecializations
 local GetPvpTalentInfoByID = GetPvpTalentInfoByID
@@ -15,9 +14,9 @@ local IsControlKeyDown = IsControlKeyDown
 local IsShiftKeyDown = IsShiftKeyDown
 local SetLootSpecialization = SetLootSpecialization
 local SetSpecialization = SetSpecialization
-local ToggleTalentFrame = ToggleTalentFrame
+local TogglePlayerSpellsFrame = TogglePlayerSpellsFrame
 
-local LoadAddOn = (C_AddOns and C_AddOns.LoadAddOn) or LoadAddOn
+local LoadAddOn = C_AddOns.LoadAddOn
 local C_SpecializationInfo_GetAllSelectedPvpTalentIDs = C_SpecializationInfo.GetAllSelectedPvpTalentIDs
 local C_Traits_GetConfigInfo = C_Traits.GetConfigInfo
 
@@ -71,13 +70,13 @@ do
 	end
 
 	loadout_func = function(_, arg1)
-		if not _G.ClassTalentFrame then
-			_G.ClassTalentFrame_LoadUI()
+		if not _G.PlayerSpellsFrame then
+			_G.PlayerSpellsFrame_LoadUI()
 		end
 
 		loadoutID = arg1
 
-		_G.ClassTalentFrame.TalentsTab:LoadConfigByPredicate(loadout_callback)
+		_G.PlayerSpellsFrame.TalentsFrame:LoadConfigByPredicate(loadout_callback)
 	end
 end
 
@@ -239,7 +238,7 @@ local function OnClick(self, button)
 
 		if IsShiftKeyDown() then
 			if not E:AlertCombat() then
-				ToggleTalentFrame(_G.TalentMicroButton.suggestedTab)
+				TogglePlayerSpellsFrame(_G.PlayerSpellsMicroButton.suggestedTab)
 			end
 		else
 			menu = IsControlKeyDown() and loadoutList or specList
@@ -255,7 +254,7 @@ local function OnClick(self, button)
 
 	if menu then
 		E:SetEasyMenuAnchor(E.EasyMenu, self)
-		EasyMenu(menu, E.EasyMenu, nil, nil, nil, 'MENU')
+		E:ComplicatedMenu(menu, E.EasyMenu, nil, nil, nil, 'MENU')
 	end
 end
 

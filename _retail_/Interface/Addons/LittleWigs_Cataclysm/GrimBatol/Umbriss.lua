@@ -48,7 +48,7 @@ end
 -- Classic Initialization
 --
 
-if not BigWigsLoader.isBeta then
+if mod:Classic() then
 	function mod:GetOptions()
 		return {
 			{74670, "ICON"}, -- Blitz

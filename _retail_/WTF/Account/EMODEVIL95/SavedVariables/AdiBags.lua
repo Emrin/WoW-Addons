@@ -16,17 +16,17 @@ AdiBagsDB = {
 },
 ["AdiBags_TooltipInfo"] = {
 },
-["Equipment"] = {
-},
-["DataSource"] = {
+["MoneyFrame"] = {
 },
 ["ItemSets"] = {
 },
 ["CurrencyFrame"] = {
 },
+["DataSource"] = {
+},
 ["Junk"] = {
 },
-["MoneyFrame"] = {
+["Equipment"] = {
 },
 },
 ["profileKeys"] = {
@@ -50,8 +50,8 @@ AdiBagsDB = {
 ["Yeetalot - Draenor"] = "Default",
 ["Holiloli - Silvermoon"] = "Default",
 ["Raingirl - Silvermoon"] = "Default",
-["Cutetroll - Draenor"] = "Default",
 ["Nolifey - Draenor"] = "Default",
+["Cutetroll - Draenor"] = "Default",
 ["Divinefurry - Draenor"] = "Default",
 },
 ["profiles"] = {
@@ -61,19 +61,19 @@ AdiBagsDB = {
 ["experiments"] = {
 ["Bag Lag Fix"] = {
 ["Enabled"] = false,
+["Name"] = "Bag Lag Fix",
 ["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 ["Percent"] = 1,
-["Name"] = "Bag Lag Fix",
 },
 },
 ["positions"] = {
-["Backpack"] = {
-["xOffset"] = -124.5861739054089,
-["yOffset"] = 248.0993057801425,
-},
 ["Bank"] = {
 ["xOffset"] = 339.0773831925981,
 ["yOffset"] = -327.8801192495157,
+},
+["Backpack"] = {
+["xOffset"] = -124.5861739054089,
+["yOffset"] = 248.0993057801425,
 },
 },
 },

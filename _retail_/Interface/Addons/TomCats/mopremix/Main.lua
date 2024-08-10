@@ -7,17 +7,8 @@ local componentsByName = { }
 
 
 local function OnEvent(_, event, arg1)
-	if (event == "PLAYER_LOGIN" and PlayerGetTimerunningSeasonID() == 1) then
-		OSD = Templates.CreateBasicWindow(
-				UIParent,
-				{
-					icon = ImagePNG.tomcats_minimap_icon,
-					prefs = TomCats_Account.mopremix.osd
-				}
-		)
-		OSD:SetSize(260,100)
-		OSD.title:SetText("TomCat's Tours")
-		OSD:Hide()
+	if (event == "FIRST_FRAME_RENDERED" and PlayerGetTimerunningSeasonID() == 1) then
+		active = true
 		for _, component in ipairs(components) do
 			if (component.Init) then
 				component.Init(componentsByName)
@@ -26,8 +17,17 @@ local function OnEvent(_, event, arg1)
 	end
 end
 
-eventFrame:RegisterEvent("PLAYER_LOGIN")
+local function OnUpdate()
+	for _, component in ipairs(components) do
+		if (component.dirty and component.Refresh) then
+			component.Refresh()
+		end
+	end
+end
+
+eventFrame:RegisterEvent("FIRST_FRAME_RENDERED")
 eventFrame:SetScript("OnEvent", OnEvent)
+eventFrame:SetScript("OnUpdate", OnUpdate)
 
 function AddComponent(component)
 	table.insert(components, component)

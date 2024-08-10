@@ -1,6 +1,168 @@
 
 MacroToolkitDB = {
 ["char"] = {
+["Hun - Ravencrest"] = {
+["macros"] = {
+[122] = {
+["icon"] = "136080",
+["name"] = "cr",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Rebirth\n",
+},
+[131] = {
+["icon"] = "136100",
+["name"] = "root",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Entangling Roots\n",
+},
+[126] = {
+["icon"] = "134400",
+["name"] = "hib",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Hibernate\n",
+},
+[132] = {
+["icon"] = "132276",
+["name"] = "shift",
+["body"] = "#showtooltip\n/cast [nomod] Bear Form\n/cast [mod] Cat Form\n",
+},
+[135] = {
+["icon"] = "134400",
+["name"] = "su",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Sunfire\n",
+},
+[133] = {
+["icon"] = "134400",
+["name"] = "soot",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Soothe\n",
+},
+[127] = {
+["icon"] = "572025",
+["name"] = "iron",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Ironbark\n",
+},
+[134] = {
+["icon"] = "132120",
+["name"] = "speed",
+["body"] = "#showtooltip\n/cast [nomod] Dash\n/cast [mod] Stampeding Roar\n",
+},
+[121] = {
+["icon"] = "538771",
+["name"] = "ca",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists][@mouseover,exists,nodead][] Wild Charge\n",
+},
+[124] = {
+["icon"] = "136022",
+["name"] = "cyc",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Cyclone\n",
+},
+[128] = {
+["icon"] = "134400",
+["name"] = "iv",
+["body"] = "#showtooltip\n/cast [mod,@player][@mouseover,exists,nodead,help][] Innervate\n",
+},
+[136] = {
+["icon"] = "571588",
+["name"] = "vortex",
+["body"] = "#showtooltip\n/cast [mod,@player][@cursor] Ursol's Vortex\n",
+},
+[129] = {
+["icon"] = "136096",
+["name"] = "mo",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Moonfire\n",
+},
+[125] = {
+["icon"] = "134222",
+["name"] = "efl",
+["body"] = "#showtooltip\n/cast [mod,@player][@cursor] Efflorescence\n",
+},
+[130] = {
+["icon"] = "1408836",
+["name"] = "og",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Overgrowth\n",
+},
+[123] = {
+["icon"] = "236288",
+["name"] = "cure",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Nature's Cure\n",
+},
+},
+},
+["Nolifey - Draenor"] = {
+["backups"] = {
+},
+},
+["Ravegirl - Ravencrest"] = {
+["macros"] = {
+[122] = {
+["icon"] = "629534",
+["name"] = "cc",
+["body"] = "#showtooltip Paralysis\n/cast [mod:shift,@focus,harm][@mouseover,harm,exists][] Paralysis\n",
+},
+[126] = {
+["icon"] = "651727",
+["name"] = "free",
+["body"] = "#showtooltip Tiger's Lust\n/cast [mod:shift,@focus,help][@mouseover,help,exists][] Tiger's Lust\n",
+},
+[132] = {
+["icon"] = "134400",
+["name"] = "oxy",
+["body"] = "#showtooltip\n/tar [mod] Black Ox Statue\n/cast [mod] Provoke\n/targetlasttarget [mod]\n/cast [nomod,@cursor] Summon Black Ox Statue\n",
+},
+[123] = {
+["icon"] = "134400",
+["name"] = "chi",
+["body"] = "#showtooltip\n/cast [@player][talent:1/2] Chi Wave; [talent:1/3] Chi Burst\n",
+},
+[127] = {
+["icon"] = "1360980",
+["name"] = "heal",
+["body"] = "#showtooltip Vivify\n/cast [mod:shift,@focus,help][@mouseover,help,exists][] Vivify\n",
+},
+[134] = {
+["icon"] = "620830",
+["name"] = "taunt",
+["body"] = "#showtooltip Provoke\n/cast [mod:shift,@focus,harm][@mouseover,harm,exists][] Provoke\n",
+},
+[133] = {
+["icon"] = "839107",
+["name"] = "peace",
+["body"] = "#showtooltip Ring of Peace\n/cast [mod,@player][@cursor] Ring of Peace\n",
+},
+[124] = {
+["icon"] = "628134",
+["name"] = "clash",
+["body"] = "#showtooltip Clash\n/cast [mod:shift,@focus,harm][@mouseover,harm,exists][] Clash\n",
+},
+[128] = {
+["icon"] = "134400",
+["name"] = "jade",
+["body"] = "#showtooltip\n/cast [talent:6/2] Rushing Jade Wind; [mod,@cursor][@player][talent:6/3] Exploding Keg\n",
+},
+[131] = {
+["icon"] = "135768",
+["name"] = "nbop",
+["body"] = "/cancelaura Blessing of Protection\n",
+},
+[121] = {
+["icon"] = "134400",
+["name"] = "bub",
+["body"] = "#showtooltip\n/cast [talent:5/2] Healing Elixir; [talent:5/3] Dampen Harm\n",
+},
+[125] = {
+["icon"] = "134400",
+["name"] = "detox",
+["body"] = "#showtooltip Detox\n/cast [mod:shift,@focus,help][@mouseover,help,exists][] Detox\n",
+},
+[130] = {
+["icon"] = "775460",
+["name"] = "mag",
+["body"] = "#showtooltip\n/cast [nomod] Diffuse Magic\n/cast [mod] Touch of Karma \n",
+},
+[129] = {
+["icon"] = "608940",
+["name"] = "kick",
+["body"] = "#showtooltip Spear Hand Strike\n/cast [mod:shift,@focus,harm][@mouseover,harm,exists][] Spear Hand Strike\n",
+},
+},
+},
 ["Cutetroll - Draenor"] = {
 ["backups"] = {
 },
@@ -8,99 +170,480 @@ MacroToolkitDB = {
 ["Sacrae - Ravencrest"] = {
 ["macros"] = {
 [131] = {
-["icon"] = "136206",
 ["name"] = "mc",
+["icon"] = "136206",
 ["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Mind Control\n",
 },
 [135] = {
-["icon"] = "135953",
 ["name"] = "renw",
+["icon"] = "135953",
 ["body"] = "#showtooltip\n/cast [@mouseover, exists][] Renew\n",
 },
 [122] = {
-["icon"] = "237545",
 ["name"] = "bolt",
+["icon"] = "237545",
 ["body"] = "#showtooltip Penance\n/cast [mod,@player][@mouseover, exists][] Penance\n",
 },
 [124] = {
-["icon"] = "136066",
 ["name"] = "disp",
+["icon"] = "136066",
 ["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Dispel Magic\n",
 },
 [126] = {
-["icon"] = "135994",
 ["name"] = "fade",
+["icon"] = "135994",
 ["body"] = "#showtooltip\n/stopcasting\n/cast Fade\n",
 },
 [128] = {
-["icon"] = "136199",
 ["name"] = "Fiend",
+["icon"] = "136214",
 ["body"] = "#showtooltip Shadowfiend\n/cast [@mouseover, exists][] Shadowfiend\n",
 },
 [132] = {
-["icon"] = "135939",
 ["name"] = "pi",
+["icon"] = "135939",
 ["body"] = "#showtooltip\n/cast [mod,@player][@mouseover, exists,nodead,help][] Power Infusion\n",
 },
 [136] = {
-["icon"] = "537079",
 ["name"] = "shift",
+["icon"] = "537079",
 ["body"] = "#showtooltip Void Shift\n/cast [@mouseover, exists][] Void Shift\n",
 },
 [129] = {
-["icon"] = "135928",
 ["name"] = "fly",
+["icon"] = "135928",
 ["body"] = "#showtooltip\n/cast [@mouseover,exists,help,nodead][] Levitate\n",
 },
 [133] = {
-["icon"] = "135894",
 ["name"] = "pur",
+["icon"] = "135894",
 ["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,help,nodead][@mouseover,exists,help,nodead][] Purify\n",
 },
 [137] = {
-["icon"] = "458230",
 ["name"] = "sil",
+["icon"] = "458230",
 ["body"] = "#showtooltip Silence\n/cast [@mouseover, exists][] Silence\n",
 },
 [121] = {
-["icon"] = "253400",
 ["name"] = "bar",
+["icon"] = "253400",
 ["body"] = "#showtooltip Power Word: Barrier\n/cast [mod,@cursor][@player] Power Word: Barrier\n",
 },
 [123] = {
-["icon"] = "135940",
 ["name"] = "bub",
+["icon"] = "135940",
 ["body"] = "#showtooltip\n/cast [mod,@player][nomod,@mouseover,exists,help,nodead][] Power Word: Shield\n",
 },
 [125] = {
-["icon"] = "136149",
 ["name"] = "exec",
+["icon"] = "136149",
 ["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm,nodead][@mouseover,exists,harm,nodead][] Shadow Word: Death\n",
 },
 [127] = {
-["icon"] = "642580",
 ["name"] = "Feather",
+["icon"] = "642580",
 ["body"] = "#showtooltip\n/cast [nomod,@player][mod,@cursor] Angelic Feather\n",
 },
 [130] = {
-["icon"] = "135907",
 ["name"] = "heal",
+["icon"] = "135907",
 ["body"] = "#showtooltip\n/cast [mod,@player][@mouseover, exists][] Flash Heal\n",
 },
 [134] = {
-["icon"] = "1386546",
 ["name"] = "rad",
+["icon"] = "1386546",
 ["body"] = "#showtooltip Power Word: Radiance\n/cast [mod,@player][nomod,@mouseover,exists,help,nodead][] Power Word: Radiance\n",
 },
 [138] = {
-["icon"] = "135936",
 ["name"] = "sup",
+["icon"] = "135936",
 ["body"] = "#showtooltip\n/cast [mod,@player][nomod,@mouseover,exists,help,nodead][] Pain Suppression\n",
 },
 },
 },
-["Nolifey - Draenor"] = {
-["backups"] = {
+["Redangel - Draenor"] = {
+["macros"] = {
+[131] = {
+["name"] = "loop",
+["icon"] = "134400",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Chrono Loop\n",
+},
+[135] = {
+["name"] = "sw",
+["icon"] = "1396974",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Sleep Walk\n",
+},
+[122] = {
+["name"] = "cle",
+["icon"] = "4630445",
+["body"] = "#showtooltip\n/cast [nomod, @mouseover, exists][nomod] Expunge\n/cast [mod, @mouseover,exists][mod] Cauterizing Flame\n",
+},
+[124] = {
+["name"] = "db",
+["icon"] = "4622454",
+["body"] = "#showtooltip\n/cast Dream Breath\n",
+},
+[126] = {
+["name"] = "es",
+["icon"] = "134400",
+["body"] = "#showtooltip\n/cast Eternity Surge\n",
+},
+[128] = {
+["name"] = "fly",
+["icon"] = "4622460",
+["body"] = "#showtooltip\n/cast [nomod,@mouseover] Rescue\n/cast [mod,@mouseover] Swoop Up\n",
+},
+[132] = {
+["name"] = "ls",
+["icon"] = "1016245",
+["body"] = "#showtooltip\n/cast [@cursor] Landslide\n",
+},
+[136] = {
+["name"] = "ve",
+["icon"] = "4622471",
+["body"] = "#showtooltip\n/cast [mod,@player][@mouseover,exists,help,nodead][] Verdant Embrace\n",
+},
+[129] = {
+["name"] = "fs",
+["icon"] = "134400",
+["body"] = "#showtooltip\n/cast [nomod,@cursor][mod,@player] Firestorm\n",
+},
+[133] = {
+["name"] = "sb",
+["icon"] = "4622476",
+["body"] = "#showtooltip\n/cast [mod,@player][@mouseover,exists,nodead,help][] Spiritbloom\n",
+},
+[137] = {
+["name"] = "VuhDoDCShieldData",
+["icon"] = "132281",
+["body"] = "P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1VH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+[121] = {
+["name"] = "blo",
+["icon"] = "4622457",
+["body"] = "#showtooltip\n/cast [mod,@player][@mouseover,exists,help,nodead][] Emerald Blossom\n",
+},
+[123] = {
+["name"] = "dash",
+["icon"] = "4622450",
+["body"] = "#showtooltip\n/cast [nomod,@cursor] Deep Breath\n/cast [mod,@cursor] Dream Flight\n",
+},
+[125] = {
+["name"] = "def",
+["icon"] = "1394891",
+["body"] = "#showtooltip\n/cast [nomod] Obsidian Scales\n/cast [mod] Renewing Blaze\n",
+},
+[127] = {
+["name"] = "fire",
+["icon"] = "4622458",
+["body"] = "#showtooltip\n/cast Fire Breath\n",
+},
+[130] = {
+["name"] = "lf",
+["icon"] = "4622464",
+["body"] = "#showtooltip\n/cast [mod, @player][nomod,@mouseover,exists][] Living Flame\n",
+},
+[134] = {
+["name"] = "som",
+["icon"] = "4630412",
+["body"] = "#showtooltip\n/cast [nomod,@mouseover,exists,help,nodead][nomod] Source of Magic\n/cast [mod,@mouseover,exists,help,nodead][mod] Timelessness\n",
+},
+[138] = {
+["name"] = "VuhDoDCShieldNames",
+["icon"] = "132281",
+["body"] = "N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Red[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+},
+},
+["Leafgirl - Silvermoon"] = {
+["macros"] = {
+[131] = {
+["icon"] = "136100",
+["name"] = "root",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Entangling Roots\n",
+},
+[135] = {
+["icon"] = "236216",
+["name"] = "su",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Sunfire\n",
+},
+[122] = {
+["icon"] = "136080",
+["name"] = "cr",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Rebirth\n",
+},
+[124] = {
+["icon"] = "134400",
+["name"] = "cyc",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Cyclone\n",
+},
+[126] = {
+["icon"] = "134400",
+["name"] = "hib",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Hibernate\n",
+},
+[128] = {
+["icon"] = "136048",
+["name"] = "iv",
+["body"] = "#showtooltip\n/cast [mod,@player][@mouseover,exists,nodead,help][] Innervate\n",
+},
+[132] = {
+["icon"] = "132276",
+["name"] = "shift",
+["body"] = "#showtooltip\n/cast [nomod] Bear Form\n/cast [mod] Cat Form\n",
+},
+[136] = {
+["icon"] = "134400",
+["name"] = "vortex",
+["body"] = "#showtooltip\n/cast [mod,@player][@cursor] Ursol's Vortex\n",
+},
+[129] = {
+["icon"] = "136096",
+["name"] = "mo",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Moonfire\n",
+},
+[133] = {
+["icon"] = "132163",
+["name"] = "soot",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,harm][@mouseover,exists,nodead,harm][] Soothe\n",
+},
+[137] = {
+["icon"] = "132281",
+["name"] = "VuhDoDCShieldData",
+["body"] = "P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+[121] = {
+["icon"] = "134400",
+["name"] = "ca",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists][@mouseover,exists,nodead][] Wild Charge\n",
+},
+[123] = {
+["icon"] = "236288",
+["name"] = "cure",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Nature's Cure\n",
+},
+[125] = {
+["icon"] = "134222",
+["name"] = "efl",
+["body"] = "#showtooltip\n/cast [mod,@player][@cursor] Efflorescence\n",
+},
+[127] = {
+["icon"] = "572025",
+["name"] = "iron",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Ironbark\n",
+},
+[130] = {
+["icon"] = "134400",
+["name"] = "og",
+["body"] = "#showtooltip\n/cast [mod,@focus,exists,help][@mouseover,exists,nodead,help][] Overgrowth\n",
+},
+[134] = {
+["icon"] = "1817485",
+["name"] = "speed",
+["body"] = "#showtooltip\n/cast [nomod] Dash\n/cast [mod] Stampeding Roar\n",
+},
+[138] = {
+["icon"] = "132281",
+["name"] = "VuhDoDCShieldNames",
+["body"] = "N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Lea[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+},
+},
+["Nolifey - Silvermoon"] = {
+["macros"] = {
+[121] = {
+["icon"] = "132281",
+["name"] = "VuhDoDCShieldData",
+["body"] = "P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1OH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+[122] = {
+["icon"] = "132281",
+["name"] = "VuhDoDCShieldNames",
+["body"] = "N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Nol[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+},
+},
+["Lovelol - Ravencrest"] = {
+["macros"] = {
+[131] = {
+["name"] = "mark",
+["icon"] = "236188",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Hunter's Mark\n",
+},
+[135] = {
+["name"] = "scare",
+["icon"] = "134400",
+["body"] = "#showtooltip Scare Beast\n/cast [@mouseover,exists][] Scare Beast\n",
+},
+[122] = {
+["name"] = "buf",
+["icon"] = "132242",
+["body"] = "#showtooltip\n/cast [nomod] Aspect of the Cheetah\n/cast [mod] Exhilaration\n",
+},
+[124] = {
+["name"] = "clip",
+["icon"] = "135860",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Wing Clip\n",
+},
+[126] = {
+["name"] = "feign",
+["icon"] = "132293",
+["body"] = "#showtooltip\n/cast [nomod] Feign Death\n/cast [mod] Play Dead\n",
+},
+[128] = {
+["name"] = "ice",
+["icon"] = "135834",
+["body"] = "#showtooltip Freezing Trap\n/cast [mod,@player][@cursor] Freezing Trap\n",
+},
+[132] = {
+["name"] = "mdr",
+["icon"] = "134400",
+["body"] = "#showtooltip [known:Interlope] Interlope;#showtooltip [noknown:Interlope] Misdirection\n/click SmartMisdirect LeftButton 1\n/click SmartMisdirect LeftButton 0\n",
+},
+[136] = {
+["name"] = "tar",
+["icon"] = "576309",
+["body"] = "#showtooltip Tar Trap\n/cast [mod,@player][@cursor] Tar Trap\n",
+},
+[129] = {
+["name"] = "inti",
+["icon"] = "132111",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Intimidation\n",
+},
+[133] = {
+["name"] = "sac",
+["icon"] = "464604",
+["body"] = "#showtooltip Roar of Sacrifice\n/cast [mod:shift,@focus][@mouseover,exists][] Roar of Sacrifice\n",
+},
+[137] = {
+["name"] = "tranq",
+["icon"] = "136020",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus][@mouseover,exists][] Tranquilizing Shot\n",
+},
+[121] = {
+["name"] = "bind",
+["icon"] = "462650",
+["body"] = "#showtooltip Binding Shot\n/cast [mod,@player][@cursor] Binding Shot\n",
+},
+[123] = {
+["name"] = "cam",
+["icon"] = "461113",
+["body"] = "#showtooltip Camouflage\n/cast !Camouflage\n",
+},
+[125] = {
+["name"] = "defs",
+["icon"] = "132199",
+["body"] = "#showtooltip\n/cast [nomod] Aspect of the Turtle\n/cast [mod] Survival of the Fittest\n",
+},
+[127] = {
+["name"] = "fl",
+["icon"] = "135815",
+["body"] = "#showtooltip Flare\n/cast [mod,@player][@cursor] Flare\n",
+},
+[130] = {
+["name"] = "kik",
+["icon"] = "249170",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Counter Shot\n",
+},
+[134] = {
+["name"] = "sca",
+["icon"] = "132153",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus][@mouseover,exists][] Scatter Shot\n",
+},
+[138] = {
+["name"] = "volly",
+["icon"] = "132205",
+["body"] = "#showtooltip\n/use Salvo\n/cast [mod,@player][@cursor] Volley\n",
+},
+},
+},
+["Raingirl - Silvermoon"] = {
+["macros"] = {
+[131] = {
+["name"] = "hot",
+["icon"] = "252995",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,help][@mouseover,nodead,help][] Riptide\n",
+},
+[135] = {
+["name"] = "VuhDoDCShieldData",
+["icon"] = "132281",
+["body"] = "P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1SH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+[122] = {
+["name"] = "bind",
+["icon"] = "136102",
+["body"] = "#showtooltip\n/cast [nomod,@cursor] Earthbind Totem\n/cast [mod,@cursor] Earthgrab Totem\n",
+},
+[124] = {
+["name"] = "cha",
+["icon"] = "136042",
+["body"] = "#showtooltip\n/cast [nomod,@mouseover,exists,help,nodead] Chain Heal\n/cast [mod,@mouseover,exists,help,nodead] Unleash Life\n/cast [nomod,nodead] Chain Heal\n/cast [mod,nodead] Unleash Life\n",
+},
+[126] = {
+["name"] = "fire",
+["icon"] = "135813",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus][@mouseover,nodead,harm][] Flame Shock\n",
+},
+[128] = {
+["name"] = "h1",
+["icon"] = "136044",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,help][@mouseover,nodead,help][] Healing Surge\n",
+},
+[132] = {
+["name"] = "lava",
+["icon"] = "237582",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,harm][@mouseover,nodead,harm][] Lava Burst\n",
+},
+[136] = {
+["name"] = "VuhDoDCShieldNames",
+["icon"] = "132281",
+["body"] = "N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Rai[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]\n",
+},
+[129] = {
+["name"] = "h2",
+["icon"] = "136043",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,help][@mouseover,nodead,help][] Healing Wave\n",
+},
+[133] = {
+["name"] = "rain",
+["icon"] = "136037",
+["body"] = "#showtooltip\n/cast [nomod,@cursor] Healing Rain\n/cast [mod,@cursor] Downpour\n",
+},
+[137] = {
+["name"] = "zap",
+["icon"] = "134400",
+["body"] = "#showtooltip\n/cast [mod,@player][@cursor] Capacitor Totem\n",
+},
+[121] = {
+["name"] = "ahe",
+["icon"] = "132315",
+["body"] = "#showtooltip\n/cast [nomod] Water Shield\n/cast [mod] Lightning Shield\n",
+},
+[123] = {
+["name"] = "bolt",
+["icon"] = "136048",
+["body"] = "#showtooltip\n/cast [@mouseover,nodead,harm][mod:shift,@focus][] Lightning Bolt\n",
+},
+[125] = {
+["name"] = "disp",
+["icon"] = "236288",
+["body"] = "#showtooltip\n/stopcasting\n/cast [mod:shift,@focus,help][@mouseover,nodead,help][] Purify Spirit\n",
+},
+[127] = {
+["name"] = "frost",
+["icon"] = "134400",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,harm][@mouseover,nodead,harm][] Frost Shock\n",
+},
+[130] = {
+["name"] = "hex",
+["icon"] = "132193",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,harm][@mouseover,nodead,harm][] Hex\n",
+},
+[134] = {
+["name"] = "sh",
+["icon"] = "136089",
+["body"] = "#showtooltip\n/cast [mod:shift,@focus,help][@mouseover,nodead,help][] Earth Shield\n",
+},
 },
 },
 },
@@ -136,20 +679,24 @@ MacroToolkitDB = {
 ["Hentaihero - Draenor"] = "profile",
 ["Clawra - Ravencrest"] = "profile",
 ["Hentaihero - Outland"] = "profile",
+["Yhewrgrhn - Draenor"] = "profile",
+["Venetha - Draenor"] = "profile",
+["Ravegirl - Ravencrest"] = "profile",
+["Nolifey - Moonglade"] = "profile",
 ["Fuwu - Silvermoon"] = "profile",
 ["Apoka - Outland"] = "profile",
 ["Bowbie - Ravencrest"] = "profile",
 ["Lifey - Moonglade"] = "profile",
 ["Lifey - Draenor"] = "profile",
-["Nolifey - Moonglade"] = "profile",
-["Missuccubus - Draenor"] = "profile",
-["Yhewrgrhn - Draenor"] = "profile",
-["Venetha - Draenor"] = "profile",
 ["Lifey - Silvermoon"] = "profile",
+["Missuccubus - Draenor"] = "profile",
 ["Demonphile - Draenor"] = "profile",
 ["Nolifey - Draenor"] = "profile",
 ["Wasdasdasd - Draenor"] = "profile",
 ["Apoki - Silvermoon"] = "profile",
+["Leafgi42F6E6 - Ravencrest"] = "profile",
+["Lovelol - Ravencrest"] = "profile",
+["Hun - Ravencrest"] = "profile",
 },
 ["profiles"] = {
 ["profile"] = {

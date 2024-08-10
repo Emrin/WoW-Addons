@@ -1,2206 +1,2206 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/i DEFEND", -- [1]
-		"/i farm pls", -- [2]
-		"/i Report the warrior Salangah", -- [3]
-		"/i he is a bot", -- [4]
-		"/i we need a 3rd base", -- [5]
-		"/i fight at flags", -- [6]
-		"/i how the fuck are the horde so bad", -- [7]
-		"/i so at start u pull nothing and now u pull everything", -- [8]
-		"/i told u to kick that mf way before", -- [9]
-		"/i whos declining", -- [10]
-		"/i fuck you all", -- [11]
-		"/i tunnel", -- [12]
-		"/reload", -- [13]
-		"/i MT", -- [14]
-		"/i myt a lot", -- [15]
-		"/i BET", -- [16]
-		"/i safe", -- [17]
-		"/i BET 2", -- [18]
-		"/i safwe", -- [19]
-		"/m", -- [20]
-	},
-	["ChatHistoryLog"] = {
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2767, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682218,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2768, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682218,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2769, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682219,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2800, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682262,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2808, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682277,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2809, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682277,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2810, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682277,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2811, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682277,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2812, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682278,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2814, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682279,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2815, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682280,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2816, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682280,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2817, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682282,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2818, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682348,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2819, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682352,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Abitmonk-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Abitmonk-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2830, -- [11]
-			"Player-1403-0A9EEF86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Abitmonk|r",
-			[51] = 1707682365,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2832, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682369,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r", -- [1]
-			"Lykkemay-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lykkemay-Draenor", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2835, -- [11]
-			"Player-1403-0A6FEA89", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffLykkemay|r",
-			[51] = 1707682373,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2853, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682331,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2858, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682340,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2861, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682406,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2863, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682407,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2864, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682409,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2865, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682409,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2866, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682409,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2869, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682413,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"LFW |cffffd000|Htrade:Player-1403-0A4657F5:195097:164|h[Blacksmithing]|h|r Maxed out! All Weapons and Armor. 41% inspiring <Fair price> <Free Recrafts>", -- [1]
-			"Raboclap-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Raboclap-Draenor", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2870, -- [11]
-			"Player-1403-0A8D0209", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dRaboclap|r",
-			[51] = 1707682414,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2875, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682425,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2876, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682427,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2882, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682429,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2888, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682383,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Abitmonk-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Abitmonk-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2895, -- [11]
-			"Player-1403-0A9EEF86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Abitmonk|r",
-			[51] = 1707682388,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2902, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682401,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2906, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682401,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2907, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682402,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2910, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682473,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2912, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682473,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r", -- [1]
-			"Lykkemay-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lykkemay-Draenor", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2917, -- [11]
-			"Player-1403-0A6FEA89", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffLykkemay|r",
-			[51] = 1707682479,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2918, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2919, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2920, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682481,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2922, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682487,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2930, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682498,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2931, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682499,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2936, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682443,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2941, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682453,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2949, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682462,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Abitmonk-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Abitmonk-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2954, -- [11]
-			"Player-1403-0A9EEF86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Abitmonk|r",
-			[51] = 1707682526,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2955, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682529,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2963, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682541,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2964, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682541,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2968, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682548,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2971, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2972, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2973, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2978, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682503,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2979, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682504,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2986, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682510,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2988, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682513,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			2994, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682522,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3003, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682593,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3006, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682598,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
-		{
-			"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r", -- [1]
-			"Lykkemay-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lykkemay-Draenor", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			3008, -- [11]
-			"Player-1403-0A6FEA89", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffLykkemay|r",
-			[51] = 1707682604,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3012, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682607,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3013, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682608,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Abitmonk-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Abitmonk-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3020, -- [11]
-			"Player-1403-0A9EEF86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Abitmonk|r",
-			[51] = 1707682617,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3023, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682562,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3024, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682562,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3025, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682562,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3029, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682564,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3034, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682578,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3036, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682580,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3044, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682647,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3046, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682647,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3057, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682663,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3062, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682673,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3068, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682676,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3069, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682677,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
-		{
-			"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k", -- [1]
-			"Lisawowqt-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lisawowqt-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3073, -- [11]
-			"Player-1403-0AA07C3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLisawowqt|r",
-			[51] = 1707682624,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3074, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682628,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3078, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682635,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3079, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682636,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3080, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682636,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
-		{
-			"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r", -- [1]
-			"Lykkemay-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lykkemay-Draenor", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			3083, -- [11]
-			"Player-1403-0A6FEA89", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffffffffLykkemay|r",
-			[51] = 1707682639,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Abitmonk-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Abitmonk-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3084, -- [11]
-			"Player-1403-0A9EEF86", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Abitmonk|r",
-			[51] = 1707682640,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3095, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682707,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3097, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682710,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
-		{
-			"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me", -- [1]
-			"Leviloper-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Leviloper-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3110, -- [11]
-			"Player-1403-0A9A3F98", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLeviloper|r",
-			[51] = 1707682720,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
-		{
-			"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!", -- [1]
-			"Lofog-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Lofog-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3117, -- [11]
-			"Player-1403-0A9EEF8B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aLofog|r",
-			[51] = 1707682728,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
-		{
-			"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info", -- [1]
-			"Regginä-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Regginä-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3128, -- [11]
-			"Player-1403-0AA10B94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aRegginä|r",
-			[51] = 1707682732,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
-		{
-			"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k", -- [1]
-			"Assimove-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Assimove-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3134, -- [11]
-			"Player-1403-0A8F8B07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00ff98Assimove|r",
-			[51] = 1707682738,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
-		{
-			"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me", -- [1]
-			"Drpandaz-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Drpandaz-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3141, -- [11]
-			"Player-1403-0A90E12E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDrpandaz|r",
-			[51] = 1707682685,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
-		{
-			"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M", -- [1]
-			"Diilara-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Diilara-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3144, -- [11]
-			"Player-1403-0A97653B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aDiilara|r",
-			[51] = 1707682689,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beckenangó-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beckenangó-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3156, -- [11]
-			"Player-1403-0A94ACEB", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebBeckenangó|r",
-			[51] = 1707682697,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
-		{
-			"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Yerally-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Yerally-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3170, -- [11]
-			"Player-1403-0AA07C7A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Yerally|r",
-			[51] = 1707682768,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
-		{
-			"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>", -- [1]
-			"Swiftcurves-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftcurves-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3171, -- [11]
-			"Player-1403-0AA07C77", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftcurves|r",
-			[51] = 1707682768,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
-		{
-			"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>", -- [1]
-			"Swiftraids-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Swiftraids-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3172, -- [11]
-			"Player-1403-0A9F4832", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebSwiftraids|r",
-			[51] = 1707682768,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
-		{
-			"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r", -- [1]
-			"Beackenbauer-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Beackenbauer-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3185, -- [11]
-			"Player-1403-0A937AF6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc41e3aBeackenbauer|r",
-			[51] = 1707682780,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
-		{
-			"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >", -- [1]
-			"Linkstars-Draenor", -- [2]
-			"", -- [3]
-			"5. Trade (Services) - City", -- [4]
-			"Linkstars-Draenor", -- [5]
-			"", -- [6]
-			42, -- [7]
-			5, -- [8]
-			"Trade (Services) - City", -- [9]
-			0, -- [10]
-			3187, -- [11]
-			"Player-1403-0A975BBC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3fc7ebLinkstars|r",
-			[51] = 1707682783,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
-	},
+["ConvertKeybindings"] = true,
+["ChatEditHistory"] = {
+"/i DEFEND",
+"/i farm pls",
+"/i Report the warrior Salangah",
+"/i he is a bot",
+"/i we need a 3rd base",
+"/i fight at flags",
+"/i how the fuck are the horde so bad",
+"/i so at start u pull nothing and now u pull everything",
+"/i told u to kick that mf way before",
+"/i whos declining",
+"/i fuck you all",
+"/i tunnel",
+"/reload",
+"/i MT",
+"/i myt a lot",
+"/i BET",
+"/i safe",
+"/i BET 2",
+"/i safwe",
+"/m",
+},
+["ChatHistoryLog"] = {
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2767,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682218,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2768,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682218,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2769,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682219,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2800,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682262,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2808,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682277,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2809,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682277,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2810,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682277,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2811,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682277,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2812,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682278,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2814,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682279,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2815,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682280,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2816,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682280,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2817,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682282,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2818,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682348,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2819,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682352,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Abitmonk-Draenor",
+"",
+"5. Trade (Services) - City",
+"Abitmonk-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2830,
+"Player-1403-0A9EEF86",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Abitmonk|r",
+[51] = 1707682365,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2832,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682369,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r",
+"Lykkemay-Draenor",
+"",
+"2. Trade - City",
+"Lykkemay-Draenor",
+"",
+2,
+2,
+"Trade - City",
+0,
+2835,
+"Player-1403-0A6FEA89",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffffffffLykkemay|r",
+[51] = 1707682373,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2853,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682331,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2858,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682340,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2861,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682406,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2863,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682407,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2864,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682409,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2865,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682409,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2866,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682409,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2869,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682413,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"LFW |cffffd000|Htrade:Player-1403-0A4657F5:195097:164|h[Blacksmithing]|h|r Maxed out! All Weapons and Armor. 41% inspiring <Fair price> <Free Recrafts>",
+"Raboclap-Draenor",
+"",
+"2. Trade - City",
+"Raboclap-Draenor",
+"",
+2,
+2,
+"Trade - City",
+0,
+2870,
+"Player-1403-0A8D0209",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc69b6dRaboclap|r",
+[51] = 1707682414,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2875,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682425,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2876,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682427,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2882,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682429,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2888,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682383,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Abitmonk-Draenor",
+"",
+"5. Trade (Services) - City",
+"Abitmonk-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2895,
+"Player-1403-0A9EEF86",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Abitmonk|r",
+[51] = 1707682388,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2902,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682401,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2906,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682401,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2907,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682402,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2910,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682473,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2912,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682473,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r",
+"Lykkemay-Draenor",
+"",
+"2. Trade - City",
+"Lykkemay-Draenor",
+"",
+2,
+2,
+"Trade - City",
+0,
+2917,
+"Player-1403-0A6FEA89",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffffffffLykkemay|r",
+[51] = 1707682479,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2918,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682481,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2919,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682481,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2920,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682481,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2922,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682487,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2930,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682498,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2931,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682499,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2936,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682443,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2941,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682453,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2949,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682462,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Abitmonk-Draenor",
+"",
+"5. Trade (Services) - City",
+"Abitmonk-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2954,
+"Player-1403-0A9EEF86",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Abitmonk|r",
+[51] = 1707682526,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2955,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682529,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2963,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682541,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2964,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682541,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2968,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682548,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2971,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682553,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2972,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682553,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2973,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682553,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2978,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682503,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2979,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682504,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2986,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682510,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2988,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682513,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+2994,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682522,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3003,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682593,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3006,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682598,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r",
+"Lykkemay-Draenor",
+"",
+"2. Trade - City",
+"Lykkemay-Draenor",
+"",
+2,
+2,
+"Trade - City",
+0,
+3008,
+"Player-1403-0A6FEA89",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffffffffLykkemay|r",
+[51] = 1707682604,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3012,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682607,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3013,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682608,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Abitmonk-Draenor",
+"",
+"5. Trade (Services) - City",
+"Abitmonk-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3020,
+"Player-1403-0A9EEF86",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Abitmonk|r",
+[51] = 1707682617,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3023,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682562,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3024,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682562,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3025,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682562,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3029,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682564,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3034,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682578,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3036,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682580,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3044,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682647,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3046,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682647,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3057,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682663,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3062,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682673,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3068,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682676,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3069,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682677,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"huhu!! |cffffff00|Hachievement:19350:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k>Chance for|cffff8000|Hitem:206448::::::::10:1455:::::::::|h[Fyr'alath the Dreamrender]|h|r >LAST 2 95k<|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC 150k HC LS 230k VIP 800k || 4x+18=420k 4x+16=380k 4x+17=400k || +20=160k 4x+20=590k |cffffff00|Hachievement:14783:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 60]|h|r-|cffffff00|Hachievement:15805:Player-1403-0AA07C3A:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 120k",
+"Lisawowqt-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lisawowqt-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3073,
+"Player-1403-0AA07C3A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLisawowqt|r",
+[51] = 1707682624,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3074,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682628,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3078,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682635,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3079,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682636,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3080,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682636,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"LFW |cffffd000|Htrade:Player-1403-0A6FEA89:195126:197|h[Tailoring]|h|r |cffffd000|Htrade:Player-1403-0A6FEA89:7411:333|h[Enchanting]|h|r Can do |cffa335ee|Hitem:206961::::::::70:258::13:1:3524::::::|h[Enchanted Aspect's Dreaming Crest]|h|r",
+"Lykkemay-Draenor",
+"",
+"2. Trade - City",
+"Lykkemay-Draenor",
+"",
+2,
+2,
+"Trade - City",
+0,
+3083,
+"Player-1403-0A6FEA89",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffffffffLykkemay|r",
+[51] = 1707682639,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Abitmonk-Draenor",
+"",
+"5. Trade (Services) - City",
+"Abitmonk-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3084,
+"Player-1403-0A9EEF86",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Abitmonk|r",
+[51] = 1707682640,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3095,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682707,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3097,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682710,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Privet GP |cffffff00|Hachievement:19331:Player-3691-0A15A307:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|rmythic 9/9<35m>Heroic 9/9<150k> lootshare<250k>VIP<790k>Last 2 BossHeroic<90k>|cff66bbff|Hjournal:1:2519:14|h[Fyrakk the Blazing]|h|r<M+15-28> M+15=90k || M+16=100k||M+18=120k|| M+20=150k 4x20=650 8x20+armorstack=1100 <LVLup> /W Me",
+"Leviloper-Draenor",
+"",
+"5. Trade (Services) - City",
+"Leviloper-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3110,
+"Player-1403-0A9A3F98",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLeviloper|r",
+[51] = 1707682720,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Offering--> |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r 9/9 HC=<130k>, HC LS=<230k>, HC VIP=<800k>, HC Last2 Boss=<90k>|| M+10-->M+27, 4xM+17=<290k>, 4xM+18=<320k>, 4xM+20=<390k>, M+20=<110k>||1-70 LvL,PvP,Mounts. Just GOLD!",
+"Lofog-Draenor",
+"",
+"5. Trade (Services) - City",
+"Lofog-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3117,
+"Player-1403-0A9EEF8B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aLofog|r",
+[51] = 1707682728,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Haiii ! |cffffff00|Hachievement:19331:Player-3391-0CC49652:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r HC 150k LS 230k Vip 800k |cffffff00|Hachievement:19350:Player-1621-0B3C9D43:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last 2 95k || M15-25 || M18=120k || 4m18=420k || M20=160k || 4M20= 590k ||M23=350k || M24=450k || 4m24=1600k || RBG 0-1800 = 4500k /w for info",
+"Regginä-Draenor",
+"",
+"5. Trade (Services) - City",
+"Regginä-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3128,
+"Player-1403-0AA10B94",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aRegginä|r",
+[51] = 1707682732,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hi > |cffffff00|Hachievement:19331:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9HC 150K VIP 800k Unsave 220k|cffa335ee|Hitem:180653::::::::1:1450:::::::::|h[Mythic Keystone]|h|r M+20 150K 4M+18 360K 4x20 540k M+22 230k M+25 500k > 4x23 8x25 |cffffff00|Hachievement:19350:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r 75k Last2 95k |cffffff00|Hachievement:6:Player-1403-0A8F8B07:1:11:15:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 249k |cffffff00|Hachievement:14783:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 60]|h|r>|cffffff00|Hachievement:15805:Player-1403-0A8F8B07:0:0:0:-1:0:0:0:0|h[Level 70]|h|r 99k",
+"Assimove-Draenor",
+"",
+"5. Trade (Services) - City",
+"Assimove-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3134,
+"Player-1403-0A8F8B07",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff00ff98Assimove|r",
+[51] = 1707682738,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"HEY! WTS |cffffff00|Hachievement:19350:Player-1403-0A90E12E:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC >> 75k << Every 15 mins! Guaranteed MountSkin |cffa335ee|Hitem:210537::::::::10:250:::::::::|h[Renewed Proto-Drake: Embodiment of Shadowflame]|h|r and Chance for 476+ilvl item & |cffff8000|Hitem:206448::::::::10:250:::::::::|h[Fyr'alath the Dreamrender]|h|r & |cffa335ee|Hitem:210947::::::::10:250:::::::::|h[Flame-Warped Curio]|h|r Last2HC 95k /w me",
+"Drpandaz-Draenor",
+"",
+"5. Trade (Services) - City",
+"Drpandaz-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3141,
+"Player-1403-0A90E12E",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDrpandaz|r",
+[51] = 1707682685,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"hello! <|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|rHM 9/9 130k, Hm Unsave 210k, HM Vip 700k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r<80k, Last 2 90k><M+ 0-30><M+16 80k, M+17 90k, M+18 100k, M+20 150k,M+25 380k. M+26 550k><4xM24-25, 8xM16, 8xM17, 4xM20, 8xM20> /W M",
+"Diilara-Draenor",
+"",
+"5. Trade (Services) - City",
+"Diilara-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3144,
+"Player-1403-0A97653B",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aDiilara|r",
+[51] = 1707682689,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::1:1449:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A94ACEB:1:11:21:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A94ACEB:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beckenangó-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beckenangó-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3156,
+"Player-1403-0A94ACEB",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebBeckenangó|r",
+[51] = 1707682697,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL|cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Yerally-Draenor",
+"",
+"5. Trade (Services) - City",
+"Yerally-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3170,
+"Player-1403-0AA07C7A",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cfffff468Yerally|r",
+[51] = 1707682768,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! HM FULL |cff66bbff|Hjournal:0:1207:14|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r <70k> <M+ Keys> <Fast Leveling 1-70>",
+"Swiftcurves-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftcurves-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3171,
+"Player-1403-0AA07C77",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftcurves|r",
+[51] = 1707682768,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL |cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k>|cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <75k> <M+ Keys >< Leveling 1-70>",
+"Swiftraids-Draenor",
+"",
+"5. Trade (Services) - City",
+"Swiftraids-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3172,
+"Player-1403-0A9F4832",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebSwiftraids|r",
+[51] = 1707682768,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey! |cffffff00|Hachievement:19331:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Amirdrassil, the Dream's Hope]|h|r9/9 HC 150K HCLS 230K VIP HC 800K |cffffff00|Hachievement:19350:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r HC 75K >Last 2 HC 95K |||cffa335ee|Hitem:180653::::::::10:1455:::::::::|h[Mythic Keystone]|h|r M15-28 InTime || 20=150K 18=110k 4M18=400K 4M20=560K M23 250K M24 320K M25 500K |cffffff00|Hachievement:6:Player-1403-0A937AF6:1:12:1:23:4294967295:4294967295:4294967295:4294967295|h[Level 10]|h|r-|cffffff00|Hachievement:15805:Player-1403-0A937AF6:0:0:0:-1:0:0:0:0|h[Level 70]|h|r",
+"Beackenbauer-Draenor",
+"",
+"5. Trade (Services) - City",
+"Beackenbauer-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3185,
+"Player-1403-0A937AF6",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cffc41e3aBeackenbauer|r",
+[51] = 1707682780,
+[50] = "CHAT_MSG_CHANNEL",
+},
+{
+"Hey!  HM FULL|cff66bbff|Hjournal:0:1207:15|h[Amirdrassil, the Dream's Hope]|h|r <140k>  Last2 <90k> |cffffff00|Hachievement:19350:Player-1305-0C888896:0:0:0:0:0:0:0:0|h[Ahead of the Curve: Fyrakk the Blazing]|h|r  <70k> <M+ Keys > < Leveling 1-70 >",
+"Linkstars-Draenor",
+"",
+"5. Trade (Services) - City",
+"Linkstars-Draenor",
+"",
+42,
+5,
+"Trade (Services) - City",
+0,
+3187,
+"Player-1403-0A975BBC",
+0,
+false,
+false,
+false,
+true,
+[52] = "|cff3fc7ebLinkstars|r",
+[51] = 1707682783,
+[50] = "CHAT_MSG_CHANNEL",
+},
+},
 }

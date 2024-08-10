@@ -1395,6 +1395,8 @@ local default_global_data = {
 		encounter_journal_cache = {}, --store a dump of the encounter journal
 		installed_skins_cache = {},
 
+		auto_change_to_standard = true,
+
 		debug_options_panel = {
 			scaletable = {scale = 1},
 			position = {},
@@ -1918,7 +1920,7 @@ function Details:ExportCurrentProfile()
 	local playerData = {}
 	--data saved for the account
 	local defaultGlobalData = Details.default_global_data
-	local globaData = {}
+	local globaData = {} --typo: 'globalData' was intended, cannot be fixed due to export strings compatibility
 
 	--fill player and global data tables
 	for key, _ in pairs(defaultPlayerData) do

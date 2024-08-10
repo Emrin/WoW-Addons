@@ -15,16 +15,15 @@ local CreateFrame = CreateFrame
 local InCombatLockdown = InCombatLockdown
 local IsAltKeyDown = IsAltKeyDown
 local IsControlKeyDown = IsControlKeyDown
-local GetMouseFocus = GetMouseFocus
 local UIParent = UIParent
 
 local EditBox_HighlightText = EditBox_HighlightText
 local EditBox_ClearFocus = EditBox_ClearFocus
 
-local EnableAddOn = (C_AddOns and C_AddOns.EnableAddOn) or EnableAddOn
-local GetAddOnInfo = (C_AddOns and C_AddOns.GetAddOnInfo) or GetAddOnInfo
-local IsAddOnLoaded = (C_AddOns and C_AddOns.IsAddOnLoaded) or IsAddOnLoaded
-local LoadAddOn = (C_AddOns and C_AddOns.LoadAddOn) or LoadAddOn
+local EnableAddOn = C_AddOns.EnableAddOn
+local GetAddOnInfo = C_AddOns.GetAddOnInfo
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded
+local LoadAddOn = C_AddOns.LoadAddOn
 
 -- GLOBALS: ElvUIMoverNudgeWindow, ElvUIMoverPopupWindow, ElvUIMoverPopupWindowDropDown
 
@@ -91,7 +90,10 @@ function E:ToggleMoveMode(which)
 		end
 
 		ElvUIMoverPopupWindow:Show()
-		_G.UIDropDownMenu_SetSelectedValue(ElvUIMoverPopupWindowDropDown, strupper(which))
+
+		if not E.Retail then
+			_G.UIDropDownMenu_SetSelectedValue(ElvUIMoverPopupWindowDropDown, strupper(which))
+		end
 
 		if IsAddOnLoaded('ElvUI_Options') then
 			E:Config_CloseWindow()
@@ -198,18 +200,43 @@ function E:ConfigMode_OnClick()
 	E:ToggleMoveMode(self.value)
 end
 
-function E:ConfigMode_Initialize()
-	local info = _G.UIDropDownMenu_CreateInfo()
-	info.func = E.ConfigMode_OnClick
-
-	for _, configMode in ipairs(E.ConfigModeLayouts) do
-		info.text = E.ConfigModeLocalizedStrings[configMode]
-		info.value = configMode
-		_G.UIDropDownMenu_AddButton(info)
+do
+	local selected = 'ALL'
+	local function IsSelected(restrictEnum)
+		return selected == restrictEnum
 	end
 
-	local dd = ElvUIMoverPopupWindowDropDown
-	_G.UIDropDownMenu_SetSelectedValue(dd, dd.selectedValue or 'ALL')
+	local function SetSelected(restrictEnum)
+		E:ToggleMoveMode(restrictEnum)
+		selected = restrictEnum
+	end
+
+	function E:ConfigMode_Initialize(root)
+		if E.Retail then
+			root:SetTag('ELVUI_MOVER_LAYOUT')
+
+			for _, configMode in ipairs(E.ConfigModeLayouts) do
+				root:CreateRadio(E.ConfigModeLocalizedStrings[configMode], IsSelected, SetSelected, configMode)
+			end
+
+			--[[if self.menu then -- 11.0 this doesnt work...
+				self.menu:SetFrameStrata('DIALOG')
+				self.menu:SetFrameLevel(1200)
+			end]]
+		else
+			local info = _G.UIDropDownMenu_CreateInfo()
+			info.func = E.ConfigMode_OnClick
+
+			for _, configMode in ipairs(E.ConfigModeLayouts) do
+				info.text = E.ConfigModeLocalizedStrings[configMode]
+				info.value = configMode
+				_G.UIDropDownMenu_AddButton(info)
+			end
+
+			local dd = ElvUIMoverPopupWindowDropDown
+			_G.UIDropDownMenu_SetSelectedValue(dd, dd.selectedValue or 'ALL')
+		end
+	end
 end
 
 function E:NudgeMover(nudgeX, nudgeY)
@@ -251,11 +278,11 @@ function E:CreateMoverPopup()
 	local r, g, b = unpack(E.media.rgbvaluecolor)
 
 	local f = CreateFrame('Frame', 'ElvUIMoverPopupWindow', UIParent)
-	f:SetFrameStrata('FULLSCREEN_DIALOG')
+	f:SetFrameStrata('DIALOG')
+	f:SetFrameLevel(1000)
 	f:SetToplevel(true)
 	f:EnableMouse(true)
 	f:SetMovable(true)
-	f:SetFrameLevel(200)
 	f:SetClampedToScreen(true)
 	f:Size(370, 190)
 	f:SetTemplate('Transparent')
@@ -375,16 +402,22 @@ function E:CreateMoverPopup()
 		end
 	end)
 
-	local dropDown = CreateFrame('Frame', f:GetName()..'DropDown', f, 'UIDropDownMenuTemplate')
-	dropDown:Point('BOTTOMRIGHT', lock, 'TOPRIGHT', 8, -5)
-	S:HandleDropDownBox(dropDown, 165)
+	local dropDown = CreateFrame(E.Retail and 'DropdownButton' or 'Frame', f:GetName()..'DropDown', f, E.Retail and 'WowStyle1DropdownTemplate' or 'UIDropDownMenuTemplate')
+	dropDown:Point('BOTTOMRIGHT', lock, 'TOPRIGHT', 2, 0)
+	S:HandleDropDownBox(dropDown, 160)
+
 	dropDown.text = dropDown:CreateFontString(nil, 'OVERLAY', 'GameFontNormal')
 	dropDown.text:Point('RIGHT', dropDown.backdrop, 'LEFT', -2, 0)
 	dropDown.text:SetText(L["Config Mode:"])
 	dropDown.text:FontTemplate(nil, 12, 'SHADOW')
+
 	f.dropDown = dropDown
 
-	_G.UIDropDownMenu_Initialize(dropDown, E.ConfigMode_Initialize)
+	if E.Retail then
+		dropDown:SetupMenu(E.ConfigMode_Initialize)
+	else
+		_G.UIDropDownMenu_Initialize(dropDown, E.ConfigMode_Initialize)
+	end
 
 	local nudgeFrame = CreateFrame('Frame', 'ElvUIMoverNudgeWindow', E.UIParent)
 	nudgeFrame:SetFrameStrata('DIALOG')
@@ -712,7 +745,7 @@ function E:Config_SearchFocusLost()
 end
 
 function E:Config_SearchOnEvent()
-	local frame = self:HasFocus() and GetMouseFocus()
+	local frame = self:HasFocus() and E:GetMouseFocus()
 	if frame and (frame ~= self and frame ~= self.clearButton) then
 		EditBox_ClearFocus(self)
 	end

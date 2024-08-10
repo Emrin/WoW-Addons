@@ -1,19 +1,19 @@
 
 MDTGuideDB = {
-["route"] = {
-["path"] = "",
-["kills"] = {
-},
-},
 ["options"] = {
-["animate"] = true,
-["zoomBorder"] = 20,
 ["route"] = false,
+["zoomBorder"] = 20,
+["version"] = 2,
 ["zoomMax"] = 1,
 ["widthSide"] = 200,
 ["zoomMin"] = 1,
 ["height"] = 200,
-["version"] = 2,
+["animate"] = true,
+},
+["route"] = {
+["kills"] = {
+},
+["path"] = "",
 },
 ["active"] = false,
 }

@@ -1,4 +1,4 @@
-Get [VuhDo release v3.167](https://www.curseforge.com/wow/addons/vuhdo/download/5383139) now with support for Dragonflight 10.2.7!
+Get [VuhDo release v3.171](https://www.curseforge.com/wow/addons/vuhdo/download/5560050) now with support for The War Within pre-patch 11.0.0!
 
 To get started read the updated [guide over at Icy-Veins](https://www.icy-veins.com/forums/topic/11805-vuhdo-a-comprehensive-guide/).
 

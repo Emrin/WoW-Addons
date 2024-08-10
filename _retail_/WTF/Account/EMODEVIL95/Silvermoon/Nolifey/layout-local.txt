@@ -1,4 +1,11 @@
 Version: 1
+Frame: RXPFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: 35
+W: 235
+H: 125
 Frame: AAP_QuestFrame
 FrameLevel: 1
 Anchor: TOP
@@ -20,3 +27,10 @@ X: 0
 Y: 0
 W: 388
 H: 251
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: BOTTOM
+X: -4
+Y: 143
+W: 128
+H: 64

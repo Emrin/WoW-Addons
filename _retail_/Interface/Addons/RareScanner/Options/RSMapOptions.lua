@@ -698,6 +698,26 @@ function RSMapOptions.GetMapOptions()
 							width = "full",
 						},
 					}
+				},
+				guidance = {
+					type = "group",
+					order = 11,
+					name = AL["MAP_GUIDE"],
+					handler = RareScanner,
+					desc = AL["MAP_GUIDE_DESC"],
+					args = {
+						support = {
+							order = 0,
+							type = "toggle",
+							name = AL["MAP_GUIDE_AUTOMATIC"],
+							desc = AL["MAP_GUIDE_AUTOMATIC_DESC"],
+							get = function() return RSConfigDB.IsShowingAutoGuidanceIcons() end,
+							set = function(_, value)
+								RSConfigDB.SetShowingAutoGuidanceIcons(value)
+							end,
+							width = "full",
+						},
+					}
 				}
 			}
 		}

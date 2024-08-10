@@ -31,20 +31,20 @@ Gladius2DB = {
 		["Clawra - Ravencrest"] = "Clawra - Ravencrest",
 		["Hentaihero - Outland"] = "Hentaihero - Outland",
 		["Apoki - Silvermoon"] = "Apoki - Silvermoon",
-		["Nolifey - Moonglade"] = "Nolifey - Moonglade",
+		["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
 		["Fuwu - Silvermoon"] = "Fuwu - Silvermoon",
 		["Apoka - Outland"] = "Arena",
-		["Bowbie - Ravencrest"] = "Bowbie - Ravencrest",
-		["Wasdasdasd - Draenor"] = "Wasdasdasd - Draenor",
-		["Lifey - Draenor"] = "Lifey - Draenor",
-		["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
-		["Missuccubus - Draenor"] = "Missuccubus - Draenor",
-		["Apokalol - Outland"] = "Apokalol - Outland",
-		["Demonphile - Draenor"] = "Demonphile - Draenor",
-		["Apoka - Stormscale"] = "Apoka - Stormscale",
-		["Nolifey - Draenor"] = "Nolifey - Draenor",
+		["Nolifey - Moonglade"] = "Nolifey - Moonglade",
 		["Venetha - Draenor"] = "Venetha - Draenor",
-		["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
+		["Lifey - Draenor"] = "Lifey - Draenor",
+		["Nolifey - Draenor"] = "Nolifey - Draenor",
+		["Missuccubus - Draenor"] = "Missuccubus - Draenor",
+		["Apoka - Stormscale"] = "Apoka - Stormscale",
+		["Demonphile - Draenor"] = "Demonphile - Draenor",
+		["Apokalol - Outland"] = "Apokalol - Outland",
+		["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
+		["Wasdasdasd - Draenor"] = "Wasdasdasd - Draenor",
+		["Bowbie - Ravencrest"] = "Bowbie - Ravencrest",
 		["Vanilia - Outland"] = "Crysta",
 	},
 	["profiles"] = {
@@ -57,13 +57,13 @@ Gladius2DB = {
 				["TargetBar Left Text"] = {
 					["text"] = "",
 				},
-				["TargetBar Right Text"] = {
+				["HealthBar Left Text"] = {
 					["text"] = "",
 				},
 				["HealthBar Right Text"] = {
 					["text"] = "",
 				},
-				["HealthBar Left Text"] = {
+				["TargetBar Right Text"] = {
 					["text"] = "",
 				},
 			},
@@ -78,26 +78,26 @@ Gladius2DB = {
 			["dispellAdjustSize"] = false,
 			["trinketAdjustSize"] = false,
 			["castBarAdjustWidth"] = false,
-			["dispellGridStyleIcon"] = true,
+			["y"] = {
+				["arena1"] = 591.039986789227,
+			},
 			["trinketGridStyleIcon"] = true,
 			["castBarHeight"] = 20,
 			["classIconGloss"] = false,
-			["highlightInset"] = true,
+			["tagsVersion"] = 4,
 			["timerOmniCC"] = true,
 			["targetBarAdjustWidth"] = false,
 			["aurasDebuffsMax"] = 17,
 			["aurasBuffsSpacingY"] = 4,
-			["y"] = {
-				["arena1"] = 591.039986789227,
-			},
+			["dispellGridStyleIcon"] = true,
 			["x"] = {
 				["arena1"] = 923.199276239888,
 			},
-			["bottomMargin"] = 84,
-			["healthBarTexture"] = "Blizzard Raid Bar",
+			["healthBarHeight"] = 40,
+			["targetBarAttachTo"] = "Dispel",
 			["healthBarAdjustWidth"] = false,
 			["trinketCooldown"] = false,
-			["targetBarAttachTo"] = "Dispel",
+			["bottomMargin"] = 84,
 			["aurasBuffsWidth"] = 18,
 			["aurasBuffsSpacingX"] = 1,
 			["powerBarTexture"] = "Details Flat",
@@ -107,24 +107,18 @@ Gladius2DB = {
 			["castBarTexture"] = "Details Flat",
 			["aurasDebuffsPerColumn"] = 17,
 			["aurasBuffsHeight"] = 18,
-			["classIconShowSpec"] = true,
-			["announcements"] = {
-				["dest"] = "say",
-				["dispell"] = true,
-			},
-			["targetBarOffsetX"] = 11,
-			["targetBarIcon"] = false,
-			["dispellSize"] = 41,
-			["aurasDebuffs"] = true,
-			["castBarBackgroundColor"] = {
+			["aurasDebuffsSpacingY"] = 4,
+			["dispellFaction"] = false,
+			["backgroundColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
 			},
-			["classIconCooldownReverse"] = true,
+			["targetBarIcon"] = false,
+			["aurasBuffsPerColumn"] = 17,
+			["castBarTextureUninterruptible"] = "Details Flat",
+			["targetBarOffsetX"] = 11,
+			["dispellSize"] = 41,
 			["targetBarHeight"] = 40,
-			["auraVersion"] = 1,
+			["aurasDebuffsSpacingX"] = 1,
 			["targetBarOffsetY"] = -11,
 			["tags"] = {
 				["maxhealth"] = {
@@ -187,42 +181,48 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
-			["aurasDebuffsSpacingX"] = 1,
-			["castBarTextureUninterruptible"] = "Details Flat",
-			["aurasBuffsPerColumn"] = 17,
-			["backgroundColor"] = {
+			["auraVersion"] = 1,
+			["aurasDebuffs"] = true,
+			["classIconCooldownReverse"] = true,
+			["castBarBackgroundColor"] = {
 				["a"] = 1,
+				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
-			["dispellFaction"] = false,
-			["aurasDebuffsSpacingY"] = 4,
+			["announcements"] = {
+				["dest"] = "say",
+				["dispell"] = true,
+			},
+			["classIconShowSpec"] = true,
 			["classIconCooldown"] = true,
 			["classIconCrop"] = true,
-			["healthBarHeight"] = 40,
-			["tagsVersion"] = 4,
+			["healthBarTexture"] = "Blizzard Raid Bar",
+			["highlightInset"] = true,
 			["healthBarWidth"] = 253,
 			["barWidth"] = 200,
 		},
 		["Nolifey - Ravencrest"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 543.4665322502369,
-			},
 			["x"] = {
 				["arena1"] = 1109.866594342384,
+			},
+			["y"] = {
+				["arena1"] = 543.4665322502369,
 			},
 		},
 		["MAGE"] = {
@@ -287,48 +287,48 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 		},
 		["Bloodlustguy - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1198.39967187641,
-			},
 			["y"] = {
 				["arena1"] = 538.6665971040675,
+			},
+			["x"] = {
+				["arena1"] = 1198.39967187641,
 			},
 		},
 		["Chocosham - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 497.0666274865434,
-			},
 			["x"] = {
 				["arena1"] = 1172.266467388457,
+			},
+			["y"] = {
+				["arena1"] = 497.0666274865434,
 			},
 		},
 		["Arielol - Outland"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 420.2666625020211,
-			},
 			["x"] = {
 				["arena1"] = 1035.200215787205,
+			},
+			["y"] = {
+				["arena1"] = 420.2666625020211,
 			},
 		},
 		["Pixiel - Draenor"] = {
@@ -336,29 +336,29 @@ Gladius2DB = {
 				["arena1"] = 567.4665660540195,
 			},
 			["tagsVersion"] = 4,
+			["auraVersion"] = 1,
 			["x"] = {
 				["arena1"] = 1063.999860179414,
 			},
-			["auraVersion"] = 1,
 		},
 		["Leafgirl - Silvermoon"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 380.2666177884348,
-			},
 			["x"] = {
 				["arena1"] = 1054.933621960176,
+			},
+			["y"] = {
+				["arena1"] = 380.2666177884348,
 			},
 		},
 		["Eucleius - Outland"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 384.5332254228633,
-			},
 			["x"] = {
 				["arena1"] = 974.4002676134769,
+			},
+			["y"] = {
+				["arena1"] = 384.5332254228633,
 			},
 		},
 		["Aclipt - Outland"] = {
@@ -429,17 +429,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 			},
 			["auraVersion"] = 1,
@@ -448,11 +448,11 @@ Gladius2DB = {
 		["Ravegirl - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1183.466352884047,
-			},
 			["y"] = {
 				["arena1"] = 449.599813782901,
+			},
+			["x"] = {
+				["arena1"] = 1183.466352884047,
 			},
 		},
 		["Pokipoki - Draenor"] = {
@@ -462,21 +462,21 @@ Gladius2DB = {
 		["Apoka - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 472.5333303031293,
-			},
 			["x"] = {
 				["arena1"] = 1189.865922540936,
+			},
+			["y"] = {
+				["arena1"] = 472.5333303031293,
 			},
 		},
 		["Uwultimate - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 272.5332694946046,
-			},
 			["x"] = {
 				["arena1"] = 1280.000519382083,
+			},
+			["y"] = {
+				["arena1"] = 272.5332694946046,
 			},
 		},
 		["Nolifey - Outland"] = {
@@ -486,11 +486,11 @@ Gladius2DB = {
 		["Yubiyubi - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 542.933068680748,
-			},
 			["x"] = {
 				["arena1"] = 1214.399672710875,
+			},
+			["y"] = {
+				["arena1"] = 542.933068680748,
 			},
 		},
 		["Taizaii - Doomhammer"] = {
@@ -498,29 +498,29 @@ Gladius2DB = {
 				["arena1"] = 530.1332332333623,
 			},
 			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
 			["x"] = {
 				["arena1"] = 1167.46658239291,
 			},
+			["auraVersion"] = 1,
 		},
 		["Yeetalot - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 550.9331041416226,
-			},
 			["x"] = {
 				["arena1"] = 1151.999230472386,
+			},
+			["y"] = {
+				["arena1"] = 550.9331041416226,
 			},
 		},
 		["Holiloli - Silvermoon"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1133.333132024593,
-			},
 			["y"] = {
 				["arena1"] = 554.6666304906175,
+			},
+			["x"] = {
+				["arena1"] = 1133.333132024593,
 			},
 		},
 		["Apoka - Tarren Mill"] = {
@@ -532,10 +532,10 @@ Gladius2DB = {
 				["arena1"] = 503.9998342290455,
 			},
 			["tagsVersion"] = 4,
+			["auraVersion"] = 1,
 			["x"] = {
 				["arena1"] = 1146.666581277124,
 			},
-			["auraVersion"] = 1,
 		},
 		["Crysta"] = {
 			["aurasBuffsMax"] = 17,
@@ -638,17 +638,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 			["aurasDebuffsSpacingX"] = 1,
@@ -689,44 +689,44 @@ Gladius2DB = {
 				["TargetBar Left Text"] = {
 					["text"] = "",
 				},
-				["HealthBar Left Text"] = {
+				["TargetBar Right Text"] = {
 					["text"] = "",
 				},
 				["HealthBar Right Text"] = {
 					["text"] = "",
 				},
-				["TargetBar Right Text"] = {
+				["HealthBar Left Text"] = {
 					["text"] = "",
 				},
 			},
-			["tagsVersion"] = 4,
-			["aurasDebuffsHideTimer"] = false,
+			["highlightInset"] = true,
+			["aurasBuffsGrow"] = "UPRIGHT",
 			["dispellSize"] = 25,
-			["castTextSize"] = 16,
-			["aurasDebuffs"] = true,
-			["dispellOffsetX"] = 100,
+			["aurasDebuffsSpacingY"] = 4,
+			["aurasBuffsTrackerCooldown"] = false,
+			["dispellGridStyleIcon"] = true,
 			["healthBarTexture"] = "Details Flat",
 			["auraVersion"] = 1,
-			["castTimeText"] = false,
-			["classIconCooldownReverse"] = true,
 			["aurasDebuffsTrackerCooldown"] = false,
+			["classIconCooldownReverse"] = true,
+			["castTimeText"] = false,
 			["castBarOffsetX"] = -43,
-			["dispellGridStyleIcon"] = true,
-			["aurasBuffsTrackerCooldown"] = false,
-			["aurasDebuffsSpacingY"] = 4,
-			["aurasBuffsGrow"] = "UPRIGHT",
-			["highlightInset"] = true,
+			["dispellOffsetX"] = 100,
+			["aurasDebuffs"] = true,
+			["castTextSize"] = 16,
+			["aurasDebuffsHideTimer"] = false,
+			["tagsVersion"] = 4,
 			["aurasBuffsAnchor"] = "BOTTOMLEFT",
 			["barWidth"] = 314,
 		},
 		["Ariellol - Outland"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 982.9328969484704,
-			},
 			["y"] = {
 				["arena1"] = 636.266558905445,
+			},
+			["x"] = {
+				["arena1"] = 982.9328969484704,
 			},
 		},
 		["Cutetroll - Draenor"] = {
@@ -797,17 +797,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 			},
 			["auraVersion"] = 1,
@@ -816,11 +816,11 @@ Gladius2DB = {
 		["Attractor - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1125.33302172185,
-			},
 			["y"] = {
 				["arena1"] = 587.839791548257,
+			},
+			["x"] = {
+				["arena1"] = 1125.33302172185,
 			},
 		},
 		["Unchill - Draenor"] = {
@@ -855,19 +855,19 @@ Gladius2DB = {
 			["x"] = {
 				["arena1"] = 895.7302299673902,
 			},
-			["classIconGloss"] = false,
-			["targetBarOffsetX"] = 96,
-			["drTrackerMargin"] = 1,
+			["healthBarTexture"] = "Details Flat",
 			["castBarBackgroundColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
+			["trinketCooldownReverse"] = true,
+			["targetBarOffsetX"] = 96,
 			["dispellGridStyleIcon"] = true,
 			["targetBarOffsetY"] = -10,
 			["dispellGloss"] = false,
-			["RacialGloss"] = false,
+			["auraVersion"] = 1,
 			["globalFont"] = "Expressway",
 			["classIconAdjustSize"] = true,
 			["castBarTextureUninterruptible"] = "PlaterFocus",
@@ -877,111 +877,111 @@ Gladius2DB = {
 			["classIconGlossColor"] = {
 				["a"] = 0.4000000357627869,
 			},
-			["auraVersion"] = 1,
+			["RacialGloss"] = false,
 			["dispellCooldownReverse"] = true,
 			["globalFontSize"] = 16,
 			["classIconCrop"] = true,
-			["trinketCooldownReverse"] = true,
+			["drTrackerMargin"] = 1,
 			["tagsVersion"] = 4,
-			["healthBarTexture"] = "Details Flat",
+			["classIconGloss"] = false,
 			["barWidth"] = 250,
 		},
 		["Lifey - Silvermoon"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1140.266595927868,
-			},
 			["y"] = {
 				["arena1"] = 534.3999627669618,
+			},
+			["x"] = {
+				["arena1"] = 1140.266595927868,
 			},
 		},
 		["Trax - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Nolifey - Silvermoon"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
+		["Raingirl - Silvermoon"] = {
 			["y"] = {
-				["arena1"] = 532.2665642181964,
+				["arena1"] = 537.5999303817698,
 			},
-			["x"] = {
-				["arena1"] = 1190.399931875858,
-			},
-		},
-		["Hentaihero - Outland"] = {
-			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 208.5334225608476,
-			},
-			["y"] = {
-				["arena1"] = 430.3997376332191,
-			},
-		},
-		["Clawra - Ravencrest"] = {
 			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 494.3999281287142,
-			},
 			["x"] = {
-				["arena1"] = 1141.333262650165,
+				["arena1"] = 1185.066468056029,
 			},
 		},
 		["Apoki - Silvermoon"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 486.9333261768006,
-			},
 			["x"] = {
 				["arena1"] = 1156.799930123481,
 			},
+			["y"] = {
+				["arena1"] = 486.9333261768006,
+			},
 		},
-		["Yhewrgrhn - Draenor"] = {
+		["Clawra - Ravencrest"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 			["x"] = {
-				["arena1"] = 1122.666595009956,
+				["arena1"] = 1141.333262650165,
 			},
 			["y"] = {
-				["arena1"] = 485.3333260933541,
+				["arena1"] = 494.3999281287142,
 			},
 		},
-		["Venetha - Draenor"] = {
-			["y"] = {
-				["arena1"] = 511.9999290466258,
-			},
-			["tagsVersion"] = 4,
+		["Hentaihero - Outland"] = {
 			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 430.3997376332191,
+			},
 			["x"] = {
-				["arena1"] = 1167.466467138118,
+				["arena1"] = 208.5334225608476,
+			},
+		},
+		["Wasdasdasd - Draenor"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["x"] = {
+				["arena1"] = 1183.466467972583,
+			},
+			["y"] = {
+				["arena1"] = 365.3333198348664,
+			},
+		},
+		["Apokalol - Outland"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 497.5998088458182,
+			},
+			["x"] = {
+				["arena1"] = 1213.86707566418,
 			},
 		},
 		["Demonphile - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Nolifey - Moonglade"] = {
+		["Nolifey - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 887.4666478474901,
-			},
 			["y"] = {
-				["arena1"] = 383.9999549229906,
+				["arena1"] = 552.5332970460222,
+			},
+			["x"] = {
+				["arena1"] = 1196.799671792964,
 			},
 		},
 		["Fuwu - Silvermoon"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 546.1331990357867,
-			},
 			["x"] = {
 				["arena1"] = 1006.400329425851,
+			},
+			["y"] = {
+				["arena1"] = 546.1331990357867,
 			},
 		},
 		["Apoka - Outland"] = {
@@ -1048,28 +1048,28 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 		},
-		["Bowbie - Ravencrest"] = {
+		["Nolifey - Moonglade"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1151.466596511993,
-			},
 			["y"] = {
-				["arena1"] = 499.7332617402026,
+				["arena1"] = 383.9999549229906,
+			},
+			["x"] = {
+				["arena1"] = 887.4666478474901,
 			},
 		},
 		["Crystalol - Draenor"] = {
@@ -1081,10 +1081,10 @@ Gladius2DB = {
 				["arena1"] = 561.0665657202335,
 			},
 			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
 			["x"] = {
 				["arena1"] = 1162.13326373497,
 			},
+			["auraVersion"] = 1,
 		},
 		["PRIEST"] = {
 			["tags"] = {
@@ -1148,17 +1148,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 		},
@@ -1166,27 +1166,55 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Nolifey - Draenor"] = {
+		["Bowbie - Ravencrest"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1196.799671792964,
-			},
 			["y"] = {
-				["arena1"] = 552.5332970460222,
+				["arena1"] = 499.7332617402026,
+			},
+			["x"] = {
+				["arena1"] = 1151.466596511993,
 			},
 		},
 		["Default"] = {
 			["aurasBuffsMax"] = 5,
+			["castBarWidth"] = 247,
+			["castBarOffsetY"] = -1,
+			["powerBarBackgroundColor"] = {
+				["a"] = 1,
+				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
+			},
 			["modules"] = {
 				["Dispel"] = false,
 				["Racial"] = false,
 				["PowerBar"] = false,
 				["Auras"] = true,
 			},
+			["dispellGloss"] = false,
+			["timerSoonFontSize"] = 12,
+			["locked"] = true,
+			["backgroundColor"] = {
+				["a"] = 1,
+			},
 			["castBarHeight"] = 30,
+			["classIconGloss"] = false,
+			["trinketSize"] = 46,
+			["aurasDebuffsMax"] = 5,
+			["y"] = {
+				["arena1"] = 382.3132020183839,
+			},
+			["x"] = {
+				["arena1"] = 904.79768064979,
+			},
+			["bottomMargin"] = 33,
 			["aurasBuffsRelativePoint"] = "TOPRIGHT",
+			["trinketIconCrop"] = true,
+			["trinketGloss"] = false,
 			["timerMinutesFontSize"] = 12,
+			["aurasBuffsHeight"] = 30,
+			["timerSecondsFontSize"] = 12,
 			["tags"] = {
 				["maxhealth"] = {
 					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nend",
@@ -1248,120 +1276,92 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 			["trinketOffsetX"] = 0,
-			["classIconCrop"] = true,
-			["dispellAdjustSize"] = false,
-			["powerBarHeight"] = 10,
-			["trinketCooldown"] = false,
-			["aurasBuffsAttachTo"] = "Trinket",
-			["auraVersion"] = 1,
-			["growUp"] = true,
-			["tagsVersion"] = 4,
-			["castBarWidth"] = 247,
-			["dispellGloss"] = false,
-			["locked"] = true,
-			["classIconGloss"] = false,
-			["trinketSize"] = 46,
-			["bottomMargin"] = 33,
-			["aurasBuffsHeight"] = 30,
-			["healthBarBackgroundColor"] = {
-				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
-			},
-			["aurasBuffs"] = true,
-			["castBarDetached"] = true,
-			["castBarAdjustWidth"] = false,
-			["aurasDebuffsHeight"] = 30,
-			["healthBarHeight"] = 42,
-			["aurasBuffsWidth"] = 30,
-			["RacialGloss"] = false,
-			["globalFont"] = "Expressway",
-			["dispellAnchor"] = "TOPRIGHT",
-			["castBarOffsetY"] = -1,
-			["timerSoonFontSize"] = 12,
-			["backgroundColor"] = {
-				["a"] = 1,
-			},
-			["castTextSize"] = 14,
-			["aurasDebuffsMax"] = 5,
-			["trinketGloss"] = false,
-			["timerSecondsFontSize"] = 12,
 			["aurasDebuffs"] = true,
 			["globalFontSize"] = 14,
+			["classIconCrop"] = true,
 			["drTrackerMargin"] = 0,
-			["direction"] = 1,
-			["trinketGridStyleIcon"] = true,
-			["dispellOffsetX"] = 2,
-			["aurasDebuffsOffsetY"] = -19,
-			["drTrackerOffsetY"] = 0,
-			["dispellSize"] = 30,
-			["powerBarBackgroundColor"] = {
+			["healthBarBackgroundColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
-			["trinketIconCrop"] = true,
-			["castTimeText"] = false,
-			["aurasDebuffsAttachTo"] = "Trinket",
 			["aurasDebuffsWidth"] = 30,
+			["direction"] = 1,
+			["aurasBuffs"] = true,
+			["castBarDetached"] = true,
 			["aurasDebuffsHideTimer"] = false,
-			["aurasDebuffsTrackerCooldown"] = false,
+			["dispellAdjustSize"] = false,
+			["castBarAdjustWidth"] = false,
+			["trinketGridStyleIcon"] = true,
+			["aurasDebuffsHeight"] = 30,
+			["powerBarHeight"] = 10,
+			["dispellOffsetX"] = 2,
 			["drTrackerSize"] = 46,
-			["healthBarTexture"] = "ElvUI Norm",
-			["powerBarTexture"] = "Details2020",
+			["healthBarHeight"] = 42,
+			["trinketCooldown"] = false,
+			["aurasBuffsWidth"] = 30,
+			["aurasDebuffsOffsetY"] = -19,
 			["dispellAttachTo"] = "Trinket",
+			["drTrackerOffsetY"] = 0,
+			["aurasBuffsAttachTo"] = "Trinket",
+			["RacialGloss"] = false,
 			["castBarBackgroundColor"] = {
 				["a"] = 1,
-				["r"] = 0,
-				["g"] = 0,
 				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
 			},
-			["classIconAdjustSize"] = true,
-			["aurasBuffsHideTimer"] = false,
-			["y"] = {
-				["arena1"] = 382.3132020183839,
-			},
-			["x"] = {
-				["arena1"] = 904.79768064979,
-			},
-			["backgroundPadding"] = 0,
-			["aurasBuffsTrackerCooldown"] = false,
+			["dispellSize"] = 30,
 			["aurasDebuffsRelativePoint"] = "BOTTOMRIGHT",
-		},
-		["Apokalol - Outland"] = {
+			["aurasBuffsTrackerCooldown"] = false,
+			["castTimeText"] = false,
+			["globalFont"] = "Expressway",
 			["auraVersion"] = 1,
+			["aurasBuffsHideTimer"] = false,
+			["classIconAdjustSize"] = true,
+			["powerBarTexture"] = "Details2020",
+			["healthBarTexture"] = "ElvUI Norm",
+			["growUp"] = true,
+			["aurasDebuffsTrackerCooldown"] = false,
+			["aurasDebuffsAttachTo"] = "Trinket",
+			["backgroundPadding"] = 0,
+			["tagsVersion"] = 4,
+			["castTextSize"] = 14,
+			["dispellAnchor"] = "TOPRIGHT",
+		},
+		["Venetha - Draenor"] = {
+			["y"] = {
+				["arena1"] = 511.9999290466258,
+			},
 			["tagsVersion"] = 4,
 			["x"] = {
-				["arena1"] = 1213.86707566418,
+				["arena1"] = 1167.466467138118,
 			},
-			["y"] = {
-				["arena1"] = 497.5998088458182,
-			},
+			["auraVersion"] = 1,
 		},
-		["Wasdasdasd - Draenor"] = {
+		["Yhewrgrhn - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 			["y"] = {
-				["arena1"] = 365.3333198348664,
+				["arena1"] = 485.3333260933541,
 			},
 			["x"] = {
-				["arena1"] = 1183.466467972583,
+				["arena1"] = 1122.666595009956,
 			},
 		},
 		["Arena"] = {
@@ -1371,8 +1371,8 @@ Gladius2DB = {
 			["dispellFaction"] = false,
 			["castBarOffsetY"] = -28,
 			["modules"] = {
-				["TargetBar"] = true,
 				["Dispel"] = false,
+				["TargetBar"] = true,
 				["Trinket"] = false,
 				["Auras"] = true,
 			},
@@ -1465,17 +1465,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 			},
 			["aurasDebuffsSpacingX"] = 1,
@@ -1513,47 +1513,47 @@ Gladius2DB = {
 			["targetBarIcon"] = false,
 			["healthBarWidth"] = 242,
 			["castTimeText"] = false,
-			["tagsVersion"] = 4,
+			["highlightInset"] = true,
 			["dispellSize"] = 25,
-			["aurasDebuffsTrackerCooldown"] = false,
-			["aurasDebuffs"] = true,
-			["dispellOffsetX"] = 100,
+			["aurasBuffsGrow"] = "UPRIGHT",
+			["aurasDebuffsSpacingY"] = 4,
+			["healthBarTexture"] = "Details Flat",
+			["dispellGridStyleIcon"] = true,
+			["auraVersion"] = 1,
+			["aurasDebuffsHideTimer"] = false,
+			["aurasBuffsOffsetX"] = -42,
+			["classIconCooldownReverse"] = true,
+			["castBarOffsetX"] = -51,
 			["tagsTexts"] = {
 				["TargetBar Left Text"] = {
-					["text"] = "",
-				},
-				["HealthBar Left Text"] = {
-					["text"] = "",
-				},
-				["HealthBar Right Text"] = {
 					["text"] = "",
 				},
 				["TargetBar Right Text"] = {
 					["text"] = "",
 				},
+				["HealthBar Right Text"] = {
+					["text"] = "",
+				},
+				["HealthBar Left Text"] = {
+					["text"] = "",
+				},
 			},
-			["auraVersion"] = 1,
-			["aurasDebuffsHideTimer"] = false,
-			["classIconCooldownReverse"] = true,
-			["aurasBuffsOffsetX"] = -42,
-			["castBarOffsetX"] = -51,
-			["dispellGridStyleIcon"] = true,
-			["healthBarTexture"] = "Details Flat",
-			["aurasDebuffsSpacingY"] = 4,
-			["aurasBuffsGrow"] = "UPRIGHT",
-			["highlightInset"] = true,
+			["dispellOffsetX"] = 100,
+			["aurasDebuffs"] = true,
+			["aurasDebuffsTrackerCooldown"] = false,
+			["tagsVersion"] = 4,
 			["aurasBuffsAnchor"] = "BOTTOMLEFT",
 			["barWidth"] = 314,
 		},
-		["Raingirl - Silvermoon"] = {
-			["y"] = {
-				["arena1"] = 537.5999303817698,
-			},
+		["Nolifey - Silvermoon"] = {
+			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 			["x"] = {
-				["arena1"] = 1185.066468056029,
+				["arena1"] = 1190.399931875858,
 			},
-			["auraVersion"] = 1,
+			["y"] = {
+				["arena1"] = 532.2665642181964,
+			},
 		},
 		["Vanilia - Outland"] = {
 			["auraVersion"] = 1,
@@ -1619,17 +1619,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 		},

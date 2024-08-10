@@ -12,17 +12,21 @@ SGTCoreDB = {
 ["Pixiel - Draenor"] = "Pixiel - Draenor",
 ["Leafgirl - Silvermoon"] = "Leafgirl - Silvermoon",
 ["Venetha - Draenor"] = "Venetha - Draenor",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
 ["Ravegirl - Draenor"] = "Ravegirl - Draenor",
 ["Pokipoki - Draenor"] = "Pokipoki - Draenor",
 ["Nolifey - Draenor"] = "Nolifey - Draenor",
 ["Apoka - Outland"] = "Apoka - Outland",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
 ["Lifey - Draenor"] = "Lifey - Draenor",
 ["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
 ["Yeetalot - Draenor"] = "Yeetalot - Draenor",
-["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
 ["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
-["Cutetroll - Draenor"] = "Cutetroll - Draenor",
+["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
 ["Crystalol - Draenor"] = "Crystalol - Draenor",
+["Cutetroll - Draenor"] = "Cutetroll - Draenor",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
 ["Divinefurry - Draenor"] = "Divinefurry - Draenor",
 },
 ["profiles"] = {
@@ -54,6 +58,8 @@ SGTCoreDB = {
 },
 ["Venetha - Draenor"] = {
 },
+["Lovelol - Ravencrest"] = {
+},
 ["Ravegirl - Draenor"] = {
 },
 ["Pokipoki - Draenor"] = {
@@ -62,19 +68,28 @@ SGTCoreDB = {
 },
 ["Apoka - Outland"] = {
 },
+["Hun - Ravencrest"] = {
+},
 ["Lifey - Draenor"] = {
 },
 ["Yubiyubi - Draenor"] = {
 },
-["Yeetalot - Draenor"] = {
+["Ravegirl - Ravencrest"] = {
+["minimap"] = {
+["minimapPos"] = 193.2721367822717,
 },
-["Holiloli - Silvermoon"] = {
+},
+["Yeetalot - Draenor"] = {
 },
 ["Raingirl - Silvermoon"] = {
 },
-["Cutetroll - Draenor"] = {
+["Holiloli - Silvermoon"] = {
 },
 ["Crystalol - Draenor"] = {
+},
+["Cutetroll - Draenor"] = {
+},
+["Leafgi42F6E6 - Ravencrest"] = {
 },
 ["Divinefurry - Draenor"] = {
 },

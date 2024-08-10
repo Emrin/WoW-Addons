@@ -1,8 +1,5 @@
 
 MogItDB = {
-["global"] = {
-["version"] = "v3.10.1",
-},
 ["profileKeys"] = {
 ["Crystalol - Outland"] = "Default",
 ["Nolifey - Ravencrest"] = "Default",
@@ -23,7 +20,11 @@ MogItDB = {
 ["Taizaii - Doomhammer"] = "Default",
 ["Yeetalot - Draenor"] = "Default",
 ["Holiloli - Silvermoon"] = "Default",
+["Lovelol - Ravencrest"] = "Default",
+["Divinefurry - Draenor"] = "Default",
+["Hun - Ravencrest"] = "Default",
 ["Apoka - Tarren Mill"] = "Default",
+["Hentaihero - Draenor"] = "Default",
 ["Taizai - Draenor"] = "Default",
 ["Apoku - Draenor"] = "Default",
 ["Ariellol - Outland"] = "Default",
@@ -31,30 +32,33 @@ MogItDB = {
 ["Sacrae - Ravencrest"] = "Default",
 ["Redangel - Draenor"] = "Default",
 ["Unchill - Draenor"] = "Default",
-["Hentaihero - Draenor"] = "Default",
-["Divinefurry - Draenor"] = "Default",
-["Raingirl - Silvermoon"] = "Default",
-["Lifey - Silvermoon"] = "Default",
+["Leafgi42F6E6 - Ravencrest"] = "Default",
+["Demonphile - Draenor"] = "Default",
+["Nolifey - Silvermoon"] = "Default",
+["Hentaihero - Outland"] = "Default",
 ["Clawra - Ravencrest"] = "Default",
 ["Apoki - Silvermoon"] = "Default",
-["Yhewrgrhn - Draenor"] = "Default",
+["Missuccubus - Draenor"] = "Default",
 ["Venetha - Draenor"] = "Default",
-["Eucleius - Outland"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
 ["Bowbie - Ravencrest"] = "Default",
 ["Fuwu - Silvermoon"] = "Default",
 ["Apoka - Outland"] = "Default",
 ["Nolifey - Moonglade"] = "Default",
 ["Lifey - Moonglade"] = "Default",
 ["Lifey - Draenor"] = "Default",
-["Trapchan - Draenor"] = "Default",
-["Missuccubus - Draenor"] = "Default",
-["Nolifey - Draenor"] = "Default",
 ["Wasdasdasd - Draenor"] = "Default",
+["Trapchan - Draenor"] = "Default",
+["Nolifey - Draenor"] = "Default",
+["Eucleius - Outland"] = "Default",
 ["Lolisama - Draenor"] = "Default",
-["Nolifey - Silvermoon"] = "Default",
-["Hentaihero - Outland"] = "Default",
-["Demonphile - Draenor"] = "Default",
+["Lifey - Silvermoon"] = "Default",
+["Raingirl - Silvermoon"] = "Default",
+["Yhewrgrhn - Draenor"] = "Default",
 ["Vanilia - Outland"] = "Default",
+},
+["global"] = {
+["version"] = "v3.10.1",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -66,7 +70,7 @@ MogItDB = {
 },
 },
 ["gridHeight"] = 715.0018310546875,
-["x"] = 0,
+["x"] = 9.056495666503906,
 ["slotLabels"] = {
 ["Waist"] = "Waist",
 ["Fist"] = "Fist Weapons",
@@ -74,11 +78,11 @@ MogItDB = {
 ["Legs"] = "Legs",
 ["Back"] = "Back",
 ["Crossbow"] = "Crossbows",
-["Gun"] = "Guns",
+["Wrist"] = "Wrist",
 ["Shirt"] = "Shirt",
 ["Dagger"] = "Daggers",
 ["Hands"] = "Hands",
-["Wrist"] = "Wrist",
+["Gun"] = "Guns",
 ["Polearm"] = "Polearms",
 ["2H-sword"] = "Two-Handed Swords",
 ["2H-axe"] = "Two-Handed Axes",
@@ -86,15 +90,15 @@ MogItDB = {
 ["1H-mace"] = "One-Handed Maces",
 ["Head"] = "Head",
 ["Holdable"] = "Held In Off-hand",
-["Bow"] = "Bows",
-["Warglaives"] = "Warglaives",
-["Feet"] = "Feet",
-["Chest"] = "Chest",
-["1H-sword"] = "One-Handed Swords",
-["ArtifactLegion"] = "Legion Artifacts",
-["1H-axe"] = "One-Handed Axes",
-["Staff"] = "Staves",
 ["Shield"] = "Shields",
+["Feet"] = "Feet",
+["Staff"] = "Staves",
+["Chest"] = "Chest",
+["1H-axe"] = "One-Handed Axes",
+["ArtifactLegion"] = "Legion Artifacts",
+["1H-sword"] = "One-Handed Swords",
+["Warglaives"] = "Warglaives",
+["Bow"] = "Bows",
 ["Shoulder"] = "Shoulder",
 ["Wand"] = "Wands",
 },
@@ -102,11 +106,14 @@ MogItDB = {
 ["minimapPos"] = 355.0266385192731,
 },
 ["gridWidth"] = 1125.996704101563,
-["y"] = 0,
+["y"] = -5.031264305114746,
 },
 },
 }
 MogItWishlist = {
+["global"] = {
+["version"] = 110000,
+},
 ["profileKeys"] = {
 ["Crystalol - Outland"] = "Crystalol - Outland",
 ["Nolifey - Ravencrest"] = "Nolifey - Ravencrest",
@@ -127,7 +134,11 @@ MogItWishlist = {
 ["Taizaii - Doomhammer"] = "Taizaii - Doomhammer",
 ["Yeetalot - Draenor"] = "Yeetalot - Draenor",
 ["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
+["Divinefurry - Draenor"] = "Divinefurry - Draenor",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
 ["Apoka - Tarren Mill"] = "Apoka - Tarren Mill",
+["Hentaihero - Draenor"] = "Hentaihero - Draenor",
 ["Taizai - Draenor"] = "Taizai - Draenor",
 ["Apoku - Draenor"] = "Apoku - Draenor",
 ["Ariellol - Outland"] = "Ariellol - Outland",
@@ -135,33 +146,30 @@ MogItWishlist = {
 ["Sacrae - Ravencrest"] = "Sacrae - Ravencrest",
 ["Redangel - Draenor"] = "Redangel - Draenor",
 ["Unchill - Draenor"] = "Unchill - Draenor",
-["Hentaihero - Draenor"] = "Hentaihero - Draenor",
-["Divinefurry - Draenor"] = "Divinefurry - Draenor",
-["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
-["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
+["Demonphile - Draenor"] = "Demonphile - Draenor",
+["Nolifey - Silvermoon"] = "Nolifey - Silvermoon",
+["Hentaihero - Outland"] = "Hentaihero - Outland",
 ["Clawra - Ravencrest"] = "Clawra - Ravencrest",
 ["Apoki - Silvermoon"] = "Apoki - Silvermoon",
-["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
+["Missuccubus - Draenor"] = "Missuccubus - Draenor",
 ["Venetha - Draenor"] = "Venetha - Draenor",
-["Eucleius - Outland"] = "Eucleius - Outland",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
 ["Bowbie - Ravencrest"] = "Bowbie - Ravencrest",
 ["Fuwu - Silvermoon"] = "Fuwu - Silvermoon",
 ["Apoka - Outland"] = "Apoka - Outland",
 ["Nolifey - Moonglade"] = "Nolifey - Moonglade",
 ["Lifey - Moonglade"] = "Lifey - Moonglade",
 ["Lifey - Draenor"] = "Lifey - Draenor",
-["Trapchan - Draenor"] = "Trapchan - Draenor",
-["Missuccubus - Draenor"] = "Missuccubus - Draenor",
-["Nolifey - Draenor"] = "Nolifey - Draenor",
 ["Wasdasdasd - Draenor"] = "Wasdasdasd - Draenor",
+["Trapchan - Draenor"] = "Trapchan - Draenor",
+["Nolifey - Draenor"] = "Nolifey - Draenor",
+["Eucleius - Outland"] = "Eucleius - Outland",
 ["Lolisama - Draenor"] = "Lolisama - Draenor",
-["Nolifey - Silvermoon"] = "Nolifey - Silvermoon",
-["Hentaihero - Outland"] = "Hentaihero - Outland",
-["Demonphile - Draenor"] = "Demonphile - Draenor",
+["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
+["Yhewrgrhn - Draenor"] = "Yhewrgrhn - Draenor",
 ["Vanilia - Outland"] = "Vanilia - Outland",
-},
-["global"] = {
-["version"] = 100207,
 },
 ["profiles"] = {
 ["Crystalol - Outland"] = {
@@ -240,7 +248,15 @@ MogItWishlist = {
 },
 ["Holiloli - Silvermoon"] = {
 },
+["Lovelol - Ravencrest"] = {
+},
+["Divinefurry - Draenor"] = {
+},
+["Hun - Ravencrest"] = {
+},
 ["Apoka - Tarren Mill"] = {
+},
+["Hentaihero - Draenor"] = {
 },
 ["Taizai - Draenor"] = {
 ["items"] = {
@@ -283,19 +299,38 @@ MogItWishlist = {
 "item:15665:0::::::::::0:1:3524",
 },
 },
-["Hentaihero - Draenor"] = {
+["Leafgi42F6E6 - Ravencrest"] = {
 },
-["Divinefurry - Draenor"] = {
+["Demonphile - Draenor"] = {
 },
-["Raingirl - Silvermoon"] = {
+["Nolifey - Silvermoon"] = {
 },
-["Lifey - Silvermoon"] = {
+["Hentaihero - Outland"] = {
+["items"] = {
+"item:21667:0::::::::::0:1:3524",
+"item:16855:0::::::::::0:1:3524",
+"item:17711:0::::::::::0:1:3524",
+"item:14970:0::::::::::0:1:3524",
+"item:14920:0::::::::::0:1:3524",
+"item:14928:0::::::::::0:1:3524",
+"item:14859:0::::::::::0:1:3524",
+"item:14554:0::::::::::0:1:3524",
+"item:24987:0::::::::::0:1:3524",
+"item:15592:0::::::::::0:1:3524",
+"item:38453:0::::::::::0:1:3524",
+"item:27772:0::::::::::0:1:3524",
+"item:34676:0::::::::::0:1:3524",
+"item:34675:0::::::::::0:1:3524",
+"item:51791:0::::::::::0:1:3524",
+"item:160698:0::::::::::0:1:3524",
+"item:160698:0::::::::::5:1:3524",
+},
 },
 ["Clawra - Ravencrest"] = {
 },
 ["Apoki - Silvermoon"] = {
 },
-["Yhewrgrhn - Draenor"] = {
+["Missuccubus - Draenor"] = {
 },
 ["Venetha - Draenor"] = {
 ["items"] = {
@@ -325,7 +360,7 @@ MogItWishlist = {
 "item:24607:0::::::::::0:1:3524",
 },
 },
-["Eucleius - Outland"] = {
+["Ravegirl - Ravencrest"] = {
 },
 ["Bowbie - Ravencrest"] = {
 },
@@ -339,13 +374,13 @@ MogItWishlist = {
 },
 ["Lifey - Draenor"] = {
 },
-["Trapchan - Draenor"] = {
+["Wasdasdasd - Draenor"] = {
 },
-["Missuccubus - Draenor"] = {
+["Trapchan - Draenor"] = {
 },
 ["Nolifey - Draenor"] = {
 },
-["Wasdasdasd - Draenor"] = {
+["Eucleius - Outland"] = {
 },
 ["Lolisama - Draenor"] = {
 ["items"] = {
@@ -356,30 +391,11 @@ MogItWishlist = {
 "item:15431:0::::::::::0:1:3524",
 },
 },
-["Nolifey - Silvermoon"] = {
+["Lifey - Silvermoon"] = {
 },
-["Hentaihero - Outland"] = {
-["items"] = {
-"item:21667:0::::::::::0:1:3524",
-"item:16855:0::::::::::0:1:3524",
-"item:17711:0::::::::::0:1:3524",
-"item:14970:0::::::::::0:1:3524",
-"item:14920:0::::::::::0:1:3524",
-"item:14928:0::::::::::0:1:3524",
-"item:14859:0::::::::::0:1:3524",
-"item:14554:0::::::::::0:1:3524",
-"item:24987:0::::::::::0:1:3524",
-"item:15592:0::::::::::0:1:3524",
-"item:38453:0::::::::::0:1:3524",
-"item:27772:0::::::::::0:1:3524",
-"item:34676:0::::::::::0:1:3524",
-"item:34675:0::::::::::0:1:3524",
-"item:51791:0::::::::::0:1:3524",
-"item:160698:0::::::::::0:1:3524",
-"item:160698:0::::::::::5:1:3524",
+["Raingirl - Silvermoon"] = {
 },
-},
-["Demonphile - Draenor"] = {
+["Yhewrgrhn - Draenor"] = {
 },
 ["Vanilia - Outland"] = {
 },

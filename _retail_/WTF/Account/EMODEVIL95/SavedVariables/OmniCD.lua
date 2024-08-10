@@ -33,25 +33,26 @@ OmniCDDB = {
 ["Lifey - Moonglade"] = "Default",
 ["Lifey - Draenor"] = "Default",
 ["Missuccubus - Draenor"] = "Default",
-["Lifey - Silvermoon"] = "Default",
-["Yhewrgrhn - Draenor"] = "Default",
-["Apoki - Silvermoon"] = "Default",
-["Wasdasdasd - Draenor"] = "Default",
-["Crystalol - Draenor"] = "Default",
 ["Kungfugoblin - Draenor"] = "Default",
+["Crystalol - Draenor"] = "Default",
+["Wasdasdasd - Draenor"] = "Default",
+["Apoki - Silvermoon"] = "Default",
+["Yhewrgrhn - Draenor"] = "Default",
+["Lifey - Silvermoon"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
 },
 ["global"] = {
-["oodVer"] = 2719,
-["oodChk"] = 220703,
 ["disableElvMsg"] = true,
+["oodChk"] = 220703,
+["oodVer"] = 2719,
 },
 ["namespaces"] = {
 ["LibDualSpec-1.0"] = {
 },
 },
-["version"] = 4,
 ["cooldowns"] = {
 },
+["version"] = 4,
 ["profiles"] = {
 ["Default"] = {
 ["Party"] = {
@@ -60,12 +61,19 @@ OmniCDDB = {
 ["raidBar1"] = {
 ["manualPos"] = {
 ["raidBar1"] = {
-["y"] = 205.7760957644423,
-["x"] = 4.712697175258199,
+["y"] = 234.0425883791977,
+["x"] = 5.246024001174192,
 },
 },
 },
 },
+["position"] = {
+["anchor"] = "TOPRIGHT",
+["attach"] = "TOPLEFT",
+["preset"] = "TOPLEFT",
+},
+},
+["arena"] = {
 ["position"] = {
 ["anchor"] = "TOPRIGHT",
 ["attach"] = "TOPLEFT",
@@ -93,18 +101,11 @@ OmniCDDB = {
 ["showPlayerEx"] = false,
 },
 },
-["arena"] = {
-["position"] = {
-["anchor"] = "TOPRIGHT",
-["attach"] = "TOPLEFT",
-["preset"] = "TOPLEFT",
-},
-},
 ["visibility"] = {
 ["scenario"] = true,
 ["raid"] = true,
-["none"] = true,
 ["pvp"] = true,
+["none"] = true,
 },
 ["pvp"] = {
 ["position"] = {

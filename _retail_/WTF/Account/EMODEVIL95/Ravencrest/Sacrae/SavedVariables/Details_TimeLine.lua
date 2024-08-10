@@ -3,32 +3,304 @@ DetailsTimeLineDB = {
 ["max_segments"] = 4,
 ["combat_data"] = {
 {
-["date_end"] = "00:30:01",
-["date_start"] = "00:28:51",
-["name"] = "Primal Tsunami",
-["total_time"] = 70.2390000000014,
+["date_start"] = "09:36:02",
+["date_end"] = "09:36:24",
+["name"] = "Decatriarch Wratheye",
+["total_time"] = 22.73000000001048,
 },
 {
-["date_end"] = "00:26:27",
-["date_start"] = "00:25:32",
-["name"] = "Khajin the Unyielding",
-["total_time"] = 54.25900000000547,
+["date_start"] = "09:29:27",
+["date_end"] = "09:30:06",
+["name"] = "Treemouth",
+["total_time"] = 39.41899999999441,
 },
 {
-["date_end"] = "00:22:55",
-["date_start"] = "00:22:14",
-["name"] = "Gulping Goliath",
-["total_time"] = 41.06200000000536,
+["date_start"] = "09:27:21",
+["date_end"] = "09:27:40",
+["name"] = "Gutshot",
+["total_time"] = 19.58100000000559,
 },
 {
-["date_end"] = "00:19:31",
-["date_start"] = "00:17:48",
-["name"] = "Watcher Irideus",
-["total_time"] = 102.1579999999958,
+["date_start"] = "09:22:02",
+["date_end"] = "09:22:36",
+["name"] = "Hackclaw's War-Band",
+["total_time"] = 34.55499999999302,
 },
 },
 ["hide_on_combat"] = false,
 ["IndividualSpells"] = {
+{
+[373915] = {
+{
+12.05400000000373,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.84799999999814,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373917] = {
+{
+12.05400000000373,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.84799999999814,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373912] = {
+{
+12.03199999997742,
+"Decatriarch Wratheye",
+373912,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+},
+[373942] = {
+{
+16.89400000000023,
+"Decatriarch Wratheye",
+373942,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376170] = {
+{
+7.679999999993015,
+"Decatriarch Wratheye",
+376170,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[376934] = {
+{
+29.01800000001094,
+"Treemouth",
+376934,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377559] = {
+{
+7.309999999997672,
+"Treemouth",
+377559,
+"SPELL_CAST_SUCCESS",
+},
+},
+[378764] = {
+{
+33.02499999999418,
+"Treemouth",
+378764,
+"SPELL_CAST_SUCCESS",
+"Pikemaster",
+},
+},
+[376933] = {
+{
+29.01800000001094,
+"Treemouth",
+376933,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377859] = {
+{
+21.58300000001327,
+"Treemouth",
+377859,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376811] = {
+{
+15.57500000001164,
+"Treemouth",
+376811,
+"SPELL_CAST_SUCCESS",
+"Sacrae",
+},
+},
+[378057] = {
+{
+21.73399999999674,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.80900000000838,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.80900000000838,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.98300000000745,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[384529] = {
+{
+9.954999999987194,
+"Rotfang Hyena",
+384529,
+"SPELL_CAST_SUCCESS",
+},
+},
+[382620] = {
+{
+4.183999999979278,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Pikemaster",
+},
+{
+17.52399999997579,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Luckystone-Silvermoon",
+},
+},
+[385359] = {
+{
+11.74399999997695,
+"Gutshot",
+385359,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384353] = {
+{
+14.89099999997416,
+"Gutshot",
+384353,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+},
+[383979] = {
+{
+8.720000000001164,
+"Gutshot",
+383979,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384531] = {
+{
+12.44799999997485,
+"Rotfang Hyena",
+384531,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[377965] = {
+{
+18.04099999999744,
+"Tricktotem",
+377965,
+"SPELL_CAST_SUCCESS",
+},
+},
+[383062] = {
+{
+0.1,
+"Decayed Elder",
+383062,
+"SPELL_CAST_SUCCESS",
+"Infected Lasher",
+},
+},
+[377950] = {
+{
+17.8980000000156,
+"Tricktotem",
+377950,
+"SPELL_CAST_SUCCESS",
+"Rira Hackclaw",
+},
+},
+[378029] = {
+{
+4.961999999999534,
+"Gashtooth",
+378029,
+"SPELL_CAST_SUCCESS",
+},
+},
+[378155] = {
+{
+3.097999999998137,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+{
+5.958000000013271,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+9.619000000006054,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+13.25899999999092,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+21.18300000001909,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Luckystone-Silvermoon",
+},
+{
+27.27700000000186,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Sacrae",
+},
+},
+},
 {
 [387504] = {
 {
@@ -308,6 +580,14 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[389179] = {
+{
+25.73199999998906,
+"Watcher Irideus",
+389179,
+"SPELL_CAST_SUCCESS",
+},
+},
 [384014] = {
 {
 11.88299999998708,
@@ -369,14 +649,6 @@ DetailsTimeLineDB = {
 88.81999999999243,
 "Nullification Device",
 389446,
-"SPELL_CAST_SUCCESS",
-},
-},
-[389179] = {
-{
-25.73199999998906,
-"Watcher Irideus",
-389179,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -688,44 +960,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[326629] = {
-{
-1.846000000005006,
-"Surgeon Stitchflesh",
-326629,
-"SPELL_CAST_SUCCESS",
-},
-},
-[320376] = {
-{
-6.964000000007218,
-"Stitchflesh's Creation",
-320376,
-"SPELL_CAST_SUCCESS",
-"Madriamia-Auchindoun",
-},
-{
-21.52999999999884,
-"Stitchflesh's Creation",
-320376,
-"SPELL_CAST_SUCCESS",
-"Madriamia-Auchindoun",
-},
-},
-[334476] = {
-{
-29.5170000000071,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-{
-41.64300000001094,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-},
 [334488] = {
 {
 25.88800000000629,
@@ -747,6 +981,44 @@ DetailsTimeLineDB = {
 334488,
 "SPELL_CAST_SUCCESS",
 "Madriamia-Auchindoun",
+},
+},
+[334476] = {
+{
+29.5170000000071,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+{
+41.64300000001094,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+},
+[320376] = {
+{
+6.964000000007218,
+"Stitchflesh's Creation",
+320376,
+"SPELL_CAST_SUCCESS",
+"Madriamia-Auchindoun",
+},
+{
+21.52999999999884,
+"Stitchflesh's Creation",
+320376,
+"SPELL_CAST_SUCCESS",
+"Madriamia-Auchindoun",
+},
+},
+[326629] = {
+{
+1.846000000005006,
+"Surgeon Stitchflesh",
+326629,
+"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -832,19 +1104,19 @@ DetailsTimeLineDB = {
 "Madriamia-Auchindoun",
 },
 },
-[321226] = {
-{
-7.884999999994761,
-"Amarth",
-321226,
-"SPELL_CAST_SUCCESS",
-},
-},
 [320012] = {
 {
 12.72899999999208,
 "Amarth",
 320012,
+"SPELL_CAST_SUCCESS",
+},
+},
+[321226] = {
+{
+7.884999999994761,
+"Amarth",
+321226,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -927,14 +1199,6 @@ DetailsTimeLineDB = {
 "Madriamia-Auchindoun",
 },
 },
-[320631] = {
-{
-32.42999999999302,
-"Carrion Worm",
-320631,
-"SPELL_CAST_SUCCESS",
-},
-},
 [321575] = {
 {
 40.14500000000408,
@@ -952,6 +1216,14 @@ DetailsTimeLineDB = {
 40.14500000000408,
 "Zolramus Necromancer",
 321575,
+"SPELL_CAST_SUCCESS",
+},
+},
+[320631] = {
+{
+32.42999999999302,
+"Carrion Worm",
+320631,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1067,13 +1339,12 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323393] = {
+[323209] = {
 {
-28.68399999999929,
-"Lord Chamberlain",
-323393,
-"SPELL_CAST_SUCCESS",
+11.11999999999898,
 "Sinstone Statue",
+323209,
+"SPELL_CAST_SUCCESS",
 },
 },
 [323392] = {
@@ -1084,12 +1355,13 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323209] = {
+[323393] = {
 {
-11.11999999999898,
-"Sinstone Statue",
-323209,
+28.68399999999929,
+"Lord Chamberlain",
+323393,
 "SPELL_CAST_SUCCESS",
+"Sinstone Statue",
 },
 },
 },
@@ -1293,6 +1565,20 @@ DetailsTimeLineDB = {
 "Lifey",
 },
 },
+[325523] = {
+{
+6.566000000000713,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+{
+10.20399999999972,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+},
 [338012] = {
 {
 22.55799999999908,
@@ -1355,20 +1641,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323552] = {
-{
-13.43900000000031,
-"High Adjudicator Aleez",
-323552,
-"SPELL_CAST_SUCCESS",
-},
-{
-29.2510000000002,
-"High Adjudicator Aleez",
-323552,
-"SPELL_CAST_SUCCESS",
-},
-},
 [325701] = {
 {
 2.010000000000218,
@@ -1383,17 +1655,17 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[325523] = {
+[323552] = {
 {
-6.566000000000713,
-"Depraved Darkblade",
-325523,
+13.43900000000031,
+"High Adjudicator Aleez",
+323552,
 "SPELL_CAST_SUCCESS",
 },
 {
-10.20399999999972,
-"Depraved Darkblade",
-325523,
+29.2510000000002,
+"High Adjudicator Aleez",
+323552,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1410,50 +1682,6 @@ DetailsTimeLineDB = {
 31.47700000000077,
 "Echelon",
 326389,
-"SPELL_CAST_SUCCESS",
-},
-},
-[319941] = {
-{
-28.27599999999984,
-"Echelon",
-319941,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328206] = {
-{
-21.77000000000044,
-"Echelon",
-328206,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328124] = {
-{
-13.27499999999964,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-13.27499999999964,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-13.27499999999964,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-},
-[319733] = {
-{
-13.27499999999964,
-"Echelon",
-319733,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1528,6 +1756,50 @@ DetailsTimeLineDB = {
 29.3080000000009,
 "Undying Stonefiend",
 328125,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328206] = {
+{
+21.77000000000044,
+"Echelon",
+328206,
+"SPELL_CAST_SUCCESS",
+},
+},
+[319941] = {
+{
+28.27599999999984,
+"Echelon",
+319941,
+"SPELL_CAST_SUCCESS",
+},
+},
+[319733] = {
+{
+13.27499999999964,
+"Echelon",
+319733,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328124] = {
+{
+13.27499999999964,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.27499999999964,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.27499999999964,
+"Undying Stonefiend",
+328124,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1823,11 +2095,11 @@ DetailsTimeLineDB = {
 "Rockchick-Shadowsong",
 },
 },
-[340357] = {
+[328533] = {
 {
 22.13600000005681,
-"Pestilence Slime",
-340357,
+"Defender of Many Eyes",
+328533,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1913,11 +2185,17 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328651] = {
+[328338] = {
 {
 22.13600000005681,
 "Venomous Sniper",
-328651,
+328338,
+"SPELL_CAST_SUCCESS",
+},
+{
+22.13600000005681,
+"Venomous Sniper",
+328338,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -1933,22 +2211,6 @@ DetailsTimeLineDB = {
 "Pestilence Slime",
 346989,
 "SPELL_CAST_SUCCESS",
-},
-},
-[328365] = {
-{
-22.13600000005681,
-"Venomous Sniper",
-328365,
-"SPELL_CAST_SUCCESS",
-"Defender of Many Eyes",
-},
-{
-22.13600000005681,
-"Venomous Sniper",
-328365,
-"SPELL_CAST_SUCCESS",
-"Defender of Many Eyes",
 },
 },
 [328343] = {
@@ -1971,25 +2233,35 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328338] = {
+[328365] = {
 {
 22.13600000005681,
 "Venomous Sniper",
-328338,
+328365,
 "SPELL_CAST_SUCCESS",
-},
-{
-22.13600000005681,
-"Venomous Sniper",
-328338,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328533] = {
-{
-22.13600000005681,
 "Defender of Many Eyes",
-328533,
+},
+{
+22.13600000005681,
+"Venomous Sniper",
+328365,
+"SPELL_CAST_SUCCESS",
+"Defender of Many Eyes",
+},
+},
+[328651] = {
+{
+22.13600000005681,
+"Venomous Sniper",
+328651,
+"SPELL_CAST_SUCCESS",
+},
+},
+[340357] = {
+{
+22.13600000005681,
+"Pestilence Slime",
+340357,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -2340,11 +2612,33 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[326629] = {
+[334488] = {
 {
-1.435000000055879,
+25.50199999997858,
 "Surgeon Stitchflesh",
-326629,
+334488,
+"SPELL_CAST_SUCCESS",
+"Drunkken-Ragnaros",
+},
+{
+35.2149999999674,
+"Surgeon Stitchflesh",
+334488,
+"SPELL_CAST_SUCCESS",
+"Drunkken-Ragnaros",
+},
+},
+[334476] = {
+{
+29.13899999996647,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+{
+41.29000000003725,
+"Surgeon Stitchflesh",
+334476,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -2364,34 +2658,12 @@ DetailsTimeLineDB = {
 "Drunkken-Ragnaros",
 },
 },
-[334476] = {
+[326629] = {
 {
-29.13899999996647,
+1.435000000055879,
 "Surgeon Stitchflesh",
-334476,
+326629,
 "SPELL_CAST_SUCCESS",
-},
-{
-41.29000000003725,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-},
-[334488] = {
-{
-25.50199999997858,
-"Surgeon Stitchflesh",
-334488,
-"SPELL_CAST_SUCCESS",
-"Drunkken-Ragnaros",
-},
-{
-35.2149999999674,
-"Surgeon Stitchflesh",
-334488,
-"SPELL_CAST_SUCCESS",
-"Drunkken-Ragnaros",
 },
 },
 },
@@ -2720,18 +2992,13 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323209] = {
+[323393] = {
 {
-5.947999999974854,
-"Sinstone Statue",
-323209,
+32.43000000005122,
+"Lord Chamberlain",
+323393,
 "SPELL_CAST_SUCCESS",
-},
-{
-14.8420000000624,
 "Sinstone Statue",
-323209,
-"SPELL_CAST_SUCCESS",
 },
 },
 [323392] = {
@@ -2748,13 +3015,18 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323393] = {
+[323209] = {
 {
-32.43000000005122,
-"Lord Chamberlain",
-323393,
-"SPELL_CAST_SUCCESS",
+5.947999999974854,
 "Sinstone Statue",
+323209,
+"SPELL_CAST_SUCCESS",
+},
+{
+14.8420000000624,
+"Sinstone Statue",
+323209,
+"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -2895,17 +3167,11 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[326389] = {
+[319941] = {
 {
-8.624000000068918,
+28.51600000006147,
 "Echelon",
-326389,
-"SPELL_CAST_SUCCESS",
-},
-{
-31.73700000008103,
-"Echelon",
-326389,
+319941,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -2945,11 +3211,17 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[319941] = {
+[326389] = {
 {
-28.51600000006147,
+8.624000000068918,
 "Echelon",
-319941,
+326389,
+"SPELL_CAST_SUCCESS",
+},
+{
+31.73700000008103,
+"Echelon",
+326389,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -3258,29 +3530,95 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[336809] = {
+[322654] = {
 {
-45.37100000004284,
-"Azmogal",
-336809,
+6.896999999997206,
+"Tred'ova",
+322654,
 "SPELL_CAST_SUCCESS",
 },
 {
-45.37100000004284,
-"Azmogal",
-336809,
+6.896999999997206,
+"Tred'ova",
+322654,
 "SPELL_CAST_SUCCESS",
 },
 {
-45.37100000004284,
-"Azmogal",
-336809,
+6.896999999997206,
+"Tred'ova",
+322654,
 "SPELL_CAST_SUCCESS",
 },
 {
-45.37100000004284,
-"Azmogal",
-336809,
+6.896999999997206,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+6.896999999997206,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.27700000000186,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.27700000000186,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.27700000000186,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.27700000000186,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.27700000000186,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+42.04399999999441,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+42.04399999999441,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+42.04399999999441,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+42.04399999999441,
+"Tred'ova",
+322654,
+"SPELL_CAST_SUCCESS",
+},
+{
+42.04399999999441,
+"Tred'ova",
+322654,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -4007,95 +4345,29 @@ DetailsTimeLineDB = {
 "Azmogal",
 },
 },
-[322654] = {
+[336809] = {
 {
-6.896999999997206,
-"Tred'ova",
-322654,
+45.37100000004284,
+"Azmogal",
+336809,
 "SPELL_CAST_SUCCESS",
 },
 {
-6.896999999997206,
-"Tred'ova",
-322654,
+45.37100000004284,
+"Azmogal",
+336809,
 "SPELL_CAST_SUCCESS",
 },
 {
-6.896999999997206,
-"Tred'ova",
-322654,
+45.37100000004284,
+"Azmogal",
+336809,
 "SPELL_CAST_SUCCESS",
 },
 {
-6.896999999997206,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-6.896999999997206,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.27700000000186,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.27700000000186,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.27700000000186,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.27700000000186,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.27700000000186,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-42.04399999999441,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-42.04399999999441,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-42.04399999999441,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-42.04399999999441,
-"Tred'ova",
-322654,
-"SPELL_CAST_SUCCESS",
-},
-{
-42.04399999999441,
-"Tred'ova",
-322654,
+45.37100000004284,
+"Azmogal",
+336809,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -4245,6 +4517,34 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[321772] = {
+{
+22.16299999994226,
+"Droman Oulfarran",
+321772,
+"SPELL_CAST_SUCCESS",
+},
+},
+[324923] = {
+{
+3.765999999945052,
+"Drust Boughbreaker",
+324923,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.00500000000466,
+"Drust Boughbreaker",
+324923,
+"SPELL_CAST_SUCCESS",
+},
+{
+40.1589999999851,
+"Drust Boughbreaker",
+324923,
+"SPELL_CAST_SUCCESS",
+},
+},
 [322767] = {
 {
 8.199999999953434,
@@ -4303,40 +4603,11 @@ DetailsTimeLineDB = {
 "Lifey",
 },
 },
-[324923] = {
+[324909] = {
 {
-3.765999999945052,
+32.4089999999851,
 "Drust Boughbreaker",
-324923,
-"SPELL_CAST_SUCCESS",
-},
-{
-18.00500000000466,
-"Drust Boughbreaker",
-324923,
-"SPELL_CAST_SUCCESS",
-},
-{
-40.1589999999851,
-"Drust Boughbreaker",
-324923,
-"SPELL_CAST_SUCCESS",
-},
-},
-[322557] = {
-{
-9.329000000027008,
-"Drust Soulcleaver",
-322557,
-"SPELL_CAST_SUCCESS",
-"Lifey",
-},
-},
-[323138] = {
-{
-18.51000000000931,
-"Ingra Maloch",
-323138,
+324909,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -4357,6 +4628,14 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[323177] = {
+{
+18.51000000000931,
+"Droman Oulfarran",
+323177,
+"SPELL_CAST_SUCCESS",
+},
+},
 [323057] = {
 {
 21.81299999996554,
@@ -4373,28 +4652,21 @@ DetailsTimeLineDB = {
 "Krucia-Wildhammer",
 },
 },
-[323177] = {
+[323138] = {
 {
 18.51000000000931,
-"Droman Oulfarran",
-323177,
+"Ingra Maloch",
+323138,
 "SPELL_CAST_SUCCESS",
 },
 },
-[324909] = {
+[322557] = {
 {
-32.4089999999851,
-"Drust Boughbreaker",
-324909,
+9.329000000027008,
+"Drust Soulcleaver",
+322557,
 "SPELL_CAST_SUCCESS",
-},
-},
-[321772] = {
-{
-22.16299999994226,
-"Droman Oulfarran",
-321772,
-"SPELL_CAST_SUCCESS",
+"Lifey",
 },
 },
 },
@@ -4548,6 +4820,31 @@ DetailsTimeLineDB = {
 "Matsifer-Ravencrest",
 },
 },
+[199193] = {
+{
+68.95999999996275,
+"Dantalionax",
+199193,
+"SPELL_CAST_SUCCESS",
+},
+},
+[199143] = {
+{
+56.64500000001863,
+"Dantalionax",
+199143,
+"SPELL_CAST_SUCCESS",
+},
+},
+[198635] = {
+{
+5.695999999996275,
+"Kur'talos Ravencrest",
+198635,
+"SPELL_CAST_SUCCESS",
+"Matsifer-Ravencrest",
+},
+},
 [199567] = {
 {
 75.2280000000028,
@@ -4619,31 +4916,6 @@ DetailsTimeLineDB = {
 91.70900000003166,
 "Image of Latosius",
 199567,
-"SPELL_CAST_SUCCESS",
-},
-},
-[199143] = {
-{
-56.64500000001863,
-"Dantalionax",
-199143,
-"SPELL_CAST_SUCCESS",
-},
-},
-[198635] = {
-{
-5.695999999996275,
-"Kur'talos Ravencrest",
-198635,
-"SPELL_CAST_SUCCESS",
-"Matsifer-Ravencrest",
-},
-},
-[199193] = {
-{
-68.95999999996275,
-"Dantalionax",
-199193,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -4893,20 +5165,12 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323393] = {
+[323209] = {
 {
-32.27999999991152,
-"Lord Chamberlain",
-323393,
-"SPELL_CAST_SUCCESS",
+8.62899999995716,
 "Sinstone Statue",
-},
-{
-56.5899999999674,
-"Lord Chamberlain",
-323393,
+323209,
 "SPELL_CAST_SUCCESS",
-"Sinstone Statue",
 },
 },
 [323392] = {
@@ -4923,12 +5187,20 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323209] = {
+[323393] = {
 {
-8.62899999995716,
-"Sinstone Statue",
-323209,
+32.27999999991152,
+"Lord Chamberlain",
+323393,
 "SPELL_CAST_SUCCESS",
+"Sinstone Statue",
+},
+{
+56.5899999999674,
+"Lord Chamberlain",
+323393,
+"SPELL_CAST_SUCCESS",
+"Sinstone Statue",
 },
 },
 },
@@ -5141,6 +5413,20 @@ DetailsTimeLineDB = {
 "Loyal Stoneborn",
 },
 },
+[325523] = {
+{
+6.720000000088476,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+{
+7.937000000034459,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+},
 [323552] = {
 {
 14.00900000007823,
@@ -5152,6 +5438,14 @@ DetailsTimeLineDB = {
 29.81599999999162,
 "High Adjudicator Aleez",
 323552,
+"SPELL_CAST_SUCCESS",
+},
+},
+[325701] = {
+{
+14.51100000005681,
+"Depraved Collector",
+325701,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -5214,28 +5508,6 @@ DetailsTimeLineDB = {
 54.12800000002608,
 "Anima Fountain",
 338012,
-"SPELL_CAST_SUCCESS",
-},
-},
-[325701] = {
-{
-14.51100000005681,
-"Depraved Collector",
-325701,
-"SPELL_CAST_SUCCESS",
-},
-},
-[325523] = {
-{
-6.720000000088476,
-"Depraved Darkblade",
-325523,
-"SPELL_CAST_SUCCESS",
-},
-{
-7.937000000034459,
-"Depraved Darkblade",
-325523,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -5315,6 +5587,28 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[326389] = {
+{
+8.351999999955297,
+"Echelon",
+326389,
+"SPELL_CAST_SUCCESS",
+},
+{
+31.39199999999255,
+"Echelon",
+326389,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328206] = {
+{
+21.68799999996554,
+"Echelon",
+328206,
+"SPELL_CAST_SUCCESS",
+},
+},
 [328124] = {
 {
 13.20799999998417,
@@ -5335,22 +5629,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328206] = {
-{
-21.68799999996554,
-"Echelon",
-328206,
-"SPELL_CAST_SUCCESS",
-},
-},
-[319941] = {
-{
-28.2170000000624,
-"Echelon",
-319941,
-"SPELL_CAST_SUCCESS",
-},
-},
 [319733] = {
 {
 13.20799999998417,
@@ -5359,17 +5637,11 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[326389] = {
+[319941] = {
 {
-8.351999999955297,
+28.2170000000624,
 "Echelon",
-326389,
-"SPELL_CAST_SUCCESS",
-},
-{
-31.39199999999255,
-"Echelon",
-326389,
+319941,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -5419,20 +5691,18 @@ DetailsTimeLineDB = {
 "Army of the Dead",
 },
 },
-[322977] = {
+[325701] = {
 {
-21.89199999999255,
-"Halkias",
-322977,
+7.550000000046566,
+"Depraved Collector",
+325701,
 "SPELL_CAST_SUCCESS",
-"Radekmarv-BurningBlade",
 },
 {
-44.92600000009406,
-"Halkias",
-322977,
+11.18900000001304,
+"Depraved Collector",
+325701,
 "SPELL_CAST_SUCCESS",
-"Radekmarv-BurningBlade",
 },
 },
 [322936] = {
@@ -5455,18 +5725,20 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[325701] = {
+[322977] = {
 {
-7.550000000046566,
-"Depraved Collector",
-325701,
+21.89199999999255,
+"Halkias",
+322977,
 "SPELL_CAST_SUCCESS",
+"Radekmarv-BurningBlade",
 },
 {
-11.18900000001304,
-"Depraved Collector",
-325701,
+44.92600000009406,
+"Halkias",
+322977,
 "SPELL_CAST_SUCCESS",
+"Radekmarv-BurningBlade",
 },
 },
 },
@@ -5996,17 +6268,11 @@ DetailsTimeLineDB = {
 },
 },
 {
-[199915] = {
+[201488] = {
 {
-70.45600000000559,
-"Faceless Voidcaster",
-199915,
-"SPELL_CAST_SUCCESS",
-},
-{
-83.77799999993294,
-"Faceless Voidcaster",
-199915,
+80.4309999999823,
+"Deranged Mindflayer",
+201488,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -6043,6 +6309,192 @@ DetailsTimeLineDB = {
 43.04500000004191,
 "Mogu'shan Secret-Keeper",
 203685,
+"SPELL_CAST_SUCCESS",
+},
+},
+[125096] = {
+{
+31.32400000002235,
+"Enormous Stone Quilen",
+125096,
+"SPELL_CAST_SUCCESS",
+"Kirorik-DunModr",
+},
+},
+[26043] = {
+{
+86.10800000000745,
+"Faceless Voidcaster",
+26043,
+"SPELL_CAST_SUCCESS",
+},
+},
+[199919] = {
+{
+68.95600000000559,
+"Faceless Voidcaster",
+199919,
+"SPELL_CAST_SUCCESS",
+},
+{
+82.27099999994971,
+"Faceless Voidcaster",
+199919,
+"SPELL_CAST_SUCCESS",
+},
+},
+[196508] = {
+{
+57.80299999995623,
+"Deranged Mindflayer",
+196508,
+"SPELL_CAST_SUCCESS",
+"Kirorik-DunModr",
+},
+{
+68.55799999996088,
+"Deranged Mindflayer",
+196508,
+"SPELL_CAST_SUCCESS",
+"Lifey",
+},
+{
+82.06099999998696,
+"Deranged Mindflayer",
+196508,
+"SPELL_CAST_SUCCESS",
+"Arrioch-DunModr",
+},
+{
+92.95999999996275,
+"Deranged Mindflayer",
+196508,
+"SPELL_CAST_SUCCESS",
+"Yarg-Dentarg",
+},
+},
+[199915] = {
+{
+70.45600000000559,
+"Faceless Voidcaster",
+199915,
+"SPELL_CAST_SUCCESS",
+},
+{
+83.77799999993294,
+"Faceless Voidcaster",
+199915,
+"SPELL_CAST_SUCCESS",
+},
+},
+[40504] = {
+{
+61.25099999993108,
+"Void-Touched Juggernaut",
+40504,
+"SPELL_CAST_SUCCESS",
+"Arrioch-DunModr",
+},
+},
+[212564] = {
+{
+33.73499999998603,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+48.81700000003912,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+51.88099999993574,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+66.93999999994412,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+69.95699999993667,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+85.13500000000931,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+{
+91.31400000001304,
+"Tormenting Orb",
+212564,
+"SPELL_CAST_SUCCESS",
+},
+},
+[214771] = {
+{
+61.02700000000186,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Yarg-Dentarg",
+},
+{
+64.6589999999851,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Kirorik-DunModr",
+},
+{
+68.3070000000298,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Yarg-Dentarg",
+},
+{
+74.375,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Yarg-Dentarg",
+},
+{
+78.00899999996182,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Arrioch-DunModr",
+},
+{
+81.63899999996647,
+"Faceless Voidcaster",
+214771,
+"SPELL_CAST_SUCCESS",
+"Yarg-Dentarg",
+},
+},
+[200898] = {
+{
+15.76500000001397,
+"Inquisitor Tormentorum",
+200898,
+"SPELL_CAST_SUCCESS",
+},
+{
+45.67499999993015,
+"Inquisitor Tormentorum",
+200898,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -6114,94 +6566,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[200898] = {
-{
-15.76500000001397,
-"Inquisitor Tormentorum",
-200898,
-"SPELL_CAST_SUCCESS",
-},
-{
-45.67499999993015,
-"Inquisitor Tormentorum",
-200898,
-"SPELL_CAST_SUCCESS",
-},
-},
-[212564] = {
-{
-33.73499999998603,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-48.81700000003912,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-51.88099999993574,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-66.93999999994412,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-69.95699999993667,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-85.13500000000931,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-{
-91.31400000001304,
-"Tormenting Orb",
-212564,
-"SPELL_CAST_SUCCESS",
-},
-},
-[196508] = {
-{
-57.80299999995623,
-"Deranged Mindflayer",
-196508,
-"SPELL_CAST_SUCCESS",
-"Kirorik-DunModr",
-},
-{
-68.55799999996088,
-"Deranged Mindflayer",
-196508,
-"SPELL_CAST_SUCCESS",
-"Lifey",
-},
-{
-82.06099999998696,
-"Deranged Mindflayer",
-196508,
-"SPELL_CAST_SUCCESS",
-"Arrioch-DunModr",
-},
-{
-92.95999999996275,
-"Deranged Mindflayer",
-196508,
-"SPELL_CAST_SUCCESS",
-"Yarg-Dentarg",
-},
-},
 [200905] = {
 {
 24.03899999998976,
@@ -6225,98 +6589,6 @@ DetailsTimeLineDB = {
 98.04899999999907,
 "Inquisitor Tormentorum",
 200905,
-"SPELL_CAST_SUCCESS",
-},
-},
-[40504] = {
-{
-61.25099999993108,
-"Void-Touched Juggernaut",
-40504,
-"SPELL_CAST_SUCCESS",
-"Arrioch-DunModr",
-},
-},
-[199919] = {
-{
-68.95600000000559,
-"Faceless Voidcaster",
-199919,
-"SPELL_CAST_SUCCESS",
-},
-{
-82.27099999994971,
-"Faceless Voidcaster",
-199919,
-"SPELL_CAST_SUCCESS",
-},
-},
-[214771] = {
-{
-61.02700000000186,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Yarg-Dentarg",
-},
-{
-64.6589999999851,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Kirorik-DunModr",
-},
-{
-68.3070000000298,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Yarg-Dentarg",
-},
-{
-74.375,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Yarg-Dentarg",
-},
-{
-78.00899999996182,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Arrioch-DunModr",
-},
-{
-81.63899999996647,
-"Faceless Voidcaster",
-214771,
-"SPELL_CAST_SUCCESS",
-"Yarg-Dentarg",
-},
-},
-[26043] = {
-{
-86.10800000000745,
-"Faceless Voidcaster",
-26043,
-"SPELL_CAST_SUCCESS",
-},
-},
-[125096] = {
-{
-31.32400000002235,
-"Enormous Stone Quilen",
-125096,
-"SPELL_CAST_SUCCESS",
-"Kirorik-DunModr",
-},
-},
-[201488] = {
-{
-80.4309999999823,
-"Deranged Mindflayer",
-201488,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -6408,22 +6680,6 @@ DetailsTimeLineDB = {
 "Kirorik-DunModr",
 },
 },
-[200238] = {
-{
-13.91799999994692,
-"Shade of Xavius",
-200238,
-"SPELL_CAST_SUCCESS",
-"Petronia-Tyrande",
-},
-{
-41.47199999995064,
-"Shade of Xavius",
-200238,
-"SPELL_CAST_SUCCESS",
-"Lifey",
-},
-},
 [200289] = {
 {
 26.96100000001025,
@@ -6438,6 +6694,22 @@ DetailsTimeLineDB = {
 200289,
 "SPELL_CAST_SUCCESS",
 "Kirorik-DunModr",
+},
+},
+[200238] = {
+{
+13.91799999994692,
+"Shade of Xavius",
+200238,
+"SPELL_CAST_SUCCESS",
+"Petronia-Tyrande",
+},
+{
+41.47199999995064,
+"Shade of Xavius",
+200238,
+"SPELL_CAST_SUCCESS",
+"Lifey",
 },
 },
 },
@@ -6460,32 +6732,22 @@ DetailsTimeLineDB = {
 },
 },
 {
-[204574] = {
+[204646] = {
 {
-13.64599999994971,
+35.77599999995437,
 "Oakheart",
-204574,
+204646,
 "SPELL_CAST_SUCCESS",
-},
-{
-39.1589999999851,
-"Oakheart",
-204574,
-"SPELL_CAST_SUCCESS",
+"Deivintír-DunModr",
 },
 },
-[204667] = {
+[204611] = {
 {
-22.85499999998137,
+30.56299999996554,
 "Oakheart",
-204667,
+204611,
 "SPELL_CAST_SUCCESS",
-},
-{
-54.42499999993015,
-"Oakheart",
-204667,
-"SPELL_CAST_SUCCESS",
+"Kirorik-DunModr",
 },
 },
 [220519] = {
@@ -6526,6 +6788,48 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[204574] = {
+{
+13.64599999994971,
+"Oakheart",
+204574,
+"SPELL_CAST_SUCCESS",
+},
+{
+39.1589999999851,
+"Oakheart",
+204574,
+"SPELL_CAST_SUCCESS",
+},
+},
+[204666] = {
+{
+7.055999999982305,
+"Oakheart",
+204666,
+"SPELL_CAST_SUCCESS",
+},
+{
+47.13399999996182,
+"Oakheart",
+204666,
+"SPELL_CAST_SUCCESS",
+},
+},
+[204667] = {
+{
+22.85499999998137,
+"Oakheart",
+204667,
+"SPELL_CAST_SUCCESS",
+},
+{
+54.42499999993015,
+"Oakheart",
+204667,
+"SPELL_CAST_SUCCESS",
+},
+},
 [199051] = {
 {
 13.64599999994971,
@@ -6562,38 +6866,6 @@ DetailsTimeLineDB = {
 "Oakheart",
 199051,
 "SPELL_CAST_SUCCESS",
-},
-},
-[204666] = {
-{
-7.055999999982305,
-"Oakheart",
-204666,
-"SPELL_CAST_SUCCESS",
-},
-{
-47.13399999996182,
-"Oakheart",
-204666,
-"SPELL_CAST_SUCCESS",
-},
-},
-[204611] = {
-{
-30.56299999996554,
-"Oakheart",
-204611,
-"SPELL_CAST_SUCCESS",
-"Kirorik-DunModr",
-},
-},
-[204646] = {
-{
-35.77599999995437,
-"Oakheart",
-204646,
-"SPELL_CAST_SUCCESS",
-"Deivintír-DunModr",
 },
 },
 },
@@ -6846,33 +7118,11 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[334488] = {
+[326629] = {
 {
-26.08500000002096,
+2.032000000006519,
 "Surgeon Stitchflesh",
-334488,
-"SPELL_CAST_SUCCESS",
-"Kavage-Aggra(Português)",
-},
-{
-35.78900000004796,
-"Surgeon Stitchflesh",
-334488,
-"SPELL_CAST_SUCCESS",
-"Kavage-Aggra(Português)",
-},
-},
-[334476] = {
-{
-29.74499999999534,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-{
-41.86200000002282,
-"Surgeon Stitchflesh",
-334476,
+326629,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -6892,12 +7142,34 @@ DetailsTimeLineDB = {
 "Kavage-Aggra(Português)",
 },
 },
-[326629] = {
+[334476] = {
 {
-2.032000000006519,
+29.74499999999534,
 "Surgeon Stitchflesh",
-326629,
+334476,
 "SPELL_CAST_SUCCESS",
+},
+{
+41.86200000002282,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+},
+[334488] = {
+{
+26.08500000002096,
+"Surgeon Stitchflesh",
+334488,
+"SPELL_CAST_SUCCESS",
+"Kavage-Aggra(Português)",
+},
+{
+35.78900000004796,
+"Surgeon Stitchflesh",
+334488,
+"SPELL_CAST_SUCCESS",
+"Kavage-Aggra(Português)",
 },
 },
 },
@@ -7004,19 +7276,19 @@ DetailsTimeLineDB = {
 "Kavage-Aggra(Português)",
 },
 },
-[320012] = {
-{
-13.13699999998789,
-"Amarth",
-320012,
-"SPELL_CAST_SUCCESS",
-},
-},
 [321226] = {
 {
 8.277000000001863,
 "Amarth",
 321226,
+"SPELL_CAST_SUCCESS",
+},
+},
+[320012] = {
+{
+13.13699999998789,
+"Amarth",
+320012,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7169,6 +7441,14 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[323209] = {
+{
+5.672000000020489,
+"Sinstone Statue",
+323209,
+"SPELL_CAST_SUCCESS",
+},
+},
 [323393] = {
 {
 24.46500000002561,
@@ -7176,14 +7456,6 @@ DetailsTimeLineDB = {
 323393,
 "SPELL_CAST_SUCCESS",
 "Sinstone Statue",
-},
-},
-[323209] = {
-{
-5.672000000020489,
-"Sinstone Statue",
-323209,
-"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -7220,11 +7492,29 @@ DetailsTimeLineDB = {
 "Shando-LosErrantes",
 },
 },
-[325872] = {
+[325523] = {
 {
-11.87699999997858,
-"Depraved Obliterator",
-325872,
+0.1,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+{
+7.319000000017695,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+{
+9.747999999963213,
+"Depraved Darkblade",
+325523,
+"SPELL_CAST_SUCCESS",
+},
+{
+17.44599999999628,
+"Depraved Darkblade",
+325523,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7280,13 +7570,20 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[325700] = {
+[325535] = {
 {
-5.392999999981839,
-"Depraved Collector",
-325700,
+1.354999999981374,
+"Depraved Houndmaster",
+325535,
 "SPELL_CAST_SUCCESS",
-"Loyal Stoneborn",
+"Zonnewende-Vek'nilash",
+},
+{
+3.768999999971129,
+"Depraved Houndmaster",
+325535,
+"SPELL_CAST_SUCCESS",
+"Zonnewende-Vek'nilash",
 },
 },
 [338003] = {
@@ -7305,23 +7602,11 @@ DetailsTimeLineDB = {
 "Shando-LosErrantes",
 },
 },
-[325797] = {
+[325872] = {
 {
-7.010000000009313,
-"Depraved Houndmaster",
-325797,
-"SPELL_CAST_SUCCESS",
-},
-{
-10.61900000000605,
-"Depraved Houndmaster",
-325797,
-"SPELL_CAST_SUCCESS",
-},
-{
-22.67300000000978,
-"Depraved Houndmaster",
-325797,
+11.87699999997858,
+"Depraved Obliterator",
+325872,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7334,27 +7619,32 @@ DetailsTimeLineDB = {
 "Zonnewende-Vek'nilash",
 },
 },
-[325535] = {
+[325700] = {
 {
-1.354999999981374,
-"Depraved Houndmaster",
-325535,
+5.392999999981839,
+"Depraved Collector",
+325700,
 "SPELL_CAST_SUCCESS",
-"Zonnewende-Vek'nilash",
+"Loyal Stoneborn",
 },
+},
+[338012] = {
 {
-3.768999999971129,
-"Depraved Houndmaster",
-325535,
+0.1,
+"Anima Fountain",
+338012,
 "SPELL_CAST_SUCCESS",
-"Zonnewende-Vek'nilash",
 },
-},
-[323552] = {
 {
-14.19500000000699,
-"High Adjudicator Aleez",
-323552,
+22.08899999997811,
+"Anima Fountain",
+338012,
+"SPELL_CAST_SUCCESS",
+},
+{
+23.38699999998789,
+"Anima Fountain",
+338012,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7381,23 +7671,11 @@ DetailsTimeLineDB = {
 "Loyal Stoneborn",
 },
 },
-[338012] = {
+[323552] = {
 {
-0.1,
-"Anima Fountain",
-338012,
-"SPELL_CAST_SUCCESS",
-},
-{
-22.08899999997811,
-"Anima Fountain",
-338012,
-"SPELL_CAST_SUCCESS",
-},
-{
-23.38699999998789,
-"Anima Fountain",
-338012,
+14.19500000000699,
+"High Adjudicator Aleez",
+323552,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7409,29 +7687,23 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[325523] = {
+[325797] = {
 {
-0.1,
-"Depraved Darkblade",
-325523,
+7.010000000009313,
+"Depraved Houndmaster",
+325797,
 "SPELL_CAST_SUCCESS",
 },
 {
-7.319000000017695,
-"Depraved Darkblade",
-325523,
+10.61900000000605,
+"Depraved Houndmaster",
+325797,
 "SPELL_CAST_SUCCESS",
 },
 {
-9.747999999963213,
-"Depraved Darkblade",
-325523,
-"SPELL_CAST_SUCCESS",
-},
-{
-17.44599999999628,
-"Depraved Darkblade",
-325523,
+22.67300000000978,
+"Depraved Houndmaster",
+325797,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7442,50 +7714,6 @@ DetailsTimeLineDB = {
 8.103999999992084,
 "Echelon",
 326389,
-"SPELL_CAST_SUCCESS",
-},
-},
-[319941] = {
-{
-27.97299999999814,
-"Echelon",
-319941,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328206] = {
-{
-21.46700000000419,
-"Echelon",
-328206,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328124] = {
-{
-12.96000000002096,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-12.96000000002096,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-12.96000000002096,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-},
-[319733] = {
-{
-12.96000000002096,
-"Echelon",
-319733,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7524,6 +7752,50 @@ DetailsTimeLineDB = {
 26.80499999999302,
 "Undying Stonefiend",
 328125,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328206] = {
+{
+21.46700000000419,
+"Echelon",
+328206,
+"SPELL_CAST_SUCCESS",
+},
+},
+[319941] = {
+{
+27.97299999999814,
+"Echelon",
+319941,
+"SPELL_CAST_SUCCESS",
+},
+},
+[319733] = {
+{
+12.96000000002096,
+"Echelon",
+319733,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328124] = {
+{
+12.96000000002096,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.96000000002096,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.96000000002096,
+"Undying Stonefiend",
+328124,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7767,17 +8039,11 @@ DetailsTimeLineDB = {
 },
 },
 {
-[325245] = {
+[340357] = {
 {
-12.18300000001909,
-"Domina Venomblade",
-325245,
-"SPELL_CAST_SUCCESS",
-},
-{
-35.28100000001723,
-"Domina Venomblade",
-325245,
+36.53499999997439,
+"Pestilence Slime",
+340357,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -7805,54 +8071,26 @@ DetailsTimeLineDB = {
 "Dimadin-Nagrand",
 },
 },
-[336451] = {
+[328651] = {
 {
-8.315999999991618,
-"Defender of Many Eyes",
-336451,
-"SPELL_CAST_SUCCESS",
-},
-{
-27.80400000000373,
-"Defender of Many Eyes",
-336451,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.20799999998417,
-"Defender of Many Eyes",
-336451,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328365] = {
-{
-25.84700000000885,
+3.25199999997858,
 "Venomous Sniper",
-328365,
+328651,
 "SPELL_CAST_SUCCESS",
-"Dimadin-Nagrand",
+},
+},
+[325245] = {
+{
+12.18300000001909,
+"Domina Venomblade",
+325245,
+"SPELL_CAST_SUCCESS",
 },
 {
-28.30499999999302,
-"Venomous Sniper",
-328365,
+35.28100000001723,
+"Domina Venomblade",
+325245,
 "SPELL_CAST_SUCCESS",
-"Dimadin-Nagrand",
-},
-{
-33.14699999999721,
-"Venomous Sniper",
-328365,
-"SPELL_CAST_SUCCESS",
-"Lifey",
-},
-{
-35.57500000001164,
-"Venomous Sniper",
-328365,
-"SPELL_CAST_SUCCESS",
-"Xnally-Sylvanas",
 },
 },
 [332314] = {
@@ -7903,25 +8141,31 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328651] = {
+[336451] = {
 {
-3.25199999997858,
+8.315999999991618,
+"Defender of Many Eyes",
+336451,
+"SPELL_CAST_SUCCESS",
+},
+{
+27.80400000000373,
+"Defender of Many Eyes",
+336451,
+"SPELL_CAST_SUCCESS",
+},
+{
+28.20799999998417,
+"Defender of Many Eyes",
+336451,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328338] = {
+{
+31.22000000003027,
 "Venomous Sniper",
-328651,
-"SPELL_CAST_SUCCESS",
-},
-},
-[327233] = {
-{
-8.291000000026543,
-"Plaguebelcher",
-327233,
-"SPELL_CAST_SUCCESS",
-},
-{
-20.47100000001956,
-"Plaguebelcher",
-327233,
+328338,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8085,11 +8329,17 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328338] = {
+[327233] = {
 {
-31.22000000003027,
-"Venomous Sniper",
-328338,
+8.291000000026543,
+"Plaguebelcher",
+327233,
+"SPELL_CAST_SUCCESS",
+},
+{
+20.47100000001956,
+"Plaguebelcher",
+327233,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8101,12 +8351,34 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[340357] = {
+[328365] = {
 {
-36.53499999997439,
-"Pestilence Slime",
-340357,
+25.84700000000885,
+"Venomous Sniper",
+328365,
 "SPELL_CAST_SUCCESS",
+"Dimadin-Nagrand",
+},
+{
+28.30499999999302,
+"Venomous Sniper",
+328365,
+"SPELL_CAST_SUCCESS",
+"Dimadin-Nagrand",
+},
+{
+33.14699999999721,
+"Venomous Sniper",
+328365,
+"SPELL_CAST_SUCCESS",
+"Lifey",
+},
+{
+35.57500000001164,
+"Venomous Sniper",
+328365,
+"SPELL_CAST_SUCCESS",
+"Xnally-Sylvanas",
 },
 },
 },
@@ -8161,6 +8433,36 @@ DetailsTimeLineDB = {
 36.13799999997718,
 "Pestilence Slime",
 321999,
+"SPELL_CAST_SUCCESS",
+},
+},
+[336451] = {
+{
+36.28700000001118,
+"Defender of Many Eyes",
+336451,
+"SPELL_CAST_SUCCESS",
+},
+},
+[348159] = {
+{
+22.98200000001816,
+"Doctor Ickus",
+348159,
+"SPELL_CAST_SUCCESS",
+},
+},
+[340356] = {
+{
+0.7179999999934807,
+"Pestilence Slime",
+340356,
+"SPELL_CAST_SUCCESS",
+},
+{
+2.950000000011642,
+"Pestilence Slime",
+340356,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8241,36 +8543,6 @@ DetailsTimeLineDB = {
 36.28700000001118,
 "Venomous Sniper",
 334899,
-"SPELL_CAST_SUCCESS",
-},
-},
-[348159] = {
-{
-22.98200000001816,
-"Doctor Ickus",
-348159,
-"SPELL_CAST_SUCCESS",
-},
-},
-[340356] = {
-{
-0.7179999999934807,
-"Pestilence Slime",
-340356,
-"SPELL_CAST_SUCCESS",
-},
-{
-2.950000000011642,
-"Pestilence Slime",
-340356,
-"SPELL_CAST_SUCCESS",
-},
-},
-[336451] = {
-{
-36.28700000001118,
-"Defender of Many Eyes",
-336451,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8436,110 +8708,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[322450] = {
-{
-10.87800000002608,
-"Tred'ova",
-322450,
-"SPELL_CAST_SUCCESS",
-"Cocoon of Lakali",
-},
-{
-20.57600000000093,
-"Tred'ova",
-322450,
-"SPELL_CAST_SUCCESS",
-"Cocoon of Lakali",
-},
-},
-[322709] = {
-{
-28.64100000000326,
-"Tred'ova",
-322709,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.64100000000326,
-"Tred'ova",
-322709,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.64100000000326,
-"Tred'ova",
-322709,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.64100000000326,
-"Tred'ova",
-322709,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.64100000000326,
-"Tred'ova",
-322709,
-"SPELL_CAST_SUCCESS",
-},
-},
-[328029] = {
-{
-37.65600000001723,
-"Plagueroc",
-328029,
-"SPELL_CAST_SUCCESS",
-},
-},
-[326281] = {
-{
-11.1370000000461,
-"Tred'ova",
-326281,
-"SPELL_CAST_SUCCESS",
-},
-{
-14.13300000003073,
-"Tred'ova",
-326281,
-"SPELL_CAST_SUCCESS",
-},
-{
-23.32600000000093,
-"Tred'ova",
-326281,
-"SPELL_CAST_SUCCESS",
-},
-},
-[330423] = {
-{
-37.65600000001723,
-"Fungi Stormer",
-330423,
-"SPELL_CAST_SUCCESS",
-},
-{
-37.65600000001723,
-"Fungi Stormer",
-330423,
-"SPELL_CAST_SUCCESS",
-},
-},
-[330037] = {
-{
-37.65600000001723,
-"Fen Hornet",
-330037,
-"SPELL_CAST_SUCCESS",
-},
-{
-37.65600000001723,
-"Fen Hornet",
-330037,
-"SPELL_CAST_SUCCESS",
-},
-},
 [342443] = {
 {
 37.65600000001723,
@@ -8623,6 +8791,110 @@ DetailsTimeLineDB = {
 37.65600000001723,
 "Plagueroc",
 342443,
+"SPELL_CAST_SUCCESS",
+},
+},
+[328029] = {
+{
+37.65600000001723,
+"Plagueroc",
+328029,
+"SPELL_CAST_SUCCESS",
+},
+},
+[322450] = {
+{
+10.87800000002608,
+"Tred'ova",
+322450,
+"SPELL_CAST_SUCCESS",
+"Cocoon of Lakali",
+},
+{
+20.57600000000093,
+"Tred'ova",
+322450,
+"SPELL_CAST_SUCCESS",
+"Cocoon of Lakali",
+},
+},
+[326281] = {
+{
+11.1370000000461,
+"Tred'ova",
+326281,
+"SPELL_CAST_SUCCESS",
+},
+{
+14.13300000003073,
+"Tred'ova",
+326281,
+"SPELL_CAST_SUCCESS",
+},
+{
+23.32600000000093,
+"Tred'ova",
+326281,
+"SPELL_CAST_SUCCESS",
+},
+},
+[330423] = {
+{
+37.65600000001723,
+"Fungi Stormer",
+330423,
+"SPELL_CAST_SUCCESS",
+},
+{
+37.65600000001723,
+"Fungi Stormer",
+330423,
+"SPELL_CAST_SUCCESS",
+},
+},
+[330037] = {
+{
+37.65600000001723,
+"Fen Hornet",
+330037,
+"SPELL_CAST_SUCCESS",
+},
+{
+37.65600000001723,
+"Fen Hornet",
+330037,
+"SPELL_CAST_SUCCESS",
+},
+},
+[322709] = {
+{
+28.64100000000326,
+"Tred'ova",
+322709,
+"SPELL_CAST_SUCCESS",
+},
+{
+28.64100000000326,
+"Tred'ova",
+322709,
+"SPELL_CAST_SUCCESS",
+},
+{
+28.64100000000326,
+"Tred'ova",
+322709,
+"SPELL_CAST_SUCCESS",
+},
+{
+28.64100000000326,
+"Tred'ova",
+322709,
+"SPELL_CAST_SUCCESS",
+},
+{
+28.64100000000326,
+"Tred'ova",
+322709,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8764,11 +9036,23 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323137] = {
+[331718] = {
 {
-11.71000000002096,
-"Droman Oulfarran",
-323137,
+32.09700000000885,
+"Mistveil Defender",
+331718,
+"SPELL_CAST_SUCCESS",
+},
+{
+32.09700000000885,
+"Mistveil Defender",
+331718,
+"SPELL_CAST_SUCCESS",
+},
+{
+32.09700000000885,
+"Mistveil Defender",
+331718,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8842,23 +9126,11 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[331718] = {
+[323137] = {
 {
-32.09700000000885,
-"Mistveil Defender",
-331718,
-"SPELL_CAST_SUCCESS",
-},
-{
-32.09700000000885,
-"Mistveil Defender",
-331718,
-"SPELL_CAST_SUCCESS",
-},
-{
-32.09700000000885,
-"Mistveil Defender",
-331718,
+11.71000000002096,
+"Droman Oulfarran",
+323137,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -8997,14 +9269,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323209] = {
-{
-7.22099999996135,
-"Sinstone Statue",
-323209,
-"SPELL_CAST_SUCCESS",
-},
-},
 [323393] = {
 {
 24.78999999997905,
@@ -9012,6 +9276,14 @@ DetailsTimeLineDB = {
 323393,
 "SPELL_CAST_SUCCESS",
 "Sinstone Statue",
+},
+},
+[323209] = {
+{
+7.22099999996135,
+"Sinstone Statue",
+323209,
+"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -9103,11 +9375,23 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[326389] = {
+[328124] = {
 {
-8.440000000002328,
-"Echelon",
-326389,
+13.29200000001583,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.29200000001583,
+"Undying Stonefiend",
+328124,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.29200000001583,
+"Undying Stonefiend",
+328124,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -9135,23 +9419,11 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[328124] = {
+[326389] = {
 {
-13.29200000001583,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-13.29200000001583,
-"Undying Stonefiend",
-328124,
-"SPELL_CAST_SUCCESS",
-},
-{
-13.29200000001583,
-"Undying Stonefiend",
-328124,
+8.440000000002328,
+"Echelon",
+326389,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -9176,6 +9448,20 @@ DetailsTimeLineDB = {
 11.17300000000978,
 "Depraved Darkblade",
 325523,
+"SPELL_CAST_SUCCESS",
+},
+},
+[322943] = {
+{
+14.41200000001118,
+"Halkias",
+322943,
+"SPELL_CAST_SUCCESS",
+},
+{
+26.55400000000373,
+"Halkias",
+322943,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -9207,20 +9493,6 @@ DetailsTimeLineDB = {
 8.466000000014901,
 "Depraved Obliterator",
 325872,
-"SPELL_CAST_SUCCESS",
-},
-},
-[322943] = {
-{
-14.41200000001118,
-"Halkias",
-322943,
-"SPELL_CAST_SUCCESS",
-},
-{
-26.55400000000373,
-"Halkias",
-322943,
 "SPELL_CAST_SUCCESS",
 },
 },
@@ -9343,14 +9615,6 @@ DetailsTimeLineDB = {
 "Laurax-Draenor",
 },
 },
-[127801] = {
-{
-43.22399999998743,
-"Turnip Punching Bag",
-127801,
-"SPELL_CAST_SUCCESS",
-},
-},
 [321894] = {
 {
 25.42000000004191,
@@ -9358,6 +9622,14 @@ DetailsTimeLineDB = {
 321894,
 "SPELL_CAST_SUCCESS",
 "Thrazzrah-Draenor",
+},
+},
+[127801] = {
+{
+43.22399999998743,
+"Turnip Punching Bag",
+127801,
+"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -9418,6 +9690,37 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[326629] = {
+{
+1.431999999971595,
+"Surgeon Stitchflesh",
+326629,
+"SPELL_CAST_SUCCESS",
+},
+},
+[320376] = {
+{
+7.785999999963678,
+"Stitchflesh's Creation",
+320376,
+"SPELL_CAST_SUCCESS",
+"Rotjong-Kilrogg",
+},
+},
+[334476] = {
+{
+29.10499999998137,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+{
+41.20600000000559,
+"Surgeon Stitchflesh",
+334476,
+"SPELL_CAST_SUCCESS",
+},
+},
 [334488] = {
 {
 25.47200000000885,
@@ -9439,37 +9742,6 @@ DetailsTimeLineDB = {
 334488,
 "SPELL_CAST_SUCCESS",
 "Rotjong-Kilrogg",
-},
-},
-[334476] = {
-{
-29.10499999998137,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-{
-41.20600000000559,
-"Surgeon Stitchflesh",
-334476,
-"SPELL_CAST_SUCCESS",
-},
-},
-[320376] = {
-{
-7.785999999963678,
-"Stitchflesh's Creation",
-320376,
-"SPELL_CAST_SUCCESS",
-"Rotjong-Kilrogg",
-},
-},
-[326629] = {
-{
-1.431999999971595,
-"Surgeon Stitchflesh",
-326629,
-"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -9505,14 +9777,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[321226] = {
-{
-9.584999999962747,
-"Amarth",
-321226,
-"SPELL_CAST_SUCCESS",
-},
-},
 [320171] = {
 {
 9.158999999985099,
@@ -9527,6 +9791,14 @@ DetailsTimeLineDB = {
 320171,
 "SPELL_CAST_SUCCESS",
 "Rotjong-Kilrogg",
+},
+},
+[321226] = {
+{
+9.584999999962747,
+"Amarth",
+321226,
+"SPELL_CAST_SUCCESS",
 },
 },
 },
@@ -9722,22 +9994,6 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
-[323190] = {
-{
-3.067000000039116,
-"Stitched Vanguard",
-323190,
-"SPELL_CAST_SUCCESS",
-},
-},
-[320631] = {
-{
-32.19300000002841,
-"Carrion Worm",
-320631,
-"SPELL_CAST_SUCCESS",
-},
-},
 [320637] = {
 {
 25.43900000001304,
@@ -9752,16 +10008,78 @@ DetailsTimeLineDB = {
 "SPELL_CAST_SUCCESS",
 },
 },
+[320631] = {
+{
+32.19300000002841,
+"Carrion Worm",
+320631,
+"SPELL_CAST_SUCCESS",
+},
+},
+[323190] = {
+{
+3.067000000039116,
+"Stitched Vanguard",
+323190,
+"SPELL_CAST_SUCCESS",
+},
+},
 },
 },
 ["useicons"] = true,
-["window_scale"] = 1,
-["backdrop_color"] = {
-0,
-0,
-0,
-0.4,
+["cooldowns_timeline"] = {
+{
+["Sacrae"] = {
+{
+15.12899999998626,
+"Lighteagle-Magtheridon",
+33206,
 },
+},
+},
+{
+["Lighteagle-Magtheridon"] = {
+{
+7.721000000019558,
+"Lighteagle-Magtheridon",
+387174,
+},
+},
+["Mortkin"] = {
+{
+32.03200000000652,
+"Mortkin",
+48707,
+},
+},
+["Sacrae"] = {
+{
+16.50900000002002,
+"Sacrae",
+19236,
+},
+},
+},
+{
+["Pikemaster"] = {
+{
+5.551999999996042,
+"Pikemaster",
+55342,
+},
+},
+},
+{
+["Pikemaster"] = {
+{
+3.15600000001723,
+"Pikemaster",
+55342,
+},
+},
+},
+},
+["window_scale"] = 1,
 ["deaths_data"] = {
 {
 },
@@ -9774,769 +10092,546 @@ DetailsTimeLineDB = {
 },
 ["debuff_timeline"] = {
 {
-["Architecton"] = {
-[387359] = {
-12.05800000000454,
-17.06100000000151,
-67.64299999999639,
-70.2390000000014,
+["Lighteagle-Magtheridon"] = {
+[373912] = {
+12.04299999997602,
+12.84799999999814,
 ["stacks"] = {
 },
-["source"] = "[*] Waterlogged",
+["source"] = "Decatriarch Wratheye",
+["active"] = false,
+},
+[373917] = {
+12.06299999999465,
+22.73000000001048,
+["stacks"] = {
+},
+["source"] = "Decatriarch Wratheye",
+["active"] = false,
+},
+[376149] = {
+8.087999999988824,
+15.24799999999232,
+["stacks"] = {
+},
+["source"] = "Choking Rotcloud",
+["active"] = false,
+},
+[373896] = {
+7.715999999985797,
+22.73000000001048,
+["stacks"] = {
+},
+["source"] = "Decatriarch Wratheye",
 ["active"] = false,
 },
 },
-["Flippo"] = {
-[387359] = {
-12.13700000000245,
-17.14400000000023,
-66.16899999999441,
-70.2390000000014,
+["Pikemaster"] = {
+[376149] = {
+18.14899999997579,
+18.38499999998021,
+18.96099999998114,
+20.05299999998533,
 ["stacks"] = {
 },
-["source"] = "[*] Waterlogged",
+["source"] = "Choking Rotcloud",
 ["active"] = false,
 },
-},
-["Dabrya-DunModr"] = {
-[387359] = {
-12.05800000000454,
-17.06100000000151,
-64.0789999999979,
-65.58199999999488,
-66.0170000000071,
-70.2390000000014,
+[373896] = {
+18.1710000000021,
+22.73000000001048,
 ["stacks"] = {
 },
-["source"] = "[*] Waterlogged",
+["source"] = "Choking Rotcloud",
 ["active"] = false,
 },
 },
 },
 {
-["Flippo"] = {
-[386743] = {
-12.82200000000012,
-54.25900000000547,
+["Luckystone-Silvermoon"] = {
+[374245] = {
+1.952000000019325,
+2.654999999998836,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "[*] Rotting Creek",
+["active"] = false,
+},
+[377864] = {
+24.76500000001397,
+39.41899999999441,
+["stacks"] = {
+},
+["source"] = "Treemouth",
+["active"] = false,
+},
+[378054] = {
+24.06200000000536,
+26.46700000000419,
+29.36600000000908,
+33.49000000001979,
+["stacks"] = {
+},
+["source"] = "[*] Withering Away!",
+["active"] = false,
+},
+[376933] = {
+29.01800000001094,
+33.02499999999418,
+["stacks"] = {
+},
+["source"] = "Treemouth",
 ["active"] = false,
 },
 },
-["Dabrya-DunModr"] = {
-[386743] = {
-0.1,
-54.25900000000547,
+["Pikemaster"] = {
+[376933] = {
+29.01800000001094,
+33.02499999999418,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "Treemouth",
+["active"] = false,
+},
+[377222] = {
+33.06299999999465,
+34.86500000001979,
+["stacks"] = {
+},
+["source"] = "[*] Consume",
+["active"] = false,
+},
+[378054] = {
+29.80900000000838,
+33.07399999999325,
+["stacks"] = {
+},
+["source"] = "[*] Withering Away!",
+["active"] = false,
+},
+[374245] = {
+28.21300000001793,
+29.20300000000862,
+["stacks"] = {
+},
+["source"] = "[*] Rotting Creek",
 ["active"] = false,
 },
 },
-["Drenajek-Lightbringer"] = {
-[386743] = {
-0.1539999999949941,
-54.25900000000547,
+["Mortkin"] = {
+[374245] = {
+1.296000000002096,
+1.630999999993946,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "[*] Rotting Creek",
+["active"] = false,
+},
+[377864] = {
+24.76500000001397,
+39.41899999999441,
+["stacks"] = {
+},
+["source"] = "Treemouth",
+["active"] = false,
+},
+[378054] = {
+24.15600000001723,
+25.48600000000442,
+29.28800000000047,
+33.89400000000023,
+39.24100000000908,
+39.41899999999441,
+["stacks"] = {
+},
+["source"] = "[*] Withering Away!",
+["active"] = false,
+},
+[376933] = {
+29.01800000001094,
+33.02499999999418,
+["stacks"] = {
+},
+["source"] = "Treemouth",
 ["active"] = false,
 },
 },
-["Architecton"] = {
-[386743] = {
-0.1,
-54.25900000000547,
+["Lighteagle-Magtheridon"] = {
+[376933] = {
+29.01800000001094,
+33.02499999999418,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "Treemouth",
 ["active"] = false,
 },
-[385963] = {
-6.017999999996391,
-7.194999999992433,
-17.02799999999115,
-23.02700000000186,
+[377864] = {
+24.76500000001397,
+39.41899999999441,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "Treemouth",
+["active"] = false,
+},
+[378054] = {
+24.01900000000023,
+24.89999999999418,
+28.99800000002142,
+35.02999999999884,
+["stacks"] = {
+},
+["source"] = "[*] Withering Away!",
 ["active"] = false,
 },
 },
 ["Sacrae"] = {
-[386743] = {
-0.1,
-54.25900000000547,
+[376933] = {
+29.01800000001094,
+33.02499999999418,
 ["stacks"] = {
 },
-["source"] = "Khajin the Unyielding",
+["source"] = "Treemouth",
+["active"] = false,
+},
+[378054] = {
+29.66800000000512,
+33.80199999999604,
+["stacks"] = {
+},
+["source"] = "[*] Withering Away!",
+["active"] = false,
+},
+[374245] = {
+2.453000000008615,
+2.74100000000908,
+["stacks"] = {
+},
+["source"] = "[*] Rotting Creek",
 ["active"] = false,
 },
 },
 },
 {
-["Drenajek-Lightbringer"] = {
-[385555] = {
-21.24000000000524,
-23.2450000000099,
+["Pikemaster"] = {
+[385356] = {
+8.720000000001164,
+11.74399999997695,
 ["stacks"] = {
 },
-["source"] = "Gulping Goliath",
-["active"] = false,
-},
-[374389] = {
-21.24000000000524,
-31.25200000000768,
-["stacks"] = {
-},
-["source"] = "Gulping Goliath",
+["source"] = "Gutshot",
 ["active"] = false,
 },
 },
-["Dabrya-DunModr"] = {
-[374389] = {
-20.49899999999616,
-41.06200000000536,
+["Luckystone-Silvermoon"] = {
+[385356] = {
+8.720000000001164,
+11.74399999997695,
 ["stacks"] = {
 },
-["source"] = "Curious Swoglet",
-["active"] = false,
-},
-},
-["Flippo"] = {
-[374389] = {
-20.5679999999993,
-30.5850000000064,
-["stacks"] = {
-},
-["source"] = "Curious Swoglet",
-["active"] = false,
-},
-},
-["Sacrae"] = {
-[374389] = {
-17.57700000000477,
-41.06200000000536,
-["stacks"] = {
-},
-["source"] = "Curious Swoglet",
+["source"] = "Gutshot",
 ["active"] = false,
 },
 },
 },
 {
-["Flippo"] = {
-[389446] = {
-53.65999999998894,
-57.66099999999278,
+["Pikemaster"] = {
+[378020] = {
+4.961999999999534,
+6.474000000016531,
 ["stacks"] = {
 },
-["source"] = "Nullification Device",
-["active"] = false,
-},
-[384524] = {
-8.00899999999092,
-9.50899999999092,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389181] = {
-33.29699999999139,
-36.73499999998603,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389443] = {
-53.75999999999476,
-56.64499999998952,
-["stacks"] = {
-},
-["source"] = "Nullification Device",
+["source"] = "Gashtooth",
 ["active"] = false,
 },
 },
-["Dabrya-DunModr"] = {
-[384524] = {
-8.00899999999092,
-9.521999999997206,
+["Lighteagle-Magtheridon"] = {
+[378020] = {
+5.969000000011874,
+7.480000000010477,
 ["stacks"] = {
 },
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389443] = {
-38.96199999999953,
-54.28199999999197,
-79.07699999999022,
-89.08999999999651,
-["stacks"] = {
-},
-["source"] = "Nullification Device",
+["source"] = "Gashtooth",
 ["active"] = false,
 },
 },
-["Drenajek-Lightbringer"] = {
-[389179] = {
-25.73199999998906,
-31.74499999999534,
+["Mortkin"] = {
+[378020] = {
+8.969000000011874,
+23.97299999999814,
 ["stacks"] = {
 },
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[384524] = {
-8.00899999999092,
-9.50899999999092,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389181] = {
-31.77099999999336,
-36.09199999998964,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389443] = {
-78.94699999998556,
-81.66799999999057,
-["stacks"] = {
-},
-["source"] = "Nullification Device",
+["source"] = "Gashtooth",
 ["active"] = false,
 },
 },
-["Architecton"] = {
-[389443] = {
-39.41399999998976,
-40.8579999999929,
-52.93199999998615,
-62.93899999999849,
-71.84499999998661,
-81.85599999999977,
+["Luckystone-Silvermoon"] = {
+[378020] = {
+7.967999999993481,
+9.472999999998137,
 ["stacks"] = {
 },
-["source"] = "Nullification Device",
-["active"] = false,
-},
-[389181] = {
-34.3689999999915,
-36.17099999998754,
-41.36199999999371,
-43.00199999999313,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389446] = {
-59.74899999999616,
-63.74599999999919,
-88.81999999999243,
-92.81499999998778,
-["stacks"] = {
-},
-["source"] = "Nullification Device",
+["source"] = "Gashtooth",
 ["active"] = false,
 },
 },
 ["Sacrae"] = {
-[389179] = {
-25.73199999998906,
-31.74499999999534,
+[378020] = {
+6.970000000001164,
+7.967999999993481,
 ["stacks"] = {
 },
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[384524] = {
-8.00899999999092,
-9.521999999997206,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389181] = {
-31.77099999999336,
-34.54099999999744,
-["stacks"] = {
-},
-["source"] = "Watcher Irideus",
-["active"] = false,
-},
-[389443] = {
-39.22499999999127,
-56.94199999999546,
-58.83899999999267,
-76.20699999999488,
-["stacks"] = {
-},
-["source"] = "Nullification Device",
+["source"] = "Gashtooth",
 ["active"] = false,
 },
 },
 },
 },
-["cooldowns_timeline"] = {
-{
-["Drenajek-Lightbringer"] = {
-{
-5.289000000004307,
-"Primal Tsunami",
-198103,
-},
-},
-["Architecton"] = {
-{
-43.45699999999488,
-"Architecton",
-212084,
-},
-{
-53.48699999999371,
-"Primal Tsunami",
-204021,
-},
-{
-53.92900000000373,
-"Architecton",
-187827,
-},
-},
-["Flippo"] = {
-{
-54.67900000000373,
-"Flippo",
-48707,
-},
-},
-["Dabrya-DunModr"] = {
-{
-34.19100000000617,
-"Dabrya-DunModr",
-11426,
-},
-{
-66.67399999999907,
-"Dabrya-DunModr",
-11426,
-},
-},
-},
-{
-["Architecton"] = {
-{
-4.210999999995693,
-"Khajin the Unyielding",
-204021,
-},
-{
-7.033999999999651,
-"Architecton",
-212084,
-},
-},
-["Dabrya-DunModr"] = {
-{
-0.7459999999991851,
-"Dabrya-DunModr",
-55342,
-},
-},
-},
-{
-["Sacrae"] = {
-{
-38.80299999999988,
-"Sacrae",
-586,
-},
-},
-["Architecton"] = {
-{
-2.494000000006054,
-"Gulping Goliath",
-204021,
-},
-{
-17.77000000000408,
-"Architecton",
-212084,
-},
-},
-["Dabrya-DunModr"] = {
-{
-0.4000000000087312,
-"Dabrya-DunModr",
-55342,
-},
-{
-38.28399999999965,
-"Dabrya-DunModr",
-11426,
-},
-},
-},
-{
-["Sacrae"] = {
-{
-26.67799999999988,
-"Sacrae",
-586,
-},
-},
-["Dabrya-DunModr"] = {
-{
-3.605999999999767,
-"Dabrya-DunModr",
-55342,
-},
-},
-["Architecton"] = {
-{
-1.444999999992433,
-"Watcher Irideus",
-204021,
-},
-{
-87.97899999999208,
-"Architecton",
-212084,
-},
-},
-},
+["backdrop_color"] = {
+0,
+0,
+0,
+0.4,
 },
 ["BossSpellCast"] = {
 {
-["Primal Tsunami"] = {
+["Decatriarch Wratheye"] = {
 {
-6.850999999995111,
-"Primal Tsunami",
-388424,
+7.679999999993015,
+"Decatriarch Wratheye",
+376170,
 "SPELL_CAST_SUCCESS",
 },
 {
-9.881999999997788,
-"Primal Tsunami",
-387559,
+12.03199999997742,
+"Decatriarch Wratheye",
+373912,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+{
+12.05400000000373,
+"Decatriarch Wratheye",
+373915,
 "SPELL_CAST_SUCCESS",
 },
 {
-17.74700000000303,
-"Primal Tsunami",
-387585,
+12.05400000000373,
+"Decatriarch Wratheye",
+373917,
 "SPELL_CAST_SUCCESS",
 },
 {
-59.01799999999639,
-"Primal Tsunami",
-388424,
+12.84799999999814,
+"Decatriarch Wratheye",
+373915,
 "SPELL_CAST_SUCCESS",
 },
 {
-62.00800000000163,
-"Primal Tsunami",
-387559,
+12.84799999999814,
+"Decatriarch Wratheye",
+373917,
 "SPELL_CAST_SUCCESS",
 },
 {
-70.01900000000023,
-"Primal Tsunami",
-387504,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-},
-["Primalist Infuser"] = {
-{
-25.4210000000021,
-"Primalist Infuser",
-387618,
-"SPELL_CAST_SUCCESS",
-},
-{
-25.4210000000021,
-"Primalist Infuser",
-387618,
-"SPELL_CAST_SUCCESS",
-},
-{
-46.46199999999953,
-"Primalist Infuser",
-388882,
+16.89400000000023,
+"Decatriarch Wratheye",
+373942,
 "SPELL_CAST_SUCCESS",
 },
 },
 },
 {
-["Khajin the Unyielding"] = {
+["Treemouth"] = {
 {
-6.017999999996391,
-"Khajin the Unyielding",
-385963,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-{
-17.02799999999115,
-"Khajin the Unyielding",
-386757,
+7.309999999997672,
+"Treemouth",
+377559,
 "SPELL_CAST_SUCCESS",
 },
 {
-17.02799999999115,
-"Khajin the Unyielding",
-385963,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-{
-23.53199999999197,
-"Khajin the Unyielding",
-386559,
-"SPELL_CAST_SUCCESS",
-},
-{
-44.02999999999884,
-"Khajin the Unyielding",
-386757,
-"SPELL_CAST_SUCCESS",
-},
-{
-45.54099999999744,
-"Khajin the Unyielding",
-386559,
-"SPELL_CAST_SUCCESS",
-},
-},
-},
-{
-["Gulping Goliath"] = {
-{
-10.00500000000466,
-"Gulping Goliath",
-385181,
-"SPELL_CAST_SUCCESS",
-},
-{
-21.24000000000524,
-"Gulping Goliath",
-385551,
-"SPELL_CAST_SUCCESS",
-},
-{
-31.91800000000512,
-"Gulping Goliath",
-385442,
-"SPELL_CAST_SUCCESS",
-},
-{
-40.41400000000431,
-"Gulping Goliath",
-385531,
-"SPELL_CAST_SUCCESS",
-},
-},
-},
-{
-["Watcher Irideus"] = {
-{
-8.00099999998929,
-"Watcher Irideus",
-384524,
-"SPELL_CAST_SUCCESS",
-},
-{
-11.88299999998708,
-"Watcher Irideus",
-384014,
-"SPELL_CAST_SUCCESS",
-},
-{
-25.73199999998906,
-"Watcher Irideus",
-389179,
-"SPELL_CAST_SUCCESS",
-},
-{
-28.67799999999988,
-"Watcher Irideus",
-384524,
-"SPELL_CAST_SUCCESS",
-},
-{
-32.74899999999616,
-"Watcher Irideus",
-383840,
-"SPELL_CAST_SUCCESS",
-},
-{
-38.96199999999953,
-"Watcher Irideus",
-389056,
-"SPELL_CAST_SUCCESS",
-},
-{
-88.11099999998987,
-"Watcher Irideus",
-384524,
-"SPELL_CAST_SUCCESS",
-},
-{
-90.7609999999986,
-"Watcher Irideus",
-384014,
-"SPELL_CAST_SUCCESS",
-},
-},
-["Nullification Device"] = {
-{
-38.0909999999858,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Dabrya-DunModr",
-},
-{
-38.0909999999858,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-{
-38.0909999999858,
-"Nullification Device",
-389443,
+15.57500000001164,
+"Treemouth",
+376811,
 "SPELL_CAST_SUCCESS",
 "Sacrae",
 },
 {
-42.95299999999406,
-"Nullification Device",
-389443,
+21.58300000001327,
+"Treemouth",
+377859,
 "SPELL_CAST_SUCCESS",
-"Dabrya-DunModr",
 },
 {
-45.06399999999849,
-"Nullification Device",
-389443,
+29.01800000001094,
+"Treemouth",
+376933,
+"SPELL_CAST_SUCCESS",
+},
+{
+29.01800000001094,
+"Treemouth",
+376934,
+"SPELL_CAST_SUCCESS",
+},
+{
+33.02499999999418,
+"Treemouth",
+378764,
+"SPELL_CAST_SUCCESS",
+"Pikemaster",
+},
+},
+["Decaying Slime"] = {
+{
+21.73399999999674,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.80900000000838,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.80900000000838,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.98300000000745,
+"Decaying Slime",
+378057,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+["Gutshot"] = {
+{
+4.183999999979278,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Pikemaster",
+},
+{
+8.720000000001164,
+"Gutshot",
+383979,
+"SPELL_CAST_SUCCESS",
+},
+{
+11.74399999997695,
+"Gutshot",
+385359,
+"SPELL_CAST_SUCCESS",
+},
+{
+14.89099999997416,
+"Gutshot",
+384353,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+{
+17.52399999997579,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Luckystone-Silvermoon",
+},
+},
+["Rotfang Hyena"] = {
+{
+9.954999999987194,
+"Rotfang Hyena",
+384529,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.44799999997485,
+"Rotfang Hyena",
+384531,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+["Tricktotem"] = {
+{
+3.097999999998137,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Lighteagle-Magtheridon",
+},
+{
+5.958000000013271,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+9.619000000006054,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+13.25899999999092,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Mortkin",
+},
+{
+17.8980000000156,
+"Tricktotem",
+377950,
+"SPELL_CAST_SUCCESS",
+"Rira Hackclaw",
+},
+{
+18.04099999999744,
+"Tricktotem",
+377965,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.18300000001909,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Luckystone-Silvermoon",
+},
+{
+27.27700000000186,
+"Tricktotem",
+378155,
 "SPELL_CAST_SUCCESS",
 "Sacrae",
 },
+},
+["Gashtooth"] = {
 {
-45.18399999999383,
-"Nullification Device",
-389446,
+4.961999999999534,
+"Gashtooth",
+378029,
 "SPELL_CAST_SUCCESS",
 },
-{
-45.37199999998848,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Sacrae",
 },
+["Decayed Elder"] = {
 {
-51.24499999999534,
-"Nullification Device",
-389446,
+0.1,
+"Decayed Elder",
+383062,
 "SPELL_CAST_SUCCESS",
-},
-{
-52.66199999999662,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-{
-52.66199999999662,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Flippo",
-},
-{
-53.65999999998894,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
-},
-{
-58.73099999999977,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Sacrae",
-},
-{
-59.74899999999616,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
-},
-{
-62.16399999998976,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
-},
-{
-66.00099999998929,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Sacrae",
-},
-{
-70.65599999998813,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
-},
-{
-70.86299999999756,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Architecton",
-},
-{
-77.82799999999406,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Dabrya-DunModr",
-},
-{
-78.13199999999779,
-"Nullification Device",
-389443,
-"SPELL_CAST_SUCCESS",
-"Drenajek-Lightbringer",
-},
-{
-82.76599999998871,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
-},
-{
-88.81999999999243,
-"Nullification Device",
-389446,
-"SPELL_CAST_SUCCESS",
+"Infected Lasher",
 },
 },
 },

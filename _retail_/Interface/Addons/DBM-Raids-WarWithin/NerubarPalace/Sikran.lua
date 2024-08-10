@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2599, "DBM-Raids-WarWithin", 1, 1273)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240711100310")
+mod:SetRevision("20240725195730")
 mod:SetCreatureID(214503)
 mod:SetEncounterID(2898)
 mod:SetUsedIcons(1, 2, 3)
@@ -22,7 +22,6 @@ mod:RegisterEventsInCombat(
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
---TODO, figure out how tanks survive being hit for 15 million on mythic, cause I see no viable strategy besides 3 tanking. On heroic and lower you can 2 tank...kinda
 --TODO, GTFO for rain of arrows with correct ID
 --NOTE, As predicted, phase blades was made a private aura
 --TODO, change option keys to match BW for weak aura compatability before live
@@ -98,14 +97,14 @@ function mod:SPELL_CAST_START(args)
 		specWarnShatteringSweep:Play("justrun")
 		timerShatteringSweepCD:Start(nil, self.vb.sweepCount+1)
 		--Restart timers
-		self.vb.tankCombo = 0
-		self.vb.bladesCount = 0
-		self.vb.arrowsCount = 0
-		self.vb.decimateCount = 0
-		timerCaptainsFlourishCD:Start(10.7, 1)
-		timerPhaseBladesCD:Start(19.3, 1)
-		timerRainofArrowsCD:Start(self:IsMythic() and 29.1 or 39.7, 1)
-		timerDecimateCD:Start(self:IsMythic() and 61.9 or 48.3, 1)
+		--self.vb.tankCombo = 0
+		--self.vb.bladesCount = 0
+		--self.vb.arrowsCount = 0
+		--self.vb.decimateCount = 0
+		timerCaptainsFlourishCD:Start(10.7, self.vb.tankCombo+1)
+		timerPhaseBladesCD:Start(19.3, self.vb.bladesCount+1)
+		timerRainofArrowsCD:Start(self:IsMythic() and 29.1 or 39.7, self.vb.arrowsCount+1)
+		timerDecimateCD:Start(self:IsMythic() and 61.9 or 48.3, self.vb.decimateCount+1)
 	elseif spellId == 435401 or spellId == 432965 then--Second cast / First cast
 		if spellId == 432965 then
 			--First part of Combo
@@ -114,8 +113,7 @@ function mod:SPELL_CAST_START(args)
 			self.vb.comboCount = 0
 			if self.vb.tankCombo < 4 then
 				--On mythic, the first tank combos are always 25.1 apart but then they are 27.9 apart after first sweep
-				--22s are rare, so making the min for normal and heroic 23 for now
-				timerCaptainsFlourishCD:Start(self:IsMythic() and (self.vb.sweepCount == 0 and 25.1 or 27.2) or 23, self.vb.tankCombo+1)
+				timerCaptainsFlourishCD:Start(self:IsMythic() and (self.vb.sweepCount == 0 and 25.1 or 27.2) or 22.5, self.vb.tankCombo+1)
 			end
 		end
 		--Now do combo stuff
@@ -125,16 +123,6 @@ function mod:SPELL_CAST_START(args)
 				specWarnExpose:Show()
 				specWarnExpose:Play("defensive")
 			end
-		else
-			--Other tank has this debuff already and it will NOT be gone when cast finishes, TAUNT NOW!
-			--This doesn't check TankSwapBehavior dropdown because this always validates that the player about to get hit by this, shouldn't be hit by it
-			--if UnitExists("boss1target") and not UnitIsUnit("player", "boss1target") then
-			--	local _, _, _, _, _, expireTimeTarget = DBM:UnitDebuff("boss1target", 407547)
-			--	if (expireTimeTarget and expireTimeTarget-GetTime() >= 2) and self:AntiSpam(1, 1) then
-			--		specWarnFlamingSlashTaunt:Show(UnitName("boss1target"))
-			--		specWarnFlamingSlashTaunt:Play("tauntboss")
-			--	end
-			--end
 		end
 	elseif spellId == 435403 then
 		self.vb.comboCount = self.vb.comboCount + 1
@@ -146,7 +134,7 @@ function mod:SPELL_CAST_START(args)
 			--This doesn't check TankSwapBehavior dropdown because this always validates that the player about to get hit by this, shouldn't be hit by it
 			if UnitExists("boss1target") and not UnitIsUnit("player", "boss1target") then
 				local _, _, _, _, _, expireTimeTarget = DBM:UnitDebuff("boss1target", 435410)--Target has Pierced Defenses already and can't take this 500% damage hit
-				if (expireTimeTarget and expireTimeTarget-GetTime() >= 2) and self:AntiSpam(1, 1) then
+				if (expireTimeTarget and expireTimeTarget-GetTime() >= 2) and self:AntiSpam(1.5, 1) then
 					specWarnPiercedDefenses:Show(UnitName("boss1target"))
 					specWarnPiercedDefenses:Play("tauntboss")
 				end
@@ -186,40 +174,11 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnCosmicShards:Schedule(05, args.amount or 1)
 		timerCosmicShards:Stop()
 		timerCosmicShards:Start()
-	elseif (spellId == 438845 or spellId == 435410) and not args:IsPlayer() then--Exposed weakness / Pierced Defenses
-		--local alertTaunt
-		--if self.vb.comboCount == 1 then
-		--	self.vb.firstHitTank = args.destName
-		--end
-		if spellId == 438845 and (args.amount or 1) == 2 then--Only thing we can be sure of, you don't want a tank taking all 3 hits
+	elseif spellId == 438845 and not args:IsPlayer() then--Exposed weakness / Pierced Defenses
+		if (args.amount or 1) == 2 and self:AntiSpam(1.5, 1) then--Only thing we can be sure of, you don't want a tank taking all 3 hits
 			specWarnExposedWeakness:Show(args.destName)
 			specWarnExposedWeakness:Play("tauntboss")
 		end
-		--if self.Options.TankSwapBehavior == "OnlyIfDanger" then
-		--	--This means there are 0 preemtive taunts at all and you only taunt when a combo hit starts and it's not safe for the current target to take
-		--	--This uses minimum amount of taunts but poses greater risk of messup since it's reactiev only and not proactive
-		--	return
-		--elseif self.Options.TankSwapBehavior == "DoubleSoak" and self.vb.comboCount == 2 and args.destName == self.vb.firstHitTank then
-		--	--This basically means the first tank took first 2 hits then 2nd tank taunts 3rd
-		--	alertTaunt = true
-		--elseif self.Options.TankSwapBehavior == "MinMaxSoak" and self.vb.comboCount == 1 then
-		--	--Min Max soaking to spread combo across both tanks to mitigate having one tank eat all the damage
-		--	--Other tank got first part of combo, and you do NOT have debuff for next part of combo, make you taunt next part of combo so one tank doesn't get both debuffs
-		--	--This condition is mostly a "first combo" catch, where the SPELL_CAST_START checks would fail to assign the tanks automatically based on what they took in previous combo
-		--	local checkedSpellId
-		--	if spellId == 438845 then
-		--		checkedSpellId = 435410
-		--	else
-		--		checkedSpellId = 438845
-		--	end
-		--	if not DBM:UnitDebuff("player", checkedSpellId) then
-		--		alertTaunt = true
-		--	end
-		--end
-		--if alertTaunt and self:AntiSpam(1, 1) then
-		--	specWarnFlamingSlashTaunt:Show(args.destName)
-		--	specWarnFlamingSlashTaunt:Play("tauntboss")
-		--end
 	--elseif spellId == 433517 then
 	--	if self:AntiSpam(10, 2) then--Backup
 	--		self.vb.bladesCount = self.vb.bladesCount + 1

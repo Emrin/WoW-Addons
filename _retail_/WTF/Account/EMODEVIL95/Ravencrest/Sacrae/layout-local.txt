@@ -31,7 +31,7 @@ Frame: ACP_AddonList
 FrameLevel: 0
 Anchor: CENTER
 X: 0
-Y: 60
+Y: 12
 W: 640
 H: 512
 Frame: scanner_button

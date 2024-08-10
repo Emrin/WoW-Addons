@@ -1,9 +1,9 @@
 
 BigWigs3DB = {
 ["namespaces"] = {
-["BigWigs_Plugins_Victory"] = {
-},
 ["BigWigs_Plugins_AltPower"] = {
+},
+["BigWigs_Plugins_Victory"] = {
 },
 ["BigWigs_Plugins_Colors"] = {
 },
@@ -19,12 +19,6 @@ BigWigs3DB = {
 },
 ["BigWigs_Plugins_Sounds"] = {
 },
-["BigWigs_Plugins_Messages"] = {
-},
-["BigWigs_Plugins_AutoReply"] = {
-},
-["BigWigs_Plugins_Statistics"] = {
-},
 ["BigWigs_Plugins_Proximity"] = {
 ["profiles"] = {
 ["Default"] = {
@@ -33,6 +27,12 @@ BigWigs3DB = {
 },
 },
 },
+["BigWigs_Plugins_AutoReply"] = {
+},
+["BigWigs_Plugins_Statistics"] = {
+},
+["BigWigs_Plugins_Messages"] = {
+},
 ["BigWigs_Plugins_InfoBox"] = {
 },
 ["BigWigs_Plugins_Pull"] = {
@@ -40,8 +40,26 @@ BigWigs3DB = {
 ["BigWigs_Plugins_Countdown"] = {
 },
 },
+["global"] = {
+["watchedMovies"] = {
+[-2233] = true,
+[991] = true,
+[-2234] = true,
+[992] = true,
+[1003] = true,
+[-323] = true,
+[-2238] = {
+true,
+true,
+},
+[964] = true,
+[-575] = true,
+[-2170] = true,
+},
+},
 ["profileKeys"] = {
 ["Crystalol - Draenor"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
 ["Cutetroll - Draenor"] = "Default",
 ["Sacrae - Ravencrest"] = "Default",
 ["Redangel - Draenor"] = "Default",
@@ -51,23 +69,6 @@ BigWigs3DB = {
 ["Kungfugoblin - Draenor"] = "Default",
 ["Unchill - Draenor"] = "Default",
 ["Divinefurry - Draenor"] = "Default",
-},
-["global"] = {
-["watchedMovies"] = {
-[-2233] = true,
-[991] = true,
-[-2170] = true,
-[-2238] = {
-true,
-true,
-},
-[1003] = true,
-[-323] = true,
-[992] = true,
-[964] = true,
-[-575] = true,
-[-2234] = true,
-},
 },
 ["profiles"] = {
 ["Default"] = {
@@ -301,4 +302,3 @@ BigWigsStatsDB = {
 },
 },
 }
-BigWigsBarsReset = true

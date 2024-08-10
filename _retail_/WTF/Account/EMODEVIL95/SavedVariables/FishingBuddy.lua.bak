@@ -9,13 +9,13 @@ FishingBuddy_Info = {
 	["DataFish"] = 0,
 	["FishingHoles"] = {
 	},
-	["Version"] = 19500,
-	["KnownZones"] = {
-	},
+	["Version"] = 1190400,
+	["FishInfo2"] = 0,
 	["SubZones"] = {
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 	},
-	["FishInfo2"] = 0,
+	["KnownZones"] = {
+	},
 }

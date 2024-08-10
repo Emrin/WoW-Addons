@@ -3,14 +3,14 @@ DetailsTimeLineDB = {
 	["max_segments"] = 4,
 	["combat_data"] = {
 		{
-			["date_start"] = "15:58:06",
 			["date_end"] = "15:58:42",
+			["date_start"] = "15:58:06",
 			["name"] = "Ravnyr",
 			["total_time"] = 36.00399999995716,
 		}, -- [1]
 		{
-			["date_start"] = "15:56:12",
 			["date_end"] = "15:56:50",
+			["date_start"] = "15:56:12",
 			["name"] = "Tunk",
 			["total_time"] = 40.1239999999525,
 		}, -- [2]
@@ -62,13 +62,18 @@ DetailsTimeLineDB = {
 		}, -- [2]
 	},
 	["useicons"] = true,
+	["cooldowns_timeline"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+	},
 	["backdrop_color"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
 		0.4, -- [4]
 	},
-	["window_scale"] = 1,
 	["deaths_data"] = {
 		{
 		}, -- [1]
@@ -81,12 +86,7 @@ DetailsTimeLineDB = {
 		{
 		}, -- [2]
 	},
-	["cooldowns_timeline"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
-	},
+	["window_scale"] = 1,
 	["BossSpellCast"] = {
 		{
 			["Gor'groth"] = {

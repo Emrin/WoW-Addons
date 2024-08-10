@@ -12,17 +12,21 @@ HandyNotes_DragonflightTreasuresDB = {
 ["Pixiel - Draenor"] = "Pixiel - Draenor",
 ["Leafgirl - Silvermoon"] = "Leafgirl - Silvermoon",
 ["Venetha - Draenor"] = "Venetha - Draenor",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
 ["Ravegirl - Draenor"] = "Ravegirl - Draenor",
 ["Pokipoki - Draenor"] = "Pokipoki - Draenor",
 ["Crystalol - Draenor"] = "Crystalol - Draenor",
 ["Apoka - Outland"] = "Apoka - Outland",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
 ["Lifey - Draenor"] = "Lifey - Draenor",
 ["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
 ["Yeetalot - Draenor"] = "Yeetalot - Draenor",
-["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
 ["Raingirl - Silvermoon"] = "Raingirl - Silvermoon",
-["Cutetroll - Draenor"] = "Cutetroll - Draenor",
+["Holiloli - Silvermoon"] = "Holiloli - Silvermoon",
 ["Nolifey - Draenor"] = "Nolifey - Draenor",
+["Cutetroll - Draenor"] = "Cutetroll - Draenor",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
 ["Divinefurry - Draenor"] = "Divinefurry - Draenor",
 },
 ["profiles"] = {
@@ -48,6 +52,8 @@ HandyNotes_DragonflightTreasuresDB = {
 },
 ["Venetha - Draenor"] = {
 },
+["Lovelol - Ravencrest"] = {
+},
 ["Ravegirl - Draenor"] = {
 },
 ["Pokipoki - Draenor"] = {
@@ -56,19 +62,25 @@ HandyNotes_DragonflightTreasuresDB = {
 },
 ["Apoka - Outland"] = {
 },
+["Hun - Ravencrest"] = {
+},
 ["Lifey - Draenor"] = {
 },
 ["Yubiyubi - Draenor"] = {
 },
-["Yeetalot - Draenor"] = {
+["Ravegirl - Ravencrest"] = {
 },
-["Holiloli - Silvermoon"] = {
+["Yeetalot - Draenor"] = {
 },
 ["Raingirl - Silvermoon"] = {
 },
-["Cutetroll - Draenor"] = {
+["Holiloli - Silvermoon"] = {
 },
 ["Nolifey - Draenor"] = {
+},
+["Cutetroll - Draenor"] = {
+},
+["Leafgi42F6E6 - Ravencrest"] = {
 },
 ["Divinefurry - Draenor"] = {
 },

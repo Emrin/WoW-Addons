@@ -1,23 +1,29 @@
 
 RXPData = {
-	["trainGenericSpells"] = true,
-	["gameVersion"] = 100002,
+["trainGenericSpells"] = true,
+["gameVersion"] = 110000,
 }
 RXPDB = {
-	["profileKeys"] = {
-		["Pokipoki - Draenor"] = "global",
-		["Crystalol - Draenor"] = "global",
-		["Nolifey - Ravencrest"] = "global",
-		["Cutetroll - Draenor"] = "global",
-		["Unchill - Draenor"] = "global",
-		["Lifey - Silvermoon"] = "global",
-		["Pixiel - Draenor"] = "global",
-		["Apoka - Outland"] = "global",
-		["Nolifey - Draenor"] = "global",
-		["Yubiyubi - Draenor"] = "global",
-	},
-	["profiles"] = {
-		["global"] = {
-		},
-	},
+["profileKeys"] = {
+["Ravegirl - Ravencrest"] = "global",
+["Hun - Ravencrest"] = "global",
+["Crystalol - Draenor"] = "global",
+["Nolifey - Ravencrest"] = "global",
+["Cutetroll - Draenor"] = "global",
+["Raingirl - Silvermoon"] = "global",
+["Apoka - Outland"] = "global",
+["Unchill - Draenor"] = "global",
+["Lifey - Silvermoon"] = "global",
+["Nolifey - Draenor"] = "global",
+["Pixiel - Draenor"] = "global",
+["Leafgirl - Silvermoon"] = "global",
+["Yubiyubi - Draenor"] = "global",
+["Nolifey - Silvermoon"] = "global",
+["Lovelol - Ravencrest"] = "global",
+["Pokipoki - Draenor"] = "global",
+},
+["profiles"] = {
+["global"] = {
+},
+},
 }

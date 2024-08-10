@@ -27,6 +27,21 @@ CraftSim.RECIPE_SCAN.SCAN_MODES_TRANSLATION_MAP = {
     OPTIMIZE = CraftSim.CONST.TEXT.RECIPE_SCAN_MODE_OPTIMIZE,
 }
 
+---@enum CraftSim.RecipeScanSortModes
+CraftSim.RECIPE_SCAN.SORT_MODES = {
+    PROFIT = "PROFIT",
+    RELATIVE_PROFIT = "RELATIVE_PROFIT",
+    CONCENTRATION_VALUE = "CONCENTRATION_VALUE",
+    CONCENTRATION_COST = "CONCENTRATION_COST",
+}
+
+CraftSim.RECIPE_SCAN.SORT_MODES_TRANSLATION_MAP = {
+    PROFIT = CraftSim.CONST.TEXT.RECIPE_SCAN_SORT_MODE_PROFIT,
+    RELATIVE_PROFIT = CraftSim.CONST.TEXT.RECIPE_SCAN_SORT_MODE_RELATIVE_PROFIT,
+    CONCENTRATION_VALUE = CraftSim.CONST.TEXT.RECIPE_SCAN_SORT_MODE_CONCENTRATION_VALUE,
+    CONCENTRATION_COST = CraftSim.CONST.TEXT.RECIPE_SCAN_SORT_MODE_CONCENTRATION_COST,
+}
+
 local print = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.RECIPE_SCAN)
 local printF = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.RECIPE_SCAN_FILTER)
 local printS = CraftSim.DEBUG:SetDebugPrint(CraftSim.CONST.DEBUG_IDS.RECIPE_SCAN_SCAN)
@@ -60,6 +75,25 @@ function CraftSim.RECIPE_SCAN:UpdateScanPercent(row, currentProgress, maxProgres
     content.resultAmount:SetText(currentProgress .. "/" .. maxProgress)
 end
 
+---@return fun(a: any, b: any) : boolean
+function CraftSim.RECIPE_SCAN:GetSortFunction()
+    local sortFuncMap = {
+        [CraftSim.RECIPE_SCAN.SORT_MODES.PROFIT] = function(a, b)
+            return a.averageProfit > b.averageProfit
+        end,
+        [CraftSim.RECIPE_SCAN.SORT_MODES.RELATIVE_PROFIT] = function(a, b)
+            return a.relativeProfit > b.relativeProfit
+        end,
+        [CraftSim.RECIPE_SCAN.SORT_MODES.CONCENTRATION_COST] = function(a, b)
+            return a.concentrationCost < b.concentrationCost
+        end,
+        [CraftSim.RECIPE_SCAN.SORT_MODES.CONCENTRATION_VALUE] = function(a, b)
+            return a.concentrationWeight > b.concentrationWeight
+        end,
+    }
+    return sortFuncMap[CraftSim.DB.OPTIONS:Get("RECIPESCAN_SORT_MODE")]
+end
+
 ---@param row CraftSim.RECIPE_SCAN.PROFESSION_LIST.ROW
 function CraftSim.RECIPE_SCAN:EndScan(row)
     printS("scan finished")
@@ -67,19 +101,10 @@ function CraftSim.RECIPE_SCAN:EndScan(row)
     CraftSim.RECIPE_SCAN:ToggleScanButton(row, true)
     CraftSim.RECIPE_SCAN.isScanning = false
 
-    CraftSim.CRAFTQ.FRAMES:UpdateRecipeScanRestockButton(row.currentResults)
+    CraftSim.CRAFTQ.UI:UpdateRecipeScanRestockButton(row.currentResults)
 
-    --sort scan results?
     local resultList = row.content.resultList
-    if CraftSim.DB.OPTIONS:Get("RECIPESCAN_SORT_BY_PROFIT_MARGIN") then
-        resultList:UpdateDisplay(function(rowA, rowB)
-            return rowA.relativeProfit > rowB.relativeProfit
-        end)
-    else
-        resultList:UpdateDisplay(function(rowA, rowB)
-            return rowA.averageProfit > rowB.averageProfit
-        end)
-    end
+    resultList:UpdateDisplay(self:GetSortFunction())
 
     if CraftSim.RECIPE_SCAN.isScanningProfessions then
         CraftSim.RECIPE_SCAN:ScanNextProfessionRow()
@@ -205,7 +230,7 @@ function CraftSim.RECIPE_SCAN.FilterRecipeInfo(crafterUID, recipeInfo)
             return false
         end
     end
-    printF("Is not expansion: Exclude")
+    printF("Is not expansion: Exclude (ExpacID: " .. tostring(expansionID) .. ")")
     return false
 end
 
@@ -215,7 +240,9 @@ function CraftSim.RECIPE_SCAN:GetScanRecipeInfo(row)
     local playerCrafterProfessionUID = CraftSim.RECIPE_SCAN:GetPlayerCrafterProfessionUID()
     -- if its the currently open profession we can just take it directly
     if row.crafterProfessionUID == playerCrafterProfessionUID then
-        return GUTIL:Map(C_TradeSkillUI.GetAllRecipeIDs(), function(recipeID)
+        local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs()
+        printF("Total RecipeIDs: " .. #recipeIDs)
+        return GUTIL:Map(recipeIDs, function(recipeID)
             local recipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeID)
             if CraftSim.RECIPE_SCAN.FilterRecipeInfo(row.crafterUID, recipeInfo) then
                 return recipeInfo
@@ -313,7 +340,7 @@ function CraftSim.RECIPE_SCAN:StartScan(row)
 
         local function continueScan()
             CraftSim.DEBUG:StopProfiling("Single Recipe Scan")
-            CraftSim.RECIPE_SCAN.FRAMES:AddRecipe(row, recipeData)
+            CraftSim.RECIPE_SCAN.UI:AddRecipe(row, recipeData)
 
             table.insert(row.currentResults, recipeData)
 
@@ -326,7 +353,7 @@ function CraftSim.RECIPE_SCAN:StartScan(row)
 
     printS("End Scan")
     CraftSim.RECIPE_SCAN:ToggleScanButton(row, false)
-    CraftSim.RECIPE_SCAN.FRAMES:ResetResults(row)
+    CraftSim.RECIPE_SCAN.UI:ResetResults(row)
     scanRecipesByInterval()
 end
 
@@ -366,7 +393,7 @@ function CraftSim.RECIPE_SCAN:UpdateProfessionListByCache()
     -- wait til the currently open profession is cached then update list
 
     local function update()
-        CraftSim.RECIPE_SCAN.FRAMES:UpdateProfessionList()
+        CraftSim.RECIPE_SCAN.UI:UpdateProfessionList()
     end
 
     GUTIL:WaitFor(function()

@@ -1,8 +1,6 @@
 local L = BigWigsAPI:NewLocale("BigWigs", "zhTW")
 if not L then return end
 
-L.tempMessage = "計時條位置已重置，現在可以使用匯入匯出功能直接匯入設定檔。"
-
 -- Core.lua
 L.berserk = "狂暴"
 L.berserk_desc = "為首領狂暴顯示計時條及警報。"
@@ -28,6 +26,9 @@ L.okay = "確定"
 L.officialRelease = "你所使用的 BigWigs %s 為官方正式版（%s）"
 L.alphaRelease = "你所使用的 BigWigs %s 為「α測試版（%s）」"
 L.sourceCheckout = "你所使用的 BigWigs（%s）是直接從原始碼倉庫下載的版本。"
+L.littlewigsOfficialRelease = "你所使用的 LittleWigs 為官方正式版（%s）"
+L.littlewigsAlphaRelease = "你所使用的 LittleWigs 為「α測試版（%s）」"
+L.littlewigsSourceCheckout = "你所使用的 LittleWigs 是直接從原始碼倉庫下載的版本。"
 L.guildRelease = "你正在使用公會製作的 BigWigs，版本 %d，其基於官方版 %d。"
 L.getNewRelease = "你的 BigWigs 已過期（/bwv）但是可以使用 CurseForge 客戶端簡單升級。另外，也可以從 curseforge.com 或 wowinterface.com 手動升級。"
 L.warnTwoReleases = "你的 BigWigs 已過期 2 個發行版！你的版本可能有錯誤，功能缺失或不正確的計時器。所以強烈建議你升級。"
@@ -37,17 +38,20 @@ L.warnOldBase = "你正在使用公會版 BigWigs（%d），但它所基於的�
 L.tooltipHint = "|cffeda55f右擊|r打開選項。"
 L.activeBossModules = "啟動首領模組："
 
-L.oldVersionsInGroup = "你隊伍中的其他成員使用了舊版本的 BigWigs 或沒有使用 BigWigs。輸入 /bwv 可以獲得詳細資訊。"
+L.oldVersionsInGroup = "你隊伍中的其他成員使用了舊版本的 BigWigs 或沒有使用 BigWigs。輸入 /bwv 可以獲得詳細資訊。" -- XXX needs updated
 L.upToDate = "已更新："
 L.outOfDate = "過期："
 L.dbmUsers = "使用 DBM："
 L.noBossMod = "沒有首領模組："
 L.offline = "離線"
 
-L.missingAddOn = "缺少插件 |cFF436EEE%s|r！"
+L.missingAddOnPopup = "缺少插件 |cFF436EEE%s|r！"
+--L.missingAddOnRaidWarning = "缺少插件 |cFF436EEE%s|r！No timers will be displayed in this zone!"
 L.disabledAddOn = "模組 |cFF436EEE%s|r 已被禁用，無法顯示計時器。"
 L.removeAddOn = "請移除「|cFF436EEE%s|r」，其已被「|cFF436EEE%s|r」所替代。"
 L.alternativeName = "%s（|cFF436EEE%s|r）"
+--L.outOfDateContentPopup = "WARNING!\nYou updated |cFF436EEE%s|r but you also need to update the main |cFF436EEEBigWigs|r addon.\nIgnoring this will result in broken functionality."
+--L.outOfDateContentRaidWarning = "|cFF436EEE%s|r requires version %d of the main |cFF436EEEBigWigs|r addon to function correctly, but you're on version %d."
 
 L.expansionNames = {
 	"艾澤拉斯", -- Classic
@@ -156,8 +160,8 @@ L.SAY_COUNTDOWN = "倒數報數"
 L.SAY_COUNTDOWN_desc = "聊天泡泡十分醒目，利用此特性，BigWigs 以倒數計時的說話訊息來提醒附近的人技能即將到期。"
 L.ME_ONLY_EMPHASIZE = "強調（只有我）"
 L.ME_ONLY_EMPHASIZE_desc = "啟用後會強調所有只施放在你的技能相關的訊息，使它們更大和更容易看到。"
-L.NAMEPLATEBAR = "名條計時條"
-L.NAMEPLATEBAR_desc = "當多個敵方單位施放相同的法術時，在名條上方顯示各自的計時條。如果不想要名條上依附的計時條，請停用此項。"
+--L.NAMEPLATEBAR = "Nameplates"
+--L.NAMEPLATEBAR_desc = "If enabled, features such as icons and text related to this specific ability will show on your nameplates. This makes it easier to see which specific NPC is casting an ability when there are multiple NPCs that cast it."
 L.PRIVATE = "私有光環"
 L.PRIVATE_desc = "私有光環無法用一般方式追蹤，但可以在音效分頁指定「只對自身」的音效。"
 
@@ -219,10 +223,29 @@ L.imported_countdown_color = "倒數文字顏色"
 
 -- Statistics
 L.statistics = "統計"
+--L.defeat = "Defeat"
+--L.defeat_desc = "The total amount of times you've been defeated by this boss encounter."
+--L.victory = "Victory"
+--L.victory_desc = "The total amount of times you were victorious against this boss encounter."
+--L.fastest = "Fastest"
+--L.fastest_desc = "The fastest victory and the date it occured on (Year/Month/Day)"
+--L.first = "First"
+--L.first_desc = "The first time you were victorious against this boss encounter, formatted as:\n[Amount of defeats prior to first victory] - [Combat duration] - [Year/Month/Day of victory]"
+-- Difficulty levels for statistics display on bosses
+--L.unknown = "Unknown"
 L.LFR = "隨機團隊"
 L.normal = "普通模式"
 L.heroic = "英雄模式"
 L.mythic = "傳奇模式"
-L.wipes = "團滅："
-L.kills = "擊殺："
-L.best = "最快："
+--L.timewalk = "Timewalking"
+--L.story = "Story"
+--L.mplus = "Mythic+ %d"
+--L.SOD = "Season of Discovery"
+--L.hardcore = "Hardcore"
+--L.level1 = "Level 1"
+--L.level2 = "Level 2"
+--L.level3 = "Level 3"
+--L.N10 = "Normal 10"
+--L.N25 = "Normal 25"
+--L.H10 = "Heroic 10"
+--L.H25 = "Heroic 25"

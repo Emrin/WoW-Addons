@@ -7,7 +7,7 @@ local mod, CL = BigWigs:NewBoss("City of Threads Trash", 2669)
 if not mod then return end
 mod.displayName = CL.trash
 mod:RegisterEnableMob(
-	223254, -- Queen Ansurek (gossip NPC)
+	223254, -- Queen Ansurek / The Vizier (gossip NPC)
 	220196, -- Herald of Ansurek
 	220195, -- Sureki Silkbinder
 	220197, -- Royal Swarmguard
@@ -16,9 +16,11 @@ mod:RegisterEnableMob(
 	220003, -- Eye of the Queen
 	223844, -- Covert Webmancer
 	224732, -- Covert Webmancer
+	220777, -- Executor Nizrek (warmup NPC)
 	220730, -- Royal Venomshell
 	216328, -- Unstable Test Subject
 	216339, -- Sureki Unnaturaler
+	216329, -- Congealed Droplet
 	221102, -- Elder Shadeweaver
 	221103 -- Hulking Warshell
 )
@@ -42,19 +44,23 @@ if L then
 	L.elder_shadeweaver = "Elder Shadeweaver"
 	L.hulking_warshell = "Hulking Warshell"
 
+	L.xephitik_defeated_trigger = "Enough!"
+	L.fangs_of_the_queen_warmup_trigger = "The Transformatory was once the home of our sacred evolution."
 	L.izo_warmup_trigger = "Enough! You've earned a place in my collection. Let me usher you in."
+	L.custom_on_autotalk = CL.autotalk
+	L.custom_on_autotalk_desc = "|cFFFF0000Requires Rogue, Priest, or 25 skill in Khaz Algar Engineering.|r Automatically select the NPC dialog option that grants you the 'Stolen Power' aura.\n\n|T135888:16|tStolen Power\n{448305}"
+	L.custom_on_autotalk_icon = mod:GetMenuIcon("SAY")
 end
 
 --------------------------------------------------------------------------------
 -- Initialization
 --
 
-local autotalk = mod:AddAutoTalkOption(true)
 function mod:GetOptions()
 	return {
-		autotalk,
+		"custom_on_autotalk",
 		-- Herald of Ansurek
-		443437, -- Shadows of Doubt
+		{443437, "SAY"}, -- Shadows of Doubt
 		-- Sureki Silkbinder
 		443430, -- Silk Binding
 		-- Royal Swarmguard
@@ -62,8 +68,8 @@ function mod:GetOptions()
 		-- Xeph'itik
 		450784, -- Perfume Toss
 		451423, -- Gossamer Barrage
+		441795, -- Pheromone Veil
 		-- Pale Priest
-		442653, -- What's That?
 		448047, -- Web Wrap
 		-- Eye of the Queen
 		451543, -- Null Slam
@@ -84,7 +90,7 @@ function mod:GetOptions()
 		[443430] = L.sureki_silkbinder,
 		[443500] = L.royal_swarmguard,
 		[450784] = L.xephitik,
-		[442653] = L.pale_priest,
+		[448047] = L.pale_priest,
 		[451543] = L.eye_of_the_queen,
 		[452162] = L.covert_webmancer,
 		[434137] = L.royal_venomshell,
@@ -98,11 +104,13 @@ end
 function mod:OnBossEnable()
 	-- Warmups
 	self:RegisterEvent("CHAT_MSG_MONSTER_SAY")
+	self:RegisterEvent("CHAT_MSG_MONSTER_YELL")
 
 	-- Autotalk
 	self:RegisterEvent("GOSSIP_SHOW")
 
 	-- Herald of Ansurek
+	--self:Log("SPELL_CAST_SUCCESS", "ShadowsOfDoubt", 443436)
 	self:Log("SPELL_AURA_APPLIED", "ShadowsOfDoubtApplied", 443437)
 
 	-- Sureki Silkbinder
@@ -115,9 +123,9 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "PerfumeToss", 450784)
 	self:Log("SPELL_CAST_START", "GossamerBarrage", 451423)
 	self:Log("SPELL_CAST_SUCCESS", "PheromoneVeil", 441795)
+	self:Log("SPELL_AURA_APPLIED", "PheromoneVeilApplied", 441795)
 
 	-- Pale Priest
-	self:Log("SPELL_CAST_START", "WhatsThat", 442653) -- Normal only
 	self:Log("SPELL_AURA_APPLIED", "WebWrap", 448047)
 
 	-- Eye of the Queen
@@ -140,6 +148,9 @@ function mod:OnBossEnable()
 
 	-- Hulking Warshell
 	self:Log("SPELL_CAST_START", "TremorSlam", 447271)
+
+	-- Congealed Droplet
+	self:Death("CongealedDropletDeath", 216329)
 end
 
 --------------------------------------------------------------------------------
@@ -148,7 +159,7 @@ end
 
 -- Warmups
 
-function mod:CHAT_MSG_MONSTER_SAY(event, msg)
+function mod:CHAT_MSG_MONSTER_SAY(_, msg)
 	if msg == L.izo_warmup_trigger then
 		-- Izo, the Grand Splicer warmup
 		local izoModule = BigWigs:GetBossModule("Izo, the Grand Splicer", true)
@@ -156,31 +167,63 @@ function mod:CHAT_MSG_MONSTER_SAY(event, msg)
 			izoModule:Enable()
 			izoModule:Warmup()
 		end
+	elseif msg == L.fangs_of_the_queen_warmup_trigger then
+		-- Fangs of the Queen warmup
+		local fangsOfTheQueenModule = BigWigs:GetBossModule("Fangs of the Queen", true)
+		if fangsOfTheQueenModule then
+			fangsOfTheQueenModule:Enable()
+			fangsOfTheQueenModule:Warmup()
+		end
+	end
+end
+
+function mod:CHAT_MSG_MONSTER_YELL(_, msg)
+	if msg == L.xephitik_defeated_trigger then
+		-- clean up bars a bit early
+		self:XephitikDefeated()
 	end
 end
 
 -- Autotalk
 
 function mod:GOSSIP_SHOW()
-	if self:GetOption(autotalk) and self:GetGossipID(122352) then
-		-- 122352:<Tinker with the device and steal some of its power.> [Requires Rogue, Priest, or at least 25 skill in Khaz Algar Engineering.]
-		-- gives a temporary damage buff to the group
-		self:SelectGossipID(122352)
+	if self:GetOption("custom_on_autotalk")then
+		if self:GetGossipID(122351) then -- Rogue
+			-- 122351:<Sabotage the device and steal some of its power.>\r\n[Requires Rogue, Priest, or at least 25 skill in Khaz Algar Engineering.]|r
+			self:SelectGossipID(122351)
+		elseif self:GetGossipID(122352) then -- Engineering
+			-- 122352:<Tinker with the device and steal some of its power.>\r\n[Requires Rogue, Priest, or at least 25 skill in Khaz Algar Engineering.]|r
+			self:SelectGossipID(122352)
+		elseif self:GetGossipID(122353) then -- Priest
+			-- 122353:<Manipulate the device with shadow magic and steal some of its power.>\r\n[Requires Rogue, Priest, or at least 25 skill in Khaz Algar Engineering.]|r
+			self:SelectGossipID(122353)
+		end
 	end
 end
 
 -- Herald of Ansurek
 
+--function mod:ShadowsOfDoubt()
+	--self:Nameplate(443437, 13.9, args.sourceGUID)
+--end
+
 function mod:ShadowsOfDoubtApplied(args)
 	self:TargetMessage(args.spellId, "yellow", args.destName)
 	self:PlaySound(args.spellId, "alarm", nil, args.destName)
+	if self:Me(args.destGUID) then
+		self:Say(args.spellId, nil, nil, "Shadows of Doubt")
+	end
 end
 
 -- Sureki Silkbinder
 
 function mod:SilkBinding(args)
+	if self:Friendly(args.sourceFlags) then -- these NPCs can be mind-controlled by Priests
+		return
+	end
 	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "alert")
+	--self:Nameplate(args.spellId, 21.8, args.sourceGUID) -- recast if stunned, needs SUCCESS/INTERRUPT
 end
 
 -- Royal Swarmguard
@@ -188,34 +231,57 @@ end
 function mod:Earthshatter(args)
 	self:Message(args.spellId, "orange")
 	self:PlaySound(args.spellId, "alarm")
+	--self:Nameplate(args.spellId, 15.5, args.sourceGUID)
 end
 
 -- Xeph'itik
 
-function mod:PerfumeToss(args)
-	self:Message(args.spellId, "orange")
-	self:PlaySound(args.spellId, "alarm")
-	self:CDBar(args.spellId, 15.8)
-end
+do
+	local timer
 
-function mod:GossamerBarrage(args)
-	self:Message(args.spellId, "red")
-	self:PlaySound(args.spellId, "long")
-	self:CDBar(args.spellId, 23.1)
-end
+	function mod:PerfumeToss(args)
+		if timer then
+			self:CancelTimer(timer)
+		end
+		self:Message(args.spellId, "orange")
+		self:PlaySound(args.spellId, "alarm")
+		self:CDBar(args.spellId, 15.8)
+		timer = self:ScheduleTimer("XephitikDefeated", 30)
+	end
 
-function mod:PheromoneVeil(args)
-	-- TODO could clean up bars a little earlier with [CHAT_MSG_MONSTER_YELL] Enough!#Xeph'itik
-	self:StopBar(450784) -- Perfume Toss
-	self:StopBar(451423) -- Gossamer Barrage
+	function mod:GossamerBarrage(args)
+		if timer then
+			self:CancelTimer(timer)
+		end
+		self:Message(args.spellId, "red")
+		self:PlaySound(args.spellId, "long")
+		self:CDBar(args.spellId, 23.1)
+		timer = self:ScheduleTimer("XephitikDefeated", 30)
+	end
+
+	function mod:PheromoneVeil()
+		-- backup in case xephitik_defeated_trigger isn't translated
+		self:XephitikDefeated()
+	end
+
+	function mod:PheromoneVeilApplied(args)
+		if self:Me(args.destGUID) then
+			self:Message(args.spellId, "green", CL.you:format(args.spellName))
+			self:PlaySound(args.spellId, "info")
+		end
+	end
+
+	function mod:XephitikDefeated()
+		if timer then
+			self:CancelTimer(timer)
+			timer = nil
+		end
+		self:StopBar(450784) -- Perfume Toss
+		self:StopBar(451423) -- Gossamer Barrage
+	end
 end
 
 -- Pale Priest
-
-function mod:WhatsThat(args)
-	self:Message(args.spellId, "cyan")
-	self:PlaySound(args.spellId, "info")
-end
 
 do
 	local prev = 0
@@ -235,6 +301,7 @@ end
 function mod:NullSlam(args)
 	self:Message(args.spellId, "orange")
 	self:PlaySound(args.spellId, "alarm")
+	--self:Nameplate(args.spellId, 26.7, args.sourceGUID)
 end
 
 -- Covert Webmender
@@ -242,6 +309,7 @@ end
 function mod:MendingWeb(args)
 	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "alert")
+	--self:Nameplate(args.spellId, 20.6, args.sourceGUID) -- recast if stunned, needs SUCCESS/INTERRUPT
 end
 
 -- Royal Venomshell
@@ -249,6 +317,7 @@ end
 function mod:VenomousSpray(args)
 	self:Message(args.spellId, "yellow")
 	self:PlaySound(args.spellId, "long")
+	--self:Nameplate(args.spellId, 24.2, args.sourceGUID)
 end
 
 -- Unstable Test Subject
@@ -256,13 +325,18 @@ end
 function mod:DarkBarrage(args)
 	self:Message(args.spellId, "orange")
 	self:PlaySound(args.spellId, "long")
+	--self:Nameplate(args.spellId, 27.9, args.sourceGUID)
 end
 
 -- Sureki Unnaturaler
 
 function mod:VoidWave(args)
+	if self:Friendly(args.sourceFlags) then -- these NPCs can be mind-controlled by Priests
+		return
+	end
 	self:Message(args.spellId, "red", CL.casting:format(args.spellName))
 	self:PlaySound(args.spellId, "alert")
+	--self:Nameplate(args.spellId, 16.4, args.sourceGUID) -- recast if stunned, needs SUCCESS/INTERRUPT
 end
 
 -- Elder Shadeweaver
@@ -270,6 +344,7 @@ end
 function mod:UmbralWeave(args)
 	self:Message(args.spellId, "yellow")
 	self:PlaySound(args.spellId, "alert")
+	--self:Nameplate(args.spellId, 23.1, args.sourceGUID)
 end
 
 -- Hulking Warshell
@@ -277,4 +352,27 @@ end
 function mod:TremorSlam(args)
 	self:Message(args.spellId, "orange")
 	self:PlaySound(args.spellId, "alarm")
+	--self:Nameplate(args.spellId, 23.0, args.sourceGUID)
+end
+
+-- Congealed Droplet
+
+do
+	local prev, deathCount = 0, 0
+	function mod:CongealedDropletDeath(args)
+		local t = args.time
+		if t - prev > 120 then -- 1
+			deathCount = 1
+		elseif deathCount < 9 then -- 2 through 9
+			deathCount = deathCount + 1
+		else -- 10
+			deathCount = 0
+			local coaglamationModule = BigWigs:GetBossModule("The Coaglamation", true)
+			if coaglamationModule then
+				coaglamationModule:Enable()
+				coaglamationModule:Warmup()
+			end
+		end
+		prev = t
+	end
 end

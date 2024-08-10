@@ -1,129 +1,229 @@
 
-CraftSimDebugData = {
-}
-CraftSimOptions = {
-	["transparencyCostOverview"] = 1,
-	["customResourcefulnessConstant"] = 0.3,
-	["infoVersionID"] = 84,
-	["topGearMode"] = "Top Profit",
-	["autoAssignVellum"] = false,
-	["customerServiceAllowAutoResult"] = true,
-	["priceDebug"] = false,
-	["transparencySpecInfo"] = 1,
-	["enableHSV"] = true,
-	["materialSuggestionInspirationThreshold"] = false,
-	["craftGarbageCollectCrafts"] = 500,
-	["customerServiceActivePreviewIDs"] = {
-	},
-	["customerServiceAutoReplyCommand"] = "!craft",
-	["modulesPriceOverride"] = false,
-	["customMulticraftConstant"] = 2.5,
-	["modulesMaterials"] = true,
-	["priceSource"] = "Auctionator",
-	["customerServiceAutoReplyFormat"] = "Highest Result: %gc\nwith Inspiration: %ic (%insp)\nCrafting Costs: %cc\n%ccd",
-	["detailedCraftingInfoTooltip"] = true,
-	["transparencyTopGear"] = 1,
-	["modulesCostOverview"] = true,
-	["modulesPriceDetails"] = true,
-	["breakPointOffset"] = false,
-	["modulesSpecInfo"] = true,
-	["tsmPriceKeyMaterials"] = "DBMinbuyout",
-	["customerServiceRecipeWhisperFormat"] = "Highest Result: %gc\nwith Inspiration: %ic (%insp)\nCrafting Costs: %cc\n%ccd",
-	["maxHistoryEntriesPerClient"] = 200,
-	["modulesStatWeights"] = true,
-	["tsmPriceKeyItems"] = "DBMinbuyout",
-	["showProfitPercentage"] = false,
-	["transparencyStatWeights"] = 1,
-	["modulesCraftResults"] = true,
-	["modulesTopGear"] = true,
-	["transparencyMaterials"] = 1,
-	["craftGarbageCollectEnabled"] = true,
-	["openLastRecipe"] = true,
-}
-CraftSimGGUIConfig = {
-	["savedPos_STAT_WEIGHTS"] = {
-		["offsetX"] = 411.1571655273438,
-		["offsetY"] = -179.6289672851563,
-	},
-	["collapsed_CRAFT_RESULTS"] = true,
-	["savedPos_INFO"] = {
-		["offsetX"] = 1.006103515625,
-		["offsetY"] = 0,
-	},
-}
-CraftSimPriceOverridesV2 = {
-	["recipeResultOverrides"] = {
-	},
-	["globalOverrides"] = {
-	},
-}
-CraftSimRecipeIDs = {
-	["version"] = "8.5.0",
-	["data"] = {
-		[10] = {
-			393064, -- [1]
-			393063, -- [2]
-			393065, -- [3]
-			393062, -- [4]
-			393059, -- [5]
-			393061, -- [6]
-			393060, -- [7]
-			393067, -- [8]
-			393068, -- [9]
-			393066, -- [10]
-		},
-	},
-}
-CraftSimProfessionInfoCache = {
-	["version"] = "8.5.0",
-	["data"] = {
-		[10] = {
-			["skillLevel"] = 100,
-			["professionID"] = 2826,
-			["skillModifier"] = 15,
-			["parentProfessionName"] = "Fishing",
-			["professionName"] = "Dragon Isles Fishing",
-			["profession"] = 10,
-			["parentProfessionID"] = 356,
-			["expansionName"] = "Dragon Isles",
-			["maxSkillLevel"] = 100,
-			["isPrimaryProfession"] = false,
-		},
-	},
-}
-CraftSimProfessionSkillLineIDCache = {
-	["version"] = "8.5.0",
-	["data"] = {
-		[10] = 2826,
-	},
-}
-CraftSimCraftData = {
-}
-CraftSimRecipeMap = {
-	["version"] = 100007,
-	["data"] = {
-		["itemToRecipe"] = {
-		},
-		["recipeToProfession"] = {
-			[393059] = 10,
-			[393063] = 10,
-			[393067] = 10,
-			[393060] = 10,
-			[393064] = 10,
-			[393068] = 10,
-			[393061] = 10,
-			[393065] = 10,
-			[393062] = 10,
-			[393066] = 10,
-		},
-	},
-}
-CraftSimLoadedProfessionRecipes = {
-	9, -- [1]
-	10, -- [2]
-}
-CraftSimCustomerHistory = {
-	["profileKeys"] = {
-		["Yubiyubi - Draenor"] = "Default",
-	},
+CraftSimDB = {
+["customerHistoryDB"] = {
+["version"] = 1,
+["data"] = {
+},
+},
+["itemOptimizedCostsDB"] = {
+["version"] = 3,
+["data"] = {
+},
+},
+["itemRecipeDB"] = {
+["version"] = 3,
+["data"] = {
+},
+},
+["itemCountDB"] = {
+["data"] = {
+["characters"] = {
+["Hun-Ravencrest"] = {
+["inventory"] = {
+[171840] = 4,
+[179314] = 1,
+[169701] = 28,
+[171833] = 3,
+[177061] = 98,
+[171831] = 22,
+[36905] = 1,
+[171828] = 21,
+[171315] = 3,
+[170554] = 41,
+},
+["bank"] = {
+[171840] = 0,
+[179314] = 0,
+[169701] = 0,
+[171833] = 0,
+[177061] = 0,
+[171831] = 0,
+[36905] = 0,
+[171828] = 0,
+[171315] = 0,
+[170554] = 0,
+},
+},
+["Ravegirl-Ravencrest"] = {
+["inventory"] = {
+[172052] = 11,
+[179315] = 6,
+[171828] = 24,
+[171315] = 55,
+[186017] = 2,
+[172054] = 10,
+[169701] = 12,
+[171833] = 52,
+[171841] = 17,
+[173202] = 105,
+[173204] = 8,
+[168586] = 11,
+[172053] = 2,
+[172055] = 12,
+[170554] = 4,
+},
+["bank"] = {
+[172052] = 0,
+[179315] = 0,
+[171828] = 0,
+[171315] = 0,
+[186017] = 0,
+[172054] = 0,
+[169701] = 0,
+[171833] = 0,
+[171841] = 0,
+[173202] = 0,
+[173204] = 0,
+[168586] = 0,
+[172053] = 0,
+[172055] = 0,
+[170554] = 0,
+},
+},
+["Lovelol-Ravencrest"] = {
+["inventory"] = {
+[193210] = 14,
+[198216] = 2,
+[206960] = 1,
+[208396] = 19,
+[193214] = 11,
+[198048] = 1,
+[190453] = 5,
+},
+["bank"] = {
+[193210] = 0,
+[198216] = 0,
+[206960] = 0,
+[208396] = 0,
+[193214] = 0,
+[198048] = 0,
+[190453] = 0,
+},
+},
+},
+["accountBank"] = {
+[171831] = 0,
+[172052] = 0,
+[179314] = 0,
+[208396] = 0,
+[193210] = 0,
+[193214] = 0,
+[171828] = 0,
+[172053] = 0,
+[173204] = 0,
+[179315] = 0,
+[170554] = 0,
+[171833] = 0,
+[172054] = 0,
+[171841] = 0,
+[177061] = 0,
+[171840] = 0,
+[198048] = 0,
+[190453] = 0,
+[168586] = 0,
+[169701] = 0,
+[173202] = 0,
+[171315] = 0,
+[172055] = 0,
+[186017] = 0,
+[36905] = 0,
+[198216] = 0,
+[206960] = 0,
+},
+},
+["version"] = 3,
+},
+["recipeSubCrafterDB"] = {
+["version"] = 2,
+["data"] = {
+},
+},
+["multicraftPreloadDB"] = {
+["version"] = 1,
+["data"] = {
+},
+},
+["craftQueueDB"] = {
+["version"] = 2,
+["data"] = {
+},
+},
+["priceOverrideDB"] = {
+["version"] = 1,
+["data"] = {
+["recipeResultOverrides"] = {
+},
+["globalOverrides"] = {
+},
+},
+},
+["crafterDB"] = {
+["version"] = 3,
+["data"] = {
+},
+},
+["optionsDB"] = {
+["data"] = {
+["COST_OPTIMIZATION_SUB_RECIPE_INCLUDE_COOLDOWNS"] = false,
+["SHOW_PROFIT_PERCENTAGE"] = true,
+["CUSTOMER_HISTORY_MAX_ENTRIES_PER_CLIENT"] = 200,
+["MODULE_COOLDOWNS"] = false,
+["MODULE_AVERAGE_PROFIT"] = true,
+["MODULE_COST_OPTIMIZATION"] = false,
+["RECIPESCAN_OPTIMIZE_PROFESSION_TOOLS"] = false,
+["MODULE_STATISTICS"] = false,
+["CRAFTQUEUE_GENERAL_RESTOCK_PROFIT_MARGIN_THRESHOLD"] = 0,
+["SHOW_NEWS"] = true,
+["MODULE_CUSTOMER_HISTORY"] = false,
+["DEBUG_AUTO_SCROLL"] = true,
+["MODULE_REAGENT_OPTIMIZATION"] = false,
+["PROFIT_CALCULATION_MULTICRAFT_CONSTANT"] = 2.5,
+["CRAFTQUEUE_GENERAL_RESTOCK_RESTOCK_AMOUNT"] = 1,
+["DEBUG_IDS"] = {
+},
+["MODULE_SPEC_INFO"] = false,
+["CRAFTING_GARBAGE_COLLECTION_CRAFTS"] = 500,
+["DEBUG_VISIBLE"] = false,
+["MODULE_TOP_GEAR"] = false,
+["RECIPESCAN_SCAN_MODE"] = "OPTIMIZE",
+["COST_OPTIMIZATION_SUB_RECIPE_MAX_DEPTH"] = 1,
+["NEWS_CHECKSUM"] = 112,
+["PROFIT_CALCULATION_RESOURCEFULNESS_CONSTANT"] = 0.3,
+["TOP_GEAR_AUTO_UPDATE"] = true,
+["RECIPESCAN_FILTERED_EXPANSIONS"] = {
+[10] = true,
+},
+["RECIPESCAN_SORT_MODE"] = "PROFIT",
+["MINIMAP_BUTTON_HIDE"] = false,
+["MODULE_CRAFT_BUFFS"] = false,
+["CRAFT_RESULTS_DISABLE"] = false,
+["MODULE_RECIPE_SCAN"] = false,
+["CRAFTQUEUE_FLASH_TASKBAR_ON_CRAFT_FINISHED"] = true,
+["RECIPESCAN_IMPORT_ALL_PROFESSIONS"] = false,
+["MODULE_COST_OVERVIEW"] = false,
+["RECIPESCAN_INCLUDE_GEAR"] = false,
+["CRAFTING_GARBAGE_COLLECTION_ENABLED"] = true,
+["RECIPESCAN_INCLUDE_SOULBOUND"] = false,
+["COST_OPTIMIZATION_AUTOMATIC_SUB_RECIPE_OPTIMIZATION"] = false,
+["OPEN_LAST_RECIPE"] = true,
+["MODULE_CRAFT_RESULTS"] = false,
+["RECIPESCAN_INCLUDE_NOT_LEARNED"] = false,
+["MODULE_CRAFT_QUEUE"] = false,
+["PRICE_SOURCE"] = "Auctionator",
+["RECIPESCAN_ONLY_FAVORITES"] = false,
+["GGUI_CONFIG"] = {
+},
+["CRAFTQUEUE_SHOPPING_LIST_PER_CHARACTER"] = false,
+["MODULE_PRICE_OVERRIDE"] = false,
+["CUSTOMER_HISTORY_AUTO_PURGE_LAST_PURGE"] = 1722718500,
+["LIB_ICON_DB"] = {
+},
+["CUSTOMER_HISTORY_AUTO_PURGE_INTERVAL"] = 2,
+["QUALITY_BREAKPOINT_OFFSET"] = false,
+["MODULE_EXPLANATIONS"] = false,
+["RECIPESCAN_OPTIMIZE_SUBRECIPES"] = false,
+["CRAFTQUEUE_GENERAL_RESTOCK_SALE_RATE_THRESHOLD"] = 0,
+},
+["version"] = 5,
+},
 }

@@ -1,0 +1,77 @@
+VER 3 0100000000000008 "bind" "INV_MISC_QUESTIONMARK"
+#showtooltip Binding Shot
+/cast [mod,@player][@cursor] Binding Shot
+END
+VER 3 0100000000000016 "buf" "134400"
+#showtooltip
+/cast [nomod] Aspect of the Cheetah
+/cast [mod] Exhilaration
+END
+VER 3 010000000000000F "cam" "INV_MISC_QUESTIONMARK"
+#showtooltip Camouflage
+/cast !Camouflage
+END
+VER 3 0100000000000013 "clip" "134400"
+#showtooltip
+/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Wing Clip
+END
+VER 3 0100000000000015 "defs" "132199"
+#showtooltip
+/cast [nomod] Aspect of the Turtle
+/cast [mod] Survival of the Fittest
+END
+VER 3 0100000000000014 "feign" "134400"
+#showtooltip
+/cast [nomod] Feign Death
+/cast [mod] Play Dead
+END
+VER 3 0100000000000005 "fl" "INV_MISC_QUESTIONMARK"
+#showtooltip Flare
+/cast [mod,@player][@cursor] Flare
+END
+VER 3 0100000000000007 "ice" "INV_MISC_QUESTIONMARK"
+#showtooltip Freezing Trap
+/cast [mod,@player][@cursor] Freezing Trap
+END
+VER 3 0100000000000017 "inti" "134400"
+#showtooltip
+/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Intimidation
+END
+VER 3 0100000000000004 "kik" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Counter Shot
+END
+VER 3 0100000000000012 "mark" "236188"
+#showtooltip
+/cast [mod:shift,@focus,exists,nodead][@mouseover,exists,nodead][] Hunter's Mark
+END
+VER 3 0100000000000011 "mdr" "134400"
+#showtooltip [known:Interlope] Interlope;#showtooltip [noknown:Interlope] Misdirection
+/click SmartMisdirect LeftButton 1
+/click SmartMisdirect LeftButton 0
+END
+VER 3 010000000000000C "sac" "INV_MISC_QUESTIONMARK"
+#showtooltip Roar of Sacrifice
+/cast [mod:shift,@focus][@mouseover,exists][] Roar of Sacrifice
+END
+VER 3 0100000000000003 "sca" "132153"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Scatter Shot
+END
+VER 3 010000000000000E "scare" "INV_MISC_QUESTIONMARK"
+#showtooltip Scare Beast
+/cast [@mouseover,exists][] Scare Beast
+END
+VER 3 0100000000000006 "tar" "INV_MISC_QUESTIONMARK"
+#showtooltip Tar Trap
+/cast [mod,@player][@cursor] Tar Trap
+END
+VER 3 010000000000000A "tranq" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift,@focus][@mouseover,exists][] Tranquilizing Shot
+END
+VER 3 0100000000000010 "volly" "132205"
+#showtooltip
+/use Salvo
+/cast [mod,@player][@cursor] Volley
+END

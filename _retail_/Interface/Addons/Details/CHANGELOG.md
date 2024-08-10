@@ -1,6 +1,9 @@
 # Details! Damage Meter
 
-## [Details.12811.158](https://github.com/Tercioo/Details-Damage-Meter/tree/Details.12811.158) (2024-07-16)
-[Full Changelog](https://github.com/Tercioo/Details-Damage-Meter/compare/Details.12810.158...Details.12811.158) 
+## [Details.12828.159](https://github.com/Tercioo/Details-Damage-Meter/tree/Details.12828.159) (2024-08-04)
+[Full Changelog](https://github.com/Tercioo/Details-Damage-Meter/compare/Details.12827.159...Details.12828.159) 
 
-- More debug for the new storage system  
+- Pushing release for Flamanis fixes on for classic pet, av and other bugs.  
+- Merge pull request #801 from Flamanis/Fix-pet-owner  
+    Fix get pet owner on classics  
+- Fix get pet owner on classics  

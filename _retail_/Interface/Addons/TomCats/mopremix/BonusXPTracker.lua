@@ -5,6 +5,7 @@ local eventFrame
 local charVars = { }
 local playerUnitGUID
 local atMaxLevel = false
+local OSD
 local bonusXPItems = {
 	[224407] = "uncommon",
 	[224408] = "rare",
@@ -50,7 +51,7 @@ end
 local function ShowXPTrackerTooltip(self)
 	GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
 	GameTooltip:ClearLines()
-	GameTooltip:AddLine("TomCat's Tours Bonus Experience Tracker", nil, nil, nil, true)
+	GameTooltip:AddLine("TomCat's Tours\nBonus XP Tracker", nil, nil, nil, true)
 	GameTooltip:AddLine("\nThe tool helps you determine the optimal time to use the Bonus Experience stored in your mailbox. The status bar displays your current progress to reach level 70, as well as where your XP will be if you utilize all your Bonus Experience.", 1, 1, 1, true)
 	if (not charVars.synchronized) then
 		GameTooltip:AddLine("\nTo get started, visit a mailbox to let the tool count any any Bonus Experience you have saved up. It will detect when more Bonus Experience may have been added to your mailbox after that so long as you keep the addon running.", nil, nil, nil, true)
@@ -214,6 +215,16 @@ end
 
 function component.Init()
 	if (not GameLimitedMode_IsActive()) then
+		OSD = Templates.CreateBasicWindow(
+				UIParent,
+				{
+					icon = ImagePNG.tomcats_minimap_icon,
+					prefs = TomCats_Account.mopremix.osd,
+				}
+		)
+		OSD:SetSize(260,100)
+		OSD.title:SetText("Bonus XP Tracker")
+		OSD:Hide()
 		eventFrame = CreateFrame("Frame")
 		eventFrame:RegisterEvent("PLAYER_XP_UPDATE")
 		eventFrame:RegisterEvent("PLAYER_LEVEL_UP")
@@ -264,14 +275,38 @@ function component.Init()
 		OSD.footerBar:SetScript("OnLeave", HideXPTrackerTooltip)
 		OSD.xpCaption:SetScript("OnEnter", ShowXPTrackerTooltip)
 		OSD.xpCaption:SetScript("OnLeave", HideXPTrackerTooltip)
-		if (not atMaxLevel) then
+		if (not atMaxLevel and component.IsVisible()) then
 			OSD:Show()
 		end
 		if (charVars.synchronized) then
 			SetSynchronized()
 		end
-		UpdateBonusXPTracker()
+		if (not atMaxLevel) then
+			UpdateBonusXPTracker()
+		end
+	end
+end
+
+function component.IsVisible()
+	return TomCats_Account.mopremix.bonusXPTrackerDisplay == addon.constants.accessoryDisplay.WHENAPPLICABLE
+end
+
+function component.GetVisibilityOption()
+	return TomCats_Account.mopremix.bonusXPTrackerDisplay
+end
+
+function component.SetVisibilityOption(value)
+	TomCats_Account.mopremix.bonusXPTrackerDisplay = value
+	if (not GameLimitedMode_IsActive()) then
+		local level = UnitLevel("player")
+		if (level < 70 and component.IsVisible()) then
+			OSD:Show()
+		else
+			OSD:Hide()
+		end
 	end
 end
 
 AddComponent(component)
+
+BonusXPTracker = component

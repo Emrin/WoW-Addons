@@ -5,9 +5,9 @@ AdvancedDeathLogsDB = {
 	},
 	["spellIdCache"] = {
 	},
-	["deathsOccurrences"] = {
-	},
 	["enemySpellCasts"] = {
+	},
+	["deathsOccurrences"] = {
 	},
 	["encounterInfo"] = {
 	},

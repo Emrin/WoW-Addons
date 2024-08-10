@@ -1,16 +1,16 @@
 
 AdvancedDeathLogsDB = {
-	["__version"] = 1,
-	["deathsPerSegment"] = {
-	},
-	["spellIdCache"] = {
-	},
-	["enemySpellCasts"] = {
-	},
-	["deathsOccurrences"] = {
-	},
-	["encounterInfo"] = {
-	},
+["__version"] = 1,
+["deathsPerSegment"] = {
+},
+["spellIdCache"] = {
+},
+["deathsOccurrences"] = {
+},
+["enemySpellCasts"] = {
+},
+["encounterInfo"] = {
+},
 }
 DeathGraphsDBEndurance = {
 }

@@ -249,9 +249,9 @@ GladiusExDB = {
 },
 ["party_Clicks"] = {
 },
-["party_Interrupts"] = {
-},
 ["Announcements"] = {
+},
+["party_Interrupts"] = {
 },
 ["Alerts"] = {
 },
@@ -310,6 +310,7 @@ GladiusExDB = {
 },
 ["profileKeys"] = {
 ["Taizai - Draenor"] = "Default",
+["Nolifey - Silvermoon"] = "Default",
 ["Nolifey - Ravencrest"] = "Nolifey - Ravencrest",
 ["Cutetroll - Draenor"] = "Cutetroll - Draenor",
 ["Sacrae - Ravencrest"] = "Default",
@@ -317,7 +318,9 @@ GladiusExDB = {
 ["Unchill - Draenor"] = "Unchill - Draenor",
 ["Lifey - Silvermoon"] = "Lifey - Silvermoon",
 ["Pixiel - Draenor"] = "Pixiel - Draenor",
+["Leafgirl - Silvermoon"] = "Default",
 ["Venetha - Draenor"] = "Default",
+["Lovelol - Ravencrest"] = "Default",
 ["Ravegirl - Draenor"] = "Default",
 ["Pokipoki - Draenor"] = "Default",
 ["Nolifey - Draenor"] = "Unchill - Draenor",
@@ -325,8 +328,12 @@ GladiusExDB = {
 ["Lifey - Draenor"] = "Default",
 ["Yubiyubi - Draenor"] = "Default",
 ["Yeetalot - Draenor"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
+["Raingirl - Silvermoon"] = "Default",
 ["Crystalol - Draenor"] = "Default",
 ["Kungfugoblin - Draenor"] = "Default",
+["Leafgi42F6E6 - Ravencrest"] = "Default",
+["Hun - Ravencrest"] = "Default",
 },
 ["profiles"] = {
 ["Pokipoki - Draenor"] = {

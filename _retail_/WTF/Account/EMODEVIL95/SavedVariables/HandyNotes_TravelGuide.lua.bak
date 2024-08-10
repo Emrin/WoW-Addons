@@ -25,18 +25,22 @@ HandyNotes_TravelGuideDB = {
 ["Hentaihero - Draenor"] = "Hentaihero - Draenor",
 ["Venetha - Draenor"] = "Venetha - Draenor",
 ["Hentaihero - Outland"] = "Hentaihero - Outland",
+["Kungfugoblin - Draenor"] = "Kungfugoblin - Draenor",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
 ["Fuwu - Silvermoon"] = "Fuwu - Silvermoon",
 ["Apoka - Outland"] = "Apoka - Outland",
 ["Nolifey - Moonglade"] = "Nolifey - Moonglade",
 ["Lifey - Moonglade"] = "Lifey - Moonglade",
 ["Lifey - Draenor"] = "Lifey - Draenor",
-["Missuccubus - Draenor"] = "Missuccubus - Draenor",
-["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
-["Crystalol - Draenor"] = "Crystalol - Draenor",
-["Apoki - Silvermoon"] = "Apoki - Silvermoon",
-["Lifey - Silvermoon"] = "Lifey - Silvermoon",
 ["Bloodlustguy - Draenor"] = "Bloodlustguy - Draenor",
-["Kungfugoblin - Draenor"] = "Kungfugoblin - Draenor",
+["Missuccubus - Draenor"] = "Missuccubus - Draenor",
+["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+["Apoki - Silvermoon"] = "Apoki - Silvermoon",
+["Crystalol - Draenor"] = "Crystalol - Draenor",
+["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
 },
 ["profiles"] = {
 ["Nolifey - Ravencrest"] = {
@@ -87,6 +91,10 @@ HandyNotes_TravelGuideDB = {
 },
 ["Hentaihero - Outland"] = {
 },
+["Kungfugoblin - Draenor"] = {
+},
+["Ravegirl - Ravencrest"] = {
+},
 ["Fuwu - Silvermoon"] = {
 },
 ["Apoka - Outland"] = {
@@ -97,19 +105,23 @@ HandyNotes_TravelGuideDB = {
 },
 ["Lifey - Draenor"] = {
 },
+["Bloodlustguy - Draenor"] = {
+},
 ["Missuccubus - Draenor"] = {
-},
-["Yubiyubi - Draenor"] = {
-},
-["Crystalol - Draenor"] = {
-},
-["Apoki - Silvermoon"] = {
 },
 ["Lifey - Silvermoon"] = {
 },
-["Bloodlustguy - Draenor"] = {
+["Apoki - Silvermoon"] = {
 },
-["Kungfugoblin - Draenor"] = {
+["Crystalol - Draenor"] = {
+},
+["Yubiyubi - Draenor"] = {
+},
+["Leafgi42F6E6 - Ravencrest"] = {
+},
+["Lovelol - Ravencrest"] = {
+},
+["Hun - Ravencrest"] = {
 },
 },
 }

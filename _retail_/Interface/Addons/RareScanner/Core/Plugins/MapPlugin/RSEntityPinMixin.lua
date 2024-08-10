@@ -60,7 +60,7 @@ function RSEntityPinMixin:OnMouseLeave()
 end
 
 function RSEntityPinMixin:OnMouseDown(button)
-	if (button == "LeftButton") then
+	if (button == "LeftButton") then		
 		--Toggle state
 		if (IsShiftKeyDown() and IsAltKeyDown()) then
 			if (self.POI.isNpc) then
@@ -143,6 +143,8 @@ function RSEntityPinMixin:ShowOverlay()
 		overlay = RSNpcDB.GetInternalNpcOverlay(self.POI.entityID, self.POI.mapID)
 	elseif (self.POI.isContainer) then
 		overlay = RSContainerDB.GetInternalContainerOverlay(self.POI.entityID, self.POI.mapID)
+	elseif (self.POI.isEvent) then
+		overlay = RSEventDB.GetInternalEventOverlay(self.POI.entityID, self.POI.mapID)
 	end
 
 	if (overlay) then

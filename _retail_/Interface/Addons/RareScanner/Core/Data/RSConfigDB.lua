@@ -1727,3 +1727,15 @@ end
 function RSConfigDB.SetHighlightingReputation(value)
 	private.db.map.highlightReputation = value
 end
+
+---============================================================================
+-- Worldmap guidance icons
+---============================================================================
+
+function RSConfigDB.IsShowingAutoGuidanceIcons()
+	return private.db.map.autoGuidanceIcons
+end
+
+function RSConfigDB.SetShowingAutoGuidanceIcons(value)
+	private.db.map.autoGuidanceIcons = value
+end

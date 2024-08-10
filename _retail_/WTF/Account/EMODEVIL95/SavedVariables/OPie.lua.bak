@@ -1,12 +1,12 @@
 
 OneRing_Config = nil
 OPie_SavedData = {
-["_GameVersion"] = "10.2.7",
+["_GameVersion"] = "11.0.0",
 ["CharProfiles"] = {
 ["Outland-Aclipt-3"] = "default",
 },
 ["_TimeBand"] = 0.6484375,
-["_OPieVersion"] = "Zeta 8a (4.126)",
+["_OPieVersion"] = "Ælling 1 (4.127)",
 ["ProfileStorage"] = {
 ["default"] = {
 ["Bindings"] = {
@@ -393,8 +393,8 @@ OPie_SavedData = {
 ["sliceToken"] = "ABuez3BG0fU",
 },
 {
-["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 ["sliceToken"] = "ABuez3BG0fY",
+["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 },
 {
 ["id"] = 783,
@@ -484,40 +484,35 @@ OPie_SavedData = {
 ["OPieFlagStore"] = {
 ["StoreVersion"] = 3,
 },
-["nsWarlords"] = {
+["heLichKing"] = {
 {
-["id"] = 159895,
-["sliceToken"] = "ABuen4eGzkJ",
+"toy",
+48933,
+["sliceToken"] = "ABuen4eGzkA",
 },
 {
-["id"] = 159897,
-["sliceToken"] = "ABuen4eGzkH",
+"item",
+46874,
+["sliceToken"] = "ABuen4eGzkP",
 },
 {
-["id"] = 159898,
-["sliceToken"] = "ABuen4eGzk0",
+"item",
+52251,
+["sliceToken"] = "ABuen4eGzkO",
 },
 {
-["id"] = 159901,
-["sliceToken"] = "ABuen4eGzkG",
+["id"] = 193753,
+["sliceToken"] = "ABuen4eGzkI",
 },
 {
-["id"] = 159899,
-["sliceToken"] = "ABuen4eGzkF",
+["id"] = 53140,
+["sliceToken"] = "ABuen4eGzk8",
 },
 {
-["id"] = 159902,
-["sliceToken"] = "ABuen4eGzkD",
+["id"] = 53142,
+["sliceToken"] = "ABuen4eGzkU",
 },
-{
-["id"] = 159900,
-["sliceToken"] = "ABuen4eGzkS",
-},
-{
-["id"] = 159896,
-["sliceToken"] = "ABuen4eGzk9",
-},
-["name"] = "Portals: DungeonsWarlords",
+["name"] = "Portals: WrathOfTheLichKing",
 ["save"] = true,
 },
 ["talsLegion"] = {
@@ -744,8 +739,8 @@ OPie_SavedData = {
 ["sliceToken"] = "ABuen4eGzkwn",
 },
 {
-["id"] = 126892,
 ["sliceToken"] = "ABuen4eGzkw6",
+["id"] = 126892,
 },
 ["name"] = "Portals: MistsOfPandaria",
 ["save"] = true,
@@ -1000,35 +995,40 @@ OPie_SavedData = {
 ["name"] = "Portals: BattleForAzeroth",
 ["save"] = true,
 },
-["heLichKing"] = {
+["nsWarlords"] = {
 {
-"toy",
-48933,
-["sliceToken"] = "ABuen4eGzkA",
+["id"] = 159895,
+["sliceToken"] = "ABuen4eGzkJ",
 },
 {
-"item",
-46874,
-["sliceToken"] = "ABuen4eGzkP",
+["id"] = 159897,
+["sliceToken"] = "ABuen4eGzkH",
 },
 {
-"item",
-52251,
-["sliceToken"] = "ABuen4eGzkO",
+["id"] = 159898,
+["sliceToken"] = "ABuen4eGzk0",
 },
 {
-["id"] = 193753,
-["sliceToken"] = "ABuen4eGzkI",
+["id"] = 159901,
+["sliceToken"] = "ABuen4eGzkG",
 },
 {
-["id"] = 53140,
-["sliceToken"] = "ABuen4eGzk8",
+["sliceToken"] = "ABuen4eGzkF",
+["id"] = 159899,
 },
 {
-["id"] = 53142,
-["sliceToken"] = "ABuen4eGzkU",
+["id"] = 159902,
+["sliceToken"] = "ABuen4eGzkD",
 },
-["name"] = "Portals: WrathOfTheLichKing",
+{
+["id"] = 159900,
+["sliceToken"] = "ABuen4eGzkS",
+},
+{
+["id"] = 159896,
+["sliceToken"] = "ABuen4eGzk9",
+},
+["name"] = "Portals: DungeonsWarlords",
 ["save"] = true,
 },
 ["sofDraenor"] = {

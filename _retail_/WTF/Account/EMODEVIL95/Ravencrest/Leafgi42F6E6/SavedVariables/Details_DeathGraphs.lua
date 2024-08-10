@@ -1,0 +1,3 @@
+
+AdvancedDeathLogsDB = nil
+DeathGraphsDBEndurance = nil

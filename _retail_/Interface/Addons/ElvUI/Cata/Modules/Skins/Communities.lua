@@ -4,37 +4,11 @@ local S = E:GetModule('Skins')
 local _G = _G
 local next, pairs, select = next, pairs, select
 
-local C_CreatureInfo_GetClassInfo = C_CreatureInfo.GetClassInfo
 local C_GuildInfo_GetGuildNewsInfo = C_GuildInfo.GetGuildNewsInfo
 local BATTLENET_FONT_COLOR = BATTLENET_FONT_COLOR
-local GetClassInfo = GetClassInfo
 local GREEN_FONT_COLOR = GREEN_FONT_COLOR
 local CreateFrame = CreateFrame
 local hooksecurefunc = hooksecurefunc
-
----- current unused:
-local function UpdateNames(button)
-	if not button.expanded then return end
-
-	local memberInfo = button:GetMemberInfo()
-	if memberInfo and memberInfo.classID then
-		local classInfo = C_CreatureInfo_GetClassInfo(memberInfo.classID)
-		if classInfo then
-			button.Class:SetTexCoord(E:GetClassCoords(classInfo.classFile, true))
-		end
-	end
-end
-
-local function ColorMemberName(button, info)
-	if not info then return end
-
-	local class = button.Class
-	local _, classTag = GetClassInfo(info.classID)
-	if classTag then
-		class:SetTexCoord(E:GetClassCoords(classTag, true))
-	end
-end
----- TODO: need to reimplement this ^
 
 local function HandleCommunitiesButtons(button)
 	button.Background:Hide()
@@ -292,8 +266,8 @@ function S:Blizzard_Communities()
 	CommunitiesFrame.GuildMemberDetailFrame.RemoveButton:Point('BOTTOMLEFT', 10, 4)
 
 	local DropDown = CommunitiesFrame.GuildMemberDetailFrame.RankDropdown
-	DropDown:Point('LEFT', CommunitiesFrame.GuildMemberDetailFrame.RankLabel, 'RIGHT', -12, -3)
-	S:HandleDropDownBox(DropDown, 175)
+	DropDown:Point('LEFT', CommunitiesFrame.GuildMemberDetailFrame.RankLabel, 'RIGHT', 0, -3)
+	S:HandleDropDownBox(DropDown, 150)
 
 	-- Roster Tab
 	local MemberList = CommunitiesFrame.MemberList
@@ -350,7 +324,6 @@ function S:Blizzard_Communities()
 		hooksecurefunc(CommunitiesFrame.GuildBenefitsFrame.Rewards.ScrollBox, 'Update', HandleRewardButton)
 	end
 
-	-- Guild Reputation Bar TO DO: Adjust me!
 	local StatusBar = CommunitiesFrame.GuildBenefitsFrame.FactionFrame.Bar
 	StatusBar.Middle:Hide()
 	StatusBar.Right:Hide()
@@ -360,7 +333,7 @@ function S:Blizzard_Communities()
 	StatusBar.Progress:SetTexture(E.media.normTex)
 	StatusBar.Progress:ClearAllPoints()
 	StatusBar.Progress:Point('TOPLEFT')
-	StatusBar.Progress:Point('BOTTOMRIGHT')
+	StatusBar.Progress:Point('BOTTOMLEFT')
 	E:RegisterStatusBar(StatusBar)
 
 	local ProgressBarBG = CreateFrame('Frame', nil, StatusBar)

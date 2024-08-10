@@ -62,7 +62,7 @@ end
 
 function NPCTime:OnLoad()
   self:RegisterEvent("ADDON_LOADED")
-  if C_TooltipInfo then
+  if C_TooltipInfo and TooltipDataProcessor then
     TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(tooltip, tooltipData)
       if tooltip ~= GameTooltip then return end
       self:ShowTime(tooltip)

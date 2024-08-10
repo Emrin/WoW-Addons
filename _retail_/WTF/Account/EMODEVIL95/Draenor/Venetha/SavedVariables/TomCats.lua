@@ -1,24 +1,35 @@
 
 TomCats_Character = {
-	["loveisintheair"] = {
-		["preferences"] = {
-			["roles"] = {
-				false, -- [1]
-				false, -- [2]
-				true, -- [3]
-			},
-		},
-	},
-	["lunarfestival"] = {
-		["preferences"] = {
-		},
-	},
-	["midsummer"] = {
-		["preferences"] = {
-		},
-	},
-	["hallowsend"] = {
-		["preferences"] = {
-		},
-	},
+["loveisintheair"] = {
+["preferences"] = {
+["roles"] = {
+false,
+false,
+true,
+},
+},
+},
+["midsummer"] = {
+["preferences"] = {
+},
+},
+["mopremix"] = {
+["bonusxp"] = {
+["bonus"] = 0,
+["synchronized"] = false,
+["xp"] = 0,
+["epic"] = 0,
+["level"] = 10,
+["uncommon"] = 0,
+["rare"] = 0,
+},
+},
+["hallowsend"] = {
+["preferences"] = {
+},
+},
+["lunarfestival"] = {
+["preferences"] = {
+},
+},
 }

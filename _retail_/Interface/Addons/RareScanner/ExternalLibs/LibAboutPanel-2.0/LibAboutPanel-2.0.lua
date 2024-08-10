@@ -491,7 +491,14 @@ function AboutPanel:CreateAboutPanel(addon, parent)
 
 		frame.name = not parent and addon or L["About"]
 		frame.parent = parent
-		InterfaceOptions_AddCategory(frame)
+		frame.OnCommit = frame.okay;
+		frame.OnDefault = frame.default;
+		frame.OnRefresh = frame.refresh;
+		
+		local category, layout = Settings.RegisterCanvasLayoutCategory(frame, frame.name, frame.name);
+		category.ID = frame.name;
+		Settings.RegisterAddOnCategory(category);
+		
 		AboutPanel.aboutFrame[addon] = frame
 	end
 

@@ -25,18 +25,22 @@ HandyNotes_TravelGuideDB = {
 ["Hentaihero - Draenor"] = "Hentaihero - Draenor",
 ["Venetha - Draenor"] = "Venetha - Draenor",
 ["Hentaihero - Outland"] = "Hentaihero - Outland",
+["Hun - Ravencrest"] = "Hun - Ravencrest",
+["Lovelol - Ravencrest"] = "Lovelol - Ravencrest",
 ["Fuwu - Silvermoon"] = "Fuwu - Silvermoon",
-["Apoka - Outland"] = "Apoka - Outland",
+["Ravegirl - Ravencrest"] = "Ravegirl - Ravencrest",
 ["Nolifey - Moonglade"] = "Nolifey - Moonglade",
 ["Lifey - Moonglade"] = "Lifey - Moonglade",
 ["Lifey - Draenor"] = "Lifey - Draenor",
+["Leafgi42F6E6 - Ravencrest"] = "Leafgi42F6E6 - Ravencrest",
 ["Missuccubus - Draenor"] = "Missuccubus - Draenor",
-["Kungfugoblin - Draenor"] = "Kungfugoblin - Draenor",
-["Bloodlustguy - Draenor"] = "Bloodlustguy - Draenor",
-["Lifey - Silvermoon"] = "Lifey - Silvermoon",
-["Apoki - Silvermoon"] = "Apoki - Silvermoon",
-["Crystalol - Draenor"] = "Crystalol - Draenor",
 ["Yubiyubi - Draenor"] = "Yubiyubi - Draenor",
+["Crystalol - Draenor"] = "Crystalol - Draenor",
+["Apoki - Silvermoon"] = "Apoki - Silvermoon",
+["Lifey - Silvermoon"] = "Lifey - Silvermoon",
+["Bloodlustguy - Draenor"] = "Bloodlustguy - Draenor",
+["Apoka - Outland"] = "Apoka - Outland",
+["Kungfugoblin - Draenor"] = "Kungfugoblin - Draenor",
 },
 ["profiles"] = {
 ["Nolifey - Ravencrest"] = {
@@ -87,9 +91,13 @@ HandyNotes_TravelGuideDB = {
 },
 ["Hentaihero - Outland"] = {
 },
+["Hun - Ravencrest"] = {
+},
+["Lovelol - Ravencrest"] = {
+},
 ["Fuwu - Silvermoon"] = {
 },
-["Apoka - Outland"] = {
+["Ravegirl - Ravencrest"] = {
 },
 ["Nolifey - Moonglade"] = {
 },
@@ -97,19 +105,23 @@ HandyNotes_TravelGuideDB = {
 },
 ["Lifey - Draenor"] = {
 },
+["Leafgi42F6E6 - Ravencrest"] = {
+},
 ["Missuccubus - Draenor"] = {
 },
-["Kungfugoblin - Draenor"] = {
-},
-["Bloodlustguy - Draenor"] = {
-},
-["Lifey - Silvermoon"] = {
-},
-["Apoki - Silvermoon"] = {
+["Yubiyubi - Draenor"] = {
 },
 ["Crystalol - Draenor"] = {
 },
-["Yubiyubi - Draenor"] = {
+["Apoki - Silvermoon"] = {
+},
+["Lifey - Silvermoon"] = {
+},
+["Bloodlustguy - Draenor"] = {
+},
+["Apoka - Outland"] = {
+},
+["Kungfugoblin - Draenor"] = {
 },
 },
 }

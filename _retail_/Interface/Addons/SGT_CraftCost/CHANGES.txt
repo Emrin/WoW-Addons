@@ -1,10 +1,13 @@
-tag b9a501aaa4321d446768c6dd21af9bff9375bd24 v1.1.11
+tag 80640f9bc8e4c87cb5013fbf692197b96a68d50c v1.1.12
 Author:	Stijn Stroeckx <stijnstroeckx@hotmail.com>
-Date:	Sun Jul 14 15:52:57 2024 +0100
+Date:	Sat Aug 3 11:19:29 2024 +0100
 
-commit 3c1b51f09d4297535f7c5789b9a361512f3cf2c7
+commit 085244f049719a890e54a94bf2a1b15aae000873
 Author: Stijn Stroeckx <stijnstroeckx@hotmail.com>
-Date:   Sun Jul 14 15:51:18 2024 +0100
+Date:   Sat Aug 3 11:19:21 2024 +0100
 
-    Updated TOC for 10.2.7
+    Fixed error in some recipes that can use sparks
+    
+    - TOC updated for 11.0.0
+    - Special slots such as sparks are now skipped in pricing calculations.
 

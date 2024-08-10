@@ -1,0 +1,1969 @@
+
+DetailsTimeLineDB = {
+["max_segments"] = 4,
+["combat_data"] = {
+{
+["date_start"] = "12:29:56",
+["date_end"] = "12:30:33",
+["name"] = "Echo of Doragosa",
+["total_time"] = 37.89999999999418,
+},
+{
+["date_start"] = "12:27:35",
+["date_end"] = "12:28:05",
+["name"] = "Vexamus",
+["total_time"] = 30.18600000000151,
+},
+{
+["date_start"] = "12:24:24",
+["date_end"] = "12:25:03",
+["name"] = "Crawth",
+["total_time"] = 38.5969999999943,
+},
+{
+["date_start"] = "12:21:44",
+["date_end"] = "12:22:17",
+["name"] = "Overgrown Ancient",
+["total_time"] = 32.8119999999908,
+},
+},
+["hide_on_combat"] = false,
+["IndividualSpells"] = {
+{
+[388822] = {
+{
+27.83100000000559,
+"Echo of Doragosa",
+388822,
+"SPELL_CAST_SUCCESS",
+},
+},
+[374343] = {
+{
+15.81200000000536,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+36.28500000000349,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+},
+[374361] = {
+{
+32.91000000000349,
+"Echo of Doragosa",
+374361,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[387691] = {
+{
+2.815000000002328,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+{
+25.58400000000256,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+},
+[385958] = {
+{
+15.01499999999942,
+"Vexamus",
+385958,
+"SPELL_CAST_SUCCESS",
+},
+},
+[386181] = {
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+},
+[386173] = {
+{
+24.73799999999756,
+"Vexamus",
+386173,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[377009] = {
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Joellee",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Joellee",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+},
+[376997] = {
+{
+5.005999999993946,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+22.02599999999802,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[377034] = {
+{
+19.66099999999278,
+"Crawth",
+377034,
+"SPELL_CAST_SUCCESS",
+},
+},
+[181089] = {
+{
+8.347999999998137,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+{
+20.50999999999476,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377004] = {
+{
+13.29200000000128,
+"Crawth",
+377004,
+"SPELL_CAST_SUCCESS",
+},
+{
+36.35499999999593,
+"Crawth",
+377004,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[388544] = {
+{
+10.82899999999791,
+"Overgrown Ancient",
+388544,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[388796] = {
+{
+18.30399999998917,
+"Overgrown Ancient",
+388796,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[373915] = {
+{
+12.74599999999919,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.5460000000021,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373917] = {
+{
+12.74599999999919,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.5460000000021,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373912] = {
+{
+12.74599999999919,
+"Decatriarch Wratheye",
+373912,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[373942] = {
+{
+17.60899999999674,
+"Decatriarch Wratheye",
+373942,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376170] = {
+{
+8.385999999998603,
+"Decatriarch Wratheye",
+376170,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[372151] = {
+{
+6.539999999993597,
+"Gutchewer Bear",
+372151,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[384529] = {
+{
+9.400999999998021,
+"Rotfang Hyena",
+384529,
+"SPELL_CAST_SUCCESS",
+},
+},
+[382620] = {
+{
+3.618000000002212,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+13.33999999999651,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+20.64599999999336,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+},
+[385359] = {
+{
+11.17799999999988,
+"Gutshot",
+385359,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384353] = {
+{
+16.7609999999986,
+"Gutshot",
+384353,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[383979] = {
+{
+8.18300000000454,
+"Gutshot",
+383979,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[377559] = {
+{
+7.995999999999185,
+"Treemouth",
+377559,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376811] = {
+{
+13.57200000000012,
+"Treemouth",
+376811,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+},
+},
+{
+[378155] = {
+{
+6.783999999999651,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+10.27500000000873,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+16.36299999999756,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+},
+[381834] = {
+{
+22.92600000000675,
+"Rira Hackclaw",
+381834,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[378029] = {
+{
+4.417000000001281,
+"Gashtooth",
+378029,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[387559] = {
+{
+9.868999999991502,
+"Primal Tsunami",
+387559,
+"SPELL_CAST_SUCCESS",
+},
+},
+[388424] = {
+{
+6.868999999991502,
+"Primal Tsunami",
+388424,
+"SPELL_CAST_SUCCESS",
+},
+},
+[387585] = {
+{
+16.20699999999488,
+"Primal Tsunami",
+387585,
+"SPELL_CAST_SUCCESS",
+},
+},
+[387618] = {
+{
+24.25800000000163,
+"Primalist Infuser",
+387618,
+"SPELL_CAST_SUCCESS",
+},
+{
+24.25800000000163,
+"Primalist Infuser",
+387618,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[385963] = {
+{
+5.745999999999185,
+"Khajin the Unyielding",
+385963,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+15.77300000000105,
+"Khajin the Unyielding",
+385963,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[386757] = {
+{
+13.7670000000071,
+"Khajin the Unyielding",
+386757,
+"SPELL_CAST_SUCCESS",
+},
+},
+[386559] = {
+{
+23.26900000000023,
+"Khajin the Unyielding",
+386559,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[385181] = {
+{
+9.921000000002095,
+"Gulping Goliath",
+385181,
+"SPELL_CAST_SUCCESS",
+},
+},
+[385551] = {
+{
+21.125,
+"Gulping Goliath",
+385551,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[389056] = {
+{
+27.68000000000757,
+"Watcher Irideus",
+389056,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384524] = {
+{
+9.706000000005588,
+"Watcher Irideus",
+384524,
+"SPELL_CAST_SUCCESS",
+},
+},
+[383840] = {
+{
+21.46199999999953,
+"Watcher Irideus",
+383840,
+"SPELL_CAST_SUCCESS",
+},
+},
+[454605] = {
+{
+27.61800000000221,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Cbl-Deathwing",
+},
+{
+27.61800000000221,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+28.82499999999709,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+},
+[384014] = {
+{
+12.77400000000489,
+"Watcher Irideus",
+384014,
+"SPELL_CAST_SUCCESS",
+},
+},
+[389446] = {
+{
+28.61600000000908,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+32.2609999999986,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+35.91300000000047,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+38.35100000000966,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[388822] = {
+{
+27.54700000000594,
+"Echo of Doragosa",
+388822,
+"SPELL_CAST_SUCCESS",
+},
+},
+[374343] = {
+{
+15.54100000001199,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Cbl-Deathwing",
+},
+{
+35.9490000000078,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Faithie-Drak'thul",
+},
+},
+[374361] = {
+{
+32.60300000000279,
+"Echo of Doragosa",
+374361,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[387691] = {
+{
+2.101999999998952,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+{
+22.70399999999791,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+},
+[385958] = {
+{
+14.29899999999907,
+"Vexamus",
+385958,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[377009] = {
+{
+12.34800000001269,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Faithie-Drak'thul",
+},
+{
+12.34800000001269,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Scarcer-Khadgar",
+},
+{
+12.34800000001269,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+12.34800000001269,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+12.34800000001269,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Cbl-Deathwing",
+},
+},
+[376997] = {
+{
+5.289000000004307,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+21.86800000000221,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[377034] = {
+{
+19.52100000000792,
+"Crawth",
+377034,
+"SPELL_CAST_SUCCESS",
+},
+},
+[181089] = {
+{
+8.625,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+{
+20.34800000001269,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377004] = {
+{
+12.34800000001269,
+"Crawth",
+377004,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[388544] = {
+{
+9.285000000003492,
+"Overgrown Ancient",
+388544,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+},
+[388796] = {
+{
+16.78500000000349,
+"Overgrown Ancient",
+388796,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[181113] = {
+{
+2.809999999997672,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+{
+3.370999999999185,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+{
+11.95399999999791,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+{
+12.35800000000745,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.48600000000442,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+{
+19.10800000000745,
+"Eternal Orb",
+181113,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376292] = {
+{
+2.593000000008033,
+"Chrono-Lord Deios",
+376292,
+"SPELL_CAST_SUCCESS",
+},
+{
+11.07800000000862,
+"Chrono-Lord Deios",
+376292,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.36000000000058,
+"Chrono-Lord Deios",
+376292,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376049] = {
+{
+8.951000000000931,
+"Chrono-Lord Deios",
+376049,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377395] = {
+{
+4.517999999996391,
+"Chrono-Lord Deios",
+377395,
+"SPELL_CAST_SUCCESS",
+},
+},
+[375727] = {
+{
+15.49899999999616,
+"Chrono-Lord Deios",
+375727,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[369061] = {
+{
+6.209000000002561,
+"Emberon",
+369061,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369110] = {
+{
+12.55199999999604,
+"Emberon",
+369110,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[372718] = {
+{
+4.297999999995227,
+"Sentinel Talondras",
+372718,
+"SPELL_CAST_SUCCESS",
+"Kleov",
+},
+{
+14.02199999999721,
+"Sentinel Talondras",
+372718,
+"SPELL_CAST_SUCCESS",
+"Dreamhell-TwistingNether",
+},
+},
+[369409] = {
+{
+13.89400000000023,
+"Earthen Custodian",
+369409,
+"SPELL_CAST_SUCCESS",
+},
+},
+[372701] = {
+{
+9.95799999999872,
+"Sentinel Talondras",
+372701,
+"SPELL_CAST_SUCCESS",
+},
+},
+[372623] = {
+{
+0.8619999999937136,
+"Sentinel Talondras",
+372623,
+"SPELL_CAST_SUCCESS",
+},
+},
+[377732] = {
+{
+17.14500000000408,
+"Refti Custodian",
+377732,
+"SPELL_CAST_SUCCESS",
+"Kleov",
+},
+},
+},
+{
+[369806] = {
+{
+4.135999999998603,
+"Hulking Berserker",
+369806,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369696] = {
+{
+12.79799999999523,
+"Stonevault Ambusher",
+369696,
+"SPELL_CAST_SUCCESS",
+},
+{
+15.65600000000268,
+"Stonevault Ambusher",
+369696,
+"SPELL_CAST_SUCCESS",
+},
+{
+16.92900000000373,
+"Stonevault Ambusher",
+369696,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.91799999999057,
+"Scavenging Leaper",
+369696,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369674] = {
+{
+13.35099999999511,
+"Stonevault Geomancer",
+369674,
+"SPELL_CAST_SUCCESS",
+"Dreamhell-TwistingNether",
+},
+},
+[369697] = {
+{
+12.0460000000021,
+"Stonevault Ambusher",
+369697,
+"SPELL_CAST_SUCCESS",
+},
+{
+14.86800000000221,
+"Stonevault Ambusher",
+369697,
+"SPELL_CAST_SUCCESS",
+},
+{
+16.0969999999943,
+"Stonevault Ambusher",
+369697,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.11800000000221,
+"Scavenging Leaper",
+369697,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369605] = {
+{
+5.168999999994412,
+"Bromach",
+369605,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369703] = {
+{
+15.96199999999953,
+"Bromach",
+369703,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[369792] = {
+{
+10.26600000000326,
+"Eric \"The Swift\"",
+369792,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369563] = {
+{
+11.11699999999837,
+"Baelog",
+369563,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369677] = {
+{
+16.96600000000035,
+"Olaf",
+369677,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+},
+[369791] = {
+{
+9.911999999996624,
+"Eric \"The Swift\"",
+369791,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369781] = {
+{
+2.847999999998137,
+"Eric \"The Swift\"",
+369781,
+"SPELL_CAST_SUCCESS",
+"Bazanka-DunModr",
+},
+{
+6.479000000006636,
+"Eric \"The Swift\"",
+369781,
+"SPELL_CAST_SUCCESS",
+"Kleov",
+},
+},
+[375924] = {
+{
+12.54899999999907,
+"Eric \"The Swift\"",
+375924,
+"SPELL_CAST_SUCCESS",
+},
+{
+18.60599999999977,
+"Baelog",
+375924,
+"SPELL_CAST_SUCCESS",
+},
+},
+[369602] = {
+{
+18.30199999999604,
+"Olaf",
+369602,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[387559] = {
+{
+8.463000000003376,
+"Primal Tsunami",
+387559,
+"SPELL_CAST_SUCCESS",
+},
+},
+[388424] = {
+{
+5.490000000005239,
+"Primal Tsunami",
+388424,
+"SPELL_CAST_SUCCESS",
+},
+{
+53.65699999999197,
+"Primal Tsunami",
+388424,
+"SPELL_CAST_SUCCESS",
+},
+},
+[387585] = {
+{
+13.6530000000057,
+"Primal Tsunami",
+387585,
+"SPELL_CAST_SUCCESS",
+},
+},
+[387618] = {
+{
+21.70600000000559,
+"Primalist Infuser",
+387618,
+"SPELL_CAST_SUCCESS",
+},
+{
+21.70600000000559,
+"Primalist Infuser",
+387618,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[385963] = {
+{
+4.881999999997788,
+"Khajin the Unyielding",
+385963,
+"SPELL_CAST_SUCCESS",
+"Kiomungv-Aggra(Português)",
+},
+{
+14.87099999999919,
+"Khajin the Unyielding",
+385963,
+"SPELL_CAST_SUCCESS",
+"Kiomungv-Aggra(Português)",
+},
+},
+[386757] = {
+{
+12.88499999999476,
+"Khajin the Unyielding",
+386757,
+"SPELL_CAST_SUCCESS",
+},
+},
+[386559] = {
+{
+22.36799999998766,
+"Khajin the Unyielding",
+386559,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[385181] = {
+{
+9.330000000001746,
+"Gulping Goliath",
+385181,
+"SPELL_CAST_SUCCESS",
+},
+},
+[385551] = {
+{
+20.54800000000978,
+"Gulping Goliath",
+385551,
+"SPELL_CAST_SUCCESS",
+},
+},
+[385442] = {
+{
+31.17799999999988,
+"Gulping Goliath",
+385442,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[389056] = {
+{
+27.52499999999418,
+"Watcher Irideus",
+389056,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384524] = {
+{
+9.536999999996624,
+"Watcher Irideus",
+384524,
+"SPELL_CAST_SUCCESS",
+},
+{
+47.19899999999325,
+"Watcher Irideus",
+384524,
+"SPELL_CAST_SUCCESS",
+},
+},
+[383840] = {
+{
+21.31200000000536,
+"Watcher Irideus",
+383840,
+"SPELL_CAST_SUCCESS",
+},
+},
+[454605] = {
+{
+26.63999999999942,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Alivest-Silvermoon",
+},
+{
+26.63999999999942,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Broztito-Silvermoon",
+},
+{
+26.63999999999942,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Delagance-Outland",
+},
+{
+33.93899999999849,
+"Nullification Device",
+454605,
+"SPELL_CAST_SUCCESS",
+"Broztito-Silvermoon",
+},
+},
+[384014] = {
+{
+12.60499999999593,
+"Watcher Irideus",
+384014,
+"SPELL_CAST_SUCCESS",
+},
+},
+[389446] = {
+{
+30.0969999999943,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+34.95200000000477,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+36.16000000000349,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+{
+41.04700000000594,
+"Nullification Device",
+389446,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[373915] = {
+{
+12.8009999999922,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.60700000000361,
+"Decatriarch Wratheye",
+373915,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373917] = {
+{
+12.8009999999922,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.60700000000361,
+"Decatriarch Wratheye",
+373917,
+"SPELL_CAST_SUCCESS",
+},
+},
+[373912] = {
+{
+12.8009999999922,
+"Decatriarch Wratheye",
+373912,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+},
+[373942] = {
+{
+17.64999999999418,
+"Decatriarch Wratheye",
+373942,
+"SPELL_CAST_SUCCESS",
+},
+},
+[376170] = {
+{
+8.444000000003143,
+"Decatriarch Wratheye",
+376170,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[385359] = {
+{
+11.69599999999628,
+"Gutshot",
+385359,
+"SPELL_CAST_SUCCESS",
+},
+},
+[384353] = {
+{
+14.83699999999953,
+"Gutshot",
+384353,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+},
+[383979] = {
+{
+8.69199999999546,
+"Gutshot",
+383979,
+"SPELL_CAST_SUCCESS",
+},
+},
+[382620] = {
+{
+4.122000000003027,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Eixca-ArgentDawn",
+},
+{
+17.07700000000477,
+"Gutshot",
+382620,
+"SPELL_CAST_SUCCESS",
+"Kapz-ArgentDawn",
+},
+},
+},
+{
+[373943] = {
+{
+1.414000000004307,
+"Wilted Oak",
+373943,
+"SPELL_CAST_SUCCESS",
+},
+},
+[372113] = {
+{
+0.338000000003376,
+"Infected Lasher",
+372113,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+{
+2.763000000006286,
+"Infected Lasher",
+372113,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+{
+5.197000000000116,
+"Infected Lasher",
+372113,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+},
+[375416] = {
+{
+1.357000000003609,
+"Infected Lasher",
+375416,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+{
+3.591000000000349,
+"Infected Lasher",
+375416,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+{
+5.479000000006636,
+"Infected Lasher",
+375416,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+},
+[376811] = {
+{
+14.58200000000943,
+"Treemouth",
+376811,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+},
+[377559] = {
+{
+9.01600000000326,
+"Treemouth",
+377559,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+[377965] = {
+{
+16.90999999998894,
+"Tricktotem",
+377965,
+"SPELL_CAST_SUCCESS",
+},
+},
+[378029] = {
+{
+5.099000000001979,
+"Gashtooth",
+378029,
+"SPELL_CAST_SUCCESS",
+},
+},
+[378155] = {
+{
+2.455999999991036,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Kanzlol-Outland",
+},
+{
+15.78499999998894,
+"Tricktotem",
+378155,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+},
+},
+},
+["useicons"] = true,
+["window_scale"] = 1,
+["backdrop_color"] = {
+0,
+0,
+0,
+0.4,
+},
+["deaths_data"] = {
+{
+},
+{
+},
+{
+},
+{
+},
+},
+["debuff_timeline"] = {
+{
+["Ravegirl"] = {
+[374350] = {
+16.05999999999767,
+22.06399999999849,
+["stacks"] = {
+},
+["source"] = "Echo of Doragosa",
+["active"] = false,
+},
+},
+["Fetling-Uldum"] = {
+[374350] = {
+36.39400000000023,
+37.89999999999418,
+["stacks"] = {
+},
+["source"] = "Echo of Doragosa",
+["active"] = false,
+},
+},
+},
+{
+["Ravegirl"] = {
+[386181] = {
+24.84799999999814,
+28.84900000000198,
+["stacks"] = {
+},
+["source"] = "Vexamus",
+["active"] = false,
+},
+[386201] = {
+29.88700000000245,
+30.18600000000151,
+["stacks"] = {
+},
+["source"] = "[*] Corrupted Mana",
+["active"] = false,
+},
+},
+["Fetling-Uldum"] = {
+[386181] = {
+24.8640000000014,
+28.86800000000221,
+["stacks"] = {
+},
+["source"] = "Vexamus",
+["active"] = false,
+},
+},
+["Poroppo-C'Thun"] = {
+[386181] = {
+24.84799999999814,
+28.84900000000198,
+["stacks"] = {
+},
+["source"] = "Vexamus",
+["active"] = false,
+},
+},
+},
+{
+["ßacü-Aggra(Português)"] = {
+[376997] = {
+5.005999999993946,
+14.99599999999919,
+22.02599999999802,
+32.02400000000489,
+["stacks"] = {
+},
+["source"] = "Crawth",
+["active"] = false,
+},
+},
+},
+{
+["ßacü-Aggra(Português)"] = {
+[388544] = {
+10.82899999999791,
+19.82499999999709,
+["stacks"] = {
+},
+["source"] = "Overgrown Ancient",
+["active"] = false,
+},
+},
+},
+},
+["cooldowns_timeline"] = {
+{
+["ßacü-Aggra(Português)"] = {
+{
+1.779999999998836,
+"ßacü-Aggra(Português)",
+212084,
+},
+{
+4.8009999999922,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+9.730999999999767,
+"Echo of Doragosa",
+204021,
+},
+{
+15.92299999999523,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+29.07499999999709,
+"ßacü-Aggra(Português)",
+212084,
+},
+{
+33.85899999999674,
+"ßacü-Aggra(Português)",
+203720,
+},
+},
+},
+{
+["ßacü-Aggra(Português)"] = {
+{
+2.778999999994994,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+4.285000000003493,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+11.92399999999907,
+"ßacü-Aggra(Português)",
+212084,
+},
+{
+19.05500000000757,
+"Vexamus",
+204021,
+},
+{
+21.37900000000082,
+"ßacü-Aggra(Português)",
+203720,
+},
+},
+},
+{
+["ßacü-Aggra(Português)"] = {
+{
+1.142000000007101,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+3.282000000006519,
+"ßacü-Aggra(Português)",
+212084,
+},
+{
+9.611000000004424,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+10.77000000000408,
+"Crawth",
+204021,
+},
+{
+19.79799999999523,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+29.69999999999709,
+"Crawth",
+204021,
+},
+{
+37.66199999999662,
+"ßacü-Aggra(Português)",
+203720,
+},
+},
+},
+{
+["ßacü-Aggra(Português)"] = {
+{
+0.9579999999987194,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+3.135999999998603,
+"ßacü-Aggra(Português)",
+212084,
+},
+{
+6.709999999991851,
+"Overgrown Ancient",
+204021,
+},
+{
+9.131999999997788,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+25.27899999999499,
+"ßacü-Aggra(Português)",
+203720,
+},
+{
+32.15299999999115,
+"ßacü-Aggra(Português)",
+212084,
+},
+},
+},
+},
+["BossSpellCast"] = {
+{
+["Echo of Doragosa"] = {
+{
+15.81200000000536,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+27.83100000000559,
+"Echo of Doragosa",
+388822,
+"SPELL_CAST_SUCCESS",
+},
+{
+32.91000000000349,
+"Echo of Doragosa",
+374361,
+"SPELL_CAST_SUCCESS",
+},
+{
+36.28500000000349,
+"Echo of Doragosa",
+374343,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+},
+},
+{
+["Vexamus"] = {
+{
+2.815000000002328,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+{
+15.01499999999942,
+"Vexamus",
+385958,
+"SPELL_CAST_SUCCESS",
+},
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+24.73799999999756,
+"Vexamus",
+386181,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+24.73799999999756,
+"Vexamus",
+386173,
+"SPELL_CAST_SUCCESS",
+},
+{
+25.58400000000256,
+"Vexamus",
+387691,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+{
+["Crawth"] = {
+{
+5.005999999993946,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+8.347999999998137,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.29200000000128,
+"Crawth",
+377004,
+"SPELL_CAST_SUCCESS",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Joellee",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+13.29200000000128,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+19.66099999999278,
+"Crawth",
+377034,
+"SPELL_CAST_SUCCESS",
+},
+{
+20.50999999999476,
+"Crawth",
+181089,
+"SPELL_CAST_SUCCESS",
+},
+{
+22.02599999999802,
+"Crawth",
+376997,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+36.35499999999593,
+"Crawth",
+377004,
+"SPELL_CAST_SUCCESS",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Joellee",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Ravegirl",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Poroppo-C'Thun",
+},
+{
+36.375,
+"Crawth",
+377009,
+"SPELL_CAST_SUCCESS",
+"Fetling-Uldum",
+},
+},
+},
+{
+["Overgrown Ancient"] = {
+{
+10.82899999999791,
+"Overgrown Ancient",
+388544,
+"SPELL_CAST_SUCCESS",
+"ßacü-Aggra(Português)",
+},
+{
+18.30399999998917,
+"Overgrown Ancient",
+388796,
+"SPELL_CAST_SUCCESS",
+},
+},
+},
+},
+}

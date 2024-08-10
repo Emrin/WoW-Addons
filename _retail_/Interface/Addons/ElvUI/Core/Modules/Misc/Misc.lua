@@ -44,15 +44,14 @@ local PlaySound = PlaySound
 local GetNumFactions = GetNumFactions
 local GetFactionInfo = GetFactionInfo
 local UnitIsGroupLeader = UnitIsGroupLeader
-local GetWatchedFactionInfo = GetWatchedFactionInfo
-local ExpandAllFactionHeaders = ExpandAllFactionHeaders
+local ExpandAllFactionHeaders = C_Reputation.ExpandAllFactionHeaders or ExpandAllFactionHeaders
 local SetWatchedFactionIndex = SetWatchedFactionIndex
 local GetCurrentCombatTextEventInfo = GetCurrentCombatTextEventInfo
 local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
 
 local GetGameAccountInfoByGUID = C_BattleNet.GetGameAccountInfoByGUID
-local GetItemInfo = C_Item.GetItemInfo or GetItemInfo
-local IsAddOnLoaded = (C_AddOns and C_AddOns.IsAddOnLoaded) or IsAddOnLoaded
+local GetItemInfo = C_Item.GetItemInfo
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded
 local LeaveParty = C_PartyInfo.LeaveParty or LeaveParty
 local IsFriend = C_FriendList.IsFriend
 
@@ -147,7 +146,8 @@ function M:COMBAT_TEXT_UPDATE(_, messagetype)
 
 	if messagetype == 'FACTION' then
 		local faction, rep = GetCurrentCombatTextEventInfo()
-		if faction ~= 'Guild' and faction ~= GetWatchedFactionInfo() and rep > 0 then
+		local data = (rep and rep > 0) and (faction ~= 'Guild') and E:GetWatchedFactionInfo()
+		if data and faction ~= data.name then
 			ExpandAllFactionHeaders()
 
 			for i = 1, GetNumFactions() do

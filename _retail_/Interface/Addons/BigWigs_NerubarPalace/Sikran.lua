@@ -49,7 +49,7 @@ local timers = mod:Mythic() and timersMythic or mod:Easy() and timersNormal or t
 
 function mod:GetOptions()
 	return {
-		{433517, "SAY", "ME_ONLY_EMPHASIZE"}, -- Phase Blades
+		{433517, "PRIVATE"}, -- Phase Blades
 			434860, -- Cosmic Wound
 		{442428, "SAY", "SAY_COUNTDOWN"}, -- Decimate
 			459273, -- Cosmic Shards
@@ -66,7 +66,7 @@ function mod:GetOptions()
 end
 
 function mod:OnBossEnable()
-	self:Log("SPELL_CAST_START", "PhaseBlades", 433519)
+	self:Log("SPELL_CAST_SUCCESS", "PhaseBlades", 433475)
 	self:Log("SPELL_AURA_APPLIED", "CosmicWoundApplied", 434860)
 	self:RegisterEvent("CHAT_MSG_RAID_BOSS_WHISPER") -- Decimate Targetting
 	self:Log("SPELL_CAST_START", "Decimate", 442428)
@@ -102,7 +102,7 @@ end
 -- Event Handlers
 --
 
-function mod:PhaseBlades(args)
+function mod:PhaseBlades()
 	self:StopBar(CL.count:format(CL.charge, phaseBladesCount))
 	self:Message(433517, "orange", CL.count:format(CL.charge, phaseBladesCount))
 	phaseBladesCount = phaseBladesCount + 1

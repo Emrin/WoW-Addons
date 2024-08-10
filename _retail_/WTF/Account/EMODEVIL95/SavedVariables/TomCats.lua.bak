@@ -20,7 +20,7 @@ TomCats_Account = {
 ["iconScale"] = 0.8,
 ["arrowEnabled"] = true,
 },
-["lastExpirationWarning"] = 1719995657,
+["lastExpirationWarning"] = 0,
 ["discoveriesResetCount"] = 0,
 ["noblegarden"] = {
 ["enabled"] = true,
@@ -180,7 +180,7 @@ TomCats_Account = {
 },
 },
 ["discoveriesVersion"] = "2.4.35",
-["lastVersionSeen"] = "2.5.24",
+["lastVersionSeen"] = "2.5.33",
 ["preferences"] = {
 ["TomCats-HallowsEndMinimapButton"] = {
 ["hidden"] = false,
@@ -230,8 +230,23 @@ nil,
 },
 },
 ["mopremix"] = {
+["bonusXPTrackerDisplay"] = 6,
+["filterOptions"] = {
+["heirlooms"] = true,
+["notCollected"] = true,
+["achievement"] = true,
+["appearances"] = true,
+["pets"] = true,
+["mounts"] = true,
+["collected"] = true,
+["toys"] = true,
+["vendor"] = true,
+},
 ["osd"] = {
 },
+["collectionTracker"] = {
+},
+["collectionTrackerDisplay"] = true,
 },
 ["primalstorms"] = {
 ["preferences"] = {

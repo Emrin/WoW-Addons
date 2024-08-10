@@ -28,6 +28,9 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
 
     local crafterUID = self:GetCrafterUID()
 
+    self.concentrating = false
+    self.concentrationCost = 0
+
     -- important for recipedata of alts to check if data was cached (and for any recipe data creation b4 tradeskill is ready)
     self.specializationDataCached = false
     self.operationInfoCached = false
@@ -59,7 +62,9 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     ---@type CraftSim.ProfessionData
     self.professionData = CraftSim.ProfessionData(self, recipeID)
     self.professionInfoCached = self.professionData.professionInfoCached
+    self.supportsSpecializations = C_ProfSpecs.SkillLineHasSpecialization(self.professionData.skillLineID)
 
+    self.expansionID = CraftSim.UTIL:GetExpansionIDBySkillLineID(self.professionData.skillLineID)
 
     if isWorkOrder then
         ---@type CraftingOrderInfo
@@ -104,13 +109,18 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     self.relativeProfitCached = nil
     self.isQuestRecipe = tContains(CraftSim.CONST.QUEST_RECIPE_IDS, recipeID)
 
-    if self.recipeInfo.hyperlink then
-        local subclassID = select(7, C_Item.GetItemInfoInstant(self.recipeInfo.hyperlink))
-        ---@type number?
-        self.subtypeID = subclassID
+    self.isGear = false
+
+    self.isEnchantingRecipe = self.recipeInfo.isEnchantingRecipe or false
+
+
+    if self.recipeInfo.hyperlink and not self.isEnchantingRecipe then
+        local itemInfoInstant = { C_Item.GetItemInfoInstant(self.recipeInfo.hyperlink) }
+        -- 4th return value is item equip slot, so if its of non type its not equipable, otherwise its gear
+        self.isGear = not tContains(CraftSim.CONST.INVENTORY_TYPES_NON_GEAR, itemInfoInstant[4])
     end
 
-    self.isOldWorldRecipe = not self:IsDragonflightRecipe()
+    self.isOldWorldRecipe = self:IsOldWorldRecipe()
     self.isRecraft = isRecraft or false
     if self.orderData then
         self.isRecraft = self.orderData.isRecraft
@@ -122,24 +132,17 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     self.recipeName = self.recipeInfo.name
     self.supportsQualities = self.recipeInfo.supportsQualities or false
     self.supportsCraftingStats = self.recipeInfo.supportsCraftingStats or false
-    self.isEnchantingRecipe = self.recipeInfo.isEnchantingRecipe or false
     self.isCooking = self.professionData.professionInfo.profession == Enum.Profession.Cooking
     self.isSalvageRecipe = self.recipeInfo.isSalvageRecipe or false
     self.isAlchemicalExperimentation = tContains(CraftSim.CONST.ALCHEMICAL_EXPERIMENTATION_RECIPE_IDS, recipeID)
     ---@type string?
     self.allocationItemGUID = nil
     self.maxQuality = self.recipeInfo.maxQuality
-    self.isGear = self.recipeInfo.hasSingleItemOutput and self.recipeInfo.qualityIlvlBonuses ~= nil
 
-    self.supportsInspiration = false
     self.supportsMulticraft = false
     self.supportsResourcefulness = false
+    self.supportsIngenuity = false
     self.supportsCraftingspeed = true -- this is always supported (but does not show in details UI when 0)
-
-    if not self.isCooking then
-        ---@type CraftSim.SpecializationData?
-        self.specializationData = self:GetSpecializationDataForRecipeCrafter()
-    end
 
     self.cooldownData = self:GetCooldownDataForRecipeCrafter()
 
@@ -164,7 +167,20 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     self.minItemAmount = schematicInfo.quantityMin
     self.maxItemAmount = schematicInfo.quantityMax
 
-    -- EXCEPTION for Sturdy Expedition Shovel - 388279
+    -- needs to load before spec data
+    ---@type CraftSim.BuffData
+    self.buffData = CraftSim.BuffData(self)
+    -- no need to search for craft buffs when I am not even the crafter
+    if self:IsCrafter() then
+        self.buffData:Update()
+    end
+
+    if self.supportsSpecializations then
+        ---@type CraftSim.SpecializationData?
+        self.specializationData = self:GetSpecializationDataForRecipeCrafter()
+    end
+
+    -- EXCEPTION for Dragonflight - Sturdy Expedition Shovel - 388279
     -- Due to a blizzard bug the recipe's baseItemAmount is 2 although it only produces 1
     if self.recipeID == 388279 then
         self.baseItemAmount = 1
@@ -181,7 +197,7 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     self.baseOperationInfo = nil
     if self.orderData then
         self.baseOperationInfo = C_TradeSkillUI.GetCraftingOperationInfoForOrder(self.recipeID, {},
-            self.orderData.orderID)
+            self.orderData.orderID, self.concentrating)
     else
         self.baseOperationInfo = self:GetCraftingOperationInfoForRecipeCrafter()
     end
@@ -196,13 +212,14 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
     self.baseProfessionStats:SetStatsByOperationInfo(self, self.baseOperationInfo)
     CraftSim.DEBUG:StopProfiling("- RD: OperationInfo")
 
+    if self.supportsIngenuity and self.supportsSpecializations then
+        self.concentrationData = self:GetConcentrationDataForCrafter()
+    end
+
     -- exception: when salvage recipe, then resourcefulness is supported!
     if self.isSalvageRecipe then
         self.supportsResourcefulness = true
     end
-
-    self.baseProfessionStats:SetInspirationBaseBonusSkill(self.baseProfessionStats.recipeDifficulty.value,
-        self.maxQuality)
 
     if self.professionData:UsesGear() then
         CraftSim.DEBUG:StartProfiling("- RD: ProfessionGearCache")
@@ -213,17 +230,10 @@ function CraftSim.RecipeData:new(recipeID, isRecraft, isWorkOrder, crafterData)
         self.baseProfessionStats:subtract(self.professionGearSet.professionStats)
     end
 
-    ---@type CraftSim.BuffData
-    self.buffData = CraftSim.BuffData(self)
-    -- no need to search for craft buffs when I am not even the crafter
-    if self:IsCrafter() then
-        self.buffData:Update()
-    end
-
     self.baseProfessionStats:subtract(self.buffData.professionStats)
     -- As we dont know in this case what the factors are without gear and reagents and such
     -- we set them to 0 and let them accumulate in UpdateProfessionStats
-    self.baseProfessionStats:ClearFactors()
+    self.baseProfessionStats:ClearExtraValues()
 
     self:UpdateProfessionStats()
 
@@ -401,6 +411,16 @@ function CraftSim.RecipeData:SetAllReagentsBySchematicForm()
     end
 end
 
+function CraftSim.RecipeData:SetConcentrationBySchematicForm()
+    local schematicForm = CraftSim.UTIL:GetSchematicFormByVisibility()
+    if not schematicForm then
+        return
+    end
+
+    local currentTransaction = schematicForm:GetTransaction()
+    self.concentrating = currentTransaction:IsApplyingConcentration()
+end
+
 ---@param itemID number
 function CraftSim.RecipeData:SetOptionalReagent(itemID)
     self.reagentData:SetOptionalReagent(itemID)
@@ -422,6 +442,23 @@ function CraftSim.RecipeData:SetNonQualityReagentsMax()
     end
 end
 
+function CraftSim.RecipeData:GetConcentrationCosts()
+    -- includes required and optionals
+    local allReagentsTbl = self.reagentData:GetCraftingReagentInfoTbl()
+    -- on purpose do not use concentration so we will always get the costs
+    local operationInfo
+    if self.orderData then
+        operationInfo = C_TradeSkillUI.GetCraftingOperationInfoForOrder(self.recipeID, allReagentsTbl,
+            self.orderData.orderID,
+            false)
+    else
+        operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(self.recipeID, allReagentsTbl, self.allocationItemGUID,
+            false)
+    end
+
+    return (operationInfo and operationInfo.concentrationCost) or 0
+end
+
 -- Update the professionStats property of the RecipeData according to set reagents and gearSet (and any stat modifiers)
 function CraftSim.RecipeData:UpdateProfessionStats()
     local skillRequiredReagents = self.reagentData:GetSkillFromRequiredReagents()
@@ -429,10 +466,9 @@ function CraftSim.RecipeData:UpdateProfessionStats()
     local itemStats = self.professionGearSet.professionStats
     local buffStats = self.buffData.professionStats
 
-    self.professionStats:Clear()
+    self.concentrationCost = self:GetConcentrationCosts()
 
-    -- Dont forget to set this.. cause it is ignored by add/subtract
-    self.professionStats:SetInspirationBaseBonusSkill(self.baseProfessionStats.recipeDifficulty.value, self.maxQuality)
+    self.professionStats:Clear()
 
     self.professionStats:add(self.baseProfessionStats)
 
@@ -444,17 +480,17 @@ function CraftSim.RecipeData:UpdateProfessionStats()
 
     self.professionStats:add(itemStats)
 
-    if not self.isCooking then
-        local specExtraFactors = self.specializationData:GetExtraFactors()
-        self.professionStats:add(specExtraFactors)
+    -- this should cover each case of non specialization data implemented professions
+    if self.specializationData then
+        local specExtraValues = self.specializationData:GetExtraValues()
+        self.professionStats:add(specExtraValues)
     end
 
     -- finally add any custom modifiers
     self.professionStats:add(self.professionStatModifiers)
-    -- its the only one which uses "extraValueAfterFactor"
 
     -- since ooey gooey chocolate gives us math.huge on multicraft we need to limit it to 100%
-    self.professionStats.multicraft.value = math.min(1 / CraftSim.CONST.PERCENT_MODS.MULTICRAFT,
+    self.professionStats.multicraft.value = math.min(1 / self.professionStats.multicraft.percentMod,
         self.professionStats.multicraft.value)
 end
 
@@ -471,7 +507,11 @@ end
 function CraftSim.RecipeData:Copy()
     ---@type CraftSim.RecipeData
     local copy = CraftSim.RecipeData(self.recipeID, self.isRecraft, self.orderData ~= nil, self.crafterData)
+    copy.concentrating = self.concentrating
+    copy.concentrationCost = self.concentrationCost
+    copy.concentrationData = self.concentrationData and self.concentrationData:Copy()
     copy.reagentData = self.reagentData:Copy(copy)
+    copy.cooldownData = self.cooldownData:Copy()
     copy.professionGearSet = self.professionGearSet:Copy()
     copy.professionStats = self.professionStats:Copy()
     copy.baseProfessionStats = self.baseProfessionStats:Copy()
@@ -600,7 +640,7 @@ function CraftSim.RecipeData:GetJSON(indent)
     jb:Begin()
     jb:Add("recipeID", self.recipeID)
     jb:Add("categoryID", self.categoryID)
-    jb:Add("subtypeID", self.subtypeID)
+    jb:Add("concentrating", self.concentrating)
     jb:Add("learned", self.learned)
     jb:Add("numSkillUps", self.numSkillUps)
     jb:Add("recipeIcon", self.recipeIcon)
@@ -609,7 +649,6 @@ function CraftSim.RecipeData:GetJSON(indent)
     jb:Add("hasQualityReagents", self.hasQualityReagents)
     jb:Add("supportsQualities", self.supportsQualities)
     jb:Add("supportsCraftingStats", self.supportsCraftingStats)
-    jb:Add("supportsInspiration", self.supportsInspiration)
     jb:Add("supportsMulticraft", self.supportsMulticraft)
     jb:Add("supportsResourcefulness", self.supportsResourcefulness)
     jb:Add("supportsCraftingspeed", self.supportsCraftingspeed)
@@ -674,18 +713,10 @@ function CraftSim.RecipeData:GetForgeFinderExport(indent)
     end
     if self.supportsCraftingStats then
         if self.supportsMulticraft then
-            if not self.supportsInspiration and not self.supportsResourcefulness then
+            if not self.supportsResourcefulness then
                 jb:Add("multicraft", professionStatsForExport.multicraft:GetPercent(true), true)
             else
                 jb:Add("multicraft", professionStatsForExport.multicraft:GetPercent(true))
-            end
-        end
-        if self.supportsInspiration then
-            jb:Add("inspiration", professionStatsForExport.inspiration:GetPercent(true))
-            if not self.supportsMulticraft and not self.supportsResourcefulness then
-                jb:Add("inspirationSkill", self.professionStats.inspiration:GetExtraValueByFactor(), true)
-            else
-                jb:Add("inspirationSkill", self.professionStats.inspiration:GetExtraValueByFactor())
             end
         end
         if self.supportsResourcefulness then
@@ -708,10 +739,13 @@ function CraftSim.RecipeData:Craft(amount)
     if self.isEnchantingRecipe then
         local vellumLocation = GUTIL:GetItemLocationFromItemID(CraftSim.CONST.ENCHANTING_VELLUM_ID)
         if vellumLocation then
-            C_TradeSkillUI.CraftEnchant(self.recipeID, amount, craftingReagentInfoTbl, vellumLocation)
+            C_TradeSkillUI.CraftEnchant(self.recipeID, amount, craftingReagentInfoTbl, vellumLocation, self
+                .concentrating)
         end
     else
-        C_TradeSkillUI.CraftRecipe(self.recipeID, amount, craftingReagentInfoTbl)
+        C_TradeSkillUI.CraftRecipe(self.recipeID, amount, craftingReagentInfoTbl, nil,
+            self.orderData and self.orderData.orderID,
+            self.concentrating)
     end
 end
 
@@ -733,6 +767,13 @@ function CraftSim.RecipeData:CanCraft(amount)
     local craftAbleAmount = self.reagentData:GetCraftableAmount(self:GetCrafterUID())
 
     local isChargeRecipe = self.cooldownData.maxCharges > 0
+
+    local concentrationAmount = math.huge
+    if self.concentrating and self.concentrationCost > 0 then
+        concentrationAmount = math.floor(self.concentrationData:GetCurrentAmount() / (self.concentrationCost * amount))
+    end
+
+    craftAbleAmount = math.min(craftAbleAmount, concentrationAmount)
 
     if not isChargeRecipe then
         return hasEnoughReagents, craftAbleAmount
@@ -772,10 +813,12 @@ function CraftSim.RecipeData:GetCraftingOperationInfoForRecipeCrafter()
         if operationInfo then
             self.operationInfoCached = true
         else
-            operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(self.recipeID, {}, self.allocationItemGUID)
+            operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(self.recipeID, {}, self.allocationItemGUID,
+                self.concentrating)
         end
     else
-        operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(self.recipeID, {}, self.allocationItemGUID)
+        operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(self.recipeID, {}, self.allocationItemGUID,
+            self.concentrating)
 
         -- check for too early access?
         CraftSim.DB.CRAFTER:SaveOperationInfoForRecipe(crafterUID, self.recipeID, operationInfo)
@@ -801,11 +844,11 @@ function CraftSim.RecipeData:GetSpecializationDataForRecipeCrafter()
         -- if too early, use from db
         if not self.isOldWorldRecipe and #specializationData.nodeData == 0 then
             specializationData = CraftSim.DB.CRAFTER:GetSpecializationData(crafterUID, self)
+            return specializationData
         else
             CraftSim.DB.CRAFTER:SaveSpecializationData(crafterUID, specializationData)
+            return specializationData
         end
-
-        return specializationData
     end
 end
 
@@ -820,7 +863,7 @@ function CraftSim.RecipeData:GetCooldownDataForRecipeCrafter()
         cooldownData:Update()
 
         -- cache only learned recipes from current expac that can be on cooldown
-        if cooldownData.isCooldownRecipe and self.recipeInfo.learned and not self.isOldWorldRecipe then
+        if cooldownData.isCooldownRecipe and self.recipeInfo.learned then -- and not self.isOldWorldRecipe then
             cooldownData:Save(crafterUID)
         end
     else
@@ -828,6 +871,27 @@ function CraftSim.RecipeData:GetCooldownDataForRecipeCrafter()
     end
 
     return cooldownData
+end
+
+---@return CraftSim.ConcentrationData?
+function CraftSim.RecipeData:GetConcentrationDataForCrafter()
+    local crafterUID = self:GetCrafterUID()
+    local concentrationData
+    if self:IsCrafter() and self.supportsSpecializations then
+        local currencyID = C_TradeSkillUI.GetConcentrationCurrencyID(self.professionData.skillLineID)
+        concentrationData = CraftSim.ConcentrationData(currencyID)
+        concentrationData:Update()
+        -- save in crafterDB
+        CraftSim.DB.CRAFTER:SaveCrafterConcentrationData(crafterUID, self.professionData.professionInfo.profession,
+            self.expansionID,
+            concentrationData)
+    else
+        concentrationData =
+            CraftSim.DB.CRAFTER:GetCrafterConcentrationData(crafterUID, self.professionData.professionInfo.profession,
+                self.expansionID)
+    end
+
+    return concentrationData
 end
 
 function CraftSim.RecipeData:IsCrafterInfoCached()
@@ -861,24 +925,26 @@ function CraftSim.RecipeData:CrafterDataEquals(crafterData)
     local nameEquals = self.crafterData.name == crafterData.name
     local realmEquals = self.crafterData.realm == crafterData.realm
     local classEquals = self.crafterData.class == crafterData.class
-    -- local print = CraftSim.DEBUG:SetDebugPrint("RECIPE_SCAN")
-    -- print("---nameEquals: " .. tostring(nameEquals))
-    -- print("---realmEquals: " .. tostring(realmEquals))
-    -- print("---classEquals: " .. tostring(classEquals))
     return nameEquals and realmEquals and classEquals
 end
 
-function CraftSim.RecipeData:IsDragonflightRecipe()
-    local recipeInfo = self.recipeInfo
-    if recipeInfo then
-        local professionInfo = self.professionData.professionInfo
-        if not professionInfo.profession then return false end
-        local isDragonflightRecipe = professionInfo.professionID ==
-            CraftSim.CONST.TRADESKILLLINEIDS[professionInfo.profession][CraftSim.CONST.EXPANSION_IDS.DRAGONFLIGHT]
-        return isDragonflightRecipe
+function CraftSim.RecipeData:IsOldWorldRecipe()
+    return self.professionData.expansionID < CraftSim.CONST.EXPANSION_IDS.DRAGONFLIGHT
+end
+
+---@param expansionID CraftSim.EXPANSION_IDS
+function CraftSim.RecipeData:IsExpansionRecipe(expansionID)
+    if self.professionData and self.professionData.skillLineID then
+        return self.professionData.skillLineID ==
+            CraftSim.CONST.TRADESKILLLINEIDS[self.professionData.professionInfo.profession][expansionID]
     end
 
     return false
+end
+
+function CraftSim.RecipeData:IsSpecializationInfoImplemented()
+    return tContains(CraftSim.CONST.IMPLEMENTED_SPECIALIZATION_DATA[self.professionData.expansionID],
+        self.professionData.professionInfo.profession)
 end
 
 --- returns recipe crafting info for all required and all active optional reagents

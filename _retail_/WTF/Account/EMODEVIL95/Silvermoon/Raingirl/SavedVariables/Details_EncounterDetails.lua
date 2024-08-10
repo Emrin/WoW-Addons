@@ -1,9 +1,9 @@
 
 EncounterDetailsDB = {
-	["chartData"] = {
-	},
-	["encounter_spells"] = {
-	},
-	["emotes"] = {
-	},
+["chartData"] = {
+},
+["encounter_spells"] = {
+},
+["emotes"] = {
+},
 }

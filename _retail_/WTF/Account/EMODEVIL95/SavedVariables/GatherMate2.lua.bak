@@ -2,6 +2,7 @@
 GatherMate2DB = {
 ["profileKeys"] = {
 ["Taizai - Draenor"] = "Default",
+["Nolifey - Silvermoon"] = "Default",
 ["Nolifey - Ravencrest"] = "Default",
 ["Trax - Stormscale"] = "Default",
 ["Redangel - Draenor"] = "Default",
@@ -10,19 +11,23 @@ GatherMate2DB = {
 ["Pixiel - Draenor"] = "Default",
 ["Leafgirl - Silvermoon"] = "Default",
 ["Apokalol - Outland"] = "Default",
+["Lovelol - Ravencrest"] = "Default",
 ["Ravegirl - Draenor"] = "Default",
 ["Pokipoki - Draenor"] = "Default",
 ["Nolifey - Draenor"] = "Default",
 ["Apoka - Outland"] = "Default",
 ["Nolifey - Moonglade"] = "Default",
+["Ravegirl - Ravencrest"] = "Default",
 ["Lifey - Draenor"] = "Default",
 ["Yubiyubi - Draenor"] = "Default",
-["Yeetalot - Draenor"] = "Default",
 ["Kungfugoblin - Draenor"] = "Default",
+["Yeetalot - Draenor"] = "Default",
 ["Crystalol - Outland"] = "Default",
 ["Crystalol - Draenor"] = "Default",
 ["Cutetroll - Draenor"] = "Default",
 ["Venetha - Draenor"] = "Default",
+["Raingirl - Silvermoon"] = "Default",
+["Hun - Ravencrest"] = "Default",
 },
 ["global"] = {
 ["data_version"] = 6,
@@ -96,8 +101,8 @@ GatherMate2MineDB = {
 [5136516000] = 1201,
 [5106457700] = 1201,
 [5495361400] = 1202,
-[5091509200] = 1201,
 [5781651700] = 1201,
+[5091509200] = 1201,
 },
 }
 GatherMate2FishDB = {

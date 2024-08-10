@@ -802,5 +802,6 @@ AL["ZONES_FILTERS_SEARCH_DESC"] = "Gib den Namen der Zone ein, um die untenstehe
 		[9996] = "Schlachtzüge"; --Raids
 		[9995] = "Unbekannt"; --Unknown
 		[9994] = "Expedition islands"; --Expedition islands
+		[9993] = "Delves"; --Delves
 	}
 end

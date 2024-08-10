@@ -93,10 +93,12 @@ function Details222.StartUp.StartMeUp()
 
 	Details222.LoadCommentatorFunctions()
 
+	Details222.AuraScan.FindAndIgnoreWorldAuras()
+
 	if (Details.ocd_tracker.show_options) then
 		Details:InitializeCDTrackerWindow()
 	else
-		Details:InitializeCDTrackerWindow() --enabled for v11 beta, debug openraid
+		--Details:InitializeCDTrackerWindow() --enabled for v11 beta, debug openraid
 	end
 	--/run Details.ocd_tracker.show_options = true; ReloadUI()
 	--custom window
@@ -186,9 +188,9 @@ function Details222.StartUp.StartMeUp()
 		for id = 1, Details:GetNumInstances() do
 			local instance = Details:GetInstance(id)
 			if (instance:IsEnabled()) then
-				if (instance.modo == 3) then --everything
-				instance.LastModo = 2 --standard
-				instance.modo = 2 --standard
+				if (instance.modo == 3 and Details.auto_change_to_standard) then --everything
+					instance.LastModo = 2 --standard
+					instance.modo = 2 --standard
 				end
 
 				--refresh wallpaper
@@ -605,6 +607,19 @@ function Details222.StartUp.StartMeUp()
 			Details:Destroy(Details.npcid_pool or {})
 			Details:Destroy(Details.current_exp_raid_encounters or {})
 			Details.data_wipes_exp["10"] = true
+		end
+	end
+
+	if (GetExpansionLevel() == 10) then
+		if (not Details.data_wipes_exp["11"]) then
+			Details:Msg("New expansion detected, clearing data...")
+			Details:Destroy(Details.encounter_spell_pool or {})
+			Details:Destroy(Details.boss_mods_timers or {})
+			Details:Destroy(Details.spell_school_cache or {})
+			Details:Destroy(Details.spell_pool or {})
+			Details:Destroy(Details.npcid_pool or {})
+			Details:Destroy(Details.current_exp_raid_encounters or {})
+			Details.data_wipes_exp["11"] = true
 		end
 	end
 
